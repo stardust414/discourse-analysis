@@ -132,7 +132,7 @@ module.exports = [
   },
   {
     // Electron main process + preload + Cloud Function proxy: Node.
-    files: ['main.js', 'preload.js', 'functions/**/*.js'],
+    files: ['main.js', 'preload.js', 'js/i18n/*.cjs', 'scripts/*.cjs', 'functions/**/*.js'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'commonjs',

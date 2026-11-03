@@ -53,6 +53,8 @@ interface Window {
   showLabelPicker: (bracketIdx: number, y: number, x: number) => void;
   electronAPI?: {
     getSystemLanguages: () => Promise<string[]>;
+    setInterfaceLocale: (locale: string) => void;
+
     onOpenFile: (cb: (content: string) => void) => void;
     fetchESV: (query: string) => Promise<any>;
     fetchNASB: (passageId: string) => Promise<any>;
