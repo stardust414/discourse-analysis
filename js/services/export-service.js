@@ -57,6 +57,7 @@ const DA_EXPORT = {
    * needed afterward.
    */
   enterBracketViewForCapture() {
+    document.getElementById('workspaceHeader')?.classList.add('exporting-header');
     // Comments are reviewer notes, not diagram content: strip their
     // always-visible highlights (text marks + bracket glow) from every
     // capture. The caller's pre-capture renderAll picks this up.
@@ -67,6 +68,7 @@ const DA_EXPORT = {
   },
 
   restoreViewAfterCapture(wasBlock) {
+    document.getElementById('workspaceHeader')?.classList.remove('exporting-header');
     // The caller's post-capture renderAll ran while the flag was still set,
     // so one more render brings the comment highlights back.
     DA_STATE.suppressCommentVisuals = false;
@@ -141,6 +143,10 @@ const DA_EXPORT = {
       const borderColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
 
       if (header) {
+        // The live header stays reachable during horizontal panning; captures
+        // use normal flow so no sticky offset enters PNG/PDF rendering.
+        header.style.position = 'static';
+        header.style.left = 'auto';
         header.style.padding = '0 0 1rem 0';
         header.style.borderBottom = `1px solid ${borderColor}`;
         header.style.marginBottom = '1.5rem';

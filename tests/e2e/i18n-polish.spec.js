@@ -55,7 +55,10 @@ for (const [width, height] of sizes) for (const zoom of zooms) for (const mode o
     expect(await page.locator('#settingsModal .modal-body').evaluate(e => e.scrollWidth <= e.clientWidth + 1)).toBe(true);
     await page.locator('#cloudProfileName').scrollIntoViewIfNeeded();
     const input = await page.locator('#cloudProfileName').evaluate(e => ({ bg: getComputedStyle(e).backgroundColor, color: getComputedStyle(e).color }));
-    if (mode === 'dark') expect(input.bg).not.toBe('rgb(255, 255, 255)');
+    if (mode === 'dark') {
+      expect(input.bg).not.toBe('rgb(255, 255, 255)');
+      expect(await page.locator('#settingsModal .sidebar-field input').evaluateAll(inputs => inputs.every(e => getComputedStyle(e).backgroundColor !== 'rgb(255, 255, 255)'))).toBe(true);
+    }
     if (capture) await shot(page, `settings-${width}-${zoom}-${mode}`);
     await page.locator('#closeSettingsBtn').click();
     for (const profile of profiles) {
@@ -132,6 +135,8 @@ for (const script of ['greek', 'hebrew']) test(`original-script fonts direction 
   await expect(page.locator('#propositions')).toHaveClass(hebrew ? /hebrew-text/ : /greek-text/);
   expect(await page.evaluate(() => window.DA_STATE.propositions)).toEqual(text);
   if (hebrew) expect(await page.locator('.proposition-text').first().evaluate(e => getComputedStyle(e).direction)).toBe('rtl');
+  await page.locator('#workspace').evaluate(e => { e.scrollLeft = e.scrollWidth; }); await settle(page);
+  await within(page, '.workspace-toolbar');
   await shot(page, `original-${script}-parallel-dark`);
   await page.evaluate(() => window.DA_BLOCK.setActive(true)); await settle(page);
   if (hebrew) expect(await page.locator('.bd-text').first().evaluate(e => getComputedStyle(e).direction)).toBe('rtl');
@@ -152,4 +157,20 @@ test('modal semantics, SVG opener restoration, icon names and draft focus surviv
   await expect(page.locator('#commentPopover .send-reply-btn')).toHaveAccessibleName('发送回复');
   await page.locator('#commentPopover .reply-input').fill('Draft 原样'); await page.evaluate(() => window.DA_I18N.setPreference('en')); await expect(page.locator('#commentPopover .reply-input')).toHaveValue('Draft 原样');
   expect(errors).toEqual([]);
+});
+
+test('horizontal panning keeps controls reachable and does not change PNG capture width', async ({ page }) => {
+  const errors = await boot(page); await page.setViewportSize({ width: 800, height: 572 }); await seed(page);
+  await page.evaluate(() => window.DA_UI.setZoomLevel(125)); await settle(page);
+  const imageSize = async name => {
+    await page.locator('#exportMenuBtn').click(); const pending = page.waitForEvent('download');
+    await page.locator('#exportMenu [data-action="png"]').click(); const file = test.info().outputPath(name); await (await pending).saveAs(file);
+    const b = fs.readFileSync(file); return b.readUInt32BE(16); // Only width is invariant under horizontal panning; no pixel snapshot of font-dependent heights.
+  };
+  const first = await imageSize('left.png');
+  await page.locator('#workspace').evaluate(e => { e.scrollLeft = e.scrollWidth; }); await settle(page);
+  await within(page, '.workspace-toolbar');
+  const second = await imageSize('right.png'); expect(second).toEqual(first);
+  expect(await page.evaluate(() => window.DA_STATE.zoomLevel)).toBe(125);
+  await expect(page.locator('#workspaceHeader')).not.toHaveClass(/exporting-header/); expect(errors).toEqual([]);
 });

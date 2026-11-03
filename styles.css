@@ -3439,3 +3439,14 @@ body.rtl-mode .bd-line { direction: rtl; }
 .bd-label { margin-left: 0; margin-inline-start: 1em; }
 html[lang="zh-CN"] .modal-body,
 html[lang="zh-CN"] .picker-info-panel { line-break: strict; }
+/* Keep controls reachable while the diagram itself pans horizontally. */
+.workspace { --workspace-inset: 2rem; }
+#workspaceHeader { position: sticky; left: var(--workspace-inset); z-index: 40; width: 100%; flex-shrink: 0; background: var(--bg); }
+.settings-modal .sidebar-field input,
+.settings-modal .sidebar-field select {
+  min-width: 0; width: 100%; padding: 0.5rem 0.65rem;
+  background: var(--bg); color: var(--text); border: 1px solid var(--border);
+  border-radius: 6px; font-family: var(--font-sans); font-size: 0.875rem;
+}
+@media (max-width: 1000px) { .workspace { --workspace-inset: 1rem; } }
+#workspaceHeader.exporting-header { position: static; left: auto; }

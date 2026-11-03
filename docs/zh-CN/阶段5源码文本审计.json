@@ -5249,9 +5249,27 @@
       "auditClass": "C-reviewed-code-diagnostic-or-stable-value"
     },
     {
+      "id": "21a3bb2ca3d3267afdd6",
+      "file": "js/services/export-service.js",
+      "line": 60,
+      "kind": "literal",
+      "text": "workspaceHeader",
+      "occurrences": 4,
+      "auditClass": "C-reviewed-code-diagnostic-or-stable-value"
+    },
+    {
+      "id": "e9a6326795ec84b60ae1",
+      "file": "js/services/export-service.js",
+      "line": 60,
+      "kind": "literal",
+      "text": "exporting-header",
+      "occurrences": 2,
+      "auditClass": "C-reviewed-code-diagnostic-or-stable-value"
+    },
+    {
       "id": "25b53cee9dca04add977",
       "file": "js/services/export-service.js",
-      "line": 102,
+      "line": 104,
       "kind": "literal",
       "text": "workspace",
       "occurrences": 4,
@@ -5260,7 +5278,7 @@
     {
       "id": "fa84e1b47ac477b525b6",
       "file": "js/services/export-service.js",
-      "line": 104,
+      "line": 106,
       "kind": "literal",
       "text": "none",
       "occurrences": 3,
@@ -5269,7 +5287,7 @@
     {
       "id": "b5b208f4528fc6c15962",
       "file": "js/services/export-service.js",
-      "line": 116,
+      "line": 118,
       "kind": "literal",
       "text": "visible",
       "occurrences": 1,
@@ -5278,7 +5296,7 @@
     {
       "id": "e4baafcd89accea55887",
       "file": "js/services/export-service.js",
-      "line": 118,
+      "line": 120,
       "kind": "literal",
       "text": "max-content",
       "occurrences": 2,
@@ -5287,7 +5305,7 @@
     {
       "id": "cb659cb1b825a10315f7",
       "file": "js/services/export-service.js",
-      "line": 120,
+      "line": 122,
       "kind": "literal",
       "text": "40px",
       "occurrences": 1,
@@ -5296,7 +5314,7 @@
     {
       "id": "00cfb6a5aabc8ce2740b",
       "file": "js/services/export-service.js",
-      "line": 121,
+      "line": 123,
       "kind": "literal",
       "text": "--bg",
       "occurrences": 2,
@@ -5305,7 +5323,7 @@
     {
       "id": "b0afb2eba2a2dbfde40b",
       "file": "js/services/export-service.js",
-      "line": 121,
+      "line": 123,
       "kind": "literal",
       "text": "#fdfaf3",
       "occurrences": 2,
@@ -5314,25 +5332,16 @@
     {
       "id": "38c72d582a6d5eaa707e",
       "file": "js/services/export-service.js",
-      "line": 124,
+      "line": 126,
       "kind": "literal",
       "text": "\n        .workspace-toolbar,\n        .sidebar-toggle-btn,\n        .cloud-sync-btn,\n        .profile-indicator,\n        .connection-node,\n        .bracket-hitbox,\n        .summary-add-btn,\n        .main-point-summary:not(.has-text)\n      ",
       "occurrences": 1,
       "auditClass": "C-reviewed-code-diagnostic-or-stable-value"
     },
     {
-      "id": "21a3bb2ca3d3267afdd6",
-      "file": "js/services/export-service.js",
-      "line": 138,
-      "kind": "literal",
-      "text": "workspaceHeader",
-      "occurrences": 2,
-      "auditClass": "C-reviewed-code-diagnostic-or-stable-value"
-    },
-    {
       "id": "1f85b4e878ece5847a38",
       "file": "js/services/export-service.js",
-      "line": 139,
+      "line": 141,
       "kind": "literal",
       "text": "data-theme",
       "occurrences": 1,
@@ -5341,7 +5350,7 @@
     {
       "id": "61b10b87c400b08455fa",
       "file": "js/services/export-service.js",
-      "line": 139,
+      "line": 141,
       "kind": "literal",
       "text": "dark",
       "occurrences": 1,
@@ -5350,7 +5359,7 @@
     {
       "id": "e611b8bdd00e2b17c4c0",
       "file": "js/services/export-service.js",
-      "line": 140,
+      "line": 142,
       "kind": "literal",
       "text": "#ffffff",
       "occurrences": 1,
@@ -5359,7 +5368,7 @@
     {
       "id": "94c4eceaa130d921d2c2",
       "file": "js/services/export-service.js",
-      "line": 141,
+      "line": 143,
       "kind": "literal",
       "text": "rgba(255,255,255,0.1)",
       "occurrences": 1,
@@ -5368,16 +5377,34 @@
     {
       "id": "2ee638b89fa3ce437529",
       "file": "js/services/export-service.js",
-      "line": 141,
+      "line": 143,
       "kind": "literal",
       "text": "rgba(0,0,0,0.1)",
       "occurrences": 1,
       "auditClass": "C-reviewed-code-diagnostic-or-stable-value"
     },
     {
+      "id": "516592b1efa88cd5c2bf",
+      "file": "js/services/export-service.js",
+      "line": 148,
+      "kind": "literal",
+      "text": "static",
+      "occurrences": 1,
+      "auditClass": "C-reviewed-code-diagnostic-or-stable-value"
+    },
+    {
+      "id": "74ab0bb347cc61b5d1b3",
+      "file": "js/services/export-service.js",
+      "line": 149,
+      "kind": "literal",
+      "text": "auto",
+      "occurrences": 1,
+      "auditClass": "C-reviewed-code-diagnostic-or-stable-value"
+    },
+    {
       "id": "00ed4be001262e2ca568",
       "file": "js/services/export-service.js",
-      "line": 144,
+      "line": 150,
       "kind": "literal",
       "text": "0 0 1rem 0",
       "occurrences": 1,
@@ -5386,7 +5413,7 @@
     {
       "id": "5ac83c0d6d747ea3799f",
       "file": "js/services/export-service.js",
-      "line": 145,
+      "line": 151,
       "kind": "template",
       "text": "1px solid {borderColor}",
       "occurrences": 1,
@@ -5395,7 +5422,7 @@
     {
       "id": "0259adb9f3ef7f516c47",
       "file": "js/services/export-service.js",
-      "line": 146,
+      "line": 152,
       "kind": "literal",
       "text": "1.5rem",
       "occurrences": 1,
@@ -5404,7 +5431,7 @@
     {
       "id": "8f0970e7deae3370c7e6",
       "file": "js/services/export-service.js",
-      "line": 151,
+      "line": 157,
       "kind": "literal",
       "text": ".proposition-text, .bracket-label, .verse-ref, .summary-text",
       "occurrences": 1,
@@ -5413,7 +5440,7 @@
     {
       "id": "e03c15ba98be142a6e1f",
       "file": "js/services/export-service.js",
-      "line": 163,
+      "line": 169,
       "kind": "literal",
       "text": ".proposition-block",
       "occurrences": 1,
@@ -5422,7 +5449,7 @@
     {
       "id": "aedd2aa6047023389d29",
       "file": "js/services/export-service.js",
-      "line": 164,
+      "line": 170,
       "kind": "literal",
       "text": "#bracketCanvas *",
       "occurrences": 1,
@@ -5431,7 +5458,7 @@
     {
       "id": "66f47f673f031805432e",
       "file": "js/services/export-service.js",
-      "line": 165,
+      "line": 171,
       "kind": "literal",
       "text": "#wordArrowsSvg *",
       "occurrences": 1,
@@ -5440,7 +5467,7 @@
     {
       "id": "d0dd4462d5bf29ac66c1",
       "file": "js/services/export-service.js",
-      "line": 168,
+      "line": 174,
       "kind": "literal",
       "text": "#mainPointSummary",
       "occurrences": 1,
@@ -5449,7 +5476,7 @@
     {
       "id": "ce12b434ddd9ef07dc8d",
       "file": "js/services/export-service.js",
-      "line": 245,
+      "line": 251,
       "kind": "literal",
       "text": "s.S0092",
       "occurrences": 1,
@@ -5458,7 +5485,7 @@
     {
       "id": "a8c96f43a02f3a95f721",
       "file": "js/services/export-service.js",
-      "line": 245,
+      "line": 251,
       "kind": "literal",
       "text": "info",
       "occurrences": 3,
@@ -5467,7 +5494,7 @@
     {
       "id": "52a3ba3fb33fc0a22346",
       "file": "js/services/export-service.js",
-      "line": 275,
+      "line": 281,
       "kind": "literal",
       "text": "image/png",
       "occurrences": 5,
@@ -5476,7 +5503,7 @@
     {
       "id": "93c9e452fc137d50b4fd",
       "file": "js/services/export-service.js",
-      "line": 278,
+      "line": 284,
       "kind": "literal",
       "text": "undefined",
       "occurrences": 3,
@@ -5485,7 +5512,7 @@
     {
       "id": "9e036ad8bffc84e0fdac",
       "file": "js/services/export-service.js",
-      "line": 280,
+      "line": 286,
       "kind": "template",
       "text": "\n        <div style=\"font-family: sans-serif; background: white; padding: 10px;\">\n          <img src=\"{dataUrl}\" alt=\"DISCOURSE_DNA:{compressedDna}\" style=\"max-width: 100%; border: 1px solid #eee;\" />\n          <div style=\"display:none;\">DISCOURSE_DNA:{compressedDna}</div>\n        </div>\n      ",
       "occurrences": 1,
@@ -5494,7 +5521,7 @@
     {
       "id": "14d3dc65f0cd48a8936a",
       "file": "js/services/export-service.js",
-      "line": 288,
+      "line": 294,
       "kind": "literal",
       "text": "text/html",
       "occurrences": 2,
@@ -5503,7 +5530,7 @@
     {
       "id": "aaa4c9889e8cce3146df",
       "file": "js/services/export-service.js",
-      "line": 297,
+      "line": 303,
       "kind": "literal",
       "text": "s.S0094",
       "occurrences": 1,
@@ -5512,7 +5539,7 @@
     {
       "id": "4425d9e5559b20f9b508",
       "file": "js/services/export-service.js",
-      "line": 297,
+      "line": 303,
       "kind": "literal",
       "text": "success",
       "occurrences": 3,
@@ -5521,7 +5548,7 @@
     {
       "id": "ac045ae043ae82f35914",
       "file": "js/services/export-service.js",
-      "line": 299,
+      "line": 305,
       "kind": "literal",
       "text": "Export failed:",
       "occurrences": 1,
@@ -5530,7 +5557,7 @@
     {
       "id": "09a3a3d96bb645d8bc0c",
       "file": "js/services/export-service.js",
-      "line": 309,
+      "line": 315,
       "kind": "literal",
       "text": "s.S0096",
       "occurrences": 1,
@@ -5539,7 +5566,7 @@
     {
       "id": "2746b5d8d3cefb742ddc",
       "file": "js/services/export-service.js",
-      "line": 309,
+      "line": 315,
       "kind": "literal",
       "text": "error",
       "occurrences": 4,
@@ -5548,7 +5575,7 @@
     {
       "id": "0eb22ca4ef33719cb9ec",
       "file": "js/services/export-service.js",
-      "line": 320,
+      "line": 326,
       "kind": "literal",
       "text": "s.S0097",
       "occurrences": 1,
@@ -5557,7 +5584,7 @@
     {
       "id": "6f96c0516ebd9ae18003",
       "file": "js/services/export-service.js",
-      "line": 347,
+      "line": 353,
       "kind": "literal",
       "text": "a",
       "occurrences": 1,
@@ -5566,7 +5593,7 @@
     {
       "id": "0c841f14a9db84309c45",
       "file": "js/services/export-service.js",
-      "line": 348,
+      "line": 354,
       "kind": "literal",
       "text": "discourse",
       "occurrences": 2,
@@ -5575,7 +5602,7 @@
     {
       "id": "6e80bf3ab7e1aac75bd0",
       "file": "js/services/export-service.js",
-      "line": 349,
+      "line": 355,
       "kind": "template",
       "text": "{filename}_{new Date().toISOString().slice(0,10)}.png",
       "occurrences": 1,
@@ -5584,7 +5611,7 @@
     {
       "id": "22aad90886fd0f3a48bf",
       "file": "js/services/export-service.js",
-      "line": 354,
+      "line": 360,
       "kind": "literal",
       "text": "s.S0099",
       "occurrences": 1,
@@ -5593,7 +5620,7 @@
     {
       "id": "c69068293765c8dc43dc",
       "file": "js/services/export-service.js",
-      "line": 365,
+      "line": 371,
       "kind": "literal",
       "text": "s.S0100",
       "occurrences": 1,
@@ -5602,7 +5629,7 @@
     {
       "id": "07bdc482247f58599544",
       "file": "js/services/export-service.js",
-      "line": 374,
+      "line": 380,
       "kind": "literal",
       "text": "s.S0101",
       "occurrences": 1,
@@ -5611,7 +5638,7 @@
     {
       "id": "e795682ef493654034fb",
       "file": "js/services/export-service.js",
-      "line": 378,
+      "line": 384,
       "kind": "literal",
       "text": "s.S0102",
       "occurrences": 1,
@@ -5620,7 +5647,7 @@
     {
       "id": "ffd10a030dd59271e33d",
       "file": "js/services/export-service.js",
-      "line": 414,
+      "line": 420,
       "kind": "literal",
       "text": "l",
       "occurrences": 1,
@@ -5629,7 +5656,7 @@
     {
       "id": "4595876c3753a8db997e",
       "file": "js/services/export-service.js",
-      "line": 414,
+      "line": 420,
       "kind": "literal",
       "text": "p",
       "occurrences": 1,
@@ -5638,7 +5665,7 @@
     {
       "id": "342d36fc55fa2779bfb2",
       "file": "js/services/export-service.js",
-      "line": 415,
+      "line": 421,
       "kind": "literal",
       "text": "pt",
       "occurrences": 1,
@@ -5647,7 +5674,7 @@
     {
       "id": "24b6bfa56dcb02c8a127",
       "file": "js/services/export-service.js",
-      "line": 419,
+      "line": 425,
       "kind": "literal",
       "text": "PNG",
       "occurrences": 1,
@@ -5656,7 +5683,7 @@
     {
       "id": "e452adfadae32f1f6a02",
       "file": "js/services/export-service.js",
-      "line": 424,
+      "line": 430,
       "kind": "literal",
       "text": "BibleBracketDNA:",
       "occurrences": 1,
@@ -5665,7 +5692,7 @@
     {
       "id": "4fa653620b696d5ba28f",
       "file": "js/services/export-service.js",
-      "line": 424,
+      "line": 430,
       "kind": "literal",
       "text": "|||END",
       "occurrences": 1,
@@ -5674,7 +5701,7 @@
     {
       "id": "2b9b48fb6b3bbf325e3a",
       "file": "js/services/export-service.js",
-      "line": 427,
+      "line": 433,
       "kind": "literal",
       "text": "Discourse Analysis",
       "occurrences": 1,
@@ -5683,7 +5710,7 @@
     {
       "id": "5ab86f8e99c3fb14dd76",
       "file": "js/services/export-service.js",
-      "line": 433,
+      "line": 439,
       "kind": "template",
       "text": "{filename}.pdf",
       "occurrences": 1,
@@ -5692,7 +5719,7 @@
     {
       "id": "122fd377e72edbdaf521",
       "file": "js/services/export-service.js",
-      "line": 435,
+      "line": 441,
       "kind": "literal",
       "text": "s.S0103",
       "occurrences": 1,
@@ -5701,7 +5728,7 @@
     {
       "id": "baa26fdb072479e36eb3",
       "file": "js/services/export-service.js",
-      "line": 446,
+      "line": 452,
       "kind": "literal",
       "text": "s.S0104",
       "occurrences": 1,
