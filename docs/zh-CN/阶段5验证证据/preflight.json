@@ -1,0 +1,194 @@
+{
+  "split": {
+    "doubleClick": {
+      "rows": 1,
+      "text": [
+        "Alpha beta gamma delta."
+      ],
+      "selection": "gamma"
+    },
+    "enter": {
+      "rows": 2,
+      "text": [
+        "Alpha",
+        "beta gamma delta."
+      ]
+    }
+  },
+  "layouts": [
+    {
+      "width": 800,
+      "height": 572,
+      "main": {
+        "viewport": [
+          800,
+          572
+        ],
+        "toolbar": {
+          "x": 282,
+          "y": 227.15625,
+          "width": 407.671875,
+          "height": 36.1875,
+          "right": 689.671875,
+          "bottom": 263.34375,
+          "scroll": 406,
+          "client": 406
+        },
+        "workspace": {
+          "x": 250,
+          "y": 167.015625,
+          "width": 550,
+          "height": 377.125,
+          "right": 800,
+          "bottom": 544.140625,
+          "scroll": 1210,
+          "client": 550
+        },
+        "body": 800
+      },
+      "settings": {
+        "top": 3.578125,
+        "bottom": 568.40625,
+        "viewport": 572,
+        "cloudOverflow": [
+          {
+            "scroll": 530,
+            "client": 530
+          },
+          {
+            "scroll": 530,
+            "client": 530
+          }
+        ]
+      },
+      "guide": {
+        "top": 48.296875,
+        "bottom": 523.6875,
+        "scroll": 718,
+        "client": 718
+      },
+      "picker": {
+        "top": 5,
+        "bottom": 567,
+        "scroll": 478,
+        "client": 478
+      }
+    },
+    {
+      "width": 1400,
+      "height": 872,
+      "main": {
+        "viewport": [
+          1400,
+          872
+        ],
+        "toolbar": {
+          "x": 487.71875,
+          "y": 191.015625,
+          "width": 407.671875,
+          "height": 36.1875,
+          "right": 895.390625,
+          "bottom": 227.203125,
+          "scroll": 406,
+          "client": 406
+        },
+        "workspace": {
+          "x": 250,
+          "y": 167.015625,
+          "width": 1150,
+          "height": 677.125,
+          "right": 1400,
+          "bottom": 844.140625,
+          "scroll": 1210,
+          "client": 1150
+        },
+        "body": 1400
+      },
+      "settings": {
+        "top": 73.328125,
+        "bottom": 798.65625,
+        "viewport": 872,
+        "cloudOverflow": [
+          {
+            "scroll": 530,
+            "client": 530
+          },
+          {
+            "scroll": 530,
+            "client": 530
+          }
+        ]
+      },
+      "guide": {
+        "top": 93.296875,
+        "bottom": 778.6875,
+        "scroll": 798,
+        "client": 798
+      },
+      "picker": {
+        "top": 339.734375,
+        "bottom": 867,
+        "scroll": 478,
+        "client": 478
+      }
+    },
+    {
+      "width": 1600,
+      "height": 972,
+      "main": {
+        "viewport": [
+          1600,
+          972
+        ],
+        "toolbar": {
+          "x": 487.71875,
+          "y": 191.015625,
+          "width": 407.671875,
+          "height": 36.1875,
+          "right": 895.390625,
+          "bottom": 227.203125,
+          "scroll": 406,
+          "client": 406
+        },
+        "workspace": {
+          "x": 250,
+          "y": 167.015625,
+          "width": 1350,
+          "height": 777.125,
+          "right": 1600,
+          "bottom": 944.140625,
+          "scroll": 1350,
+          "client": 1350
+        },
+        "body": 1600
+      },
+      "settings": {
+        "top": 59.578125,
+        "bottom": 912.40625,
+        "viewport": 972,
+        "cloudOverflow": [
+          {
+            "scroll": 530,
+            "client": 530
+          },
+          {
+            "scroll": 530,
+            "client": 530
+          }
+        ]
+      },
+      "guide": {
+        "top": 108.296875,
+        "bottom": 863.6875,
+        "scroll": 798,
+        "client": 798
+      },
+      "picker": {
+        "top": 339.734375,
+        "bottom": 967,
+        "scroll": 478,
+        "client": 478
+      }
+    }
+  ]
+}

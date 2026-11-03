@@ -1,0 +1,82 @@
+{
+  "version": 3,
+  "passageRef": "John 1:1-3",
+  "isRTL": false,
+  "isHebrew": false,
+  "isGreek": false,
+  "propositions": [
+    "In the beginning",
+    "was the Word, and the Word was with God, and the Word was God.",
+    "He was in the beginning with God.",
+    "All things were made through him, and without him was not any thing made that was made."
+  ],
+  "verseRefs": [
+    "1",
+    "1",
+    "2",
+    "3"
+  ],
+  "verseBreaks": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "parallelTexts": [
+    "太初有道，道與神同在，道就是神。",
+    "",
+    "這道太初與神同在。",
+    "萬物是藉著他造的；凡被造的，沒有一樣不是藉著他造的。"
+  ],
+  "parallelLabel": "CUV",
+  "parallelHidden": false,
+  "mainPointSummary": "用户经文主旨摘要：此处只验证编辑和保存，不作为释经结论。",
+  "brackets": [
+    {
+      "id": "brmw0r3tr8ec9nk3",
+      "from": "p0",
+      "to": "p1",
+      "type": "ground",
+      "labelsSwapped": false,
+      "dominanceFlipped": false
+    },
+    {
+      "id": "brmw0r3tuyc46lo3",
+      "from": "p2",
+      "to": "p3",
+      "type": "action-purpose",
+      "labelsSwapped": false,
+      "dominanceFlipped": false
+    }
+  ],
+  "formatTags": [],
+  "wordArrows": [],
+  "comments": [
+    {
+      "id": "1793714175526",
+      "author": "阶段5验证",
+      "text": "第一处关系的用户评论，不随界面语言改变。",
+      "timestamp": 1793714175526,
+      "type": "bracket",
+      "target": {
+        "bracketId": "brmw0r3tr8ec9nk3"
+      },
+      "replies": [
+        {
+          "author": "阶段5验证",
+          "text": "这是一条用户回复。",
+          "timestamp": 1793714175578
+        }
+      ]
+    }
+  ],
+  "copyrightLabel": "(ESV)",
+  "pageAuthor": "阶段5验证",
+  "activeProjectId": null,
+  "customLabels": [],
+  "indentation": [
+    0
+  ],
+  "bracketHighlights": {},
+  "exportedAt": "2026-11-03T13:56:17.325Z"
+}

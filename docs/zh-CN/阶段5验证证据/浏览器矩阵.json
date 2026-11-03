@@ -1,0 +1,1122 @@
+[
+  {
+    "width": 1000,
+    "height": 712,
+    "zoom": 100,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1000,
+    "height": 712,
+    "zoom": 100,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1000,
+    "height": 712,
+    "zoom": 110,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1000,
+    "height": 712,
+    "zoom": 110,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1000,
+    "height": 712,
+    "zoom": 125,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1000,
+    "height": 712,
+    "zoom": 125,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1000,
+    "height": 712,
+    "zoom": 150,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1000,
+    "height": 712,
+    "zoom": 150,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1000,
+    "height": 712,
+    "zoom": 90,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1000,
+    "height": 712,
+    "zoom": 90,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1400,
+    "height": 872,
+    "zoom": 100,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1400,
+    "height": 872,
+    "zoom": 100,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1400,
+    "height": 872,
+    "zoom": 110,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1400,
+    "height": 872,
+    "zoom": 110,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1400,
+    "height": 872,
+    "zoom": 125,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1400,
+    "height": 872,
+    "zoom": 125,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1400,
+    "height": 872,
+    "zoom": 150,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1400,
+    "height": 872,
+    "zoom": 150,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1400,
+    "height": 872,
+    "zoom": 90,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1400,
+    "height": 872,
+    "zoom": 90,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1600,
+    "height": 972,
+    "zoom": 100,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1600,
+    "height": 972,
+    "zoom": 100,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1600,
+    "height": 972,
+    "zoom": 110,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1600,
+    "height": 972,
+    "zoom": 110,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1600,
+    "height": 972,
+    "zoom": 125,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1600,
+    "height": 972,
+    "zoom": 125,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1600,
+    "height": 972,
+    "zoom": 150,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1600,
+    "height": 972,
+    "zoom": 150,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1600,
+    "height": 972,
+    "zoom": 90,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1600,
+    "height": 972,
+    "zoom": 90,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 800,
+    "height": 572,
+    "zoom": 100,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 800,
+    "height": 572,
+    "zoom": 100,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 800,
+    "height": 572,
+    "zoom": 110,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 800,
+    "height": 572,
+    "zoom": 110,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 800,
+    "height": 572,
+    "zoom": 125,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 800,
+    "height": 572,
+    "zoom": 125,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 800,
+    "height": 572,
+    "zoom": 150,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 800,
+    "height": 572,
+    "zoom": 150,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 800,
+    "height": 572,
+    "zoom": 90,
+    "mode": "dark",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  },
+  {
+    "width": 800,
+    "height": 572,
+    "zoom": 90,
+    "mode": "light",
+    "profiles": [
+      "josiah",
+      "biblearc",
+      "gurtner",
+      "beale",
+      "schreiner"
+    ],
+    "input": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)"
+    },
+    "checks": [
+      "shell",
+      "toolbar",
+      "settings",
+      "guide x5",
+      "selector",
+      "raw abbreviations",
+      "selected and focus",
+      "block labels"
+    ],
+    "errors": []
+  }
+]

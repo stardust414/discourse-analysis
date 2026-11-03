@@ -1,0 +1,601 @@
+{
+  "started": "2026-11-03T13:55:59.714Z",
+  "steps": [
+    {
+      "name": "中文版首次启动、Welcome 与本机隔离目录",
+      "status": "pass",
+      "detail": {
+        "packaged": true,
+        "version": "3.3.1",
+        "arch": "arm64",
+        "userData": "<test-user-data>",
+        "sessionData": "<test-session-data>",
+        "workArea": {
+          "x": 0,
+          "y": 33,
+          "width": 1470,
+          "height": 923
+        }
+      }
+    },
+    {
+      "name": "真实网络载入 John 1:1-3",
+      "status": "pass",
+      "detail": {
+        "reference": "John 1:1-3",
+        "source": "(ESV)"
+      }
+    },
+    {
+      "name": "双击只选词，Enter 在词边界拆分 proposition",
+      "status": "pass",
+      "detail": {
+        "doubleClickSelected": "Word",
+        "splitRows": 4
+      }
+    },
+    {
+      "name": "通过圆点和中文搜索建立两处关系",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "五套 profile 的原始简称、双语详情与分组",
+      "status": "pass",
+      "detail": [
+        {
+          "profile": "josiah",
+          "purpose": {
+            "compact": true,
+            "name": "行动—目的",
+            "abbr": "Ac / Pur*",
+            "full": "行动—目的 Action-Purpose（Ac / Pur*）"
+          },
+          "ground": {
+            "compact": true,
+            "name": "理由",
+            "abbr": "* / G",
+            "full": "理由 Ground（* / G）"
+          }
+        },
+        {
+          "profile": "biblearc",
+          "purpose": {
+            "compact": true,
+            "name": "行动—目的",
+            "abbr": "Ac / Pur*",
+            "full": "行动—目的 Action-Purpose（Ac / Pur*）"
+          },
+          "ground": {
+            "compact": true,
+            "name": "理由",
+            "abbr": "* / G",
+            "full": "理由 Ground（* / G）"
+          }
+        },
+        {
+          "profile": "gurtner",
+          "purpose": {
+            "compact": true,
+            "name": "手段—目的",
+            "abbr": "M / Ed*",
+            "full": "手段—目的 Means-End（M / Ed*）"
+          },
+          "ground": {
+            "compact": true,
+            "name": "理由",
+            "abbr": "* / G",
+            "full": "理由 Ground（* / G）"
+          }
+        },
+        {
+          "profile": "beale",
+          "purpose": {
+            "compact": true,
+            "name": "手段—目的",
+            "abbr": "M / Ed*",
+            "full": "手段—目的 Means-End（M / Ed*）"
+          },
+          "ground": {
+            "compact": true,
+            "name": "理由",
+            "abbr": "* / G",
+            "full": "理由 Ground（* / G）"
+          }
+        },
+        {
+          "profile": "schreiner",
+          "purpose": {
+            "compact": true,
+            "name": "行动—目的",
+            "abbr": "Ac / Pur",
+            "full": "行动—目的 Action-Purpose（Ac / Pur）"
+          },
+          "ground": {
+            "compact": true,
+            "name": "理由",
+            "abbr": "G",
+            "full": "理由 Ground（G）"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Relationship Guide 完整名称、原始缩写和中文定义",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "Block Diagram 与长双语标签",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "实际添加关系评论和回复",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "实际填写经文主旨摘要",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "真实网络开启 CUV 平行经文栏",
+      "status": "pass",
+      "detail": {
+        "code": "CUV",
+        "rows": 4
+      }
+    },
+    {
+      "name": "保存 JSON、打开同一文件并核对全部内容",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "PNG 导出及实际文件恢复",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "PDF 导出及实际文件恢复",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "English ↔ 简体中文切换保持项目、profile、评论和摘要",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "Mac 原生菜单中文和 English 即时切换",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "Mac 三类真实窗口 × 五个缩放 × Light/Dark",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "深色 Settings 输入对比、图标名称与焦点",
+      "status": "pass",
+      "detail": {
+        "background": "rgb(26, 26, 28)",
+        "color": "rgb(232, 230, 227)"
+      }
+    },
+    {
+      "name": "Help、上下文菜单与长错误提示",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "Greek / Hebrew RTL 原文与中文平行栏排版",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "重启后语言保留并重新打开实际分析项目",
+      "status": "pass",
+      "detail": null
+    }
+  ],
+  "matrix": [
+    {
+      "width": 800,
+      "height": 600,
+      "viewport": [
+        800,
+        572
+      ],
+      "zoom": 90,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 800,
+      "height": 600,
+      "viewport": [
+        800,
+        572
+      ],
+      "zoom": 90,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 800,
+      "height": 600,
+      "viewport": [
+        800,
+        572
+      ],
+      "zoom": 100,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 800,
+      "height": 600,
+      "viewport": [
+        800,
+        572
+      ],
+      "zoom": 100,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 800,
+      "height": 600,
+      "viewport": [
+        800,
+        572
+      ],
+      "zoom": 110,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 800,
+      "height": 600,
+      "viewport": [
+        800,
+        572
+      ],
+      "zoom": 110,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 800,
+      "height": 600,
+      "viewport": [
+        800,
+        572
+      ],
+      "zoom": 125,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 800,
+      "height": 600,
+      "viewport": [
+        800,
+        572
+      ],
+      "zoom": 125,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 800,
+      "height": 600,
+      "viewport": [
+        800,
+        572
+      ],
+      "zoom": 150,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 800,
+      "height": 600,
+      "viewport": [
+        800,
+        572
+      ],
+      "zoom": 150,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1400,
+      "height": 900,
+      "viewport": [
+        1400,
+        872
+      ],
+      "zoom": 90,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1400,
+      "height": 900,
+      "viewport": [
+        1400,
+        872
+      ],
+      "zoom": 90,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1400,
+      "height": 900,
+      "viewport": [
+        1400,
+        872
+      ],
+      "zoom": 100,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1400,
+      "height": 900,
+      "viewport": [
+        1400,
+        872
+      ],
+      "zoom": 100,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1400,
+      "height": 900,
+      "viewport": [
+        1400,
+        872
+      ],
+      "zoom": 110,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1400,
+      "height": 900,
+      "viewport": [
+        1400,
+        872
+      ],
+      "zoom": 110,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1400,
+      "height": 900,
+      "viewport": [
+        1400,
+        872
+      ],
+      "zoom": 125,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1400,
+      "height": 900,
+      "viewport": [
+        1400,
+        872
+      ],
+      "zoom": 125,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1400,
+      "height": 900,
+      "viewport": [
+        1400,
+        872
+      ],
+      "zoom": 150,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1400,
+      "height": 900,
+      "viewport": [
+        1400,
+        872
+      ],
+      "zoom": 150,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1460,
+      "height": 900,
+      "viewport": [
+        1460,
+        872
+      ],
+      "zoom": 90,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1460,
+      "height": 900,
+      "viewport": [
+        1460,
+        872
+      ],
+      "zoom": 90,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1460,
+      "height": 900,
+      "viewport": [
+        1460,
+        872
+      ],
+      "zoom": 100,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1460,
+      "height": 900,
+      "viewport": [
+        1460,
+        872
+      ],
+      "zoom": 100,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1460,
+      "height": 900,
+      "viewport": [
+        1460,
+        872
+      ],
+      "zoom": 110,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1460,
+      "height": 900,
+      "viewport": [
+        1460,
+        872
+      ],
+      "zoom": 110,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1460,
+      "height": 900,
+      "viewport": [
+        1460,
+        872
+      ],
+      "zoom": 125,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1460,
+      "height": 900,
+      "viewport": [
+        1460,
+        872
+      ],
+      "zoom": 125,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1460,
+      "height": 900,
+      "viewport": [
+        1460,
+        872
+      ],
+      "zoom": 150,
+      "mode": "light",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    },
+    {
+      "width": 1460,
+      "height": 900,
+      "viewport": [
+        1460,
+        872
+      ],
+      "zoom": 150,
+      "mode": "dark",
+      "bodyOverflow": false,
+      "bounds": true,
+      "truncated": 0
+    }
+  ],
+  "pageErrors": [],
+  "finished": "2026-11-03T13:56:28.213Z",
+  "passed": 20,
+  "failed": 0
+}

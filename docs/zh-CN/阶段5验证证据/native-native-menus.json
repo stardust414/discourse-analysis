@@ -1,0 +1,54 @@
+{
+  "zh": [
+    {
+      "role": "appmenu",
+      "label": "discourse-analysis"
+    },
+    {
+      "role": "filemenu",
+      "label": "文件"
+    },
+    {
+      "role": "editmenu",
+      "label": "编辑"
+    },
+    {
+      "role": "viewmenu",
+      "label": "视图"
+    },
+    {
+      "role": "windowmenu",
+      "label": "窗口"
+    },
+    {
+      "role": "help",
+      "label": "帮助"
+    }
+  ],
+  "en": [
+    {
+      "role": "appmenu",
+      "label": "discourse-analysis"
+    },
+    {
+      "role": "filemenu",
+      "label": "File"
+    },
+    {
+      "role": "editmenu",
+      "label": "Edit"
+    },
+    {
+      "role": "viewmenu",
+      "label": "View"
+    },
+    {
+      "role": "windowmenu",
+      "label": "Window"
+    },
+    {
+      "role": "help",
+      "label": "Help"
+    }
+  ]
+}

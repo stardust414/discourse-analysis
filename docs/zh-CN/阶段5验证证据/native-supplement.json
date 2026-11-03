@@ -1,0 +1,25 @@
+[
+  {
+    "theme": "light",
+    "cloudInput": {
+      "bg": "rgb(245, 244, 241)",
+      "color": "rgb(26, 26, 28)",
+      "placeholder": "项目代码"
+    }
+  },
+  {
+    "theme": "dark",
+    "cloudInput": {
+      "bg": "rgb(26, 26, 28)",
+      "color": "rgb(232, 230, 227)",
+      "placeholder": "项目代码"
+    }
+  },
+  {
+    "parallelOverview": {
+      "zoom": 75,
+      "sidebarCollapsed": true,
+      "firstText": "太初有道，道與神同在，道就是神。"
+    }
+  }
+]
