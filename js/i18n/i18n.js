@@ -4,7 +4,7 @@
   const choices = ['system', 'en', 'zh-CN'];
   const catalogs = window.DA_I18N_CATALOGS || {};
   const listeners = new Set();
-  const bindings = new Map();
+  const bindings = new WeakMap();
   let systemLanguages = Array.from(navigator.languages || [navigator.language || 'en']);
   let preference = 'system';
   try {
@@ -23,16 +23,17 @@
     params = params && typeof params === 'object' ? params : {};
     const own = (dict) => dict && Object.prototype.hasOwnProperty.call(dict, key) ? dict[key] : null;
     let entry = own(catalogs[locale]);
-    if (entry == null || entry === '') entry = own(catalogs.en);
-    const pick = (value) => {
+    let messageLocale = locale;
+    if (entry == null || entry === '') { entry = own(catalogs.en); messageLocale = 'en'; }
+    const pick = (value, language) => {
       if (value && typeof value === 'object') {
-        const rule = new Intl.PluralRules(locale).select(Number(params.count));
+        const rule = new Intl.PluralRules(language).select(Number(params.count));
         return value[rule] || value.other;
       }
       return value;
     };
-    let message = pick(entry);
-    if (typeof message !== 'string' || !message) message = pick(own(catalogs.en));
+    let message = pick(entry, messageLocale);
+    if (typeof message !== 'string' || !message) message = pick(own(catalogs.en), 'en');
     if (typeof message !== 'string' || !message) message = 'Text unavailable';
     return message.replace(/\{([A-Za-z][A-Za-z0-9_]*)\}/g, (match, name) =>
       !Object.prototype.hasOwnProperty.call(params, name) || params[name] == null ? match : String(params[name]));
@@ -82,7 +83,6 @@
     const previous = locale;
     locale = preference === 'system' ? resolveLocale(systemLanguages) : preference;
     if (document.documentElement) document.documentElement.lang = locale;
-    bindings.forEach((_, el) => { if (!el.isConnected) bindings.delete(el); });
     apply();
     listeners.forEach((listener) => {
       try { listener({ locale, preference, previous }); } catch (err) { console.error('[i18n]', err); }
