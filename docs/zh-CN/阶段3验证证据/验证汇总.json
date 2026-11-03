@@ -1,0 +1,42 @@
+{
+  "baseline": "98da0241c38eef936be0f06cf736aa607dda0b62",
+  "source_commit": "5aa31fb6456b7ad5c08d0eb75f989a2deb4c21c6",
+  "protected_unchanged": [
+    "package.json",
+    "package-lock.json",
+    "js/utils/constants.js",
+    "js/utils/editor-logic.js",
+    "js/utils/render-labels.js",
+    "js/services/state.js",
+    "js/services/export-service.js",
+    "js/services/persistence.js",
+    "js/services/cloud-sync.js",
+    "js/services/notation-ui.js",
+    "js/services/mode-service.js",
+    "styles.css"
+  ],
+  "unit_tests": {
+    "old": 275,
+    "new": 42,
+    "passed": 317,
+    "failed": 0
+  },
+  "e2e": {
+    "old": 30,
+    "new": 14,
+    "passed": 44,
+    "failed": 0
+  },
+  "native": {
+    "passed": 17,
+    "failed": 0
+  },
+  "mac_zip": {
+    "path": "dist/phase3-i18n/Discourse Analysis-3.3.1-arm64-mac.zip",
+    "bytes": 91739286,
+    "sha256": "6e68081c4960392df74179c85e822f97c280f89c1af8c07a8961921dca488f6c",
+    "crc": "pass"
+  },
+  "baseline_archive": "dist/Discourse Analysis-3.3.1-arm64-mac.zip",
+  "baseline_original_hash_verified": true
+}

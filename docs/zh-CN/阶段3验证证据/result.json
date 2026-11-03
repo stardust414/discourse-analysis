@@ -1,0 +1,187 @@
+{
+  "started": "2026-11-03T08:21:39.152Z",
+  "steps": [
+    {
+      "name": "Mac arm64 首次启动与原生跟随系统",
+      "status": "pass",
+      "ms": 6909,
+      "detail": {
+        "packaged": true,
+        "version": "3.3.1",
+        "arch": "arm64",
+        "userData": "<test-user-data>",
+        "sessionData": "<test-session-data>",
+        "systemLanguages": [
+          "zh-Hans-CN",
+          "el-CN",
+          "en-CN"
+        ],
+        "preference": "system",
+        "locale": "zh-CN",
+        "expected": "zh-CN"
+      }
+    },
+    {
+      "name": "English 设置后重新启动",
+      "status": "pass",
+      "ms": 680,
+      "detail": null
+    },
+    {
+      "name": "简体中文设置后重新启动",
+      "status": "pass",
+      "ms": 2696,
+      "detail": null
+    },
+    {
+      "name": "重新选择跟随系统并回到 English",
+      "status": "pass",
+      "ms": 170,
+      "detail": {
+        "actual": "zh-CN",
+        "expected": "zh-CN"
+      }
+    },
+    {
+      "name": "真实网络载入经文及普通中文状态",
+      "status": "pass",
+      "ms": 3419,
+      "detail": {
+        "reference": "John 1:1-3",
+        "source": "(ESV)"
+      }
+    },
+    {
+      "name": "创建含评论、摘要、平行栏与自定义标签的测试项目",
+      "status": "pass",
+      "ms": 163,
+      "detail": null
+    },
+    {
+      "name": "运行时切换不改内容、当前 profile、撤销或云状态",
+      "status": "pass",
+      "ms": 136,
+      "detail": null
+    },
+    {
+      "name": "评论模板草稿和光标保留",
+      "status": "pass",
+      "ms": 365,
+      "detail": null
+    },
+    {
+      "name": "记号方案草稿保留且不写入自定义中文名称",
+      "status": "pass",
+      "ms": 181,
+      "detail": null
+    },
+    {
+      "name": "中文关系搜索和实时选择器切换",
+      "status": "pass",
+      "ms": 68,
+      "detail": null
+    },
+    {
+      "name": "五套 profile 的符号和审定显示名",
+      "status": "pass",
+      "ms": 745,
+      "detail": [
+        {
+          "id": "josiah",
+          "raw": "Action-Purpose (Ac/Pur)",
+          "display": "行动—目的 Action-Purpose (Ac/Pur)",
+          "label": {
+            "top": "Ac",
+            "bottom": "Pur*",
+            "summary": "Ac/Pur"
+          },
+          "stored": "action-purpose"
+        },
+        {
+          "id": "biblearc",
+          "raw": "Action-Purpose (Ac/Pur)",
+          "display": "行动—目的 Action-Purpose (Ac/Pur)",
+          "label": {
+            "top": "Ac",
+            "bottom": "Pur*",
+            "summary": "Ac/Pur"
+          },
+          "stored": "action-purpose"
+        },
+        {
+          "id": "gurtner",
+          "raw": "Means-End (M/Ed)",
+          "display": "手段—目的 Means-End (M/Ed)",
+          "label": {
+            "top": "M",
+            "bottom": "Ed*",
+            "summary": "M/Ed"
+          },
+          "stored": "action-purpose"
+        },
+        {
+          "id": "beale",
+          "raw": "Means-End (M/Ed)",
+          "display": "手段—目的 Means-End (M/Ed)",
+          "label": {
+            "top": "M",
+            "bottom": "Ed*",
+            "summary": "M/Ed"
+          },
+          "stored": "action-purpose"
+        },
+        {
+          "id": "schreiner",
+          "raw": "Action-Purpose (Ac/Pur)",
+          "display": "行动—目的 Action-Purpose (Ac/Pur)",
+          "label": {
+            "top": "Ac",
+            "bottom": "Pur",
+            "summary": "Ac/Pur"
+          },
+          "stored": "action-purpose"
+        }
+      ]
+    },
+    {
+      "name": "用户自定义关系名称不翻译",
+      "status": "pass",
+      "ms": 32,
+      "detail": null
+    },
+    {
+      "name": "English 保存 JSON → 中文打开 → English，内容一致",
+      "status": "pass",
+      "ms": 340,
+      "detail": null
+    },
+    {
+      "name": "中文界面 PNG 导出并恢复全部用户内容",
+      "status": "pass",
+      "ms": 634,
+      "detail": null
+    },
+    {
+      "name": "中文界面 PDF 导出并恢复全部用户内容",
+      "status": "pass",
+      "ms": 632,
+      "detail": null
+    },
+    {
+      "name": "动态变量、英文回退和安全文本",
+      "status": "pass",
+      "ms": 221,
+      "detail": null
+    },
+    {
+      "name": "最终重启仍保留简体中文",
+      "status": "pass",
+      "ms": 611,
+      "detail": null
+    }
+  ],
+  "pageErrors": [],
+  "finished": "2026-11-03T08:21:57.311Z",
+  "passed": 17,
+  "failed": 0
+}

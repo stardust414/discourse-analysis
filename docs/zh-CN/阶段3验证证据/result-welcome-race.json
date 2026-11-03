@@ -1,0 +1,54 @@
+{
+  "started": "2026-11-03T08:17:03.094Z",
+  "steps": [
+    {
+      "name": "Mac arm64 首次启动与原生跟随系统",
+      "status": "pass",
+      "ms": 6868,
+      "detail": {
+        "packaged": true,
+        "version": "3.3.1",
+        "arch": "arm64",
+        "userData": "<test-user-data>",
+        "sessionData": "<test-session-data>",
+        "systemLanguages": [
+          "zh-Hans-CN",
+          "el-CN",
+          "en-CN"
+        ],
+        "preference": "system",
+        "locale": "zh-CN",
+        "expected": "zh-CN"
+      }
+    },
+    {
+      "name": "English 设置后重新启动",
+      "status": "fail",
+      "ms": 15009,
+      "error": "locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#projectSettingsBtn')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" class=\"secondary\" id=\"projectSettingsBtn\" data-i18n-title=\"settings.tooltip\" title=\"Project and personal settings\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    28 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at language (<zh-cn-worktree>/scratch/phase3/native-i18n.cjs:12:74)\n    at <zh-cn-worktree>/scratch/phase3/native-i18n.cjs:19:47\n    at step (<zh-cn-worktree>/scratch/phase3/native-i18n.cjs:9:76)\n    at <zh-cn-worktree>/scratch/phase3/native-i18n.cjs:19:8"
+    },
+    {
+      "name": "简体中文设置后重新启动",
+      "status": "fail",
+      "ms": 15008,
+      "error": "locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#projectSettingsBtn')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"项目与个人设置\" class=\"secondary\" id=\"projectSettingsBtn\" data-i18n-title=\"settings.tooltip\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    28 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at language (<zh-cn-worktree>/scratch/phase3/native-i18n.cjs:12:74)\n    at <zh-cn-worktree>/scratch/phase3/native-i18n.cjs:20:43\n    at step (<zh-cn-worktree>/scratch/phase3/native-i18n.cjs:9:76)\n    at <zh-cn-worktree>/scratch/phase3/native-i18n.cjs:20:8"
+    },
+    {
+      "name": "重新选择跟随系统并回到 English",
+      "status": "fail",
+      "ms": 15004,
+      "error": "locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#projectSettingsBtn')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"项目与个人设置\" class=\"secondary\" id=\"projectSettingsBtn\" data-i18n-title=\"settings.tooltip\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    29 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at language (<zh-cn-worktree>/scratch/phase3/native-i18n.cjs:12:74)\n    at <zh-cn-worktree>/scratch/phase3/native-i18n.cjs:21:51\n    at step (<zh-cn-worktree>/scratch/phase3/native-i18n.cjs:9:76)\n    at <zh-cn-worktree>/scratch/phase3/native-i18n.cjs:21:8"
+    },
+    {
+      "name": "真实网络载入经文及普通中文状态",
+      "status": "fail",
+      "ms": 15017,
+      "error": "locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#projectSettingsBtn')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"项目与个人设置\" class=\"secondary\" id=\"projectSettingsBtn\" data-i18n-title=\"settings.tooltip\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    28 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div tabindex=\"-1\" id=\"welcomeModal\" class=\"modal-overlay\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at language (<zh-cn-worktree>/scratch/phase3/native-i18n.cjs:12:74)\n    at <zh-cn-worktree>/scratch/phase3/native-i18n.cjs:23:102\n    at async step (<zh-cn-worktree>/scratch/phase3/native-i18n.cjs:9:70)\n    at async <zh-cn-worktree>/scratch/phase3/native-i18n.cjs:23:2"
+    }
+  ],
+  "pageErrors": [],
+  "fatal": "Error: Real passage load required for the remaining compatibility scenario\n    at <zh-cn-worktree>/scratch/phase3/native-i18n.cjs:24:19",
+  "finished": "2026-11-03T08:18:10.171Z",
+  "passed": 1,
+  "failed": 4
+}
