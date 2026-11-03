@@ -160,7 +160,7 @@ test('dynamic menu, translated template draft and safe interpolated status', asy
     await importFixture(page);
     await page.locator('#exportMenuBtn').click();
     await expect(page.locator('#exportMenu [data-action="png"]')).toHaveText('导出 PNG 图片');
-    await expect(page.locator('#exportMenu [data-action="cloud-toggle"]')).toHaveText('Turn Cloud Sync ON');
+    await expect(page.locator('#exportMenu [data-action="cloud-toggle"]')).toHaveText('开启云同步');
     await page.keyboard.press('Escape');
     await page.locator('.bracket-hitbox').first().click({ button: 'right', force: true });
     await page.locator('#bracketActions [data-action="comment"]').click();

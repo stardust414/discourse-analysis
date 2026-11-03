@@ -79,7 +79,7 @@ test('blocked storage still permits current-session language switching', async (
 });
 test('a missing Chinese key falls back to the full English catalog', async () => {
     const { i } = await setup({ saved: 'zh-CN' });
-    assert.equal(i.t('menu.cloudOn'), 'Turn Cloud Sync ON');
+    assert.equal(i.t('group.coordinate'), 'COORDINATE RELATIONSHIPS');
 });
 test('missing keys and null params never yield blank or undefined', async () => {
     const { i } = await setup();
