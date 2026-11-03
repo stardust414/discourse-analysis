@@ -255,7 +255,7 @@ window.DA_I18N_CATALOGS["zh-CN"] = Object.freeze({
   "s.S0026": "已在文档{position}追加 {count} 节经文。{warning}{parallelHint}",
   "s.S0027": "无法追加粘贴的文字。",
   "s.S0029": "已识别{reference}{count}节经文。",
-  "s.S0031": "{detectedNote}已导入。双击拆分一行，单击编辑。点击圆点可建立括号。",
+  "s.S0031": "{detectedNote}已导入。在文字中定位光标，按 Enter 拆分行。点击圆点可建立括号。",
   "s.S0032": "展开顶部栏",
   "s.S0035": "无法打开文件。",
   "s.S0036": "已将更改同步到云端。",
@@ -595,5 +595,10 @@ window.DA_I18N_CATALOGS["zh-CN"] = Object.freeze({
   "s.S0540": "⇅ 交换",
   "s.S0543": "★ 切换星号",
   "menu.cloudOn": "开启云同步",
-  "menu.cloudOff": "关闭云同步"
+  "menu.cloudOff": "关闭云同步",
+  "group.coordinate": "并列关系",
+  "group.subordinate": "从属关系",
+  "group.restatement": "以重述支持",
+  "group.distinct": "以不同陈述支持",
+  "group.contrary": "以相反陈述支持"
 });
