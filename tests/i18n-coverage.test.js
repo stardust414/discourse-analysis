@@ -28,7 +28,7 @@ test('all 470 stage 2 UI records have an explicit implemented or preserved decis
     } else assert.ok(['B', 'C', 'D'].includes(r.audit_class), r.id);
   }
 });
-test('only the five documented unapproved/fallback labels omit Chinese', () => {
+test('every production message now has Chinese after the five group approvals', () => {
   assert.deepEqual(Object.keys(dict.en).filter(k => !Object.hasOwn(dict['zh-CN'], k)).sort(), [...audit.intentionalFallback].sort());
 });
 test('Chinese never introduces a key without a complete English baseline', () => {

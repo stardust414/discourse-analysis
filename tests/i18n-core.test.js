@@ -78,8 +78,9 @@ test('blocked storage still permits current-session language switching', async (
     assert.equal(i.t('common.save'), '保存');
 });
 test('a missing Chinese key falls back to the full English catalog', async () => {
-    const { i } = await setup({ saved: 'zh-CN' });
-    assert.equal(i.t('group.coordinate'), 'COORDINATE RELATIONSHIPS');
+    const { s, i } = await setup({ saved: 'zh-CN' });
+    s.DA_I18N_CATALOGS['zh-CN'] = {}; // Simulate a missing language entry without leaving production gaps.
+    assert.equal(i.t('common.save'), 'Save');
 });
 test('missing keys and null params never yield blank or undefined', async () => {
     const { i } = await setup();

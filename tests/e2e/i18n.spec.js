@@ -114,7 +114,8 @@ test('Chinese and English searches and live picker labels retain the search node
     await expect(page.locator('#labelPicker button.ground')).toBeVisible();
     const handle = await input.elementHandle();
     await page.evaluate(() => window.DA_I18N.setPreference('zh-CN'));
-    await expect(page.locator('#labelPicker button.ground')).toHaveText('理由 Ground (G)');
+    await expect(page.locator('#labelPicker button.ground')).toHaveAccessibleName('理由 Ground（* / G）');
+    await expect(page.locator('#labelPicker button.ground .relationship-option-abbr')).toHaveText('* / G');
     expect(await handle.evaluate(el => el.isConnected && el.value === '理由')).toBe(true);
     await input.fill('Ground');
     await expect(page.locator('#labelPicker button.ground')).toBeVisible();
