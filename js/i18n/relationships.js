@@ -7,6 +7,8 @@
     concessive: ['Adversative']
   };
   const groupKeys = {
+    'MY PRESET LABELS': 's.S0547',
+    'PROJECT-SPECIFIC LABELS': 's.S0548',
     'COORDINATE RELATIONSHIPS': 'group.coordinate',
     'SUBORDINATE RELATIONSHIPS': 'group.subordinate',
     'Support by Restatement': 'group.restatement',
@@ -48,6 +50,12 @@
       ? DA_I18N.t(key) : original;
   }
 
+  function getKeywords(type) {
+    const key = 'relationship.keywords.' + DA_PROFILES.effectiveType(type);
+    const original = DA_CONSTANTS.RELATIONSHIP_DEFINITIONS[type]?.keywords || '';
+    return Object.hasOwn(window.DA_I18N_CATALOGS.en, key) ? DA_I18N.t(key) : original;
+  }
+
   function searchTerms(type) {
     const names = [type, ...(extraNames[type] || [])];
     const zh = window.DA_I18N_CATALOGS['zh-CN'];
@@ -57,11 +65,11 @@
   function searchKeywords(type) {
     const zh = window.DA_I18N_CATALOGS['zh-CN'];
     return [type, ...(extraNames[type] || [])]
-      .map((name) => zh['relationship.definition.' + name]).filter(Boolean);
+      .flatMap((name) => [zh['relationship.definition.' + name], zh['relationship.keywords.' + name]]).filter(Boolean);
   }
 
   window.DA_RELATIONSHIPS = {
-    getName, getDefinition, searchTerms, searchKeywords,
+    getName, getDefinition, getKeywords, searchTerms, searchKeywords,
     getGroupName: (name) => groupKeys[name] ? DA_I18N.t(groupKeys[name]) : name
   };
 })();
