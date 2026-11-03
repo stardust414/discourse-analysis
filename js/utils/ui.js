@@ -346,7 +346,7 @@ function makeCommentPopoverDraggableAndResizable(popover) {
 
   const resizeHandle = document.createElement('div');
   resizeHandle.className = 'comment-popover-resize-handle';
-  resizeHandle.setAttribute('aria-label', 'Resize');
+  DA_I18N.bindValue(resizeHandle, () => (DA_I18N.t('s.S0532')), 'aria-label');
   popover.appendChild(resizeHandle);
   const minW = 260;
   const maxW = Math.min(1200, Math.max(360, wrapper.getBoundingClientRect().width * 0.9));
