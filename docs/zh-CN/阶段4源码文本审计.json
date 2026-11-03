@@ -8930,6 +8930,15 @@
       "auditClass": "C-reviewed-code-diagnostic-or-stable-value"
     },
     {
+      "id": "eaef8bbf9f082bd13554",
+      "file": "js/services/persistence.js",
+      "line": 457,
+      "kind": "literal",
+      "text": "placeholder",
+      "occurrences": 1,
+      "auditClass": "C-reviewed-code-diagnostic-or-stable-value"
+    },
+    {
       "id": "da5a31e53ac597ac51a7",
       "file": "js/services/persistence.js",
       "line": 467,

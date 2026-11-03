@@ -48,8 +48,12 @@ test('settings translates advanced hints and ARIA without changing raw names or 
   await expect(page.locator('.notation-hint').last()).toContainText('并非严格的安全保护');
   await expect(page.locator('.notation-name').first()).toHaveAttribute('aria-label', /关系名称/);
   await page.locator('#cloudProfilePassword').fill('Not a real password');
+  await page.locator('#exportFilename').fill('User_File_Name');
+  const filenamePreview = await page.locator('#exportFilename').getAttribute('placeholder');
   const before = await page.locator('.notation-name').first().inputValue();
   await lang(page, 'en'); await expect(page.locator('.notation-name').first()).toHaveValue(before);
+  await expect(page.locator('#exportFilename')).toHaveValue('User_File_Name');
+  await expect(page.locator('#exportFilename')).toHaveAttribute('placeholder', filenamePreview);
   await expect(page.locator('#cloudProfilePassword')).toHaveValue('Not a real password'); expect(errors).toEqual([]);
 });
 test('save-discard and add-replace dialogs translate and cancel without changing data', async ({ page }) => {

@@ -14,6 +14,20 @@ const dict = audit.catalogs();
 test('full coverage guard: all explicit keys, approved Chinese and source inventory pass', () => {
   assert.deepEqual(audit.check().issues, []);
 });
+test('all 470 stage 2 UI records have an explicit implemented or preserved decision', () => {
+  const mapping = JSON.parse(fs.readFileSync('docs/zh-CN/阶段4覆盖映射.json', 'utf8'));
+  const original = JSON.parse(fs.readFileSync('docs/zh-CN/文本提取与分类-v1.0.json', 'utf8')).candidates
+    .filter(c => ['普通UI翻译清单-v1.0.md', '专业相关界面文案-v1.0.md'].includes(c.destination));
+  assert.equal(mapping.records.length, 470);
+  assert.deepEqual(mapping.records.map(r => r.id), original.map(r => r.id));
+  for (const r of mapping.records) {
+    assert.ok(r.decision);
+    if (r.audit_class === 'A') {
+      assert.ok(r.keys.length, r.id);
+      for (const key of r.keys) assert.ok(dict['zh-CN'][key], r.id + ':' + key);
+    } else assert.ok(['B', 'C', 'D'].includes(r.audit_class), r.id);
+  }
+});
 test('only the five documented unapproved/fallback labels omit Chinese', () => {
   assert.deepEqual(Object.keys(dict.en).filter(k => !Object.hasOwn(dict['zh-CN'], k)).sort(), [...audit.intentionalFallback].sort());
 });

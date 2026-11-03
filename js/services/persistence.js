@@ -454,7 +454,7 @@ function getExportFilename(defaultOnly = false) {
 
 function updateFilenamePlaceholder() {
   const input = document.getElementById('exportFilename');
-  if (input) input.placeholder = getExportFilename(true);
+  if (input) DA_I18N.bindValue(input, () => getExportFilename(true), 'placeholder');
 }
 
 function attachFilenameObservers() {

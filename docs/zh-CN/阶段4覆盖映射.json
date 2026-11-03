@@ -1,0 +1,6173 @@
+{
+  "baseline": "98da0241c38eef936be0f06cf736aa607dda0b62",
+  "stage2_records": 470,
+  "classes": {
+    "A": 462,
+    "B": 4,
+    "C": 2,
+    "D": 2
+  },
+  "unresolved_ui": 0,
+  "scope_note": "A is implemented display copy, not a new approval of suggested standalone glossary terms. B/C/D are explicitly preserved data, diagnostics or names; see residual-English audit. The five deferred group headings belong to the separate terminology table.",
+  "records": [
+    {
+      "id": "S0001",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Undo: {action}",
+      "baseline_locations": [
+        "app.js:145"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0001"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0003",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Nothing to undo",
+      "baseline_locations": [
+        "app.js:147"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0003"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0005",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Redo: {action}",
+      "baseline_locations": [
+        "app.js:156"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0005"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0006",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Nothing to redo",
+      "baseline_locations": [
+        "app.js:158"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0006"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0007",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Hide Comments (C)",
+      "baseline_locations": [
+        "app.js:183"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0007"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0008",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Show Comments (C)",
+      "baseline_locations": [
+        "app.js:183",
+        "index.html:90"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0008"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0009",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Clear all brackets and formatting?",
+      "baseline_locations": [
+        "app.js:201"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "confirm.clearAll"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0010",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "clear-all",
+      "baseline_locations": [
+        "app.js:202"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.clear-all"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0011",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "All brackets cleared.",
+      "baseline_locations": [
+        "app.js:205"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "project.cleared"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0012",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Could not read file.",
+      "baseline_locations": [
+        "app.js:217"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0012"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0014",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Enter a passage reference (e.g. John 1:1-5)",
+      "baseline_locations": [
+        "app.js:253"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0014"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0015",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Fetching…",
+      "baseline_locations": [
+        "app.js:258"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "passage.fetching"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0016",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Cannot add: that text reads in the opposite direction. Fetch it as a new document instead.",
+      "baseline_locations": [
+        "app.js:267"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0016"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0017",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Added {added} verse{added === 1 ? '' : 's'} to the {position === 'start' ? 'beginning' : 'end'}.{notes ? ' ' + notes : ''}",
+      "baseline_locations": [
+        "app.js:312"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0017"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0018",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Passage loaded (via Bolls — {apiName} API unavailable).",
+      "baseline_locations": [
+        "app.js:344"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "passage.fallback"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0019",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Passage loaded.",
+      "baseline_locations": [
+        "app.js:344"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "passage.loaded"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0020",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Failed to fetch passage",
+      "baseline_locations": [
+        "app.js:346"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "passage.failed"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0021",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Fetch Passage",
+      "baseline_locations": [
+        "app.js:349",
+        "index.html:34"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "passage.fetch"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0022",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Paste some text first.",
+      "baseline_locations": [
+        "app.js:383"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0022"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0023",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "That is a saved project file — it can only replace the document, not be added to it.",
+      "baseline_locations": [
+        "app.js:403"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0023"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0025",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": " New rows have empty parallel cells — refill via Alternate Views → Change translation.",
+      "baseline_locations": [
+        "app.js:468"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0025"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0026",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Added {added} verse{added === 1 ? '' : 's'} to the {position === 'start' ? 'beginning' : 'end'}.{warning ? ' ' + warning : ''}{parallelHint}",
+      "baseline_locations": [
+        "app.js:471"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0026"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0027",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Could not add the pasted text.",
+      "baseline_locations": [
+        "app.js:474"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0027"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0028",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Imported text",
+      "baseline_locations": [
+        "app.js:497"
+      ],
+      "audit_class": "B",
+      "keys": [],
+      "decision": "进入项目的原始默认标题；不迁移或按文字相同替换用户标题。"
+    },
+    {
+      "id": "S0029",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Detected {parsed.passageRef ? `${parsed.passageRef} — ` : ''}{parsed.verseRefs.length} verse{parsed.verseRefs.length === 1 ? '' : 's'}. ",
+      "baseline_locations": [
+        "app.js:511"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0029"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0031",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "{detectedNote}Imported. Double-click to split a line, single-click to edit. Click the dots to create brackets.",
+      "baseline_locations": [
+        "app.js:513"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0031"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0032",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Expand the top bar",
+      "baseline_locations": [
+        "app.js:576"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0032"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0033",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Collapse the top bar (it also folds away when you scroll down)",
+      "baseline_locations": [
+        "app.js:577",
+        "index.html:49"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0033"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0034",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Fetch or import a passage to start. Click in the text and press Enter to split it into a new line. Click the dots to create brackets and logical relationships.",
+      "baseline_locations": [
+        "app.js:606",
+        "js/utils/render-propositions.js:31",
+        "index.html:183"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0034"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0035",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Could not open file.",
+      "baseline_locations": [
+        "app.js:617"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0035"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0036",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Changes synced to cloud!",
+      "baseline_locations": [
+        "app.js:639"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0036"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0037",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "No active cloud session. Turn Cloud Sync on first.",
+      "baseline_locations": [
+        "app.js:641"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0037"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0038",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Sync failed: ",
+      "baseline_locations": [
+        "app.js:644"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0038"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0039",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "unknown error",
+      "baseline_locations": [
+        "app.js:644",
+        "js/services/profiles.js:511"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "error.unknown"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0040",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Project code {code} copied!",
+      "baseline_locations": [
+        "app.js:661"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "project.codeCopied"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0041",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Could not copy code.",
+      "baseline_locations": [
+        "app.js:662"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0041"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0043",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "API.Bible bibles list error ({res.status})",
+      "baseline_locations": [
+        "main.js:79",
+        "functions/index.js:66"
+      ],
+      "audit_class": "C",
+      "keys": [],
+      "decision": "主进程／代理技术错误详情保留，渲染层以中文完整提示包裹。"
+    },
+    {
+      "id": "S0045",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "No NASB bible available on this API.Bible key.",
+      "baseline_locations": [
+        "main.js:83",
+        "functions/index.js:70"
+      ],
+      "audit_class": "C",
+      "keys": [],
+      "decision": "主进程／代理技术错误详情保留，渲染层以中文完整提示包裹。"
+    },
+    {
+      "id": "S0054",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "SBLGNT fetch error: {res.status}",
+      "baseline_locations": [
+        "js/services/bible-service.js:61"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0054"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0056",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Book not found in SBLGNT (New Testament only).",
+      "baseline_locations": [
+        "js/services/bible-service.js:78"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0056"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0057",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "No verses found in SBLGNT for this range.",
+      "baseline_locations": [
+        "js/services/bible-service.js:86"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0057"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0059",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "SBLGNT covers the New Testament only.",
+      "baseline_locations": [
+        "js/services/bible-service.js:102"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0059"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0060",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "No verses found in SBLGNT for this chapter.",
+      "baseline_locations": [
+        "js/services/bible-service.js:105"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0060"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0061",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Book \"{match[1]}\" not recognized.",
+      "baseline_locations": [
+        "js/services/bible-service.js:126"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0061"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0062",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Bolls API error: {res.status}",
+      "baseline_locations": [
+        "js/services/bible-service.js:129"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0062"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0063",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "No verses found.",
+      "baseline_locations": [
+        "js/services/bible-service.js:132"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0063"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0064",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Could not parse reference. Use format like \"John 1:1-5\"",
+      "baseline_locations": [
+        "js/services/bible-service.js:149"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0064"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0065",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Verse range not found.",
+      "baseline_locations": [
+        "js/services/bible-service.js:159"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0065"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0067",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Could not read this passage reference. Parallel needs a reference like \"John 1:1-5\".",
+      "baseline_locations": [
+        "js/services/bible-service.js:180"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0067"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0068",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "No API backend available in this build.",
+      "baseline_locations": [
+        "js/services/bible-service.js:267"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0068"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0069",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "API proxy error ({res.status})",
+      "baseline_locations": [
+        "js/services/bible-service.js:270"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0069"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0070",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "No {label} key configured.",
+      "baseline_locations": [
+        "js/services/bible-service.js:276"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0070"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0071",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "{label} error{res && res.status ? ` (${res.status})` : ''}",
+      "baseline_locations": [
+        "js/services/bible-service.js:277"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0071"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0073",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "{label} returned no verses.",
+      "baseline_locations": [
+        "js/services/bible-service.js:280"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0073"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0075",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Reference not recognized for the NASB API.",
+      "baseline_locations": [
+        "js/services/bible-service.js:292"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0075"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0077",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Cloud Sync stopped.",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:98"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0077"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0078",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Cloud Sync stopped — this new work is not connected to the old project.",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:113"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0078"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0079",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Firebase not initialized.",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:154",
+        "js/services/cloud-sync.js:184"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0079"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0080",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "This project was previously synced with code {projectId}. \n\nWould you like to resume that session? \n(Cancel will generate a new six-digit code)",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:159"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0080"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0081",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Cloud Sync started!",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:177"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0081"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0082",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Failed to start sync: ",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:179"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0082"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0083",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Project not found.",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:190"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0083"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0084",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Connected to project ",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:194"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0084"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0085",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Failed to join: ",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:196"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0085"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0086",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Sync",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:311",
+        "index.html:153"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0086"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0087",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Synced ✓",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:311"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0087"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0088",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Sync your changes to the cloud",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:312",
+        "index.html:153"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0088"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0089",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "All changes are synced",
+      "baseline_locations": [
+        "js/services/cloud-sync.js:312"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0089"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0092",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Capturing diagram...",
+      "baseline_locations": [
+        "js/services/export-service.js:245"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0092"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0094",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Diagram copied to clipboard!",
+      "baseline_locations": [
+        "js/services/export-service.js:297"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0094"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0096",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Capture failed.",
+      "baseline_locations": [
+        "js/services/export-service.js:309"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0096"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0097",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Generating image...",
+      "baseline_locations": [
+        "js/services/export-service.js:320"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0097"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0099",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Image saved.",
+      "baseline_locations": [
+        "js/services/export-service.js:354"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0099"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0100",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Save failed.",
+      "baseline_locations": [
+        "js/services/export-service.js:365"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0100"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0101",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "PDF library not loaded.",
+      "baseline_locations": [
+        "js/services/export-service.js:374"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0101"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0102",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Generating PDF...",
+      "baseline_locations": [
+        "js/services/export-service.js:378"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0102"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0103",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "PDF exported.",
+      "baseline_locations": [
+        "js/services/export-service.js:435"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0103"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0104",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "PDF export failed.",
+      "baseline_locations": [
+        "js/services/export-service.js:446"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0104"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0105",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket selection cancelled.",
+      "baseline_locations": [
+        "js/services/keyboard-handler.js:87"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0105"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0106",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Arrow selection cancelled.",
+      "baseline_locations": [
+        "js/services/keyboard-handler.js:94"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0106"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0107",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "delete arrow",
+      "baseline_locations": [
+        "js/services/keyboard-handler.js:226",
+        "js/utils/ui-menus.js:1047"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.delete arrow"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0108",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Arrow removed.",
+      "baseline_locations": [
+        "js/services/keyboard-handler.js:230",
+        "js/utils/ui-menus.js:1050"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0108"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0109",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "shift text",
+      "baseline_locations": [
+        "js/services/keyboard-handler.js:327"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.shift text"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0110",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "The row above is in a collapsed section. Expand it before merging.",
+      "baseline_locations": [
+        "js/services/keyboard-handler.js:436"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0110"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0112",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Text edit mode on: edit text directly, use Tab for indent, Enter for newlines. (T or Esc to exit)",
+      "baseline_locations": [
+        "js/services/mode-service.js:14"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0112"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0113",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Toggle text edit mode: edit text freely with newlines and indentation. (T)",
+      "baseline_locations": [
+        "js/services/mode-service.js:15",
+        "index.html:157"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0113"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0114",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Text Edit mode on. Brackets disabled.",
+      "baseline_locations": [
+        "js/services/mode-service.js:26"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0114"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0115",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Text Edit mode off.",
+      "baseline_locations": [
+        "js/services/mode-service.js:28"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0115"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0116",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Arrow mode on. Click a word to start.",
+      "baseline_locations": [
+        "js/services/mode-service.js:40"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0116"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0117",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Arrow mode off.",
+      "baseline_locations": [
+        "js/services/mode-service.js:46"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0117"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0118",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "add arrow",
+      "baseline_locations": [
+        "js/services/mouse-handler.js:25"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.add arrow"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0119",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Word arrows are not supported in the parallel column.",
+      "baseline_locations": [
+        "js/services/mouse-handler.js:97"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0119"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0120",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Start word selected. Now click the target word.",
+      "baseline_locations": [
+        "js/services/mouse-handler.js:105"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0120"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0121",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Arrow created.",
+      "baseline_locations": [
+        "js/services/mouse-handler.js:110"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0121"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0122",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "An identical arrow already exists.",
+      "baseline_locations": [
+        "js/services/mouse-handler.js:112"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0122"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0123",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Arrow cancelled.",
+      "baseline_locations": [
+        "js/services/mouse-handler.js:114"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0123"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0124",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Custom",
+      "baseline_locations": [
+        "js/services/notation-ui.js:33",
+        "js/services/notation-ui.js:70",
+        "js/services/profiles.js:214"
+      ],
+      "audit_class": "B",
+      "keys": [],
+      "decision": "自动创建方案的原始数据名称 Custom 保留；界面的（自定义）后缀另行翻译。"
+    },
+    {
+      "id": "S0125",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": " (custom)",
+      "baseline_locations": [
+        "js/services/notation-ui.js:70"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "profile.customOption"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0126",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "No dominance for this relationship",
+      "baseline_locations": [
+        "js/services/notation-ui.js:120"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0126"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0127",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Mark dominance with a star",
+      "baseline_locations": [
+        "js/services/notation-ui.js:120"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0127"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0128",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Dominance turned {on ? 'on' : 'off'} for all relationships.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:160"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0128"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0132",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Profile exported.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:171"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0132"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0133",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "That file is not a notation profile.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:176"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0133"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0134",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Loaded profile \"{DA_PROFILES.getActive().name}\".",
+      "baseline_locations": [
+        "js/services/notation-ui.js:181"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0134"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0135",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Could not read profile file.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:203"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0135"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0136",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Enter a profile name to load.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:215"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0136"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0137",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Loading \"{name}\"…",
+      "baseline_locations": [
+        "js/services/notation-ui.js:216"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0137"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0138",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "No profile named \"{name}\" found.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:219"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0138"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0139",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Loaded profile \"{loaded.name}\".",
+      "baseline_locations": [
+        "js/services/notation-ui.js:221"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0139"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0140",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Could not load profile.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:223"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0140"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0141",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Enter the published profile name to share.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:232"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0141"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0142",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Link copied. Anyone who opens it gets \"{name}\": {link}",
+      "baseline_locations": [
+        "js/services/notation-ui.js:236"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0142"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0143",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Copy this link: {link}",
+      "baseline_locations": [
+        "js/services/notation-ui.js:238"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0143"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0144",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Enter a profile name to publish.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:245"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0144"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0145",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Enter a password to publish.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:246"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0145"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0146",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Publishing \"{name}\"…",
+      "baseline_locations": [
+        "js/services/notation-ui.js:255"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0146"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0147",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Published \"{name}\". Students can load it by name.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:262"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0147"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0148",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Updated \"{name}\".",
+      "baseline_locations": [
+        "js/services/notation-ui.js:263"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0148"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0149",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Could not publish profile.",
+      "baseline_locations": [
+        "js/services/notation-ui.js:265"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0149"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0153",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Invalid bracket file.",
+      "baseline_locations": [
+        "js/services/persistence.js:283"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0153"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0154",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Imported bracket",
+      "baseline_locations": [
+        "js/services/persistence.js:294",
+        "js/services/persistence.js:355"
+      ],
+      "audit_class": "B",
+      "keys": [],
+      "decision": "导入项目的原始默认标题，不改写数据。"
+    },
+    {
+      "id": "S0155",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Project loaded.",
+      "baseline_locations": [
+        "js/services/persistence.js:350"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0155"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0158",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Load this bracket",
+      "baseline_locations": [
+        "js/services/persistence.js:400"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0158"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0178",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "📋 Diagram detected in paste! ",
+      "baseline_locations": [
+        "js/services/persistence.js:489"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0178"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0180",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "📋 Bracket data detected! ",
+      "baseline_locations": [
+        "js/services/persistence.js:501"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0180"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0181",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "📋 Bracket data detected on clipboard: ",
+      "baseline_locations": [
+        "js/services/persistence.js:524"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0181"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0182",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "an unnamed passage",
+      "baseline_locations": [
+        "js/services/persistence.js:537"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0182"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0183",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "📝 Unsaved work on",
+      "baseline_locations": [
+        "js/services/persistence.js:539"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "recovery.draft"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0185",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Restore",
+      "baseline_locations": [
+        "js/services/persistence.js:541"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0185"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0186",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Dismiss",
+      "baseline_locations": [
+        "js/services/persistence.js:542",
+        "js/utils/ui-dialogs.js:80"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0186"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0187",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Draft restored.",
+      "baseline_locations": [
+        "js/services/persistence.js:550"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0187"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0189",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Reconnect to cloud project",
+      "baseline_locations": [
+        "js/services/persistence.js:580"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0189"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0190",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "🌐 You were connected to cloud project",
+      "baseline_locations": [
+        "js/services/persistence.js:582"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "recovery.cloud"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0193",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Reconnect",
+      "baseline_locations": [
+        "js/services/persistence.js:584"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0193"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0194",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Start Fresh",
+      "baseline_locations": [
+        "js/services/persistence.js:585"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0194"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0195",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Loading project {projectId}…",
+      "baseline_locations": [
+        "js/services/persistence.js:599"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0195"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0198",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Decompression failed: LZString not loaded.",
+      "baseline_locations": [
+        "js/services/persistence.js:726"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0198"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0199",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Found data, but decompression failed.",
+      "baseline_locations": [
+        "js/services/persistence.js:731"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0199"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0200",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Data found, but it is not a valid bracket.",
+      "baseline_locations": [
+        "js/services/persistence.js:738"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0200"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0201",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Failed to read data: ",
+      "baseline_locations": [
+        "js/services/persistence.js:741"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0201"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0202",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Nothing to save.",
+      "baseline_locations": [
+        "js/services/persistence.js:749"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0202"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0203",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Saved.",
+      "baseline_locations": [
+        "js/services/persistence.js:769"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0203"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0204",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Nothing to export.",
+      "baseline_locations": [
+        "js/services/persistence.js:781"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0204"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0205",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket exported.",
+      "baseline_locations": [
+        "js/services/persistence.js:793"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0205"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0206",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Could not read JSON file.",
+      "baseline_locations": [
+        "js/services/persistence.js:827",
+        "js/utils/ui-menus.js:953"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0206"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0207",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "No embedded data found in PNG.",
+      "baseline_locations": [
+        "js/services/persistence.js:831"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0207"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0208",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "No embedded data found in PDF.",
+      "baseline_locations": [
+        "js/services/persistence.js:835"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0208"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0251",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Also called ",
+      "baseline_locations": [
+        "js/services/profiles.js:374"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "relationship.alsoCalled"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0253",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Cloud is not available.",
+      "baseline_locations": [
+        "js/services/profiles.js:439",
+        "js/services/profiles.js:465"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0253"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0254",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "A password is required to publish.",
+      "baseline_locations": [
+        "js/services/profiles.js:440"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0254"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0255",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Enter a profile name first.",
+      "baseline_locations": [
+        "js/services/profiles.js:442"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0255"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0256",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "That name is taken and the password does not match.",
+      "baseline_locations": [
+        "js/services/profiles.js:451"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0256"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0257",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Enter a profile name.",
+      "baseline_locations": [
+        "js/services/profiles.js:467"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0257"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0258",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Notation profile \"{loaded.name}\" loaded.",
+      "baseline_locations": [
+        "js/services/profiles.js:507"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0258"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0259",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "No notation profile named \"{name}\" was found.",
+      "baseline_locations": [
+        "js/services/profiles.js:508"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0259"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0260",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Could not load notation profile \"{name}\": {err.message || 'unknown error'}",
+      "baseline_locations": [
+        "js/services/profiles.js:511"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0260"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0261",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "verse ",
+      "baseline_locations": [
+        "js/utils/block-diagram.js:71"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "block.verses"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0262",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "verses ",
+      "baseline_locations": [
+        "js/utils/block-diagram.js:71"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "block.verses"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0263",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "{friendlyRelName(b.type)} to {versePhrase([refOfRange(domRange)])}",
+      "baseline_locations": [
+        "js/utils/block-diagram.js:158"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "block.to"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0264",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "{friendlyRelName(key)} with {versePhrase(partners)}",
+      "baseline_locations": [
+        "js/utils/block-diagram.js:173"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "block.with"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0265",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "No passage loaded. Fetch or import a passage first.",
+      "baseline_locations": [
+        "js/utils/block-diagram.js:194"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0265"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0346",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "split",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:116",
+        "js/utils/editor-logic.js:184"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.split"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0347",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "split parallel",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:116",
+        "js/utils/editor-logic.js:362"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.split parallel"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0348",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "merge",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:395",
+        "js/utils/editor-logic.js:868"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.merge"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0349",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "added verses",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:696"
+      ],
+      "audit_class": "B",
+      "keys": [],
+      "decision": "拼入经文范围数据的稳定默认标记，保持原数据语义。"
+    },
+    {
+      "id": "S0356",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Nothing to add.",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:761"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0356"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0357",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "No document loaded to add to.",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:762"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0357"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0358",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "add passage",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:763"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.add passage"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0359",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "merge parallel",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:868"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.merge parallel"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0360",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "This bracket has {dependents} larger bracket{dependents === 1 ? '' : 's'} built on it, ",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:989"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "confirm.deleteDependents"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0361",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "which can't stand without it.\n\nDelete all {doomedIds.size} brackets? (Undo restores them.)",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:990"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "confirm.deleteDependents"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0362",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "delete brackets",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:995"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.delete brackets"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0363",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "delete bracket",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:995"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.delete bracket"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0364",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Select second node to create bracket",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:1147"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0364"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0365",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Brackets must connect adjacent items. No \"jumping over\" allowed.",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:1188"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0365"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0366",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket already exists for this exact range",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:1196"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0366"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0367",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Brackets cannot cross each other",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:1204"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0367"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0368",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Cannot connect two nodes that are already bracketed. Connect their dots instead.",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:1215"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0368"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0369",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket already exists between these nodes",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:1225"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0369"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0370",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "add bracket",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:1230"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.add bracket"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0371",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Jump-over bracket created",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:1261"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0371"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0372",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket created",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:1261"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0372"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0373",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "expand section",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:1271",
+        "js/utils/render-propositions.js:160"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.expand section"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0374",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "collapse section",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:1271"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.collapse section"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0377",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "⚠ Error: ",
+      "baseline_locations": [
+        "js/utils/init.js:30"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0377"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0378",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "edit main point summary",
+      "baseline_locations": [
+        "js/utils/main-point-summary.js:168",
+        "js/utils/main-point-summary.js:270"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.edit main point summary"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0379",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Add Comment",
+      "baseline_locations": [
+        "js/utils/main-point-summary.js:211",
+        "js/utils/ui-menus.js:36",
+        "js/utils/ui-menus.js:133",
+        "index.html:366"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0379"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0395",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "{_spokenType} bracket, verses {_verseMap[_ext.from] || _ext.from + 1}–{_verseMap[_ext.to] || _ext.to + 1}. Press Enter to edit.",
+      "baseline_locations": [
+        "js/utils/render-brackets.js:465"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0395"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0402",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "{_spokenType} bracket node: collapsed, press Enter to expand",
+      "baseline_locations": [
+        "js/utils/render-brackets.js:534"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0402"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0403",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "{_spokenType} bracket node: select for bracket",
+      "baseline_locations": [
+        "js/utils/render-brackets.js:535"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0403"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0406",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket ({fullRef}): {b ? DA_UI.formatBracketType(b.type) : 'Unknown'}",
+      "baseline_locations": [
+        "js/utils/render-comments.js:58"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0406"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0414",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Reply...",
+      "baseline_locations": [
+        "js/utils/render-comments.js:76",
+        "index.html:357"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "comment.replyPlaceholder"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0415",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Send reply",
+      "baseline_locations": [
+        "js/utils/render-comments.js:77",
+        "index.html:358"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "comment.sendReply"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0422",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "··· {count} row{count !== 1 ? 's' : ''} collapsed ···",
+      "baseline_locations": [
+        "js/utils/render-propositions.js:148"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0422"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0424",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Click to expand",
+      "baseline_locations": [
+        "js/utils/render-propositions.js:157"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0424"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0425",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Expand {count} collapsed row{count !== 1 ? 's' : ''}",
+      "baseline_locations": [
+        "js/utils/render-propositions.js:158"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0425"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0426",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "text edit parallel",
+      "baseline_locations": [
+        "js/utils/render-propositions.js:304"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.text edit parallel"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0427",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "text edit",
+      "baseline_locations": [
+        "js/utils/render-propositions.js:345"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.text edit"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0428",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Verse {vd || i + 1}: select for bracket",
+      "baseline_locations": [
+        "js/utils/render-propositions.js:479"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0428"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0437",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Unknown Date",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:43",
+        "js/utils/ui-comments.js:45"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0437"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0438",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket Comment",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:49"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0438"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0439",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Text Comment",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:49"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0439"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0440",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket ({fullRef}): {b ? formatBracketType(b.type) : 'Unknown'}",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:60"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0440"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0443",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Anonymous",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:83",
+        "js/utils/ui-comments.js:95"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0443"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0445",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "edit reply",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:118"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.edit reply"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0446",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Delete this reply?",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:126"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0446"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0447",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "delete reply",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:127"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.delete reply"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0448",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "add comment",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:164"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.add comment"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0449",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "edit comment",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:201"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.edit comment"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0450",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Delete this comment?",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:210"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0450"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0451",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "delete comment",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:211"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.delete comment"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0455",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Main point summary: \"{snippet}\"",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:345"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0455"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0456",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Main point summary (commented text was removed)",
+      "baseline_locations": [
+        "js/utils/ui-comments.js:345"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0456"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0457",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "bracket data",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:75"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0457"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0460",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Import",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:79",
+        "index.html:44",
+        "index.html:258"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0460"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0462",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Light Mode",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:112",
+        "index.html:89"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0462"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0463",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Dark Mode",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:112"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0463"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0465",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Welcome, {name}!",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:245"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0465"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0467",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "OTHER RELATIONSHIPS",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:318"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "group.other"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0468",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Logical Relationships Guide — {DA_PROFILES.getActive().name}",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:329"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "guide.title"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0471",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "By: {input.value.trim()}",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:385"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0471"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0473",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Save current bracket before starting new?",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:413"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0473"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0474",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Save",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:415",
+        "index.html:106",
+        "index.html:224",
+        "index.html:348",
+        "index.html:388"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0474"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0475",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Discard",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:416"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0475"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0476",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Cancel",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:417",
+        "js/utils/ui-dialogs.js:468",
+        "index.html:349",
+        "index.html:389"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0476"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0479",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Add to the current diagram?",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:464"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0479"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0480",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Add",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:466"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0480"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0481",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Replace",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:467"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0481"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0484",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "New bracket started.",
+      "baseline_locations": [
+        "js/utils/ui-dialogs.js:542"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0484"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0486",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Yellow",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:20"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0486"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0488",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Blue",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:21",
+        "js/utils/ui-menus.js:122"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0488"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0490",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Green",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:22",
+        "js/utils/ui-menus.js:123"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0490"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0492",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Pink",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:23"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0492"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0494",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Lavender",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:24"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0494"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0495",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Nothing to fold — both endpoints stay visible",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:35"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0495"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0498",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Connect to...",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:37"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0498"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0500",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Highlight Rows",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:40"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0500"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0503",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Clear Highlight",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:43"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0503"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0504",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Delete Bracket",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:46",
+        "js/utils/ui-menus.js:310"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0504"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0507",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Expand Section",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:35"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0507"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0508",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Collapse Section",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:35"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0508"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0509",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "View Comment",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:36"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0509"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0511",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "★ Unmark Passage Main Point",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:38"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0511"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0512",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "☆ Mark Passage Main Point",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:38"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0512"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0514",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "{removed} brackets removed.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:61",
+        "js/utils/ui-menus.js:596"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "relationship.removed"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0515",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket removed.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:61",
+        "js/utils/ui-menus.js:596"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "relationship.removed"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0516",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket selected. Click a node or dot to connect.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:77"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0516"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0517",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "main point",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:89"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.main point"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0518",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "highlight rows",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:101"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.highlight rows"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0520",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Red",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:121"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0520"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0524",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Orange",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:124"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0524"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0526",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Purple",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:125"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0526"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0528",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Color Code",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:135"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0528"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0530",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Clear Color",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:138"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0530"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0531",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "color text",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:158"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.color text"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0532",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Resize",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:237",
+        "js/utils/ui.js:341"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0532"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0535",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Choose Relationship",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:292"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "relationship.choose"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0536",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Add Custom Label",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:294",
+        "js/utils/ui-menus.js:977"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0536"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0537",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Custom Label",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:294"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0537"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0539",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Swap Labels",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:295"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0539"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0540",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "⇅ Swap",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:295"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0540"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0542",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Switch Stars",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:296"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0542"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0543",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "★ Switch Stars",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:296"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0543"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0544",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Type to filter… (e.g. 'act', 'cause', 'because')",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:300"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "relationship.placeholder"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0545",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Filter relationships",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:300"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "relationship.filter"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0546",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Hover over a relationship to see its definition.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:304"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "relationship.hover"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0547",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "MY PRESET LABELS",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:334"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0547"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0548",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "PROJECT-SPECIFIC LABELS",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:345"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0548"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0550",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "change label",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:380"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.change label"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0551",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Label changed to {labelText}",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:384"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "relationship.changed"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0556",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Key words: ",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:408"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "relationship.keywords"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0557",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Remove from my bank",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:419"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0557"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0558",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Save to my bank",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:419"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0558"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0561",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Jump-over bracket — choose {choices}.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:497"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0561"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0562",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "No matches — try a name like \"ground\", another system's term like \"cause\", or a key word like \"because\".",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:550"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "relationship.noMatches"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0563",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "swap labels",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:575"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.swap labels"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0564",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "switch stars",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:584"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.switch stars"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0565",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Export PNG Image",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:657"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "menu.png"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0566",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Export PDF Document",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:658"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "menu.pdf"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0567",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Copy Image to Clipboard",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:659"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "menu.copyImage"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0568",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Download Project JSON",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:661"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "menu.json"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0569",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Copy Project Data (JSON)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:662"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "menu.copyJson"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0571",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Turn Cloud Sync OFF",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:664"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "menu.cloudOff"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0572",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Turn Cloud Sync ON",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:664"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "menu.cloudOn"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0576",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Project data copied!",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:704"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0576"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0579",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Show Parallel Column…",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:744"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0579"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0581",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Hide Parallel Column",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:746"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0581"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0584",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket View (B)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:741"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0584"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0585",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Block Diagram (B)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:741"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0585"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0586",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Change Parallel Translation… ({DA_UI.escapeHtml(DA_STATE.parallelLabel)})",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:747",
+        "js/utils/ui-menus.js:750"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "parallel.change"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0587",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Show Parallel Column ({DA_UI.escapeHtml(DA_STATE.parallelLabel)})",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:749"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "parallel.showExisting"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0588",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Parallel column hidden — its text is kept with the project.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:775"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0588"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0589",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Parallel column: {DA_STATE.parallelLabel}.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:781"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0589"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0591",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "中文和合本 — Chinese Union (Traditional)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:792"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0591"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0593",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "新标点和合本 — Chinese Union (Simplified)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:793"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0593"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0595",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "개역한글 — Korean Revised",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:794"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0595"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0597",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Reina-Valera 1960 (Español)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:795"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0597"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0599",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Luther 1912 (Deutsch)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:796"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0599"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0601",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Nova Versão Internacional (Português)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:797"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0601"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0603",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "English Standard Version",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:798"
+      ],
+      "audit_class": "D",
+      "keys": [
+        "s.S0603"
+      ],
+      "decision": "保留译本正式英文名称和 ESV 缩写。"
+    },
+    {
+      "id": "S0605",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "NASB (1995)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:799",
+        "index.html:29"
+      ],
+      "audit_class": "D",
+      "keys": [
+        "s.S0605"
+      ],
+      "decision": "保留 NASB 译本名称及年份。"
+    },
+    {
+      "id": "S0607",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Ελληνικά — Greek NT (SBLGNT)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:800"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0607"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0609",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Ελληνικά — Greek OT (Septuagint)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:801"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0609"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0611",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "עברית — Hebrew OT (Westminster Leningrad)",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:802"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0611"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0613",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Parallel Column",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:814"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0613"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0614",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Parallel translation",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:816"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0614"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0617",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Editable beside the text (splits with Enter in Text Edit mode) and saved with the project.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:819"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0617"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0618",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Show",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:820"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0618"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0622",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Replace the current {DA_STATE.parallelLabel} column (including any edits) with {code}? Ctrl+Z undoes this.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:836"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0622"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0623",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Fetching {code}…",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:841"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0623"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0624",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "No matching verses found for this passage.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:848"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0624"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0625",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "show parallel column",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:850"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.show parallel column"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0626",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Parallel column: {code}.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:857"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0626"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0627",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Could not fetch the parallel translation.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:859"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0627"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0629",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "📂 Open local file",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:879"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0629"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0630",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "🔗 Join cloud session",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:880"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0630"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0631",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Project ID",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:888"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0631"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0632",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Join",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:895"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0632"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0636",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "No bracket data found in PNG.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:958"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0636"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0637",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "No bracket data found in PDF.",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:962"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0637"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0639",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "e.g. MyRel or Top/Bot*",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:979"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0639"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0640",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Use / for split, * for star",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:980"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0640"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0641",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Apply & Save",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:981"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0641"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0642",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "add custom label",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:995"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.add custom label"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0643",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Label \"{val}\" created!",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:1008"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0643"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0644",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Delete Arrow",
+      "baseline_locations": [
+        "js/utils/ui-menus.js:1029"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0644"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0646",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "add reply",
+      "baseline_locations": [
+        "js/utils/ui.js:152"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "action.add reply"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0652",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bible version to fetch",
+      "baseline_locations": [
+        "index.html:27"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "passage.version"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0653",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Greek (SBLGNT / LXX)",
+      "baseline_locations": [
+        "index.html:30"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0653"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0654",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Hebrew (WLC)",
+      "baseline_locations": [
+        "index.html:31"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0654"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0655",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "e.g. John 1:1-5, Romans 8:28",
+      "baseline_locations": [
+        "index.html:33"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "passage.placeholder"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0656",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Or paste text to bracket or import",
+      "baseline_locations": [
+        "index.html:36"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0656"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0657",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Paste from Logos, Accordance, or any Bible text — verse numbers are detected automatically. You can also mark breaks with [1], [2], [3:14].",
+      "baseline_locations": [
+        "index.html:37"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0657"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0658",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Passage ref:",
+      "baseline_locations": [
+        "index.html:39"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0658"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0659",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "e.g. Phil 3:2-8",
+      "baseline_locations": [
+        "index.html:40"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0659"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0660",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Label for the passage",
+      "baseline_locations": [
+        "index.html:40"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0660"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0661",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Starting verse:",
+      "baseline_locations": [
+        "index.html:41"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0661"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0662",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "First verse number if no [n] markers in text",
+      "baseline_locations": [
+        "index.html:42"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0662"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0663",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Help & Tips",
+      "baseline_locations": [
+        "index.html:60"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0663"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0665",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Split line at cursor",
+      "baseline_locations": [
+        "index.html:62"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0665"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0667",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Join to line above",
+      "baseline_locations": [
+        "index.html:63"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0667"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0668",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Click Bracket",
+      "baseline_locations": [
+        "index.html:64"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0668"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0669",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Edit relationship",
+      "baseline_locations": [
+        "index.html:64"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0669"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0670",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Right-Click Bracket",
+      "baseline_locations": [
+        "index.html:65"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0670"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0671",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket Options",
+      "baseline_locations": [
+        "index.html:65"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0671"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0672",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Right-Click Text",
+      "baseline_locations": [
+        "index.html:66"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0672"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0673",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Comment / Color Code",
+      "baseline_locations": [
+        "index.html:66"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0673"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0676",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Quick Save",
+      "baseline_locations": [
+        "index.html:67"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0676"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0678",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Undo",
+      "baseline_locations": [
+        "index.html:68",
+        "index.html:161"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0678"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0680",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Redo (or Ctrl+Shift+Z)",
+      "baseline_locations": [
+        "index.html:69"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0680"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0682",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Text Edit mode",
+      "baseline_locations": [
+        "index.html:70"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0682"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0684",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Arrow mode",
+      "baseline_locations": [
+        "index.html:71"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0684"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0686",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Block Diagram",
+      "baseline_locations": [
+        "index.html:72"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0686"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0687",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Alternate Views",
+      "baseline_locations": [
+        "index.html:73"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0687"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0688",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Block Diagram / Parallel Column (editable, saved with project)",
+      "baseline_locations": [
+        "index.html:73"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0688"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0690",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Comments (panel, or comment on selected text)",
+      "baseline_locations": [
+        "index.html:74"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0690"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0692",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Exit mode / close dialog",
+      "baseline_locations": [
+        "index.html:75"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0692"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0694",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Brackets by keyboard (via the dots)",
+      "baseline_locations": [
+        "index.html:76"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0694"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0695",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Drop File",
+      "baseline_locations": [
+        "index.html:77"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0695"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0696",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Import JSON/PNG/PDF",
+      "baseline_locations": [
+        "index.html:77"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0696"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0697",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Zoom (− / 100% / +)",
+      "baseline_locations": [
+        "index.html:78"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0697"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0698",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Scale text & diagram (View, sidebar)",
+      "baseline_locations": [
+        "index.html:78"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0698"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0699",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Relationship Guide",
+      "baseline_locations": [
+        "index.html:81"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "guide.open"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0700",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "View",
+      "baseline_locations": [
+        "index.html:87"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0700"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0701",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Switch between Light and Dark mode",
+      "baseline_locations": [
+        "index.html:89"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0701"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0702",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Show or hide comments on brackets (C)",
+      "baseline_locations": [
+        "index.html:90"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0702"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0703",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Zoom",
+      "baseline_locations": [
+        "index.html:92"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0703"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0704",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Zoom out",
+      "baseline_locations": [
+        "index.html:93"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0704"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0705",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Reset zoom to 100%",
+      "baseline_locations": [
+        "index.html:94"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0705"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0706",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Zoom in",
+      "baseline_locations": [
+        "index.html:95"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0706"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0707",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Project",
+      "baseline_locations": [
+        "index.html:100"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0707"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0708",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Start a new bracket",
+      "baseline_locations": [
+        "index.html:102"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0708"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0709",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "New",
+      "baseline_locations": [
+        "index.html:102"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0709"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0710",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Open file or join cloud session",
+      "baseline_locations": [
+        "index.html:103"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0710"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0711",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Open...",
+      "baseline_locations": [
+        "index.html:103"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0711"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0712",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Save to current file (Ctrl+S)",
+      "baseline_locations": [
+        "index.html:106"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0712"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0713",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Save current bracket as a new JSON file",
+      "baseline_locations": [
+        "index.html:107"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0713"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0714",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Save As",
+      "baseline_locations": [
+        "index.html:107"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0714"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0715",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Project and personal settings",
+      "baseline_locations": [
+        "index.html:110"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "settings.tooltip"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0716",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Settings",
+      "baseline_locations": [
+        "index.html:114"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "settings.open"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0717",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Export as image, PDF, or data",
+      "baseline_locations": [
+        "index.html:122"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0717"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0718",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Export As...",
+      "baseline_locations": [
+        "index.html:122"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0718"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0719",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Remove all brackets and formatting from the current page",
+      "baseline_locations": [
+        "index.html:125"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0719"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0720",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Clear All Brackets",
+      "baseline_locations": [
+        "index.html:125"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0720"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0721",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Recent",
+      "baseline_locations": [
+        "index.html:130"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0721"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0722",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Toggle Sidebar",
+      "baseline_locations": [
+        "index.html:136"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0722"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0723",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Click to edit passage reference",
+      "baseline_locations": [
+        "index.html:145"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0723"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0724",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Parallel column shown (editable; saved with the project)",
+      "baseline_locations": [
+        "index.html:147"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0724"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0725",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Sync status",
+      "baseline_locations": [
+        "index.html:149"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0725"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0726",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "LIVE:",
+      "baseline_locations": [
+        "index.html:151"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0726"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0727",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Click to copy project code",
+      "baseline_locations": [
+        "index.html:152"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0727"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0728",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Text Edit (T)",
+      "baseline_locations": [
+        "index.html:157"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "view.textEdit"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0729",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Toggle arrow mode: draw word-to-word arrows. (A)",
+      "baseline_locations": [
+        "index.html:158"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0729"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0730",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Add Arrows (A)",
+      "baseline_locations": [
+        "index.html:158"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "view.arrows"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0731",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Alternate views: block diagram (B) or an editable parallel translation column.",
+      "baseline_locations": [
+        "index.html:159"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0731"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0732",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Alternate Views ▾",
+      "baseline_locations": [
+        "index.html:159"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "view.alternate"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0733",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Undo last action (Ctrl/Cmd+Z)",
+      "baseline_locations": [
+        "index.html:161"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "view.undoTooltip"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0734",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Redo last undone action (Ctrl/Cmd+Y or Ctrl/Cmd+Shift+Z)",
+      "baseline_locations": [
+        "index.html:162"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0734"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0735",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Redo",
+      "baseline_locations": [
+        "index.html:162"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "view.redo",
+        "native.redo"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0736",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Active notation profile — click to change",
+      "baseline_locations": [
+        "index.html:165"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "profile.indicatorTooltip"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0737",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Notation:",
+      "baseline_locations": [
+        "index.html:166"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "profile.indicator"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0738",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Page author",
+      "baseline_locations": [
+        "index.html:169"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0738"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0739",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Main point summary",
+      "baseline_locations": [
+        "index.html:187",
+        "index.html:191"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0739"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0740",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "+ Add main point summary",
+      "baseline_locations": [
+        "index.html:188"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0740"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0741",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Main Point Summary",
+      "baseline_locations": [
+        "index.html:190"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0741"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0742",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "State the passage's main point in your own words…",
+      "baseline_locations": [
+        "index.html:191"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "summary.placeholder"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0743",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Comments",
+      "baseline_locations": [
+        "index.html:199"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0743"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0744",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "APIs:",
+      "baseline_locations": [
+        "index.html:206"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0744"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0746",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "v3.3.1 · Josiah Hoi & Bryce Bussert, based on the method taught by Dr. Daniel M. Gurtner.",
+      "baseline_locations": [
+        "index.html:207"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0746"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0747",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Welcome to Discourse Analysis",
+      "baseline_locations": [
+        "index.html:213"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0747"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0748",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "What's your name? It's attached to your comments and set as the owner of new projects. You can change it anytime in Settings.",
+      "baseline_locations": [
+        "index.html:216"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0748"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0749",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Your Name",
+      "baseline_locations": [
+        "index.html:218"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0749"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0750",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "e.g. Jane Smith",
+      "baseline_locations": [
+        "index.html:219"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0750"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0751",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Skip for now",
+      "baseline_locations": [
+        "index.html:223"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0751"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0752",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Project Settings",
+      "baseline_locations": [
+        "index.html:232"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "settings.title"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0753",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Notation",
+      "baseline_locations": [
+        "index.html:237"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0753"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0754",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Notation profile",
+      "baseline_locations": [
+        "index.html:239"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "profile.label"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0755",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "How relationships are labeled and whether dominance is marked",
+      "baseline_locations": [
+        "index.html:240"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0755"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0756",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Advanced Notation Settings",
+      "baseline_locations": [
+        "index.html:245"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0756"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0757",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Mark dominance on every relationship",
+      "baseline_locations": [
+        "index.html:247"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0757"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0758",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Dominance: All on",
+      "baseline_locations": [
+        "index.html:247"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0758"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0759",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Turn dominance off for every relationship",
+      "baseline_locations": [
+        "index.html:248"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0759"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0760",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "All off",
+      "baseline_locations": [
+        "index.html:248"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0760"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0761",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Load a profile from a file",
+      "baseline_locations": [
+        "index.html:250"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0761"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0762",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Import…",
+      "baseline_locations": [
+        "index.html:250"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0762"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0763",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Save the current profile to a file",
+      "baseline_locations": [
+        "index.html:251"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0763"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0764",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Export",
+      "baseline_locations": [
+        "index.html:251",
+        "index.html:258"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0764"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0765",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Relationship",
+      "baseline_locations": [
+        "index.html:255"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0765"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0766",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Label",
+      "baseline_locations": [
+        "index.html:255"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0766"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0767",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Mark dominance",
+      "baseline_locations": [
+        "index.html:255"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0767"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0768",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Color",
+      "baseline_locations": [
+        "index.html:255"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0768"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0769",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Edits create your own profile. Use",
+      "baseline_locations": [
+        "index.html:258"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "notation.editHint"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0772",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Share on the cloud",
+      "baseline_locations": [
+        "index.html:260"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0772"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0773",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Profile name",
+      "baseline_locations": [
+        "index.html:262"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0773"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0774",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "The name students type to load this profile",
+      "baseline_locations": [
+        "index.html:262"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0774"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0775",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Load a profile by name",
+      "baseline_locations": [
+        "index.html:263"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0775"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0776",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Load",
+      "baseline_locations": [
+        "index.html:263"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0776"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0777",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Copy a link that loads this profile for whoever opens it",
+      "baseline_locations": [
+        "index.html:264"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0777"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0778",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Copy link",
+      "baseline_locations": [
+        "index.html:264"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0778"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0779",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Password (to publish/update)",
+      "baseline_locations": [
+        "index.html:267"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0779"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0780",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Required only to publish or change a profile",
+      "baseline_locations": [
+        "index.html:267"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0780"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0781",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Publish or update this profile on the cloud",
+      "baseline_locations": [
+        "index.html:268"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0781"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0782",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Publish",
+      "baseline_locations": [
+        "index.html:268"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0782"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0783",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Anyone can load by name, or open the copied link to load it in one click. The password protects changes (in-app gate, not hardened security) — pick a fresh one, not a password you use elsewhere.",
+      "baseline_locations": [
+        "index.html:270"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0783"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0784",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Identity",
+      "baseline_locations": [
+        "index.html:274"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0784"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0785",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Project Owner",
+      "baseline_locations": [
+        "index.html:276"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0785"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0786",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "e.g. Original Author",
+      "baseline_locations": [
+        "index.html:277"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0786"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0787",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Reviewing As",
+      "baseline_locations": [
+        "index.html:280"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0787"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0788",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Your name",
+      "baseline_locations": [
+        "index.html:281"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0788"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0789",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "File Defaults",
+      "baseline_locations": [
+        "index.html:285"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0789"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0790",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Filename Template",
+      "baseline_locations": [
+        "index.html:287"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0790"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0791",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Passage_Owner_Date",
+      "baseline_locations": [
+        "index.html:288"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0791"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0792",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Done",
+      "baseline_locations": [
+        "index.html:293"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "common.done"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0793",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Logical Relationships Guide",
+      "baseline_locations": [
+        "index.html:301"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "guide.heading"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0794",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Name",
+      "baseline_locations": [
+        "index.html:308"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "guide.name"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0795",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Abbr.",
+      "baseline_locations": [
+        "index.html:309"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "guide.abbr"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0796",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Key Word(s)",
+      "baseline_locations": [
+        "index.html:310"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "guide.keywords"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0797",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Definition",
+      "baseline_locations": [
+        "index.html:311"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "guide.definition"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0798",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Close",
+      "baseline_locations": [
+        "index.html:327"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "common.close"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0799",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Edit",
+      "baseline_locations": [
+        "index.html:339",
+        "index.html:380"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "common.edit",
+        "native.editmenu"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0800",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Delete",
+      "baseline_locations": [
+        "index.html:340",
+        "index.html:381"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "common.delete",
+        "native.delete"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0801",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Edit comment...",
+      "baseline_locations": [
+        "index.html:346"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "comment.editPlaceholder"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0802",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Add a comment...",
+      "baseline_locations": [
+        "index.html:364"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "comment.newPlaceholder"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0803",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Drop to import",
+      "baseline_locations": [
+        "styles.css:1782"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "drop.import"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0804",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Note: the added text uses a different script than the document.",
+      "baseline_locations": [
+        "app.js:309"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0804"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0805",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Note: there is a gap between the existing passage and the added verses.",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:677"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0805"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0806",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Note: the added verses overlap the existing passage.",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:678",
+        "js/utils/editor-logic.js:681"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0806"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0807",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Note: gap between verse {before.v} and verse {after.v}.",
+      "baseline_locations": [
+        "js/utils/editor-logic.js:682"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0807"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0808",
+      "source_list": "专业相关界面文案-v1.0.md",
+      "english": "Bracket",
+      "baseline_locations": [
+        "js/services/persistence.js:399"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0808"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    },
+    {
+      "id": "S0809",
+      "source_list": "普通UI翻译清单-v1.0.md",
+      "english": "Unknown",
+      "baseline_locations": [
+        "js/utils/render-comments.js:58",
+        "js/utils/ui-comments.js:60"
+      ],
+      "audit_class": "A",
+      "keys": [
+        "s.S0809"
+      ],
+      "decision": "已接入审定 UI 显示层；片段合并为完整句，原数据／操作值不翻译。"
+    }
+  ]
+}
