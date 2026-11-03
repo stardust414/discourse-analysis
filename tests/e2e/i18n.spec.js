@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const fs = require('fs');
 const fixture = {
-    version: 3, passageRef: 'John 1:1-2', propositions: ['First user text', 'Second user text'], verseRefs: ['1', '2'], verseBreaks: [[], []], brackets: [{ id: 'br-i18n', type: 'ground', from: 'p0', to: 'p1' }], parallelLabel: 'CUV', parallelTexts: ['平行正文一', '平行正文二'], parallelHidden: false, mainPointSummary: 'User summary 原样', customLabels: [{ id: 'cl-user', name: 'User original label', label: 'X/Y*' }], comments: [{
+    version: 3, passageRef: 'John 1:1-2', propositions: ['First user text', 'Second user text'], verseRefs: ['1', '2'], verseBreaks: [[], []], brackets: [{ id: 'br-i18n', type: 'ground', from: 'p0', to: 'p1' }], parallelLabel: 'CUV', parallelTexts: ['平行正文一', '平行正文二'], parallelHidden: false, mainPointSummary: 'User summary 原样', customLabels: [{ id: 'cl_user', name: 'User original label', label: 'X/Y*' }], comments: [{
             id: 'c-user', type: 'text', target: { propIndex: 0, start: 0, end: 5 }, text: 'User comment 原样', author: 'Tester', replies: [{ id: 'r-user', author: 'Other', text: 'Reply 原样' }]
         }], formatTags: [], wordArrows: [], indentation: [0, 0], bracketHighlights: {}, pageAuthor: 'I18n Tester'
 };
@@ -36,7 +36,8 @@ async function snapshot(page) {
     });
 }
 async function picker(page) {
-    await page.locator('.bracket-hitbox[tabindex="0"]').first().click({ force: true });
+    // SVG lines have zero width; use the app's supported keyboard entry path.
+    await page.locator('.bracket-hitbox[tabindex="0"]').first().press('Enter');
     await expect(page.locator('#labelPicker')).toBeVisible();
 }
 for (const [locale, want] of [['zh-CN', 'zh-CN'], ['zh-SG', 'zh-CN'], ['zh-TW', 'en'], ['fr-FR', 'en']]) {
@@ -180,4 +181,31 @@ test('translated confirmation preserves cancel and document data', async ({ page
     });
     await page.locator('#clearBrackets').click();
     expect(await snapshot(page)).toEqual(before);
+});
+test('summary editable selection and contents survive a language change', async ({page}) => {
+    await boot(page);
+    await importFixture(page);
+    const summary = page.locator('#summaryText');
+    await summary.evaluate(el => {
+        el.focus();
+        const range = document.createRange();
+        range.setStart(el.firstChild, 2);
+        range.setEnd(el.firstChild, 8);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+    });
+    const before = await page.evaluate(() => ({text: window.getSelection().toString(), state: window.DA_STATE.mainPointSummary, undo: JSON.stringify(window.DA_STATE.undoStack)}));
+    await page.evaluate(() => window.DA_I18N.setPreference('zh-CN'));
+    expect(await summary.evaluate(el => document.activeElement === el)).toBe(true);
+    expect(await page.evaluate(() => ({text: window.getSelection().toString(), state: window.DA_STATE.mainPointSummary, undo: JSON.stringify(window.DA_STATE.undoStack)}))).toEqual(before);
+});
+test('custom relationship display and name remain verbatim in both languages', async ({page}) => {
+    await boot(page);
+    await importFixture(page);
+    await picker(page);
+    const custom = page.locator('#labelPicker button.cl_user');
+    await expect(custom).toHaveText('User original label (X/Y*)');
+    await page.evaluate(() => window.DA_I18N.setPreference('zh-CN'));
+    await expect(custom).toHaveText('User original label (X/Y*)');
 });
