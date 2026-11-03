@@ -50,6 +50,25 @@
       ? DA_I18N.t(key) : original;
   }
 
+  /** Display only: the raw profile abbreviation is never rewritten or stored. */
+  function selectorPresentation(type) {
+    const t = DA_PROFILES.effectiveType(type);
+    const full = getName(type);
+    const active = DA_PROFILES.getActive();
+    const builtin = active.builtin && DA_PROFILES.builtins()[active.id];
+    const original = builtin && (builtin.labels[t]?.name || DA_CONSTANTS.RELATIONSHIP_LABELS[t]);
+    const compact = DA_I18N.getLocale() === 'zh-CN' && !t.startsWith('cl_')
+      && !!original && DA_PROFILES.getName(t) === original;
+    const key = 'relationship.name.' + variant(t);
+    const english = window.DA_I18N_CATALOGS.en[key];
+    if (!compact || !english) return { compact: false, full, name: full, abbr: '' };
+    const translated = DA_I18N.t(key);
+    const name = translated.endsWith(' ' + english)
+      ? translated.slice(0, -english.length - 1) : translated;
+    const abbr = DA_PROFILES.getAbbr(t);
+    return { compact: true, name, abbr, full: `${translated}（${abbr}）` };
+  }
+
   function getKeywords(type) {
     const key = 'relationship.keywords.' + DA_PROFILES.effectiveType(type);
     const original = DA_CONSTANTS.RELATIONSHIP_DEFINITIONS[type]?.keywords || '';
@@ -69,7 +88,7 @@
   }
 
   window.DA_RELATIONSHIPS = {
-    getName, getDefinition, getKeywords, searchTerms, searchKeywords,
+    getName, getDefinition, getKeywords, selectorPresentation, searchTerms, searchKeywords,
     getGroupName: (name) => groupKeys[name] ? DA_I18N.t(groupKeys[name]) : name
   };
 })();

@@ -39,8 +39,8 @@ function showBracketActions(bracketIdx, centerY, centerX) {
     <div class="menu-divider"></div>
     <div class="color-palette-title" data-i18n="s.S0500">Highlight Rows</div>
     <div class="color-palette">
-      ${pastels.map(c => `<button class="color-swatch" data-color="${c.val}" title="${c.name}" data-i18n-title="${c.key}" style="background-color: ${c.val}"></button>`).join('')}
-      <button class="color-swatch clear-color" data-color="clear" title="Clear Highlight" data-i18n-title="s.S0503">✕</button>
+      ${pastels.map(c => `<button class="color-swatch" data-color="${c.val}" title="${c.name}" data-i18n-title="${c.key}" aria-label="${c.name}" data-i18n-aria-label="${c.key}" style="background-color: ${c.val}"></button>`).join('')}
+      <button class="color-swatch clear-color" data-color="clear" title="Clear Highlight" data-i18n-title="s.S0503" aria-label="Clear Highlight" data-i18n-aria-label="s.S0503">✕</button>
     </div>
     <div class="menu-divider"></div>
     <div class="menu-item danger" data-action="delete" data-i18n="s.S0504">Delete Bracket</div>
@@ -134,8 +134,8 @@ function showTextContextMenu(propIndex, start, end, centerY, centerX, pcol) {
     <div class="menu-divider"></div>`}
     <div class="color-palette-title" data-i18n="s.S0528">Color Code</div>
     <div class="color-palette">
-      ${colors.map(c => `<button class="color-swatch" data-color="${c.val}" title="${c.name}" data-i18n-title="${c.key}" style="background-color: ${c.val}"></button>`).join('')}
-      <button class="color-swatch clear-color" data-color="clear" title="Clear Color" data-i18n-title="s.S0530">✕</button>
+      ${colors.map(c => `<button class="color-swatch" data-color="${c.val}" title="${c.name}" data-i18n-title="${c.key}" aria-label="${c.name}" data-i18n-aria-label="${c.key}" style="background-color: ${c.val}"></button>`).join('')}
+      <button class="color-swatch clear-color" data-color="clear" title="Clear Color" data-i18n-title="s.S0530" aria-label="Clear Color" data-i18n-aria-label="s.S0530">✕</button>
     </div>
   `;
 
@@ -254,8 +254,8 @@ function makePickerResizable(picker) {
     picker.style.maxWidth = 'none';
     picker.style.maxHeight = 'none';
     const onMove = (e2) => {
-      picker.style.width = `${Math.max(320, Math.min(maxW, startW + e2.clientX - startX))}px`;
-      picker.style.height = `${Math.max(320, Math.min(maxH, startH + e2.clientY - startY))}px`;
+      picker.style.width = `${Math.max(Math.min(320, maxW), Math.min(maxW, startW + e2.clientX - startX))}px`;
+      picker.style.height = `${Math.max(Math.min(320, maxH), Math.min(maxH, startH + e2.clientY - startY))}px`;
     };
     const onUp = () => {
       document.removeEventListener('mousemove', onMove);
@@ -266,12 +266,34 @@ function makePickerResizable(picker) {
   });
 }
 
+function paintRelationshipButton(button, type) {
+  const view = DA_RELATIONSHIPS.selectorPresentation(type);
+  button.replaceChildren();
+  button.classList.toggle('relationship-option', view.compact);
+  if (view.compact) {
+    const name = document.createElement('span');
+    name.className = 'relationship-option-name';
+    name.textContent = view.name;
+    const abbr = document.createElement('span');
+    abbr.className = 'relationship-option-abbr';
+    abbr.textContent = view.abbr;
+    button.append(name, document.createTextNode(' '), abbr);
+  } else {
+    button.textContent = view.full;
+  }
+  button.setAttribute('aria-label', view.full);
+  const hint = DA_PROFILES.searchIndexFor(type).altHint;
+  button.title = view.full + (hint ? ' — ' + hint : '');
+}
+
 function showLabelPicker(bracketIdx, centerY, centerX) {
   const existing = document.getElementById('labelPicker');
   if (existing) existing.remove();
 
   const picker = document.createElement('div');
   picker.id = 'labelPicker';
+  picker.setAttribute('role', 'dialog');
+  DA_I18N.bindValue(picker, () => DA_I18N.t('relationship.choose'), 'aria-label');
   picker.className = 'label-picker';
   
   const bracket = DA_STATE.brackets[bracketIdx];
@@ -365,10 +387,10 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
     wrapper.className = 'picker-btn-wrapper';
 
     const btn = document.createElement('button');
-    btn.textContent = labelText;
     btn.dataset.relationshipType = typeKey;
-    btn.title = labelText;
     btn.className = typeKey;
+    btn.setAttribute('aria-pressed', String(typeKey === bracket.type));
+    paintRelationshipButton(btn, typeKey);
     if (isCustom) btn.classList.add('custom-label-btn');
 
     // Apply relationship color
@@ -394,12 +416,11 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
       const idx = DA_PROFILES.searchIndexFor(typeKey);
       wrapper.dataset.searchNames = idx.nameBlob;
       wrapper.dataset.searchKeywords = idx.keywordBlob;
-      if (idx.altHint) btn.title = `${labelText} — ${idx.altHint}`;
     }
 
     const defData = DA_CONSTANTS.RELATIONSHIP_DEFINITIONS?.[typeKey];
     if (defData) {
-      btn.addEventListener('mouseenter', () => {
+      const showDetails = () => {
         // Fill the fixed info slot — never toggle the panel's display.
         // Expanding it on hover reflowed the height-capped picker, shifting
         // the relationship buttons under the cursor mid-click (real
@@ -407,11 +428,13 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
         const hint = infoPanel.querySelector('.info-hint');
         if (hint) hint.style.display = 'none';
         infoPanel.dataset.relationshipType = typeKey;
-        infoPanel.querySelector('.info-name').textContent = btn.textContent;
+        infoPanel.querySelector('.info-name').textContent = DA_RELATIONSHIPS.selectorPresentation(typeKey).full;
         infoPanel.querySelector('.info-name').style.color = color;
         infoPanel.querySelector('.info-def').textContent = window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getDefinition(typeKey) : defData.definition;
         DA_I18N.bindValue(infoPanel.querySelector('.info-keywords'), () => (defData.keywords ? DA_I18N.t('relationship.keywords', { keywords: DA_RELATIONSHIPS.getKeywords(typeKey) }) : ''), 'text');
-      });
+      };
+      btn.addEventListener('mouseenter', showDetails);
+      btn.addEventListener('focus', showDetails);
     }
 
     wrapper.appendChild(btn);
@@ -446,6 +469,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
     
     const header = document.createElement('h4');
     header.className = 'picker-group-header';
+    header.title = group.name;
     DA_I18N.bindValue(header, () => DA_RELATIONSHIPS.getGroupName(group.name));
     groupDiv.appendChild(header);
 
@@ -471,6 +495,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
 
         const subHeader = document.createElement('h5');
         subHeader.className = 'picker-subgroup-header';
+        subHeader.title = sub.name;
         DA_I18N.bindValue(subHeader, () => DA_RELATIONSHIPS.getGroupName(sub.name));
         subDiv.appendChild(subHeader);
 
@@ -1074,14 +1099,12 @@ function refreshRelationshipPickerLanguage() {
     const type = button.dataset.relationshipType;
     // Custom cl_ labels are resolved by the existing picker, never translated.
     if (type.startsWith('cl_')) return;
-    button.textContent = DA_RELATIONSHIPS.getName(type);
-    const hint = DA_PROFILES.searchIndexFor(type).altHint;
-    button.title = button.textContent + (hint ? ' — ' + hint : '');
+    paintRelationshipButton(button, type);
   });
   const info = picker.querySelector('.picker-info-panel');
   const type = info?.dataset.relationshipType;
   if (type) {
-    info.querySelector('.info-name').textContent = DA_RELATIONSHIPS.getName(type);
+    info.querySelector('.info-name').textContent = DA_RELATIONSHIPS.selectorPresentation(type).full;
     info.querySelector('.info-def').textContent = DA_RELATIONSHIPS.getDefinition(type);
     const keywords = DA_RELATIONSHIPS.getKeywords(type);
     DA_I18N.bindValue(info.querySelector('.info-keywords'), () => (keywords ? DA_I18N.t('relationship.keywords', { keywords }) : ''), 'text');
@@ -1090,4 +1113,12 @@ function refreshRelationshipPickerLanguage() {
 
 window.DA_UI = Object.assign(window.DA_UI || {}, {
   refreshRelationshipPickerLanguage, showBracketActions, showTextContextMenu, showLabelPicker, computeLabelPickerPosition, showExportMenu, showOpenMenu, showAlternateViewsMenu, showParallelDialog, showArrowActions
+});
+
+// Viewport changes must not leave a modeless picker outside the reachable area.
+window.addEventListener('resize', () => {
+  document.querySelectorAll('#labelPicker, #openPicker').forEach((picker) => {
+    picker.style.maxHeight = `${Math.max(0, window.innerHeight - 16)}px`;
+    DA_UI.clampToViewport(picker);
+  });
 });

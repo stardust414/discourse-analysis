@@ -185,7 +185,9 @@ function addReplyToComment(comment, text) {
  */
 function manageDialogFocus(dialog, opts = {}) {
   let opener = document.activeElement;
-  if (!(opener instanceof HTMLElement) || opener === document.body) opener = null;
+  const canRestore = opener instanceof HTMLElement
+    || (typeof SVGElement !== 'undefined' && opener instanceof SVGElement);
+  if (!canRestore || opener === document.body) opener = null;
 
   const FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), '
     + 'select:not([disabled]), textarea:not([disabled]), '
