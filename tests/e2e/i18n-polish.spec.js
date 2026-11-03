@@ -119,7 +119,10 @@ for (const language of ['en', 'zh-CN']) test(`upstream copy correction: double-c
   expect(await page.evaluate(() => getSelection().toString().length)).toBeGreaterThan(0);
   await page.evaluate(() => { const el = document.querySelector('.proposition-text'); el.focus(); const r = document.createRange(); const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); r.setStart(w.nextNode(), 6); r.collapse(true); const s = getSelection(); s.removeAllRanges(); s.addRange(r); });
   await page.keyboard.press('Enter'); await expect(page.locator('.proposition-block')).toHaveCount(2);
-  expect(await page.evaluate(() => window.DA_STATE.propositions)).toEqual(['Alpha', 'beta gamma delta.']); expect(errors).toEqual([]);
+  expect(await page.evaluate(() => window.DA_STATE.propositions)).toEqual(['Alpha', 'beta gamma delta.']);
+  await page.evaluate(() => window.DA_UI.showParallelDialog());
+  await expect(page.locator('.parallel-dialog .hint-small')).toContainText(language === 'zh-CN' ? '续行初始为空' : 'continuation cells start empty');
+  expect(errors).toEqual([]);
 });
 for (const script of ['greek', 'hebrew']) test(`original-script fonts direction and parallel text remain valid: ${script}`, async ({ page }) => {
   const errors = await boot(page); await page.setViewportSize({ width: 800, height: 572 });

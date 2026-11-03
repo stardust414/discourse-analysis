@@ -474,7 +474,7 @@ window.DA_I18N_CATALOGS["en"] = Object.freeze({
   "s.S0579": "Show Parallel Column…",
   "s.S0581": "Hide Parallel Column",
   "s.S0613": "Parallel Column",
-  "s.S0617": "Editable beside the text (splits with Enter in Text Edit mode) and saved with the project.",
+  "s.S0617": "Each verse is loaded on its first row; continuation cells start empty. Editable beside the text (splits with Enter in Text Edit mode) and saved with the project.",
   "s.S0618": "Show",
   "s.S0640": "Use / for split, * for star",
   "s.S0641": "Apply & Save",
