@@ -1,0 +1,420 @@
+{
+  "generated": "2026-11-03T14:23:34.539Z",
+  "baseline": "98da0241c38eef936be0f06cf736aa607dda0b62",
+  "branch": "codex/zh-cn-i18n",
+  "validatedCommit": "cd694bbfa85d5bf31b97589bae3afbeffe16db14",
+  "implementationFrozenCommit": "120666a12e727fefd6f0e2d44d56ebc752367053",
+  "cleanBeforeRegression": true,
+  "cleanAfterRegression": true,
+  "appVersion": "3.3.1",
+  "architecture": "arm64",
+  "environment": {
+    "node": "v26.12.0",
+    "npm": "11.20.0",
+    "electron": "28.3.3",
+    "electronBuilder": "24.13.3",
+    "playwright": "1.61.1"
+  },
+  "sourceManifest": [
+    {
+      "file": "app.js",
+      "gitBlob": "8407f1832d55c1c88107c4d0307c6f1c6f1dedc7",
+      "sha256": "e5cc392d8c95946fdb1803ef4a451f1f8a93db45745c45d3ee108d29872bbb1c",
+      "bytes": 29015
+    },
+    {
+      "file": "index.html",
+      "gitBlob": "63238ca31e79512d0e670a15ddb03e4f3e2cb1fb",
+      "sha256": "4766e7dff89211d845e6aac9caaf8ce1c646ac1d7c79c309c80ce32fb790a2e5",
+      "bytes": 30996
+    },
+    {
+      "file": "js/i18n/en.js",
+      "gitBlob": "a7650847993defe9c79b5d001250ad0ed60fd98a",
+      "sha256": "90153b14379da4647281f8983342362e0e4c10ee90bd6a1f00cb79ef35812881",
+      "bytes": 29871
+    },
+    {
+      "file": "js/i18n/i18n.js",
+      "gitBlob": "aa6365d0b7270a30479f579a0c2df6e1c1fce858",
+      "sha256": "534997593b66cdfa6fbfee91557b20cfdf7c66ebda91f37bf5eb10331f63a24c",
+      "bytes": 7148
+    },
+    {
+      "file": "js/i18n/native-menu.cjs",
+      "gitBlob": "793acb5cc447e7a49400a2cd9985ed4db798abfe",
+      "sha256": "47e8d73e2c8f171e511eeb0883f05efb5ea9c16c2faef992f77366885e2e87ef",
+      "bytes": 1688
+    },
+    {
+      "file": "js/i18n/relationships.js",
+      "gitBlob": "1adb88f06c294844b8d8a6505b7fd86a03e9b6cd",
+      "sha256": "71962683ff76d7d654a367b45619ec3d719a629ae51c3a28755193a4b4348601",
+      "bytes": 4216
+    },
+    {
+      "file": "js/i18n/zh-CN.js",
+      "gitBlob": "91709a0d44b46da1760b3eddd67c719774286266",
+      "sha256": "48a6d8ba580cb97aeea20904e836b4c4ca4111122eb99f32e4d863a066ce0f33",
+      "bytes": 31497
+    },
+    {
+      "file": "js/services/bible-service.js",
+      "gitBlob": "f847dc7fec194c9300b858276a7e60062c992016",
+      "sha256": "506408e80f3254669979689539b953379f43739308c4e73373be135289442911",
+      "bytes": 15611
+    },
+    {
+      "file": "js/services/cloud-sync.js",
+      "gitBlob": "385839472699d18680b57d1338d26810bd384913",
+      "sha256": "c4b3775acce0f0fa23749e01d0e35c5f2277c90dfab1612f3a5d46a4ea8d755b",
+      "bytes": 13179
+    },
+    {
+      "file": "js/services/export-service.js",
+      "gitBlob": "0e2a3dacc2b8d0b32470a473c7a0a131c8a1d667",
+      "sha256": "d78627e2bae07b77f6f8a9dc7fe6a3a35c12acaa26caadc01a5f000c08c692b0",
+      "bytes": 19995
+    },
+    {
+      "file": "js/services/firebase-config.js",
+      "gitBlob": "e60dcf2ecd27255492f0ea82461b5ed16701cbeb",
+      "sha256": "769561b2fadf62f405907da7c9ca746cf80fa1bdc544bc4df4ff44066ab279b4",
+      "bytes": 591
+    },
+    {
+      "file": "js/services/keyboard-handler.js",
+      "gitBlob": "a4ab3152eea2d54f5bbc6b54ab8dc576e34858aa",
+      "sha256": "81754565bd253f0991bef80e9b6e77243d22b37fdcf8e4fe0dddc36de9e75792",
+      "bytes": 26759
+    },
+    {
+      "file": "js/services/mode-service.js",
+      "gitBlob": "9d59b2cebdaef5cae1ecd468f040e76b04d9ef39",
+      "sha256": "9e1c767ad13e9dca085a4320a18945d51b0c40e7cab52db51da9ea5961f4a5da",
+      "bytes": 3376
+    },
+    {
+      "file": "js/services/mouse-handler.js",
+      "gitBlob": "d75a091088105f67b0fdc9a4a09a724e61f5e633",
+      "sha256": "73c9e4e79c115ffc14433e1ce76464e0877887678ed64e8f2f071c859a2996e5",
+      "bytes": 14349
+    },
+    {
+      "file": "js/services/notation-ui.js",
+      "gitBlob": "dd0973486d4329e0f843a42057bcd3cda5e3e993",
+      "sha256": "bc326504a3631ea4a8a4d9cba8acaaa4722019c55bc5e9fdb4034aaf8cb870c2",
+      "bytes": 11400
+    },
+    {
+      "file": "js/services/persistence.js",
+      "gitBlob": "9c148f885cf319b8a4b75c134785d1b3b312170c",
+      "sha256": "a30f8fdd69c8f394a5ec0e1e40043965d29802531dab181c6306d5b52711d26f",
+      "bytes": 34884
+    },
+    {
+      "file": "js/services/profiles.js",
+      "gitBlob": "8341781e771f63493054edcc04388f59f57d3627",
+      "sha256": "c93c9e07613ff0f1753970510f1a125fdc7c5cbe0b31c44f60b2f7657948bf0d",
+      "bytes": 22521
+    },
+    {
+      "file": "js/services/state.js",
+      "gitBlob": "c248722290601ec12f4b3c40e0fecaba7697b33a",
+      "sha256": "59375df77d366fbcfd68d4f31499f0322a4b3e5275c0519ffe68e5e6165d65be",
+      "bytes": 12070
+    },
+    {
+      "file": "js/utils/block-diagram.js",
+      "gitBlob": "5323a2c759149d4e8e1072c9d125ee4bc45f7aa7",
+      "sha256": "d85a9fa157ee8e080456b895fa023e27af3e2a49379d8fad9869f04be665433b",
+      "bytes": 10618
+    },
+    {
+      "file": "js/utils/constants.js",
+      "gitBlob": "cc20825d92b45f30bd1cb683afb6275bd6bc7b59",
+      "sha256": "468a468d89b585e1272feba732285f90ec0dd9d33817bd807b5c195176cfa1b7",
+      "bytes": 14949
+    },
+    {
+      "file": "js/utils/editor-logic.js",
+      "gitBlob": "01d5103064db24a3e2fdca907788236f35b782cd",
+      "sha256": "108731d7f84a77e80d1f55756194086c40244df26103cf7f73c1884257884265",
+      "bytes": 53327
+    },
+    {
+      "file": "js/utils/init.js",
+      "gitBlob": "8a79176e306dbefc691d60cf52fa1d8677b41907",
+      "sha256": "f773670c32f78dd8925c651044fcb5cdaef42bb34b3f0ab278f86418032fc9a0",
+      "bytes": 1589
+    },
+    {
+      "file": "js/utils/main-point-summary.js",
+      "gitBlob": "57576fdcc3453eff7b65156d72f20eeb26f1b97a",
+      "sha256": "365cc1f01e825e1ba9dbcbc2d3a6604c3001686254f39e88a638509a8e962a27",
+      "bytes": 13818
+    },
+    {
+      "file": "js/utils/paste-parser.js",
+      "gitBlob": "21ab69f029f682079f21064634ba9c0d0c1ac9ef",
+      "sha256": "fdfa978501d5f0bf188578afb063829e62f06394e472448ba4d945d09ae39176",
+      "bytes": 16520
+    },
+    {
+      "file": "js/utils/render-arrows.js",
+      "gitBlob": "73128e1c2b3d5395747638694b0a4562b95fe454",
+      "sha256": "de2423190709f915838b890538120504c722444b1e0211cfb264c77377fdb75d",
+      "bytes": 9362
+    },
+    {
+      "file": "js/utils/render-brackets.js",
+      "gitBlob": "861182f54bda2071204834f14cac26dc5a5c311a",
+      "sha256": "e3f5fe23dba7f653efaef63cf4f8de5b95d05e03faacc6bd3a078b216a110a0d",
+      "bytes": 28380
+    },
+    {
+      "file": "js/utils/render-comments.js",
+      "gitBlob": "353b46c295ad79003145cd7a5404d1dff3ec2bc4",
+      "sha256": "82cab5ae0b65e5bcd6637c0d639fc7cc99feaf97febc4df0c32e4b08e7370cd4",
+      "bytes": 5644
+    },
+    {
+      "file": "js/utils/render-labels.js",
+      "gitBlob": "41693d14d37c2305ac02e01678bca8adca7589fb",
+      "sha256": "72a7d715fd0a9464ec91d1b8942f614106fcd2ffb7277b7fbf7ed73a8cbf00f1",
+      "bytes": 6183
+    },
+    {
+      "file": "js/utils/render-model.js",
+      "gitBlob": "48c8152a8b0eff58f0f23bfc833e12c5ad0963bd",
+      "sha256": "9f75fe17c49eff78dbcd9daf948acf2c67468e64ab7849bef7c4b7e5f595515f",
+      "bytes": 10318
+    },
+    {
+      "file": "js/utils/render-propositions.js",
+      "gitBlob": "81d86f5bde0f8eda385e510fa11e6f5320ef39e3",
+      "sha256": "f687163edcd68b6838c3e33ee76710de1950238bb638c294b4aa5820bab95016",
+      "bytes": 32985
+    },
+    {
+      "file": "js/utils/rendering-engine.js",
+      "gitBlob": "c85546b71d78540c00305b1371e168fd23a43825",
+      "sha256": "c5aa80bfbdc4966dfd8fe1b0122909c8438e560bf6296ca9c4ed3630f05bdd0e",
+      "bytes": 1713
+    },
+    {
+      "file": "js/utils/ui-comments.js",
+      "gitBlob": "471daa85ef380e96c0a9a793767d58f7cd369548",
+      "sha256": "89d19d5d8b9cf06295757d7bdb008ec9c4dfdc83c6f1090e6fc361e9b76d474e",
+      "bytes": 15297
+    },
+    {
+      "file": "js/utils/ui-dialogs.js",
+      "gitBlob": "f447de84a3b6c248e19d3a696a89a7acdbf766bf",
+      "sha256": "f2a734318f757598d0845758aa93f9a3648d9fb9788419359e1590fbb6d54e98",
+      "bytes": 22846
+    },
+    {
+      "file": "js/utils/ui-menus.js",
+      "gitBlob": "b376ba5bbb7cdcf896294d69a684d1783517e1ad",
+      "sha256": "701ed94c3c0eb03932d16c660bfcba5154e237afbe538b9b6970da7604ef7ebc",
+      "bytes": 49745
+    },
+    {
+      "file": "js/utils/ui.js",
+      "gitBlob": "a2a45465eba6a83daf7af2490d768d103efd245b",
+      "sha256": "06aa9737d0fbe79aa0b137e65024dd8f444cdd4dcb2fce2eb6b315d45818c6c3",
+      "bytes": 14432
+    },
+    {
+      "file": "js/vendor/html2canvas.min.js",
+      "gitBlob": "aed6bfd70defa322824e5cba11b3ad5d6061ee28",
+      "sha256": "e87e550794322e574a1fda0c1549a3c70dae5a93d9113417a429016838eab8cb",
+      "bytes": 198689
+    },
+    {
+      "file": "js/vendor/jspdf.umd.min.js",
+      "gitBlob": "a9781f1dc03f77453adf11c8be05105330fefadc",
+      "sha256": "98ccf17aa10c20bb1301762618fcc9b6ab3a4e7f26b6071d64d0b41154df3875",
+      "bytes": 364463
+    },
+    {
+      "file": "js/vendor/lz-string.min.js",
+      "gitBlob": "2d1900a0d3e4d2854479474903d0a4cf24e9944f",
+      "sha256": "9d1a0ef07a2ea5faa8cd4afb60a0518075e6771e341e5ff4e0e481cefedeecbf",
+      "bytes": 4719
+    },
+    {
+      "file": "main.js",
+      "gitBlob": "8aa772b8cb1dd4d75592c46df6b20518780dfb1a",
+      "sha256": "73af227d4c5d55a3c9c7b63af840f4e6e5046b9742be363fb5f3a633a2fabbc0",
+      "bytes": 7260
+    },
+    {
+      "file": "preload.js",
+      "gitBlob": "ef242f4470333d7f7593e9a08947d5d9f0805d56",
+      "sha256": "f3a7d6a241e502f89008433dc39440d42506e22c48ae8a1679f4cd0c3d9b2286",
+      "bytes": 680
+    },
+    {
+      "file": "styles.css",
+      "gitBlob": "0eee2ab51905e91d2a02228228631028326d8df9",
+      "sha256": "88ad55f8a5657e8591767355692c9cb6f1b6289291a5c13f371698cda06c15ca",
+      "bytes": 83213
+    }
+  ],
+  "asarFiles": [
+    "app.js",
+    "index.html",
+    "js/i18n/en.js",
+    "js/i18n/i18n.js",
+    "js/i18n/native-menu.cjs",
+    "js/i18n/relationships.js",
+    "js/i18n/zh-CN.js",
+    "js/services/bible-service.js",
+    "js/services/cloud-sync.js",
+    "js/services/export-service.js",
+    "js/services/firebase-config.js",
+    "js/services/keyboard-handler.js",
+    "js/services/mode-service.js",
+    "js/services/mouse-handler.js",
+    "js/services/notation-ui.js",
+    "js/services/persistence.js",
+    "js/services/profiles.js",
+    "js/services/state.js",
+    "js/utils/block-diagram.js",
+    "js/utils/constants.js",
+    "js/utils/editor-logic.js",
+    "js/utils/init.js",
+    "js/utils/main-point-summary.js",
+    "js/utils/paste-parser.js",
+    "js/utils/render-arrows.js",
+    "js/utils/render-brackets.js",
+    "js/utils/render-comments.js",
+    "js/utils/render-labels.js",
+    "js/utils/render-model.js",
+    "js/utils/render-propositions.js",
+    "js/utils/rendering-engine.js",
+    "js/utils/ui-comments.js",
+    "js/utils/ui-dialogs.js",
+    "js/utils/ui-menus.js",
+    "js/utils/ui.js",
+    "js/vendor/html2canvas.min.js",
+    "js/vendor/jspdf.umd.min.js",
+    "js/vendor/lz-string.min.js",
+    "main.js",
+    "package.json",
+    "preload.js",
+    "styles.css"
+  ],
+  "protectedUpstreamFiles": [
+    "package.json",
+    "package-lock.json",
+    "README.md",
+    "build/icon.png",
+    "js/utils/constants.js",
+    "js/services/state.js",
+    "js/utils/render-labels.js",
+    "js/utils/render-model.js"
+  ],
+  "protectedFunctions": [
+    [
+      "js/utils/editor-logic.js",
+      "mergePropositions"
+    ],
+    [
+      "js/services/export-service.js",
+      "buildBracketData"
+    ],
+    [
+      "js/services/persistence.js",
+      "normalizeBracketData"
+    ]
+  ],
+  "builtinProfileDefinitionsUnchanged": true,
+  "originalComparator": {
+    "filesMatched": 36,
+    "baseline": "98da0241c38eef936be0f06cf736aa607dda0b62",
+    "from": "retained baseline ZIP extraction"
+  },
+  "priorPackagesUnchanged": [
+    {
+      "path": "dist/Discourse Analysis-3.3.1-arm64-mac.zip",
+      "bytes": 91730757,
+      "sha256": "ce308a0e44b49e9400c50439adb51e3bc7eb2d0e924ce4b93dcd20602f24d1c7"
+    },
+    {
+      "path": "dist/phase3-i18n/Discourse Analysis-3.3.1-arm64-mac.zip",
+      "bytes": 91739286,
+      "sha256": "6e68081c4960392df74179c85e822f97c280f89c1af8c07a8961921dca488f6c"
+    },
+    {
+      "path": "dist/phase4-zh-CN/Discourse Analysis-3.3.1-arm64-mac.zip",
+      "bytes": 91754482,
+      "sha256": "582204834416bc6636a090c6a61ce140fa20994ed8311a25ff4cb84559181c51"
+    },
+    {
+      "path": "dist/phase5-zh-CN/Discourse Analysis-3.3.1-arm64-mac.zip",
+      "bytes": 91756978,
+      "sha256": "f69e45073aee2ca67a8ea2573d85b155eaf61580c16b7402e2aba6ca86d7e8a6"
+    }
+  ],
+  "unit": {
+    "passed": 343,
+    "total": 343,
+    "original": 275
+  },
+  "e2e": {
+    "passed": 107,
+    "total": 107,
+    "original": 30
+  },
+  "audit": {
+    "issues": [],
+    "englishKeys": 600,
+    "chineseKeys": 600,
+    "explicitKeysChecked": 434,
+    "sourceFiles": 37,
+    "sourceRecords": 2397,
+    "intentionalFallback": []
+  },
+  "native": {
+    "passed": 20,
+    "total": 20,
+    "pageErrors": [],
+    "finished": "2026-11-03T14:22:36.703Z",
+    "compatibility": "pass"
+  },
+  "stage5MatrixRetained": {
+    "native": 30,
+    "browser": 40,
+    "rerun": false,
+    "reason": "no application or CSS changes in stage 6"
+  },
+  "artifact": {
+    "path": "dist/final-zh-CN/Discourse Analysis-3.3.1-zh-CN-arm64-mac.zip",
+    "filename": "Discourse Analysis-3.3.1-zh-CN-arm64-mac.zip",
+    "zip_crc_ok": true,
+    "zip_members": 253,
+    "roots": [
+      "Discourse Analysis.app"
+    ],
+    "forbidden_entries": [],
+    "sha256": "739b41c1f7b255b66a0637a461ec1f374f23b91b92959c7bf423b4eea21a6eab",
+    "bytes": 91756978,
+    "renamed_copy_identical": true
+  },
+  "signature": {
+    "developerId": false,
+    "notarized": false,
+    "existingElectronBinarySignature": "adhoc linker-signed, no TeamIdentifier; not a Developer ID signature",
+    "policyChanged": false
+  },
+  "copyrightAndAttributionPreserved": true,
+  "publicActions": {
+    "push": false,
+    "release": false,
+    "pr": false,
+    "upload": false
+  }
+}

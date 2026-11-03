@@ -1,0 +1,253 @@
+Discourse Analysis.app/
+Discourse Analysis.app/Contents/
+Discourse Analysis.app/Contents/Frameworks/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (GPU).app/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (GPU).app/Contents/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (GPU).app/Contents/Info.plist
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (GPU).app/Contents/MacOS/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (GPU).app/Contents/MacOS/Discourse Analysis Helper (GPU)
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (GPU).app/Contents/PkgInfo
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Plugin).app/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Plugin).app/Contents/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Plugin).app/Contents/Info.plist
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Plugin).app/Contents/MacOS/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Plugin).app/Contents/MacOS/Discourse Analysis Helper (Plugin)
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Plugin).app/Contents/PkgInfo
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Renderer).app/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Renderer).app/Contents/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Renderer).app/Contents/Info.plist
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Renderer).app/Contents/MacOS/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Renderer).app/Contents/MacOS/Discourse Analysis Helper (Renderer)
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper (Renderer).app/Contents/PkgInfo
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper.app/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper.app/Contents/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper.app/Contents/Info.plist
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper.app/Contents/MacOS/
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper.app/Contents/MacOS/Discourse Analysis Helper
+Discourse Analysis.app/Contents/Frameworks/Discourse Analysis Helper.app/Contents/PkgInfo
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Electron Framework
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Helpers
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Libraries
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Resources
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libEGL.dylib
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libGLESv2.dylib
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/vk_swiftshader_icd.json
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/Info.plist
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/MainMenu.nib
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/af.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/af.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/am.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/am.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ar.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ar.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bg.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bg.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bn.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bn.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ca.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ca.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_100_percent.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_200_percent.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/cs.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/cs.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/da.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/da.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/de.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/de.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/el.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/el.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_GB.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_GB.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_419.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_419.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/et.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/et.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fa.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fa.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fi.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fi.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fil.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fil.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fr.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fr.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/gu.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/gu.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/he.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/he.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hi.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hi.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hr.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hr.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hu.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hu.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/icudtl.dat
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/id.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/id.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/it.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/it.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ja.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ja.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/kn.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/kn.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ko.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ko.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lt.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lt.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lv.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lv.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ml.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ml.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/mr.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/mr.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ms.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ms.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nb.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nb.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nl.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nl.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pl.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pl.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_BR.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_BR.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_PT.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_PT.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/resources.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ro.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ro.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ru.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ru.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sk.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sk.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sl.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sl.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sr.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sr.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sv.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sv.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sw.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sw.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ta.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ta.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/te.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/te.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/th.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/th.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/tr.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/tr.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/uk.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/uk.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ur.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ur.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/v8_context_snapshot.arm64.bin
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW.lproj/
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW.lproj/locale.pak
+Discourse Analysis.app/Contents/Frameworks/Electron Framework.framework/Versions/Current
+Discourse Analysis.app/Contents/Frameworks/Mantle.framework/
+Discourse Analysis.app/Contents/Frameworks/Mantle.framework/Mantle
+Discourse Analysis.app/Contents/Frameworks/Mantle.framework/Resources
+Discourse Analysis.app/Contents/Frameworks/Mantle.framework/Versions/
+Discourse Analysis.app/Contents/Frameworks/Mantle.framework/Versions/A/
+Discourse Analysis.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle
+Discourse Analysis.app/Contents/Frameworks/Mantle.framework/Versions/A/Resources/
+Discourse Analysis.app/Contents/Frameworks/Mantle.framework/Versions/A/Resources/Info.plist
+Discourse Analysis.app/Contents/Frameworks/Mantle.framework/Versions/Current
+Discourse Analysis.app/Contents/Frameworks/ReactiveObjC.framework/
+Discourse Analysis.app/Contents/Frameworks/ReactiveObjC.framework/ReactiveObjC
+Discourse Analysis.app/Contents/Frameworks/ReactiveObjC.framework/Resources
+Discourse Analysis.app/Contents/Frameworks/ReactiveObjC.framework/Versions/
+Discourse Analysis.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/
+Discourse Analysis.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC
+Discourse Analysis.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/Resources/
+Discourse Analysis.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/Resources/Info.plist
+Discourse Analysis.app/Contents/Frameworks/ReactiveObjC.framework/Versions/Current
+Discourse Analysis.app/Contents/Frameworks/Squirrel.framework/
+Discourse Analysis.app/Contents/Frameworks/Squirrel.framework/Resources
+Discourse Analysis.app/Contents/Frameworks/Squirrel.framework/Squirrel
+Discourse Analysis.app/Contents/Frameworks/Squirrel.framework/Versions/
+Discourse Analysis.app/Contents/Frameworks/Squirrel.framework/Versions/A/
+Discourse Analysis.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/
+Discourse Analysis.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/Info.plist
+Discourse Analysis.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt
+Discourse Analysis.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel
+Discourse Analysis.app/Contents/Frameworks/Squirrel.framework/Versions/Current
+Discourse Analysis.app/Contents/Info.plist
+Discourse Analysis.app/Contents/MacOS/
+Discourse Analysis.app/Contents/MacOS/Discourse Analysis
+Discourse Analysis.app/Contents/PkgInfo
+Discourse Analysis.app/Contents/Resources/
+Discourse Analysis.app/Contents/Resources/af.lproj/
+Discourse Analysis.app/Contents/Resources/am.lproj/
+Discourse Analysis.app/Contents/Resources/app-update.yml
+Discourse Analysis.app/Contents/Resources/app.asar
+Discourse Analysis.app/Contents/Resources/ar.lproj/
+Discourse Analysis.app/Contents/Resources/bg.lproj/
+Discourse Analysis.app/Contents/Resources/bn.lproj/
+Discourse Analysis.app/Contents/Resources/ca.lproj/
+Discourse Analysis.app/Contents/Resources/cs.lproj/
+Discourse Analysis.app/Contents/Resources/da.lproj/
+Discourse Analysis.app/Contents/Resources/de.lproj/
+Discourse Analysis.app/Contents/Resources/el.lproj/
+Discourse Analysis.app/Contents/Resources/en.lproj/
+Discourse Analysis.app/Contents/Resources/en_GB.lproj/
+Discourse Analysis.app/Contents/Resources/es.lproj/
+Discourse Analysis.app/Contents/Resources/es_419.lproj/
+Discourse Analysis.app/Contents/Resources/et.lproj/
+Discourse Analysis.app/Contents/Resources/fa.lproj/
+Discourse Analysis.app/Contents/Resources/fi.lproj/
+Discourse Analysis.app/Contents/Resources/fil.lproj/
+Discourse Analysis.app/Contents/Resources/fr.lproj/
+Discourse Analysis.app/Contents/Resources/gu.lproj/
+Discourse Analysis.app/Contents/Resources/he.lproj/
+Discourse Analysis.app/Contents/Resources/hi.lproj/
+Discourse Analysis.app/Contents/Resources/hr.lproj/
+Discourse Analysis.app/Contents/Resources/hu.lproj/
+Discourse Analysis.app/Contents/Resources/icon.icns
+Discourse Analysis.app/Contents/Resources/id.lproj/
+Discourse Analysis.app/Contents/Resources/it.lproj/
+Discourse Analysis.app/Contents/Resources/ja.lproj/
+Discourse Analysis.app/Contents/Resources/kn.lproj/
+Discourse Analysis.app/Contents/Resources/ko.lproj/
+Discourse Analysis.app/Contents/Resources/lt.lproj/
+Discourse Analysis.app/Contents/Resources/lv.lproj/
+Discourse Analysis.app/Contents/Resources/ml.lproj/
+Discourse Analysis.app/Contents/Resources/mr.lproj/
+Discourse Analysis.app/Contents/Resources/ms.lproj/
+Discourse Analysis.app/Contents/Resources/nb.lproj/
+Discourse Analysis.app/Contents/Resources/nl.lproj/
+Discourse Analysis.app/Contents/Resources/pl.lproj/
+Discourse Analysis.app/Contents/Resources/pt_BR.lproj/
+Discourse Analysis.app/Contents/Resources/pt_PT.lproj/
+Discourse Analysis.app/Contents/Resources/ro.lproj/
+Discourse Analysis.app/Contents/Resources/ru.lproj/
+Discourse Analysis.app/Contents/Resources/sk.lproj/
+Discourse Analysis.app/Contents/Resources/sl.lproj/
+Discourse Analysis.app/Contents/Resources/sr.lproj/
+Discourse Analysis.app/Contents/Resources/sv.lproj/
+Discourse Analysis.app/Contents/Resources/sw.lproj/
+Discourse Analysis.app/Contents/Resources/ta.lproj/
+Discourse Analysis.app/Contents/Resources/te.lproj/
+Discourse Analysis.app/Contents/Resources/th.lproj/
+Discourse Analysis.app/Contents/Resources/tr.lproj/
+Discourse Analysis.app/Contents/Resources/uk.lproj/
+Discourse Analysis.app/Contents/Resources/ur.lproj/
+Discourse Analysis.app/Contents/Resources/vi.lproj/
+Discourse Analysis.app/Contents/Resources/zh_CN.lproj/
+Discourse Analysis.app/Contents/Resources/zh_TW.lproj/

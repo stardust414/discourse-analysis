@@ -1,0 +1,278 @@
+{
+  "started": "2026-11-03T14:22:03.846Z",
+  "steps": [
+    {
+      "name": "01 最终 ZIP 首次启动、Welcome、默认 Follow System",
+      "status": "pass",
+      "detail": {
+        "version": "3.3.1",
+        "packaged": true,
+        "arch": "arm64",
+        "userData": "<test-user-data>",
+        "sessionData": "<test-session-data>",
+        "preferredLanguages": [
+          "zh-Hans-CN",
+          "el-CN",
+          "en-CN"
+        ],
+        "locale": "zh-CN",
+        "system": [
+          "zh-Hans-CN",
+          "el-CN",
+          "en-CN"
+        ],
+        "expected": "zh-CN"
+      }
+    },
+    {
+      "name": "02 简体中文设置和原生菜单",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "03 English 设置和原生菜单",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "04 跟随实际系统语言并切回中文",
+      "status": "pass",
+      "detail": {
+        "preference": "system",
+        "locale": "zh-CN",
+        "expected": "zh-CN",
+        "languages": [
+          "zh-Hans-CN",
+          "el-CN",
+          "en-CN"
+        ]
+      }
+    },
+    {
+      "name": "05 网络载入真实 John 1:1-3 ESV",
+      "status": "pass",
+      "detail": {
+        "reference": "John 1:1-3",
+        "source": "(ESV)"
+      }
+    },
+    {
+      "name": "06 光标处 Enter 拆分",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "07 圆点建立 Ground 和 Action-Purpose",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "08 关系选择器和中文搜索",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "09 英文和原简称搜索保持有效",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "10 五套 profile 真实切换、ID 与简称",
+      "status": "pass",
+      "detail": [
+        "josiah",
+        "biblearc",
+        "gurtner",
+        "beale",
+        "schreiner"
+      ]
+    },
+    {
+      "name": "11 五套 Relationship Guide 名称、定义与分组",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "12 Block Diagram",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "13 Comments 和回复",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "14 Main Point Summary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "15 真实 CUV Parallel Column",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "16 自定义关系、个人方案、用户名与 schema 边界",
+      "status": "pass",
+      "detail": {
+        "projectVersion": 3,
+        "profileSchemaVersion": 1,
+        "profileId": "final-qa-custom",
+        "projectKeys": [
+          "version",
+          "passageRef",
+          "isRTL",
+          "isHebrew",
+          "isGreek",
+          "propositions",
+          "verseRefs",
+          "verseBreaks",
+          "parallelTexts",
+          "parallelLabel",
+          "parallelHidden",
+          "mainPointSummary",
+          "brackets",
+          "formatTags",
+          "wordArrows",
+          "comments",
+          "copyrightLabel",
+          "pageAuthor",
+          "activeProjectId",
+          "customLabels",
+          "indentation",
+          "bracketHighlights"
+        ]
+      }
+    },
+    {
+      "name": "17 中文保存 JSON → English 打开 → 中文打开",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "18 PNG 导出并从文件恢复完整项目",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "19 PDF 导出并从文件恢复完整项目",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "20 重启后中文与自定义 profile 保留",
+      "status": "pass",
+      "detail": null
+    }
+  ],
+  "pageErrors": [],
+  "compatibility": {
+    "status": "pass",
+    "originalInfo": {
+      "version": "3.3.1",
+      "packaged": true,
+      "arch": "arm64",
+      "userData": "<test-user-data>",
+      "sessionData": "<test-session-data>",
+      "preferredLanguages": [
+        "zh-Hans-CN",
+        "el-CN",
+        "en-CN"
+      ]
+    },
+    "projectVersion": 3,
+    "profileId": "final-qa-custom",
+    "compared": "all serialized fields except exportedAt; custom profile compared separately in original local store",
+    "expected": {
+      "version": 3,
+      "passageRef": "John 1:1-3",
+      "isRTL": false,
+      "isHebrew": false,
+      "isGreek": false,
+      "propositions": [
+        "In the beginning",
+        "was the Word, and the Word was with God, and the Word was God.",
+        "He was in the beginning with God.",
+        "All things were made through him, and without him was not any thing made that was made."
+      ],
+      "verseRefs": [
+        "1",
+        "1",
+        "2",
+        "3"
+      ],
+      "verseBreaks": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "parallelTexts": [
+        "太初有道，道與神同在，道就是神。",
+        "",
+        "這道太初與神同在。",
+        "萬物是藉著他造的；凡被造的，沒有一樣不是藉著他造的。"
+      ],
+      "parallelLabel": "CUV",
+      "parallelHidden": false,
+      "mainPointSummary": "Final summary 用户经文主旨摘要，仅验证保存恢复",
+      "brackets": [
+        {
+          "id": "brmw0s1ed0v7ia30",
+          "from": "p0",
+          "to": "p1",
+          "type": "ground",
+          "labelsSwapped": false,
+          "dominanceFlipped": false
+        },
+        {
+          "id": "brmw0s1eh6veufyw",
+          "from": "p2",
+          "to": "p3",
+          "type": "action-purpose",
+          "labelsSwapped": false,
+          "dominanceFlipped": false
+        }
+      ],
+      "formatTags": [],
+      "wordArrows": [],
+      "comments": [
+        {
+          "id": "1793715743245",
+          "author": "Final QA 用户",
+          "text": "Final comment 用户评论保持原样",
+          "timestamp": 1793715743245,
+          "type": "bracket",
+          "target": {
+            "bracketId": "brmw0s1ed0v7ia30"
+          },
+          "replies": [
+            {
+              "author": "Final QA 用户",
+              "text": "Final reply 用户回复",
+              "timestamp": 1793715743314
+            }
+          ]
+        }
+      ],
+      "copyrightLabel": "(ESV)",
+      "pageAuthor": "Final QA 用户",
+      "activeProjectId": null,
+      "customLabels": [
+        {
+          "id": "cl_final_qa",
+          "name": "Custom Ground 用户关系原名",
+          "label": "X / Y*"
+        }
+      ],
+      "indentation": [
+        0
+      ],
+      "bracketHighlights": {}
+    }
+  },
+  "finished": "2026-11-03T14:22:36.703Z",
+  "passed": 20,
+  "failed": 0
+}

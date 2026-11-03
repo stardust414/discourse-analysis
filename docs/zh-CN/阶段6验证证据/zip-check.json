@@ -1,0 +1,11 @@
+{
+  "zip_crc_ok": true,
+  "zip_members": 253,
+  "roots": [
+    "Discourse Analysis.app"
+  ],
+  "forbidden_entries": [],
+  "sha256": "739b41c1f7b255b66a0637a461ec1f374f23b91b92959c7bf423b4eea21a6eab",
+  "bytes": 91756978,
+  "renamed_copy_identical": true
+}

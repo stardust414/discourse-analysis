@@ -1,0 +1,23 @@
+Executable=<zh-cn-worktree>/scratch/phase6/final-zip-extracted/Discourse Analysis.app/Contents/MacOS/Discourse Analysis
+Identifier=Electron
+Format=app bundle with Mach-O thin (arm64)
+CodeDirectory v=20400 size=513 flags=0x20002(adhoc,linker-signed) hashes=13+0 location=embedded
+VersionPlatform=1
+VersionMin=720896
+VersionSDK=917504
+Hash type=sha256 size=32
+CandidateCDHash sha256=00b2d8a1865d374c03ff44b3f0cb071f032ce70c
+CandidateCDHashFull sha256=00b2d8a1865d374c03ff44b3f0cb071f032ce70cc1b44711cb35ac53303e4fd7
+Hash choices=sha256
+CMSDigest=00b2d8a1865d374c03ff44b3f0cb071f032ce70cc1b44711cb35ac53303e4fd7
+CMSDigestType=2
+Executable Segment base=0
+Executable Segment limit=16384
+Executable Segment flags=0x1
+Page size=4096
+CDHash=00b2d8a1865d374c03ff44b3f0cb071f032ce70c
+Signature=adhoc
+Info.plist=not bound
+TeamIdentifier=not set
+Sealed Resources=none
+Internal requirements=none

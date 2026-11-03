@@ -24,7 +24,7 @@ Base: upstream `98da0241c38eef936be0f06cf736aa607dda0b62` (3.3.1). The applicati
 - Full Playwright suite: **107/107**, including the original 30 English scenarios.
 - i18n audit: **600 English / 600 Chinese keys**, no intentional production translation gaps.
 - Stage 5 packaged Mac arm64 validation: **20/20 workflow checks and 30/30 window/zoom/theme combinations**; browser layout matrix covers 40 combinations.
-- Final handoff repeats full regression and runs smoke/data-compatibility checks from the final ZIP. Exact final source commit, ZIP hash and results are recorded in the linked final verification report.
+- Final named-ZIP smoke: **20/20**, with an additional successful load/data comparison in the unchanged upstream 3.3.1 Mac app, including a separate custom profile. Full unit/E2E regression was repeated from a clean commit. Exact source commit, ZIP hash and results are recorded in the linked final verification report.
 
 See [final verification](最终验证报告.md), [i18n implementation notes](../i18n.md) and [maintenance workflow](维护与上游同步.md).
 
