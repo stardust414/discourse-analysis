@@ -5,6 +5,7 @@
   const catalogs = window.DA_I18N_CATALOGS || {};
   const listeners = new Set();
   const bindings = new WeakMap();
+  const liveValues = new WeakMap();
   let systemLanguages = Array.from(navigator.languages || [navigator.language || 'en']);
   let preference = 'system';
   try {
@@ -57,16 +58,21 @@
     if (bound) params = typeof bound.params === 'function' ? bound.params() : bound.params;
     const key = el.getAttribute('data-i18n');
     if (key) writeText(el, t(key, params));
-    for (const attr of ['title', 'placeholder', 'aria-label', 'data-placeholder']) {
+    for (const attr of ['title', 'placeholder', 'aria-label', 'data-placeholder', 'data-drop-label']) {
       const attrKey = el.getAttribute('data-i18n-' + attr);
       if (attrKey) el.setAttribute(attr, t(attrKey, params));
     }
+    liveValues.get(el)?.forEach((render, attr) => {
+      const value = String(render() ?? '');
+      if (attr === 'text') writeText(el, value);
+      else el.setAttribute(attr, value);
+    });
   }
 
   /** @param {Document | DocumentFragment | Element} [root] */
   function apply(root = document) {
     if (root.nodeType === 1) applyElement(root);
-    root.querySelectorAll('[data-i18n], [data-i18n-title], [data-i18n-placeholder], [data-i18n-aria-label], [data-i18n-data-placeholder]')
+    root.querySelectorAll('[data-i18n], [data-i18n-title], [data-i18n-placeholder], [data-i18n-aria-label], [data-i18n-data-placeholder], [data-i18n-data-drop-label], [data-i18n-live]')
       .forEach(applyElement);
     // Template contents are not descendants of the live document.
     root.querySelectorAll('template').forEach((template) => apply(template.content));
@@ -79,11 +85,22 @@
     applyElement(el);
   }
 
+  // Display-only derived values (mode labels, dates, ARIA and current names).
+  // Never bind form values, innerHTML or user-authored editable content.
+  function bindValue(el, render, attr = 'text') {
+    if (!el || !['text', 'title', 'placeholder', 'aria-label', 'data-placeholder'].includes(attr)) return;
+    if (!liveValues.has(el)) liveValues.set(el, new Map());
+    liveValues.get(el).set(attr, render);
+    el.setAttribute('data-i18n-live', '');
+    applyElement(el);
+  }
+
   function refresh() {
     const previous = locale;
     locale = preference === 'system' ? resolveLocale(systemLanguages) : preference;
     if (document.documentElement) document.documentElement.lang = locale;
     apply();
+    window.electronAPI?.setInterfaceLocale?.(locale);
     listeners.forEach((listener) => {
       try { listener({ locale, preference, previous }); } catch (err) { console.error('[i18n]', err); }
     });
@@ -110,7 +127,7 @@
   }
 
   window.DA_I18N = {
-    STORAGE_KEY, t, apply, bindText, resolveLocale, setPreference,
+    STORAGE_KEY, t, apply, bindText, bindValue, resolveLocale, setPreference,
     getLocale: () => locale,
     getPreference: () => preference,
     getSystemLanguages: () => systemLanguages.slice(),
@@ -118,6 +135,7 @@
     ready: null
   };
   if (document.documentElement) document.documentElement.lang = locale;
+  window.electronAPI?.setInterfaceLocale?.(locale);
   window.DA_I18N.ready = refreshSystemLanguages();
   window.addEventListener('languagechange', refreshSystemLanguages);
   window.addEventListener('focus', () => { if (preference === 'system') refreshSystemLanguages(); });

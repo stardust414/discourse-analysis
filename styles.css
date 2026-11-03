@@ -1779,7 +1779,7 @@ body {
 }
 
 .bracket-canvas-wrapper.drag-over::after {
-  content: 'Drop to import';
+  content: attr(data-drop-label);
   position: absolute;
   inset: 0;
   display: flex;
