@@ -1,0 +1,16 @@
+{
+  "started": "2026-11-03T07:17:50.626Z",
+  "executable": "<zh-cn-worktree>/scratch/phase25/delivery-check/Discourse Analysis.app/Contents/MacOS/Discourse Analysis",
+  "steps": [
+    {
+      "name": "ZIP 解压后的 arm64 应用启动及数据隔离",
+      "status": "fail",
+      "error": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#fetchBtn') to be visible\u001b[22m\n"
+    }
+  ],
+  "pageErrors": [],
+  "networkFailures": [],
+  "finished": "2026-11-03T07:18:05.688Z",
+  "passed": 0,
+  "failed": 1
+}

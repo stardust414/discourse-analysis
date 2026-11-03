@@ -1,0 +1,28 @@
+
+> discourse-analysis@3.3.1 build
+> electron-builder --mac --arm64 && electron-builder --win --x64
+
+  • electron-builder  version=24.13.3 os=27.0.0
+  • loaded configuration  file=package.json ("build" field)
+  • packaging       platform=darwin arch=arm64 electron=28.3.3 appOutDir=dist/mac-arm64
+  • downloading     url=https://github.com/electron/electron/releases/download/v28.3.3/electron-v28.3.3-darwin-arm64.zip size=95 MB parts=8
+  • downloaded      url=https://github.com/electron/electron/releases/download/v28.3.3/electron-v28.3.3-darwin-arm64.zip duration=1m10.741s
+  • skipped macOS application code signing  reason=cannot find valid "Developer ID Application" identity or custom non-Apple code signing certificate, it could cause some undefined behaviour, e.g. macOS localized description not visible, see https://electron.build/code-signing allIdentities=     0 identities found
+                                                Valid identities only
+     0 valid identities found
+  • building        target=macOS zip arch=arm64 file=dist/Discourse Analysis-3.3.1-arm64-mac.zip
+  • building block map  blockMapFile=dist/Discourse Analysis-3.3.1-arm64-mac.zip.blockmap
+  • electron-builder  version=24.13.3 os=27.0.0
+  • loaded configuration  file=package.json ("build" field)
+  • packaging       platform=win32 arch=x64 electron=28.3.3 appOutDir=dist/win-unpacked
+  • downloading     url=https://github.com/electron/electron/releases/download/v28.3.3/electron-v28.3.3-win32-x64.zip size=108 MB parts=8
+  • downloaded      url=https://github.com/electron/electron/releases/download/v28.3.3/electron-v28.3.3-win32-x64.zip duration=1m48.78s
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z size=5.6 MB parts=1
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z duration=16.949s
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/wine-4.0.1-mac/wine-4.0.1-mac.7z size=19 MB parts=3
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/wine-4.0.1-mac/wine-4.0.1-mac.7z duration=39.488s
+  • building        target=portable file=dist/Discourse Analysis 3.3.1 x64 Portable.exe archs=x64
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-3.0.4.1/nsis-3.0.4.1.7z size=1.3 MB parts=1
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-3.0.4.1/nsis-3.0.4.1.7z duration=10.586s
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-resources-3.4.1/nsis-resources-3.4.1.7z size=731 kB parts=1
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-resources-3.4.1/nsis-resources-3.4.1.7z duration=9.621s

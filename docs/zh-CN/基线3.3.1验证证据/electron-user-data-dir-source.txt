@@ -1,0 +1,13 @@
+https://raw.githubusercontent.com/electron/electron/v28.3.3/shell/app/electron_main_delegate.cc
+
+
+void ElectronMainDelegate::PreSandboxStartup() {
+  auto* command_line = base::CommandLine::ForCurrentProcess();
+  std::string process_type = GetProcessType();
+
+  base::FilePath user_data_dir =
+      command_line->GetSwitchValuePath(::switches::kUserDataDir);
+  if (!user_data_dir.empty()) {
+    base::PathService::OverrideAndCreateIfNeeded(chrome::DIR_USER_DATA,
+                                                 user_data_dir, false, true);
+  }

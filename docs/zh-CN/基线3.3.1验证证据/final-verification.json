@@ -1,0 +1,17 @@
+{
+  "source_file_count": 78,
+  "source_unchanged": true,
+  "mac_zip_crc_ok": true,
+  "artifacts": [
+    {
+      "path": "dist/Discourse Analysis-3.3.1-arm64-mac.zip",
+      "bytes": 91730757,
+      "sha256": "ce308a0e44b49e9400c50439adb51e3bc7eb2d0e924ce4b93dcd20602f24d1c7"
+    },
+    {
+      "path": "dist/Discourse Analysis 3.3.1 x64 Portable.exe",
+      "bytes": 69638053,
+      "sha256": "6aa63a8d544d21ac5258551641e3c48825c6db177aeb05fb0063661a8931e142"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+PASS ZIP 解压后的 arm64 应用启动及数据隔离
+PASS 首次启动欢迎页
+PASS 通过真实网络载入 John 1:1-3（无响应替身）
+PASS 真实键盘拆分／合并并保持文字
+PASS 用圆点与选择器建立 Action-Purpose 关系
+PASS 五套 profile 切换及差异保持
+PASS 保存项目 JSON
+PASS 打开已保存的 JSON 并核对内容
+PASS 导出 PNG 图片及项目数据
+PASS 通过打开文件重新导入 PNG
+PASS 导出 PDF
+PASS 通过打开文件重新导入 PDF
+PASS 最终界面和浏览器错误检查
+PASS 关闭后重新启动，记号方案保留
+{"passed":14,"failed":0,"fatal":null}

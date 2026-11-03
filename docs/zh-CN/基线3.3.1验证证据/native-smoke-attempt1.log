@@ -1,0 +1,5 @@
+FAIL ZIP 解压后的 arm64 应用启动及数据隔离 locator.waitFor: Timeout 12000ms exceeded.
+Call log:
+[2m  - waiting for locator('#fetchBtn') to be visible[22m
+
+{"passed":0,"failed":1,"fatal":null}

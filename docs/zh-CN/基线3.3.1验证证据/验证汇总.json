@@ -1,0 +1,51 @@
+{
+  "source_file_count": 78,
+  "source_unchanged": true,
+  "mac_zip_crc_ok": true,
+  "artifacts": [
+    {
+      "path": "dist/Discourse Analysis-3.3.1-arm64-mac.zip",
+      "bytes": 91730757,
+      "sha256": "ce308a0e44b49e9400c50439adb51e3bc7eb2d0e924ce4b93dcd20602f24d1c7"
+    },
+    {
+      "path": "dist/Discourse Analysis 3.3.1 x64 Portable.exe",
+      "bytes": 69638053,
+      "sha256": "6aa63a8d544d21ac5258551641e3c48825c6db177aeb05fb0063661a8931e142"
+    }
+  ],
+  "commands": [
+    {
+      "command": "npm run check",
+      "exit_code": 0,
+      "unit_tests": 275,
+      "failures": 0
+    },
+    {
+      "command": "PLAYWRIGHT_BROWSERS_PATH=<task browsers> npm run test:e2e",
+      "exit_code": 0,
+      "e2e_tests": 30,
+      "failures": 0
+    },
+    {
+      "command": "npm run build",
+      "exit_code": 0,
+      "mac": "arm64 ZIP",
+      "windows": "x64 Portable EXE"
+    },
+    {
+      "command": "packaged ZIP native smoke, word-boundary split",
+      "exit_code": 0,
+      "steps": 14,
+      "failures": 0
+    }
+  ],
+  "versions": {
+    "node": "26.12.0",
+    "npm": "11.20.0",
+    "electron": "28.3.3",
+    "electron-builder": "24.13.3",
+    "playwright": "1.61.1",
+    "app": "3.3.1"
+  }
+}
