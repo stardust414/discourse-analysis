@@ -33,6 +33,8 @@ function showCommentPopover(config) {
   const template = document.getElementById('commentPopoverTemplate');
   const popover = document.createElement('div');
   popover.id = 'commentPopover';
+  popover.setAttribute('role', 'dialog');
+  popover.setAttribute('aria-labelledby', 'commentPopoverTitle');
   popover.className = 'comment-popover';
   popover.style.width = '640px'; 
   popover.appendChild(template.content.cloneNode(true));
@@ -72,6 +74,7 @@ function showCommentPopover(config) {
 
   return targetDesc;
   };
+  popover.querySelector('.popover-title').id = 'commentPopoverTitle';
   DA_I18N.bindValue(popover.querySelector('.popover-title'), targetDescription);
 
   const renderContent = () => {

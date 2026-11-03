@@ -77,8 +77,8 @@ function renderCommentPreviews() {
         `).join('')}
       </div>
       <div class="reply-input-row">
-        <input type="text" data-i18n-placeholder="comment.replyPlaceholder" placeholder="Reply..." class="reply-input" data-id="${comment.id}">
-        <button class="send-reply-btn" data-id="${comment.id}" title="Send reply" data-i18n-title="comment.sendReply">→</button>
+        <input type="text" data-i18n-placeholder="comment.replyPlaceholder" placeholder="Reply..." aria-label="Reply..." data-i18n-aria-label="comment.replyPlaceholder" class="reply-input" data-id="${comment.id}">
+        <button class="send-reply-btn" data-id="${comment.id}" title="Send reply" data-i18n-title="comment.sendReply" aria-label="Send reply" data-i18n-aria-label="comment.sendReply">→</button>
       </div>
     `;
     

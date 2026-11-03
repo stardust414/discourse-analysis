@@ -211,7 +211,8 @@
 
       const txt = document.createElement('span');
       txt.className = 'bd-text';
-      txt.style.paddingLeft = `${(levels[i] || 0) * INDENT_PX}px`;
+      txt.style.paddingInlineStart = `${(levels[i] || 0) * INDENT_PX}px`;
+      txt.dir = 'auto';
       txt.textContent = cleanText(text);
       line.appendChild(txt);
 

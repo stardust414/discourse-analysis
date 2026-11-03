@@ -337,6 +337,7 @@ function populateReferenceGuide() {
         const td = document.createElement('td');
         if (opts.className) td.className = opts.className;
         if (opts.colSpan) td.colSpan = opts.colSpan;
+        if (opts.title) td.title = opts.title;
         if (opts.strong) {
             const b = document.createElement('strong');
             b.textContent = text;
@@ -350,13 +351,14 @@ function populateReferenceGuide() {
     referenceGuideSections().forEach((section) => {
         const head = document.createElement('tr');
         head.className = section.subgroup ? 'subgroup-header' : 'group-header';
+        head.title = section.name;
         head.appendChild(cell(window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getGroupName(section.name) : section.name, { colSpan: 4 }));
         tbody.appendChild(head);
 
         section.rows.forEach((row) => {
             const tr = document.createElement('tr');
             tr.append(
-                cell(row.name, { strong: true }),
+                cell(row.name, { strong: true, title: window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.selectorPresentation(row.type).full : row.name }),
                 cell(row.abbr, { className: 'abbr-cell' }),
                 cell(row.keywords, { className: 'keyword-cell' }),
                 cell(row.definition)
