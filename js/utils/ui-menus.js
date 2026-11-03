@@ -58,7 +58,7 @@ function showBracketActions(bracketIdx, centerY, centerX) {
     const removed = DA_EDITOR.deleteBracket(bracketIdx);
     clearAndDismiss();
     if (removed > 0) {
-      showStatus(removed > 1 ? `${removed} brackets removed.` : 'Bracket removed.', 'success');
+      DA_UI.showTranslatedStatus('relationship.removed', { count: removed }, 'success');
     }
   });
 
@@ -289,7 +289,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
 
   picker.innerHTML = `
     <div class="picker-title">
-      <span>Choose Relationship</span>
+      <span data-i18n="relationship.choose">Choose Relationship</span>
       <div class="picker-header-tools">
         <button class="tool-btn" data-action="add-custom" title="Add Custom Label">Custom Label</button>
         ${hasTwoLabels ? '<button class="tool-btn" data-action="swap" title="Swap Labels">⇅ Swap</button>' : ''}
@@ -297,17 +297,17 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
       </div>
     </div>
     <div class="picker-search-row">
-      <input type="text" class="picker-search" placeholder="Type to filter… (e.g. 'act', 'cause', 'because')" aria-label="Filter relationships">
+      <input type="text" class="picker-search" placeholder="Type to filter… (e.g. 'act', 'cause', 'because')" aria-label="Filter relationships" data-i18n-placeholder="relationship.placeholder" data-i18n-aria-label="relationship.filter">
     </div>
     <div class="relationship-picker-content"></div>
     <div class="picker-info-panel">
-      <div class="info-hint">Hover over a relationship to see its definition.</div>
+      <div class="info-hint" data-i18n="relationship.hover">Hover over a relationship to see its definition.</div>
       <strong class="info-name"></strong>
       <div class="info-def"></div>
       <div class="info-keywords"></div>
     </div>
     <div class="picker-footer">
-      <button class="delete-btn">Delete Bracket</button>
+      <button class="delete-btn" data-i18n="relationship.delete">Delete Bracket</button>
     </div>
   `;
 
@@ -351,7 +351,8 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
     const isCustom = typeKey.startsWith('cl_');
     // Resolve through the active profile (handles renames + Gurtner). getName
     // returns the bare typeKey when it has no entry, which we treat as "unknown".
-    let labelText = window.DA_PROFILES ? DA_PROFILES.getName(typeKey) : RELATIONSHIP_LABELS[typeKey];
+    let labelText = window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getName(typeKey)
+      : window.DA_PROFILES ? DA_PROFILES.getName(typeKey) : RELATIONSHIP_LABELS[typeKey];
     if ((!labelText || labelText === typeKey) && isCustom) {
       const custom = (DA_STATE.customLabels || []).find(cl => cl.id === typeKey) ||
                      (DA_STATE.savedCustomLabels || []).find(cl => cl.id === typeKey);
@@ -365,6 +366,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
 
     const btn = document.createElement('button');
     btn.textContent = labelText;
+    btn.dataset.relationshipType = typeKey;
     btn.title = labelText;
     btn.className = typeKey;
     if (isCustom) btn.classList.add('custom-label-btn');
@@ -381,7 +383,8 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
       DA_STATE.brackets[bracketIdx].type = typeKey;
       picker.remove();
       if (window.renderAll) window.renderAll();
-      showStatus(`Label changed to ${labelText}`, 'success');
+      const currentName = window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getName(typeKey) : labelText;
+      DA_UI.showTranslatedStatus('relationship.changed', { label: currentName }, 'success');
     });
 
     // Search metadata for the type-to-filter box: names from every built-in
@@ -402,10 +405,11 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
         // misclicks). The last-hovered definition simply stays shown.
         const hint = infoPanel.querySelector('.info-hint');
         if (hint) hint.style.display = 'none';
-        infoPanel.querySelector('.info-name').textContent = labelText;
+        infoPanel.dataset.relationshipType = typeKey;
+        infoPanel.querySelector('.info-name').textContent = btn.textContent;
         infoPanel.querySelector('.info-name').style.color = color;
-        infoPanel.querySelector('.info-def').textContent = defData.definition;
-        infoPanel.querySelector('.info-keywords').textContent = defData.keywords ? 'Key words: ' + defData.keywords : '';
+        infoPanel.querySelector('.info-def').textContent = window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getDefinition(typeKey) : defData.definition;
+        infoPanel.querySelector('.info-keywords').textContent = defData.keywords ? DA_I18N.t('relationship.keywords', { keywords: defData.keywords }) : '';
       });
     }
 
@@ -441,7 +445,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
     
     const header = document.createElement('h4');
     header.className = 'picker-group-header';
-    header.textContent = group.name;
+    header.textContent = window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getGroupName(group.name) : group.name;
     groupDiv.appendChild(header);
 
     if (group.types) {
@@ -466,7 +470,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
 
         const subHeader = document.createElement('h5');
         subHeader.className = 'picker-subgroup-header';
-        subHeader.textContent = sub.name;
+        subHeader.textContent = window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getGroupName(sub.name) : sub.name;
         subDiv.appendChild(subHeader);
 
         const btnContainer = document.createElement('div');
@@ -547,14 +551,18 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
       if (none && !note) {
         note = document.createElement('p');
         note.className = 'picker-no-matches';
-        note.textContent = 'No matches — try a name like "ground", another system\'s term like "cause", or a key word like "because".';
+        DA_I18N.bindText(note, 'relationship.noMatches');
         content.appendChild(note);
       } else if (!none && note) {
         note.remove();
       }
     };
-    searchInput.addEventListener('input', applyFilter);
+    let composing = false;
+    searchInput.addEventListener('compositionstart', () => { composing = true; });
+    searchInput.addEventListener('compositionend', () => { composing = false; applyFilter(); });
+    searchInput.addEventListener('input', (e) => { if (!composing && !(/** @type {InputEvent} */ (e)).isComposing) applyFilter(); });
     searchInput.addEventListener('keydown', (e) => {
+      if (composing || (/** @type {KeyboardEvent} */ (e)).isComposing || (/** @type {KeyboardEvent} */ (e)).keyCode === 229) return;
       if (e.key === 'Enter') {
         e.preventDefault();
         const first = content.querySelector('.picker-btn-wrapper:not(.search-hidden) button');
@@ -593,7 +601,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
     const removed = DA_EDITOR.deleteBracket(bracketIdx);
     picker.remove();
     if (removed > 0) {
-      showStatus(removed > 1 ? `${removed} brackets removed.` : 'Bracket removed.', 'success');
+      DA_UI.showTranslatedStatus('relationship.removed', { count: removed }, 'success');
     }
   });
 
@@ -654,14 +662,14 @@ function showExportMenu(e) {
   menu.id = 'exportMenu';
   menu.className = 'context-menu';
   menu.innerHTML = `
-    <div class="menu-item" data-action="png">Export PNG Image</div>
-    <div class="menu-item" data-action="pdf">Export PDF Document</div>
-    <div class="menu-item" data-action="copy-img">Copy Image to Clipboard</div>
+    <div class="menu-item" data-action="png" data-i18n="menu.png">Export PNG Image</div>
+    <div class="menu-item" data-action="pdf" data-i18n="menu.pdf">Export PDF Document</div>
+    <div class="menu-item" data-action="copy-img" data-i18n="menu.copyImage">Copy Image to Clipboard</div>
     <hr>
-    <div class="menu-item" data-action="json">Download Project JSON</div>
-    <div class="menu-item" data-action="copy-json">Copy Project Data (JSON)</div>
+    <div class="menu-item" data-action="json" data-i18n="menu.json">Download Project JSON</div>
+    <div class="menu-item" data-action="copy-json" data-i18n="menu.copyJson">Copy Project Data (JSON)</div>
     <hr>
-    <div class="menu-item" data-action="cloud-toggle">${DA_CLOUD.isLive() ? 'Turn Cloud Sync OFF' : 'Turn Cloud Sync ON'}</div>
+    <div class="menu-item" data-action="cloud-toggle" data-i18n="${DA_CLOUD.isLive() ? 'menu.cloudOff' : 'menu.cloudOn'}">${DA_I18N.t(DA_CLOUD.isLive() ? 'menu.cloudOff' : 'menu.cloudOn')}</div>
   `;
 
   document.body.appendChild(menu);
@@ -1053,6 +1061,29 @@ function showArrowActions(arrowIdx, centerY, centerX) {
   setupClickOutside(popover, dismiss);
 }
 
+
+/** Update a live picker without replacing its search input or draft dialogs. */
+function refreshRelationshipPickerLanguage() {
+  const picker = document.getElementById('labelPicker');
+  if (!picker || !window.DA_RELATIONSHIPS) return;
+  picker.querySelectorAll('button[data-relationship-type]').forEach((button) => {
+    const type = button.dataset.relationshipType;
+    // Custom cl_ labels are resolved by the existing picker, never translated.
+    if (type.startsWith('cl_')) return;
+    button.textContent = DA_RELATIONSHIPS.getName(type);
+    const hint = DA_PROFILES.searchIndexFor(type).altHint;
+    button.title = button.textContent + (hint ? ' — ' + hint : '');
+  });
+  const info = picker.querySelector('.picker-info-panel');
+  const type = info?.dataset.relationshipType;
+  if (type) {
+    info.querySelector('.info-name').textContent = DA_RELATIONSHIPS.getName(type);
+    info.querySelector('.info-def').textContent = DA_RELATIONSHIPS.getDefinition(type);
+    const keywords = DA_CONSTANTS.RELATIONSHIP_DEFINITIONS[type]?.keywords;
+    info.querySelector('.info-keywords').textContent = keywords ? DA_I18N.t('relationship.keywords', { keywords }) : '';
+  }
+}
+
 window.DA_UI = Object.assign(window.DA_UI || {}, {
-  showBracketActions, showTextContextMenu, showLabelPicker, computeLabelPickerPosition, showExportMenu, showOpenMenu, showAlternateViewsMenu, showParallelDialog, showArrowActions
+  refreshRelationshipPickerLanguage, showBracketActions, showTextContextMenu, showLabelPicker, computeLabelPickerPosition, showExportMenu, showOpenMenu, showAlternateViewsMenu, showParallelDialog, showArrowActions
 });

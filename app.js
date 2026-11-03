@@ -357,7 +357,7 @@ async function fetchPassage(mode = 'replace') {
     const apiName = version === 'esv' ? 'ESV' : 'NASB';
     DA_UI.showTranslatedStatus(usedFallback ? 'passage.fallback' : 'passage.loaded', { apiName }, 'success');
   } catch (err) {
-    DA_UI.showStatus(err.message || 'Failed to fetch passage', 'error');
+    DA_UI.showTranslatedStatus('passage.failed', { error: err.message || DA_I18N.t('error.unknown') }, 'error');
   } finally {
     fetchBtn.disabled = false;
     DA_I18N.bindText(fetchBtn, 'passage.fetch');

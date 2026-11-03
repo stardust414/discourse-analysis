@@ -297,10 +297,10 @@ function referenceGuideSections() {
         const def = defs[type] || {};
         return {
             type,
-            name: DA_PROFILES.getName(type).replace(/\s*\([^)]*\)\s*$/, ''),
+            name: (window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getName(type) : DA_PROFILES.getName(type)).replace(/\s*\([^)]*\)\s*$/, ''),
             abbr: abbrFor(type),
             keywords: def.keywords || '',
-            definition: def.definition || ''
+            definition: window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getDefinition(type) : (def.definition || '')
         };
     };
     const rowsOf = (types) => types.filter((t) => visible.includes(t)).map(rowFor);
@@ -326,7 +326,9 @@ function populateReferenceGuide() {
     tbody.replaceChildren();
 
     const title = document.getElementById('referenceGuideTitle');
-    if (title) title.textContent = `Logical Relationships Guide — ${DA_PROFILES.getActive().name}`;
+    if (title) title.textContent = window.DA_I18N
+      ? DA_I18N.t('guide.title', { profile: DA_PROFILES.getActive().name })
+      : `Logical Relationships Guide — ${DA_PROFILES.getActive().name}`;
 
     // textContent throughout: names and abbreviations can come from an
     // imported or cloud profile, so they must never be parsed as HTML.
@@ -347,7 +349,7 @@ function populateReferenceGuide() {
     referenceGuideSections().forEach((section) => {
         const head = document.createElement('tr');
         head.className = section.subgroup ? 'subgroup-header' : 'group-header';
-        head.appendChild(cell(section.name, { colSpan: 4 }));
+        head.appendChild(cell(window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getGroupName(section.name) : section.name, { colSpan: 4 }));
         tbody.appendChild(head);
 
         section.rows.forEach((row) => {

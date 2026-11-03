@@ -307,7 +307,7 @@
    * punctuation, or [] for empty/no-alphanumeric input.
    */
   function searchNorm(s) {
-    const spaced = String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    const spaced = String(s || '').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
     return spaced ? [spaced, spaced.replace(/ /g, '')] : [];
   }
 
@@ -351,6 +351,10 @@
     const activeName = getName(t);
     const altByName = new Map(); // display name -> [profile names]
     sourceTypes.forEach((src) => {
+      if (window.DA_RELATIONSHIPS) {
+        DA_RELATIONSHIPS.searchTerms(src).forEach((s) => add(s, nameTerms));
+        DA_RELATIONSHIPS.searchKeywords(src).forEach((s) => add(s, kwTerms));
+      }
       if (src !== t) {
         add(src, nameTerms);
         add(DA_CONSTANTS.RELATIONSHIP_LABELS[src], nameTerms);
