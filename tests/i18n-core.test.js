@@ -165,3 +165,21 @@ test('English plural fallback uses English rules even in Chinese UI', async () =
     assert.equal(i.t('relationship.removed', { count: 1 }), 'Bracket removed.');
     assert.equal(i.t('relationship.removed', { count: 2 }), '2 brackets removed.');
 });
+test('Follow System responds to languagechange while manual English remains fixed', async () => {
+    const {s, i, events} = await setup();
+    s.navigator.languages = ['zh-CN'];
+    await events.languagechange();
+    assert.equal(i.getLocale(), 'zh-CN');
+    i.setPreference('en');
+    s.navigator.languages = ['zh-SG'];
+    await events.languagechange();
+    assert.equal(i.getLocale(), 'en');
+});
+test('choosing Follow System refreshes native preferences changed during manual mode', async () => {
+    const native = ['en-US'];
+    const {i} = await setup({native, saved:'en'});
+    native[0] = 'zh-CN';
+    i.setPreference('system');
+    await i.ready;
+    assert.equal(i.getLocale(), 'zh-CN');
+});

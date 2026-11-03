@@ -94,6 +94,8 @@
     preference = value;
     try { localStorage.setItem(STORAGE_KEY, value); } catch (_) { /* Session-only fallback. */ }
     refresh();
+    // The OS may have changed while a manual language was selected.
+    if (value === 'system') window.DA_I18N.ready = refreshSystemLanguages();
     return true;
   }
 
@@ -101,7 +103,7 @@
     let languages = Array.from(navigator.languages || [navigator.language || 'en']);
     try {
       const native = await window.electronAPI?.getSystemLanguages?.();
-      if (Array.isArray(native) && native.length) languages = native;
+      if (Array.isArray(native) && native.length) languages = Array.from(native);
     } catch (_) { /* Browser locale remains a safe fallback. */ }
     systemLanguages = languages;
     if (preference === 'system') refresh();
