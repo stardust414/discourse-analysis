@@ -3450,3 +3450,5 @@ html[lang="zh-CN"] .picker-info-panel { line-break: strict; }
 }
 @media (max-width: 1000px) { .workspace { --workspace-inset: 1rem; } }
 #workspaceHeader.exporting-header { position: static; left: auto; }
+
+#openPicker input { min-width: 0; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 4px; font-family: var(--font-sans); }

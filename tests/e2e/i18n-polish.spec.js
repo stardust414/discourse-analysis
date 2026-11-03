@@ -156,6 +156,11 @@ test('modal semantics, SVG opener restoration, icon names and draft focus surviv
   await expect(page.locator('#commentPopover')).toHaveAttribute('role', 'dialog'); await expect(page.locator('#commentPopover .close-btn')).toHaveAccessibleName('关闭');
   await expect(page.locator('#commentPopover .send-reply-btn')).toHaveAccessibleName('发送回复');
   await page.locator('#commentPopover .reply-input').fill('Draft 原样'); await page.evaluate(() => window.DA_I18N.setPreference('en')); await expect(page.locator('#commentPopover .reply-input')).toHaveValue('Draft 原样');
+  await page.locator('#commentPopover .close-btn').click();
+  await theme(page, 'dark'); await page.locator('#openMenuBtn').click(); await page.locator('#openPicker > button').nth(1).click();
+  await expect(page.locator('#openPicker input')).toBeFocused();
+  expect(await page.locator('#openPicker input').evaluate(e => getComputedStyle(e).backgroundColor)).not.toBe('rgb(255, 255, 255)');
+  await page.keyboard.press('Escape');
   expect(errors).toEqual([]);
 });
 
