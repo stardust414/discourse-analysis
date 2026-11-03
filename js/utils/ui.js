@@ -19,6 +19,13 @@ function showStatus(message, type = 'info') {
       el.style.opacity = '0';
       setTimeout(() => el.remove(), 500);
     }, 3000);
+    return el;
+}
+
+function showTranslatedStatus(key, params = {}, type = 'info') {
+    const el = showStatus(DA_I18N.t(key, params), type);
+    DA_I18N.bindText(el, key, params);
+    return el;
 }
 
 function updateCloudUI(isActive, projectId = '') {
@@ -374,5 +381,5 @@ function makeCommentPopoverDraggableAndResizable(popover) {
 
 
 window.DA_UI = Object.assign(window.DA_UI || {}, {
-  showStatus, updateCloudUI, escapeHtml, renderCommentText, applyFormatting, clampToViewport, makePopupDraggable, makeFixedDraggable, setupClickOutside, clearPropositionHighlights, getCommentForBracket, getPropositionSelection, addReplyToComment, makeCommentPopoverDraggableAndResizable, manageDialogFocus
+  showStatus, showTranslatedStatus, updateCloudUI, escapeHtml, renderCommentText, applyFormatting, clampToViewport, makePopupDraggable, makeFixedDraggable, setupClickOutside, clearPropositionHighlights, getCommentForBracket, getPropositionSelection, addReplyToComment, makeCommentPopoverDraggableAndResizable, manageDialogFocus
 });

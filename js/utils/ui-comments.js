@@ -36,6 +36,7 @@ function showCommentPopover(config) {
   popover.className = 'comment-popover';
   popover.style.width = '640px'; 
   popover.appendChild(template.content.cloneNode(true));
+  if (window.DA_I18N) DA_I18N.apply(popover);
   
   let comment = existingCommentId ? DA_STATE.comments.find(c => c.id === existingCommentId) : null;
   

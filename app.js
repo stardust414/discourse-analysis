@@ -63,6 +63,20 @@ function clearAllFormatting() {
   document.getElementById('bracketCanvas')?.classList.remove('connect-mode');
 }
 
+// UI locale is a personal preference, never a document edit.
+const interfaceLanguage = document.getElementById('interfaceLanguage');
+if (interfaceLanguage) {
+  interfaceLanguage.value = DA_I18N.getPreference();
+  interfaceLanguage.addEventListener('change', () => DA_I18N.setPreference(interfaceLanguage.value));
+}
+DA_I18N.onChange(() => {
+  if (interfaceLanguage) interfaceLanguage.value = DA_I18N.getPreference();
+  // Only display-only areas are refreshed; editable fields keep their nodes/drafts.
+  if (DA_UI.refreshRelationshipPickerLanguage) DA_UI.refreshRelationshipPickerLanguage();
+  const guide = document.getElementById('referenceModal');
+  if (guide?.style.display === 'flex') populateReferenceGuide();
+});
+
 // Service Initializations
 DA_UI.initTheme();
 DA_UI.initZoom();
@@ -198,11 +212,11 @@ if (saveBtn) saveBtn.addEventListener('click', () => DA_PERSISTENCE.saveBracket(
 if (saveAsBtn) saveAsBtn.addEventListener('click', () => DA_PERSISTENCE.saveBracket(true));
 if (exportMenuBtn) exportMenuBtn.addEventListener('click', DA_UI.showExportMenu);
 if (clearBracketsBtn) clearBracketsBtn.addEventListener('click', () => {
-  if (confirm('Clear all brackets and formatting?')) {
+  if (confirm(DA_I18N.t('confirm.clearAll'))) {
     DA_STATE.pushUndo('clear-all');
     clearAllFormatting();
     renderAll();
-    DA_UI.showStatus('All brackets cleared.', 'success');
+    DA_UI.showTranslatedStatus('project.cleared', {}, 'success');
   }
 });
 if (importFileInput) {
@@ -255,7 +269,7 @@ async function fetchPassage(mode = 'replace') {
   }
 
   fetchBtn.disabled = true;
-  fetchBtn.textContent = 'Fetching…';
+  DA_I18N.bindText(fetchBtn, 'passage.fetching');
 
   try {
     const result = await DA_BIBLE.fetchPassageData(version, query);
@@ -341,12 +355,12 @@ async function fetchPassage(mode = 'replace') {
     // other versions are always Bolls, so don't call that a "fallback".
     const usedFallback = (version === 'esv' || version === 'nasb') && result.source === 'bolls';
     const apiName = version === 'esv' ? 'ESV' : 'NASB';
-    DA_UI.showStatus(usedFallback ? `Passage loaded (via Bolls — ${apiName} API unavailable).` : 'Passage loaded.', 'success');
+    DA_UI.showTranslatedStatus(usedFallback ? 'passage.fallback' : 'passage.loaded', { apiName }, 'success');
   } catch (err) {
     DA_UI.showStatus(err.message || 'Failed to fetch passage', 'error');
   } finally {
     fetchBtn.disabled = false;
-    fetchBtn.textContent = 'Fetch Passage';
+    DA_I18N.bindText(fetchBtn, 'passage.fetch');
   }
 }
 
@@ -658,7 +672,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sel.removeAllRanges();
       sel.addRange(range);
       navigator.clipboard.writeText(code)
-        .then(() => DA_UI.showStatus(`Project code ${code} copied!`, 'success'))
+        .then(() => DA_UI.showTranslatedStatus('project.codeCopied', { code }, 'success'))
         .catch(() => DA_UI.showStatus('Could not copy code.', 'error'));
     });
   }

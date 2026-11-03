@@ -46,6 +46,7 @@ test.beforeEach(async ({ page }) => {
     localStorage.setItem('biblebracket_comment_author', 'E2E Tester');
     localStorage.setItem('biblebracket_welcome_seen', 'true');
     localStorage.setItem('biblebracket_theme', 'light');
+    localStorage.setItem('biblebracket_language', 'en');
   });
 });
 
