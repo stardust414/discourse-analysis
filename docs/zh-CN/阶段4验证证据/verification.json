@@ -1,0 +1,109 @@
+{
+  "baseline": "98da0241c38eef936be0f06cf736aa607dda0b62",
+  "source_commit": "5979b0f64cd38f6696533acd2c160ccbacf92c4e",
+  "app_version": "3.3.1",
+  "protected_files": [
+    "package.json",
+    "package-lock.json",
+    "js/utils/constants.js",
+    "js/services/state.js",
+    "js/utils/render-labels.js"
+  ],
+  "protected_functions": [
+    {
+      "file": "js/utils/editor-logic.js",
+      "name": "mergePropositions"
+    },
+    {
+      "file": "js/services/export-service.js",
+      "name": "buildBracketData"
+    },
+    {
+      "file": "js/services/persistence.js",
+      "name": "normalizeBracketData"
+    }
+  ],
+  "packaged_files_match": [
+    "/app.js",
+    "/index.html",
+    "/main.js",
+    "/preload.js",
+    "/styles.css",
+    "/js/vendor/html2canvas.min.js",
+    "/js/vendor/jspdf.umd.min.js",
+    "/js/vendor/lz-string.min.js",
+    "/js/utils/block-diagram.js",
+    "/js/utils/constants.js",
+    "/js/utils/editor-logic.js",
+    "/js/utils/init.js",
+    "/js/utils/main-point-summary.js",
+    "/js/utils/paste-parser.js",
+    "/js/utils/render-arrows.js",
+    "/js/utils/render-brackets.js",
+    "/js/utils/render-comments.js",
+    "/js/utils/render-labels.js",
+    "/js/utils/render-model.js",
+    "/js/utils/render-propositions.js",
+    "/js/utils/rendering-engine.js",
+    "/js/utils/ui-comments.js",
+    "/js/utils/ui-dialogs.js",
+    "/js/utils/ui-menus.js",
+    "/js/utils/ui.js",
+    "/js/services/bible-service.js",
+    "/js/services/cloud-sync.js",
+    "/js/services/export-service.js",
+    "/js/services/firebase-config.js",
+    "/js/services/keyboard-handler.js",
+    "/js/services/mode-service.js",
+    "/js/services/mouse-handler.js",
+    "/js/services/notation-ui.js",
+    "/js/services/persistence.js",
+    "/js/services/profiles.js",
+    "/js/services/state.js",
+    "/js/i18n/en.js",
+    "/js/i18n/i18n.js",
+    "/js/i18n/native-menu.cjs",
+    "/js/i18n/relationships.js",
+    "/js/i18n/zh-CN.js"
+  ],
+  "unit": {
+    "original": 275,
+    "stage3": 42,
+    "stage4": 18,
+    "passed": 335,
+    "failed": 0
+  },
+  "e2e": {
+    "original": 30,
+    "stage3": 14,
+    "stage4": 16,
+    "passed": 60,
+    "failed": 0
+  },
+  "native": {
+    "passed": 26,
+    "failed": 0,
+    "finished": "2026-11-03T12:07:47.786Z"
+  },
+  "coverage": {
+    "issues": [],
+    "englishKeys": 600,
+    "chineseKeys": 595,
+    "explicitKeysChecked": 434,
+    "sourceFiles": 37,
+    "sourceRecords": 2365,
+    "intentionalFallback": [
+      "group.coordinate",
+      "group.subordinate",
+      "group.restatement",
+      "group.distinct",
+      "group.contrary"
+    ]
+  },
+  "artifact": {
+    "path": "dist/phase4-zh-CN/Discourse Analysis-3.3.1-arm64-mac.zip",
+    "bytes": 91754482,
+    "sha256": "582204834416bc6636a090c6a61ce140fa20994ed8311a25ff4cb84559181c51"
+  },
+  "baseline_zip_hash_unchanged": "ce308a0e44b49e9400c50439adb51e3bc7eb2d0e924ce4b93dcd20602f24d1c7"
+}

@@ -1,0 +1,54 @@
+
+Running 5 tests using 1 worker
+
+(node:38284) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (289ms)
+(node:38311) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (261ms)
+(node:38398) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (284ms)
+(node:38403) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (275ms)
+(node:38408) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (275ms)
+
+
+  1) tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn
+
+    TypeError: Cannot read properties of null (reading 'y')
+
+      1233 |   const armBox = await reducedArm.boundingBox();
+      1234 |   const dot3 = await page.locator('.prop-dot').nth(3).boundingBox();
+    > 1235 |   expect(Math.abs((armBox.y + armBox.height / 2) - (dot3.y + dot3.height / 2))).toBeLessThanOrEqual(3);
+           |                           ^
+      1236 |
+      1237 |   // The collapsed bracket's summary arm points at the surviving series
+      1238 |   // bracket's node — the middle of the structure it dominates (midway between
+        at <zh-cn-worktree>/tests/e2e/app.spec.js:1235:27
+
+    Error Context: test-results/app-collapse-reduces-to-th-1af42-ps-the-series-bracket-drawn/error-context.md
+
+  2) tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn
+
+    TypeError: Cannot read properties of null (reading 'y')
+
+      1233 |   const armBox = await reducedArm.boundingBox();
+      1234 |   const dot3 = await page.locator('.prop-dot').nth(3).boundingBox();
+    > 1235 |   expect(Math.abs((armBox.y + armBox.height / 2) - (dot3.y + dot3.height / 2))).toBeLessThanOrEqual(3);
+           |                           ^
+      1236 |
+      1237 |   // The collapsed bracket's summary arm points at the surviving series
+      1238 |   // bracket's node — the middle of the structure it dominates (midway between
+        at <zh-cn-worktree>/tests/e2e/app.spec.js:1235:27
+
+    Error Context: test-results/app-collapse-reduces-to-th-1af42-ps-the-series-bracket-drawn-repeat1/error-context.md
+
+  2 failed
+    tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn
+    tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn
+  3 passed (3.3s)

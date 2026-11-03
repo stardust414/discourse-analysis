@@ -1,0 +1,582 @@
+{
+  "en": [
+    {
+      "label": "discourse-analysis",
+      "role": "appmenu",
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "About discourse-analysis",
+      "role": "about",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "Services",
+      "role": "services",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "Hide discourse-analysis",
+      "role": "hide",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Hide Others",
+      "role": "hideothers",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Show All",
+      "role": "unhide",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "Quit discourse-analysis",
+      "role": "quit",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "File",
+      "role": "filemenu",
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "Close Window",
+      "role": "close",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Edit",
+      "role": "editmenu",
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "Undo",
+      "role": "undo",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Redo",
+      "role": "redo",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "Cut",
+      "role": "cut",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Copy",
+      "role": "copy",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Paste",
+      "role": "paste",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Paste and Match Style",
+      "role": "pasteandmatchstyle",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Delete",
+      "role": "delete",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Select All",
+      "role": "selectall",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "Substitutions",
+      "role": null,
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "Show Substitutions",
+      "role": "showsubstitutions",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "Smart Quotes",
+      "role": "togglesmartquotes",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Smart Dashes",
+      "role": "togglesmartdashes",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Text Replacement",
+      "role": "toggletextreplacement",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Speech",
+      "role": null,
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "Start Speaking",
+      "role": "startspeaking",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Stop Speaking",
+      "role": "stopspeaking",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "View",
+      "role": "viewmenu",
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "Reload",
+      "role": "reload",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Force Reload",
+      "role": "forcereload",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Toggle Developer Tools",
+      "role": "toggledevtools",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "Actual Size",
+      "role": "resetzoom",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Zoom In",
+      "role": "zoomin",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Zoom Out",
+      "role": "zoomout",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "Toggle Full Screen",
+      "role": "togglefullscreen",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Window",
+      "role": "windowmenu",
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "Minimize",
+      "role": "minimize",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Zoom",
+      "role": "zoom",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "Bring All to Front",
+      "role": "front",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Help",
+      "role": "help",
+      "type": "submenu",
+      "accelerator": null
+    }
+  ],
+  "zh": [
+    {
+      "label": "discourse-analysis",
+      "role": "appmenu",
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "关于 discourse-analysis",
+      "role": "about",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "服务",
+      "role": "services",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "隐藏 discourse-analysis",
+      "role": "hide",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "隐藏其他应用",
+      "role": "hideothers",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "全部显示",
+      "role": "unhide",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "退出 discourse-analysis",
+      "role": "quit",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "文件",
+      "role": "filemenu",
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "关闭窗口",
+      "role": "close",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "编辑",
+      "role": "editmenu",
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "撤销",
+      "role": "undo",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "重做",
+      "role": "redo",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "剪切",
+      "role": "cut",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "复制",
+      "role": "copy",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "粘贴",
+      "role": "paste",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "粘贴并匹配样式",
+      "role": "pasteandmatchstyle",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "删除",
+      "role": "delete",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "全选",
+      "role": "selectall",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "Substitutions",
+      "role": null,
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "Show Substitutions",
+      "role": "showsubstitutions",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "Smart Quotes",
+      "role": "togglesmartquotes",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Smart Dashes",
+      "role": "togglesmartdashes",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Text Replacement",
+      "role": "toggletextreplacement",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "Speech",
+      "role": null,
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "开始朗读",
+      "role": "startspeaking",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "停止朗读",
+      "role": "stopspeaking",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "视图",
+      "role": "viewmenu",
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "重新载入",
+      "role": "reload",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "强制重新载入",
+      "role": "forcereload",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "开发者工具",
+      "role": "toggledevtools",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "实际大小",
+      "role": "resetzoom",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "放大",
+      "role": "zoomin",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "缩小",
+      "role": "zoomout",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "切换全屏",
+      "role": "togglefullscreen",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "窗口",
+      "role": "windowmenu",
+      "type": "submenu",
+      "accelerator": null
+    },
+    {
+      "label": "最小化",
+      "role": "minimize",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "缩放窗口",
+      "role": "zoom",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "",
+      "role": null,
+      "type": "separator",
+      "accelerator": null
+    },
+    {
+      "label": "全部前置",
+      "role": "front",
+      "type": "normal",
+      "accelerator": null
+    },
+    {
+      "label": "帮助",
+      "role": "help",
+      "type": "submenu",
+      "accelerator": null
+    }
+  ]
+}

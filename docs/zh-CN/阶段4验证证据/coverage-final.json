@@ -1,0 +1,15 @@
+{
+  "issues": [],
+  "englishKeys": 600,
+  "chineseKeys": 595,
+  "explicitKeysChecked": 434,
+  "sourceFiles": 37,
+  "sourceRecords": 2365,
+  "intentionalFallback": [
+    "group.coordinate",
+    "group.subordinate",
+    "group.restatement",
+    "group.distinct",
+    "group.contrary"
+  ]
+}

@@ -1,0 +1,27 @@
+PASS Mac arm64 首次启动与原生跟随系统
+PASS English 设置后重新启动
+PASS 简体中文设置后重新启动
+PASS 重新选择跟随系统并回到 English
+PASS 真实网络载入经文及普通中文状态
+PASS 创建含评论、摘要、平行栏与自定义标签的测试项目
+PASS 运行时切换不改内容、当前 profile、撤销或云状态
+PASS 评论模板草稿和光标保留
+PASS 记号方案草稿保留且不写入自定义中文名称
+PASS 中文关系搜索和实时选择器切换
+PASS 五套 profile 的符号和审定显示名
+PASS 用户自定义关系名称不翻译
+PASS English 保存 JSON → 中文打开 → English，内容一致
+PASS 中文界面 PNG 导出并恢复全部用户内容
+PASS 中文界面 PDF 导出并恢复全部用户内容
+PASS 动态变量、英文回退和安全文本
+PASS 完整中文 Settings 与可编辑原始名称
+PASS 原生桌面菜单即时中英文切换且角色和快捷键不变
+PASS 五套关系指南完整中文关键词及打开后 profile 同步
+PASS 缩进结构图中文与即时 English 切换
+PASS 评论回复模板完整中文、草稿保留且摘要正文不翻译
+PASS 平行经文对话框译本说明及选择在语言切换后保持
+PASS 中文 context menu、配色 tooltip 和导出菜单
+PASS Cloud Sync 界面和项目代码输入，无真实云写入
+PASS 帮助提示与 CSS 拖放提示完整中文
+PASS 最终重启仍保留简体中文
+{"passed":26,"failed":0,"fatal":null}

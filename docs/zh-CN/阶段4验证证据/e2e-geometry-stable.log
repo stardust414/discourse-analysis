@@ -1,0 +1,35 @@
+
+Running 10 tests using 1 worker
+
+(node:38521) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (298ms)
+(node:38526) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (290ms)
+(node:38547) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (274ms)
+(node:38552) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (299ms)
+(node:38557) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (274ms)
+(node:38562) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (273ms)
+(node:38567) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (302ms)
+(node:38572) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (275ms)
+(node:38577) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (374ms)
+(node:38582) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 tests/e2e/app.spec.js:1193:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (274ms)
+
+  10 passed (6.6s)

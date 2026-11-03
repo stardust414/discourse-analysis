@@ -1,0 +1,38 @@
+
+Running 5 tests using 1 worker
+
+(node:38459) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/e2e/app.spec.js:1192:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (396ms)
+(node:38469) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 tests/e2e/app.spec.js:1192:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (226ms)
+(node:38474) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 tests/e2e/app.spec.js:1192:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (250ms)
+(node:38479) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 tests/e2e/app.spec.js:1192:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (273ms)
+(node:38484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 tests/e2e/app.spec.js:1192:1 › collapse reduces to the dominant spine and keeps the series bracket drawn (277ms)
+
+
+  1) tests/e2e/app.spec.js:1192:1 › collapse reduces to the dominant spine and keeps the series bracket drawn
+
+    TypeError: Cannot read properties of null (reading 'y')
+
+      1242 |   const dot2 = await page.locator('.prop-dot').nth(2).boundingBox();
+      1243 |   const seriesMidY = ((dot2.y + dot2.height / 2) + (dot3.y + dot3.height / 2)) / 2;
+    > 1244 |   expect(Math.abs((mBox.y + mBox.height / 2) - seriesMidY)).toBeLessThanOrEqual(3);
+           |                         ^
+      1245 |   await expect(page.locator('.bracket-group.is-collapsed .bracket-label')).toHaveText('G');
+      1246 |
+      1247 |   // Expand via the collapsed connection node…
+        at <zh-cn-worktree>/scratch/phase4/baseline-geometry/tests/e2e/app.spec.js:1244:25
+
+    Error Context: test-results/app-collapse-reduces-to-th-1af42-ps-the-series-bracket-drawn-repeat1/error-context.md
+
+  1 failed
+    tests/e2e/app.spec.js:1192:1 › collapse reduces to the dominant spine and keeps the series bracket drawn
+  4 passed (3.4s)
