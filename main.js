@@ -31,6 +31,9 @@ function loadDotEnv() {
 
 const ENV = loadDotEnv();
 
+// Read-only system language metadata; no access to document or user content.
+ipcMain.handle('get-system-languages', () => app.getPreferredSystemLanguages());
+
 /**
  * Fetch ESV passage text ourselves (main process) rather than handing the API
  * key to the renderer: contextIsolation + sandbox mean the renderer never sees
