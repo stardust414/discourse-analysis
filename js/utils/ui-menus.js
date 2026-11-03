@@ -17,11 +17,11 @@ function showBracketActions(bracketIdx, centerY, centerX) {
   const hasComment = !!getCommentForBracket(bracketIdx);
 
   const pastels = [
-    { val: '#FFF9C4', name: 'Yellow' },
-    { val: '#BBDEFB', name: 'Blue' },
-    { val: '#C8E6C9', name: 'Green' },
-    { val: '#F8BBD0', name: 'Pink' },
-    { val: '#E1BEE7', name: 'Lavender' }
+    { val: '#FFF9C4', key: 's.S0486', name: DA_I18N.t('s.S0486') },
+    { val: '#BBDEFB', key: 's.S0488', name: DA_I18N.t('s.S0488') },
+    { val: '#C8E6C9', key: 's.S0490', name: DA_I18N.t('s.S0490') },
+    { val: '#F8BBD0', key: 's.S0492', name: DA_I18N.t('s.S0492') },
+    { val: '#E1BEE7', key: 's.S0494', name: DA_I18N.t('s.S0494') }
   ];
 
   const isMainPoint = !!bracket.isMainPoint;
@@ -32,18 +32,18 @@ function showBracketActions(bracketIdx, centerY, centerX) {
     || (window.DA_RENDERER?.getCollapseInfo && DA_RENDERER.getCollapseInfo(bracketIdx).hiddenRows.length > 0);
 
   popover.innerHTML = `
-    <div class="menu-item${foldWouldHide ? '' : ' disabled'}" data-action="fold"${foldWouldHide ? '' : ' title="Nothing to fold — both endpoints stay visible"'}>${bracket.isCollapsed ? 'Expand Section' : 'Collapse Section'}</div>
-    <div class="menu-item" data-action="comment">${hasComment ? 'View Comment' : 'Add Comment'}</div>
-    <div class="menu-item" data-action="select">Connect to...</div>
-    <div class="menu-item${isMainPoint ? ' active' : ''}" data-action="main-point">${isMainPoint ? '★ Unmark Passage Main Point' : '☆ Mark Passage Main Point'}</div>
+    <div class="menu-item${foldWouldHide ? '' : ' disabled'}" data-action="fold" data-i18n="${bracket.isCollapsed ? 's.S0507' : 's.S0508'}"${foldWouldHide ? '' : ' title="Nothing to fold — both endpoints stay visible" data-i18n-title="s.S0495"'}>${bracket.isCollapsed ? DA_I18N.t('s.S0507') : DA_I18N.t('s.S0508')}</div>
+    <div class="menu-item" data-action="comment" data-i18n="${hasComment ? 's.S0509' : 's.S0379'}">${hasComment ? DA_I18N.t('s.S0509') : DA_I18N.t('s.S0379')}</div>
+    <div class="menu-item" data-action="select" data-i18n="s.S0498">Connect to...</div>
+    <div class="menu-item${isMainPoint ? ' active' : ''}" data-action="main-point" data-i18n="${isMainPoint ? 's.S0511' : 's.S0512'}">${isMainPoint ? DA_I18N.t('s.S0511') : DA_I18N.t('s.S0512')}</div>
     <div class="menu-divider"></div>
-    <div class="color-palette-title">Highlight Rows</div>
+    <div class="color-palette-title" data-i18n="s.S0500">Highlight Rows</div>
     <div class="color-palette">
-      ${pastels.map(c => `<button class="color-swatch" data-color="${c.val}" title="${c.name}" style="background-color: ${c.val}"></button>`).join('')}
-      <button class="color-swatch clear-color" data-color="clear" title="Clear Highlight">✕</button>
+      ${pastels.map(c => `<button class="color-swatch" data-color="${c.val}" title="${c.name}" data-i18n-title="${c.key}" style="background-color: ${c.val}"></button>`).join('')}
+      <button class="color-swatch clear-color" data-color="clear" title="Clear Highlight" data-i18n-title="s.S0503">✕</button>
     </div>
     <div class="menu-divider"></div>
-    <div class="menu-item danger" data-action="delete">Delete Bracket</div>
+    <div class="menu-item danger" data-action="delete" data-i18n="s.S0504">Delete Bracket</div>
   `;
 
   popover.style.left = `${centerX}px`;
@@ -74,7 +74,7 @@ function showBracketActions(bracketIdx, centerY, centerX) {
     DA_STATE.firstBracketPoint = bracket.id;
     DA_STATE.bracketSelectStep = 1;
     document.getElementById('bracketCanvas')?.classList.add('connect-mode');
-    showStatus('Bracket selected. Click a node or dot to connect.', 'info');
+    DA_UI.showTranslatedStatus('s.S0516', {}, 'info');
     clearAndDismiss();
   });
 
@@ -118,11 +118,11 @@ function showTextContextMenu(propIndex, start, end, centerY, centerX, pcol) {
   if (existing) existing.remove();
 
   const colors = [
-    { val: '#E53935', name: 'Red' },
-    { val: '#1E88E5', name: 'Blue' },
-    { val: '#43A047', name: 'Green' },
-    { val: '#FB8C00', name: 'Orange' },
-    { val: '#8E24AA', name: 'Purple' }
+    { val: '#E53935', key: 's.S0520', name: DA_I18N.t('s.S0520') },
+    { val: '#1E88E5', key: 's.S0488', name: DA_I18N.t('s.S0488') },
+    { val: '#43A047', key: 's.S0490', name: DA_I18N.t('s.S0490') },
+    { val: '#FB8C00', key: 's.S0524', name: DA_I18N.t('s.S0524') },
+    { val: '#8E24AA', key: 's.S0526', name: DA_I18N.t('s.S0526') }
   ];
 
   const menu = document.createElement('div');
@@ -130,12 +130,12 @@ function showTextContextMenu(propIndex, start, end, centerY, centerX, pcol) {
   menu.className = 'context-menu';
   // Comments are primary-text-only; a parallel-cell selection gets colors only.
   menu.innerHTML = `
-    ${pcol ? '' : `<div class="menu-item" data-action="add-comment">Add Comment</div>
+    ${pcol ? '' : `<div class="menu-item" data-action="add-comment" data-i18n="s.S0379">Add Comment</div>
     <div class="menu-divider"></div>`}
-    <div class="color-palette-title">Color Code</div>
+    <div class="color-palette-title" data-i18n="s.S0528">Color Code</div>
     <div class="color-palette">
-      ${colors.map(c => `<button class="color-swatch" data-color="${c.val}" title="${c.name}" style="background-color: ${c.val}"></button>`).join('')}
-      <button class="color-swatch clear-color" data-color="clear" title="Clear Color">✕</button>
+      ${colors.map(c => `<button class="color-swatch" data-color="${c.val}" title="${c.name}" data-i18n-title="${c.key}" style="background-color: ${c.val}"></button>`).join('')}
+      <button class="color-swatch clear-color" data-color="clear" title="Clear Color" data-i18n-title="s.S0530">✕</button>
     </div>
   `;
 
@@ -234,7 +234,7 @@ function computeLabelPickerPosition({ anchorTop, anchorBottom, aRect, pw, ph, vw
 function makePickerResizable(picker) {
   const handle = document.createElement('div');
   handle.className = 'picker-resize-handle';
-  handle.setAttribute('aria-label', 'Resize');
+  DA_I18N.bindValue(handle, () => (DA_I18N.t('s.S0532')), 'aria-label');
   picker.appendChild(handle);
   handle.addEventListener('mousedown', (e) => {
     if (e.button !== 0) return;
@@ -291,9 +291,9 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
     <div class="picker-title">
       <span data-i18n="relationship.choose">Choose Relationship</span>
       <div class="picker-header-tools">
-        <button class="tool-btn" data-action="add-custom" title="Add Custom Label">Custom Label</button>
-        ${hasTwoLabels ? '<button class="tool-btn" data-action="swap" title="Swap Labels">⇅ Swap</button>' : ''}
-        ${hasTwoLabels && showStars ? '<button class="tool-btn" data-action="flip-dominance" title="Switch Stars">★ Switch Stars</button>' : ''}
+        <button class="tool-btn" data-action="add-custom" title="Add Custom Label" data-i18n-title="s.S0536" data-i18n="s.S0537">Custom Label</button>
+        ${hasTwoLabels ? '<button class="tool-btn" data-action="swap" title="Swap Labels" data-i18n-title="s.S0539" data-i18n="s.S0540">⇅ Swap</button>' : ''}
+        ${hasTwoLabels && showStars ? '<button class="tool-btn" data-action="flip-dominance" title="Switch Stars" data-i18n-title="s.S0542" data-i18n="s.S0543">★ Switch Stars</button>' : ''}
       </div>
     </div>
     <div class="picker-search-row">
@@ -331,7 +331,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
   // Group 1: My Presets (Persistent)
   if (DA_STATE.savedCustomLabels && DA_STATE.savedCustomLabels.length > 0) {
     RELATIONSHIP_GROUPS_LIST.push({
-      name: 'MY PRESET LABELS',
+      key: 's.S0547', name: 'MY PRESET LABELS',
       types: DA_STATE.savedCustomLabels.map(cl => cl.id)
     });
   }
@@ -342,7 +342,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
   );
   if (projectSpecific.length > 0) {
     RELATIONSHIP_GROUPS_LIST.push({
-      name: 'PROJECT-SPECIFIC LABELS',
+      key: 's.S0548', name: 'PROJECT-SPECIFIC LABELS',
       types: projectSpecific.map(cl => cl.id)
     });
   }
@@ -410,7 +410,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
         infoPanel.querySelector('.info-name').textContent = btn.textContent;
         infoPanel.querySelector('.info-name').style.color = color;
         infoPanel.querySelector('.info-def').textContent = window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getDefinition(typeKey) : defData.definition;
-        infoPanel.querySelector('.info-keywords').textContent = defData.keywords ? DA_I18N.t('relationship.keywords', { keywords: defData.keywords }) : '';
+        DA_I18N.bindValue(infoPanel.querySelector('.info-keywords'), () => (defData.keywords ? DA_I18N.t('relationship.keywords', { keywords: DA_RELATIONSHIPS.getKeywords(typeKey) }) : ''), 'text');
       });
     }
 
@@ -421,7 +421,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
       const actionBtn = document.createElement('button');
       actionBtn.className = 'picker-action-btn';
       actionBtn.innerHTML = isSaved ? '&times;' : '+';
-      actionBtn.title = isSaved ? 'Remove from my bank' : 'Save to my bank';
+      DA_I18N.bindValue(actionBtn, () => (isSaved ? DA_I18N.t('s.S0557') : DA_I18N.t('s.S0558')), 'title');
       actionBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         if (isSaved) {
@@ -446,7 +446,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
     
     const header = document.createElement('h4');
     header.className = 'picker-group-header';
-    header.textContent = window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getGroupName(group.name) : group.name;
+    DA_I18N.bindValue(header, () => DA_RELATIONSHIPS.getGroupName(group.name));
     groupDiv.appendChild(header);
 
     if (group.types) {
@@ -471,7 +471,7 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
 
         const subHeader = document.createElement('h5');
         subHeader.className = 'picker-subgroup-header';
-        subHeader.textContent = window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getGroupName(sub.name) : sub.name;
+        DA_I18N.bindValue(subHeader, () => DA_RELATIONSHIPS.getGroupName(sub.name));
         subDiv.appendChild(subHeader);
 
         const btnContainer = document.createElement('div');
@@ -492,14 +492,13 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
     // Offer only the jump-over-capable types the active profile actually has
     // (always at least Series), since the bracket spans multiple members.
     const jumpTypes = DA_CONSTANTS.JUMP_OVER_TYPES.filter(isVisibleType);
-    const names = jumpTypes.map(t => (window.DA_PROFILES ? DA_PROFILES.getName(t)
-      : DA_CONSTANTS.RELATIONSHIP_LABELS[t] || t).replace(/\s*\([^)]*\)\s*$/, '').trim());
+    const choices = () => {
+      const names = jumpTypes.map(t => DA_RELATIONSHIPS.getName(t).replace(/\s*\([^)]*\)\s*$/, '').trim());
+      return names.length === 1 ? names[0] : DA_I18N.t(names.length <= 2 ? 'relationship.choicesTwo' : 'relationship.choicesMany', {first: names.slice(0, -1).join('、'), last: names.at(-1)});
+    };
     const note = document.createElement('p');
     note.className = 'picker-jump-note';
-    const choices = names.length <= 2
-      ? names.join(' or ')
-      : `${names.slice(0, -1).join(', ')}, or ${names[names.length - 1]}`;
-    note.textContent = `Jump-over bracket — choose ${choices}.`;
+    DA_I18N.bindValue(note, () => (DA_I18N.t('s.S0561', { choices: choices() })), 'text');
     content.appendChild(note);
     const container = document.createElement('div');
     container.className = 'picker-btn-container';
@@ -710,7 +709,7 @@ function showExportMenu(e) {
       }
       if (action === 'copy-json') {
           const data = JSON.stringify(DA_EXPORT.buildBracketData(), null, 2);
-          navigator.clipboard.writeText(data).then(() => showStatus('Project data copied!', 'success'));
+          navigator.clipboard.writeText(data).then(() => DA_UI.showTranslatedStatus('s.S0576', {}, 'success'));
       }
       if (action === 'cloud-toggle') {
           if (DA_CLOUD.isLive()) {
@@ -747,19 +746,21 @@ function showAlternateViewsMenu(e) {
   menu.id = 'alternateViewsMenu';
   menu.className = 'context-menu';
   menu.innerHTML = `
-    <div class="menu-item${blockActive ? ' active' : ''}" data-action="block-diagram">${blockActive ? 'Bracket View (B)' : 'Block Diagram (B)'}</div>
+    <div class="menu-item${blockActive ? ' active' : ''}" data-action="block-diagram" data-i18n="${blockActive ? 's.S0584' : 's.S0585'}">${blockActive ? DA_I18N.t('s.S0584') : DA_I18N.t('s.S0585')}</div>
     <hr>
     ${!hasColumn ? `
-      <div class="menu-item" data-action="parallel-fetch">Show Parallel Column…</div>
+      <div class="menu-item" data-action="parallel-fetch" data-i18n="s.S0579">Show Parallel Column…</div>
     ` : columnVisible ? `
-      <div class="menu-item" data-action="parallel-hide">Hide Parallel Column</div>
-      <div class="menu-item" data-action="parallel-change">Change Parallel Translation… (${DA_UI.escapeHtml(DA_STATE.parallelLabel)})</div>
+      <div class="menu-item" data-action="parallel-hide" data-i18n="s.S0581">Hide Parallel Column</div>
+      <div class="menu-item" data-action="parallel-change">${DA_UI.escapeHtml(DA_I18N.t('parallel.change', {translation: DA_STATE.parallelLabel}))}</div>
     ` : `
-      <div class="menu-item" data-action="parallel-unhide">Show Parallel Column (${DA_UI.escapeHtml(DA_STATE.parallelLabel)})</div>
-      <div class="menu-item" data-action="parallel-change">Change Parallel Translation… (${DA_UI.escapeHtml(DA_STATE.parallelLabel)})</div>
+      <div class="menu-item" data-action="parallel-unhide">${DA_UI.escapeHtml(DA_I18N.t('parallel.showExisting', {translation: DA_STATE.parallelLabel}))}</div>
+      <div class="menu-item" data-action="parallel-change">${DA_UI.escapeHtml(DA_I18N.t('parallel.change', {translation: DA_STATE.parallelLabel}))}</div>
     `}
   `;
 
+  menu.querySelectorAll('[data-action="parallel-change"]').forEach(el => DA_I18N.bindText(el, 'parallel.change', {translation: DA_STATE.parallelLabel}));
+  DA_I18N.bindText(menu.querySelector('[data-action="parallel-unhide"]'), 'parallel.showExisting', {translation: DA_STATE.parallelLabel});
   document.body.appendChild(menu);
   const menuW = menu.offsetWidth || 200;
   const menuH = menu.offsetHeight || 120;
@@ -781,13 +782,13 @@ function showAlternateViewsMenu(e) {
         // column keeps following splits/merges while hidden.
         DA_STATE.parallelHidden = true;
         if (window.renderAll) window.renderAll();
-        showStatus('Parallel column hidden — its text is kept with the project.', 'info');
+        DA_UI.showTranslatedStatus('s.S0588', {}, 'info');
       }
       if (action === 'parallel-unhide') {
         DA_STATE.parallelHidden = false;
         if (window.DA_BLOCK && DA_BLOCK.isActive()) DA_BLOCK.setActive(false);
         if (window.renderAll) window.renderAll();
-        showStatus(`Parallel column: ${DA_STATE.parallelLabel}.`, 'success');
+        DA_UI.showTranslatedStatus('s.S0589', () => ({ translation: DA_STATE.parallelLabel }), 'success');
       }
     });
   });
@@ -798,17 +799,17 @@ function showAlternateViewsMenu(e) {
 
 // Curated Bolls translation codes for the parallel column.
 const PARALLEL_TRANSLATIONS = [
-  { code: 'CUV', name: '中文和合本 — Chinese Union (Traditional)' },
-  { code: 'CUNPS', name: '新标点和合本 — Chinese Union (Simplified)' },
-  { code: 'KRV', name: '개역한글 — Korean Revised' },
-  { code: 'RV1960', name: 'Reina-Valera 1960 (Español)' },
-  { code: 'LUT', name: 'Luther 1912 (Deutsch)' },
-  { code: 'NVIPT', name: 'Nova Versão Internacional (Português)' },
-  { code: 'ESV', name: 'English Standard Version' },
-  { code: 'NASB', name: 'NASB (1995)' },
-  { code: 'SBLGNT', name: 'Ελληνικά — Greek NT (SBLGNT)' },
-  { code: 'LXX', name: 'Ελληνικά — Greek OT (Septuagint)' },
-  { code: 'WLC', name: 'עברית — Hebrew OT (Westminster Leningrad)' },
+  { code: 'CUV', key: 's.S0591', name: DA_I18N.t('s.S0591') },
+  { code: 'CUNPS', key: 's.S0593', name: DA_I18N.t('s.S0593') },
+  { code: 'KRV', key: 's.S0595', name: DA_I18N.t('s.S0595') },
+  { code: 'RV1960', key: 's.S0597', name: DA_I18N.t('s.S0597') },
+  { code: 'LUT', key: 's.S0599', name: DA_I18N.t('s.S0599') },
+  { code: 'NVIPT', key: 's.S0601', name: DA_I18N.t('s.S0601') },
+  { code: 'ESV', key: 's.S0603', name: DA_I18N.t('s.S0603') },
+  { code: 'NASB', key: 's.S0605', name: DA_I18N.t('s.S0605') },
+  { code: 'SBLGNT', key: 's.S0607', name: DA_I18N.t('s.S0607') },
+  { code: 'LXX', key: 's.S0609', name: DA_I18N.t('s.S0609') },
+  { code: 'WLC', key: 's.S0611', name: DA_I18N.t('s.S0611') },
 ];
 
 /** Pick a translation and fetch it into the view-only parallel column. */
@@ -820,13 +821,13 @@ function showParallelDialog() {
   dialog.className = 'label-picker custom-label-dialog parallel-dialog';
   dialog.style.width = '300px';
   dialog.innerHTML = `
-    <div class="picker-title">Parallel Column</div>
+    <div class="picker-title" data-i18n="s.S0613">Parallel Column</div>
     <div style="padding: 5px;">
-      <select id="parallelTranslationSelect" aria-label="Parallel translation" style="width: 100%; padding: 6px; border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: var(--text); box-sizing: border-box;">
-        ${PARALLEL_TRANSLATIONS.map((t) => `<option value="${t.code}"${t.code === DA_STATE.parallelLabel ? ' selected' : ''}>${DA_UI.escapeHtml(t.name)}</option>`).join('')}
+      <select id="parallelTranslationSelect" aria-label="Parallel translation" style="width: 100%; padding: 6px; border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: var(--text); box-sizing: border-box;" data-i18n-aria-label="s.S0614">
+        ${PARALLEL_TRANSLATIONS.map((t) => `<option data-i18n="${t.key}" value="${t.code}"${t.code === DA_STATE.parallelLabel ? ' selected' : ''}>${DA_UI.escapeHtml(t.name)}</option>`).join('')}
       </select>
-      <div class="hint-small" style="margin: 6px 0 8px; font-size: 0.7rem;">Editable beside the text (splits with Enter in Text Edit mode) and saved with the project.</div>
-      <button id="parallelShowBtn" class="series" style="width: 100%; padding: 6px;">Show</button>
+      <div class="hint-small" style="margin: 6px 0 8px; font-size: 0.7rem;" data-i18n="s.S0617">Editable beside the text (splits with Enter in Text Edit mode) and saved with the project.</div>
+      <button id="parallelShowBtn" class="series" style="width: 100%; padding: 6px;" data-i18n="s.S0618">Show</button>
     </div>
   `;
   document.body.appendChild(dialog);
@@ -842,19 +843,19 @@ function showParallelDialog() {
     // Replacing an existing column overwrites its (possibly edited) cells —
     // confirm first. The pushUndo below makes it recoverable either way.
     if (DA_STATE.parallelLabel
-      && !confirm(`Replace the current ${DA_STATE.parallelLabel} column (including any edits) with ${code}? Ctrl+Z undoes this.`)) return;
+      && !confirm(DA_I18N.t('s.S0622', { newTranslation: DA_STATE.parallelLabel, oldTranslation: code }))) return;
 
     // The parallel column belongs to the bracket view.
     if (window.DA_BLOCK && DA_BLOCK.isActive()) DA_BLOCK.setActive(false);
 
-    showStatus(`Fetching ${code}…`, 'info');
+    DA_UI.showTranslatedStatus('s.S0623', () => ({ translation: code }), 'info');
     try {
       const chapterMap = await DA_BIBLE.fetchParallelVerses(code, DA_STATE.passageRef || '');
       // Distribute the chapter onto the current rows ONCE (each verse's text
       // lands on its first row); from here on the cells are ordinary per-row
       // editable text in DA_STATE.parallelTexts.
       const cells = DA_RENDERER.distributeVersesToRows(chapterMap);
-      if (!cells.some(t => t)) throw new Error('No matching verses found for this passage.');
+      if (!cells.some(t => t)) throw new Error(DA_I18N.t('s.S0624'));
 
       DA_STATE.pushUndo('show parallel column');
       DA_STATE.parallelTexts = cells;
@@ -863,9 +864,9 @@ function showParallelDialog() {
       // Cell formatting belonged to the previous column's text, if any.
       DA_STATE.formatTags = DA_STATE.formatTags.filter(f => !f.pcol);
       if (window.renderAll) window.renderAll();
-      showStatus(`Parallel column: ${code}.`, 'success');
+      DA_UI.showTranslatedStatus('s.S0626', () => ({ translation: code }), 'success');
     } catch (err) {
-      showStatus(err.message || 'Could not fetch the parallel translation.', 'error');
+      showStatus(err.message || DA_I18N.t('s.S0627'), 'error');
     }
   });
 
@@ -885,8 +886,8 @@ function showOpenMenu(e) {
   picker.className = 'label-picker relationship-picker-fixed';
   
   const options = [
-    { label: '📂 Open local file', action: openBracketFile, inline: false },
-    { label: '🔗 Join cloud session', inline: true, action: (btnEl) => {
+    { key: 's.S0629', label: DA_I18N.t('s.S0629'), action: openBracketFile, inline: false },
+    { key: 's.S0630', label: DA_I18N.t('s.S0630'), inline: true, action: (btnEl) => {
         btnEl.innerHTML = '';
         btnEl.style.display = 'flex';
         btnEl.style.gap = '8px';
@@ -894,14 +895,14 @@ function showOpenMenu(e) {
         
         const input = document.createElement('input');
         input.type = 'text';
-        input.placeholder = 'Project ID';
+        DA_I18N.bindValue(input, () => (DA_I18N.t('s.S0631')), 'placeholder');
         input.style.flex = '1';
         input.style.padding = '4px';
         input.style.textTransform = 'uppercase';
         input.onclick = (e) => e.stopPropagation();
         
         const goBtn = document.createElement('button');
-        goBtn.textContent = 'Join';
+        DA_I18N.bindValue(goBtn, () => (DA_I18N.t('s.S0632')), 'text');
         goBtn.style.padding = '2px 8px';
         goBtn.onclick = (e) => {
           e.stopPropagation();
@@ -921,7 +922,9 @@ function showOpenMenu(e) {
   options.forEach(opt => {
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.textContent = opt.label;
+    const label = document.createElement('span');
+    DA_I18N.bindText(label, opt.key);
+    btn.appendChild(label);
     btn.style.width = '100%';
     btn.style.textAlign = 'left';
     btn.style.padding = '0.75rem 1rem';
@@ -959,16 +962,16 @@ function openBracketFile() {
         const text = await file.text();
         DA_PERSISTENCE.importBracket(JSON.parse(text));
       } catch (_) {
-        showStatus('Could not read JSON file.', 'error');
+        DA_UI.showTranslatedStatus('s.S0206', {}, 'error');
       }
     } else if (file.type === 'image/png') {
         const data = await DA_PERSISTENCE.extractPngMetadata(file);
         if (data) DA_PERSISTENCE.importBracket(data);
-        else showStatus('No bracket data found in PNG.', 'error');
+        else DA_UI.showTranslatedStatus('s.S0636', {}, 'error');
     } else if (file.type === 'application/pdf') {
         const data = await DA_PERSISTENCE.extractPdfMetadata(file);
         if (data) DA_PERSISTENCE.importBracket(data);
-        else showStatus('No bracket data found in PDF.', 'error');
+        else DA_UI.showTranslatedStatus('s.S0637', {}, 'error');
     }
   };
   input.click();
@@ -983,11 +986,11 @@ function showCustomLabelDialog(bracketIdx, centerY, centerX, mainPicker) {
   dialog.style.top = `${centerY}px`;
   
   dialog.innerHTML = `
-    <div class="picker-title">Add Custom Label</div>
+    <div class="picker-title" data-i18n="s.S0536">Add Custom Label</div>
     <div style="padding: 5px;">
-      <input type="text" id="customInput" placeholder="e.g. MyRel or Top/Bot*" style="width: 100%; padding: 6px; border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: var(--text); box-sizing: border-box;">
-      <div class="hint-small" style="margin: 4px 0 8px; font-size: 0.7rem;">Use / for split, * for star</div>
-      <button id="submitCustom" class="series" style="width: 100%; padding: 6px;">Apply & Save</button>
+      <input type="text" id="customInput" placeholder="e.g. MyRel or Top/Bot*" style="width: 100%; padding: 6px; border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: var(--text); box-sizing: border-box;" data-i18n-placeholder="s.S0639">
+      <div class="hint-small" style="margin: 4px 0 8px; font-size: 0.7rem;" data-i18n="s.S0640">Use / for split, * for star</div>
+      <button id="submitCustom" class="series" style="width: 100%; padding: 6px;" data-i18n="s.S0641">Apply & Save</button>
     </div>
   `;
   document.body.appendChild(dialog);
@@ -1014,7 +1017,7 @@ function showCustomLabelDialog(bracketIdx, centerY, centerX, mainPicker) {
     dialog.remove();
     mainPicker.remove();
     if (window.renderAll) window.renderAll();
-    showStatus(`Label "${val}" created!`, 'success');
+    DA_UI.showTranslatedStatus('s.S0643', () => ({ label: val }), 'success');
   };
   
   dialog.querySelector('#submitCustom').onclick = handleAdd;
@@ -1035,7 +1038,7 @@ function showArrowActions(arrowIdx, centerY, centerX) {
   popover.id = 'arrowActions';
   popover.className = 'context-menu';
   popover.innerHTML = `
-    <div class="menu-item danger" data-action="delete">Delete Arrow</div>
+    <div class="menu-item danger" data-action="delete" data-i18n="s.S0644">Delete Arrow</div>
   `;
 
   popover.style.left = `${centerX}px`;
@@ -1056,7 +1059,7 @@ function showArrowActions(arrowIdx, centerY, centerX) {
     DA_STATE.pushUndo('delete arrow');
     DA_STATE.wordArrows.splice(arrowIdx, 1);
     dismiss();
-    showStatus('Arrow removed.', 'success');
+    DA_UI.showTranslatedStatus('s.S0108', {}, 'success');
   });
 
   setupClickOutside(popover, dismiss);
@@ -1080,8 +1083,8 @@ function refreshRelationshipPickerLanguage() {
   if (type) {
     info.querySelector('.info-name').textContent = DA_RELATIONSHIPS.getName(type);
     info.querySelector('.info-def').textContent = DA_RELATIONSHIPS.getDefinition(type);
-    const keywords = DA_CONSTANTS.RELATIONSHIP_DEFINITIONS[type]?.keywords;
-    info.querySelector('.info-keywords').textContent = keywords ? DA_I18N.t('relationship.keywords', { keywords }) : '';
+    const keywords = DA_RELATIONSHIPS.getKeywords(type);
+    DA_I18N.bindValue(info.querySelector('.info-keywords'), () => (keywords ? DA_I18N.t('relationship.keywords', { keywords }) : ''), 'text');
   }
 }
 
