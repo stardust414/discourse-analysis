@@ -1,0 +1,346 @@
+{
+  "source": "DA Relationships.docx",
+  "locator": "word/document.xml paragraph index, including empty paragraphs",
+  "paragraphs": [
+    {
+      "paragraph": 1,
+      "text": "Name"
+    },
+    {
+      "paragraph": 2,
+      "text": "Definition"
+    },
+    {
+      "paragraph": 3,
+      "text": "Key Word(s)"
+    },
+    {
+      "paragraph": 4,
+      "text": "Abbr."
+    },
+    {
+      "paragraph": 5,
+      "text": "Series"
+    },
+    {
+      "paragraph": 6,
+      "text": "Each proposition makes an independent contribution to the whole"
+    },
+    {
+      "paragraph": 7,
+      "text": "and, moreover, furthermore, likewise"
+    },
+    {
+      "paragraph": 8,
+      "text": "S"
+    },
+    {
+      "paragraph": 9,
+      "text": "Progression"
+    },
+    {
+      "paragraph": 10,
+      "text": "Each proposition is a further step to the climax"
+    },
+    {
+      "paragraph": 11,
+      "text": "then, and, moreover"
+    },
+    {
+      "paragraph": 12,
+      "text": "P/*"
+    },
+    {
+      "paragraph": 13,
+      "text": "Alternative"
+    },
+    {
+      "paragraph": 14,
+      "text": "Each proposition expresses an opposite possibility arising from a situation"
+    },
+    {
+      "paragraph": 15,
+      "text": "but, on the other hand, while, or"
+    },
+    {
+      "paragraph": 16,
+      "text": "A"
+    },
+    {
+      "paragraph": 17,
+      "text": "Question-Answer"
+    },
+    {
+      "paragraph": 18,
+      "text": "Statement of question and answer to that question "
+    },
+    {
+      "paragraph": 19,
+      "text": "?"
+    },
+    {
+      "paragraph": 20,
+      "text": "Q/A*"
+    },
+    {
+      "paragraph": 21,
+      "text": "Situation-Response"
+    },
+    {
+      "paragraph": 22,
+      "text": "Statement of response to a stated situation or action"
+    },
+    {
+      "paragraph": 23,
+      "text": "and"
+    },
+    {
+      "paragraph": 24,
+      "text": "Sit/R*"
+    },
+    {
+      "paragraph": 25,
+      "text": "Action-Manner (Way-End)"
+    },
+    {
+      "paragraph": 26,
+      "text": "Statement of an action and one which tells more explicitly what is involved in carrying out this action"
+    },
+    {
+      "paragraph": 27,
+      "text": "in that, by"
+    },
+    {
+      "paragraph": 28,
+      "text": "Ac*/Mn"
+    },
+    {
+      "paragraph": 29,
+      "text": "Comparison"
+    },
+    {
+      "paragraph": 30,
+      "text": "Statement expressing an action, thing, etc. followed by a statement making that action, thing, etc. clearer by showing what it is like"
+    },
+    {
+      "paragraph": 31,
+      "text": "even as, as… so"
+    },
+    {
+      "paragraph": 32,
+      "text": "*/Cf"
+    },
+    {
+      "paragraph": 33,
+      "text": "Negative-Positive"
+    },
+    {
+      "paragraph": 34,
+      "text": "Two alternatives, one of which is denied so that the other is enforced"
+    },
+    {
+      "paragraph": 35,
+      "text": "not… but, though, although, but"
+    },
+    {
+      "paragraph": 36,
+      "text": "-/+*"
+    },
+    {
+      "paragraph": 37,
+      "text": "General-Specific"
+    },
+    {
+      "paragraph": 38,
+      "text": "Propositions stating a whole and one or more which set for the part of the whole"
+    },
+    {
+      "paragraph": 39,
+      "text": "that is, for"
+    },
+    {
+      "paragraph": 40,
+      "text": "Gn/Sp*"
+    },
+    {
+      "paragraph": 41,
+      "text": "Fact-Interpretation"
+    },
+    {
+      "paragraph": 42,
+      "text": "Proposition and one clarifying or explaining its meaning"
+    },
+    {
+      "paragraph": 43,
+      "text": "that is, for"
+    },
+    {
+      "paragraph": 44,
+      "text": "Ft/In*"
+    },
+    {
+      "paragraph": 45,
+      "text": "Ground"
+    },
+    {
+      "paragraph": 46,
+      "text": "Statement and the argument or basis on which it stands; supporting follows the supported"
+    },
+    {
+      "paragraph": 47,
+      "text": "for, because, since"
+    },
+    {
+      "paragraph": 48,
+      "text": "*/G"
+    },
+    {
+      "paragraph": 49,
+      "text": "Inference"
+    },
+    {
+      "paragraph": 50,
+      "text": "As above, but now the supporting precedes the supported "
+    },
+    {
+      "paragraph": 51,
+      "text": "therefore, wherefore, thus, consequently"
+    },
+    {
+      "paragraph": 52,
+      "text": "∴/*"
+    },
+    {
+      "paragraph": 53,
+      "text": "Action-Result (Cause-Effect)"
+    },
+    {
+      "paragraph": 54,
+      "text": "An action and one automatically consequent upon that action "
+    },
+    {
+      "paragraph": 55,
+      "text": "that, so that, with the result that"
+    },
+    {
+      "paragraph": 56,
+      "text": "C/E*"
+    },
+    {
+      "paragraph": 57,
+      "text": "Conditional"
+    },
+    {
+      "paragraph": 58,
+      "text": "Like above, except the existence of the cause is only potential "
+    },
+    {
+      "paragraph": 59,
+      "text": "if… then, if, except"
+    },
+    {
+      "paragraph": 60,
+      "text": "If/Th*"
+    },
+    {
+      "paragraph": 61,
+      "text": "Action-Purpose (Means-End)"
+    },
+    {
+      "paragraph": 62,
+      "text": "An action and the one that is intended to come as a result or goal "
+    },
+    {
+      "paragraph": 63,
+      "text": "in order that, that, lest, to the end that"
+    },
+    {
+      "paragraph": 64,
+      "text": "Ac/Pur*"
+    },
+    {
+      "paragraph": 65,
+      "text": "Temporal"
+    },
+    {
+      "paragraph": 66,
+      "text": "Proposition and the occasion when it can occur "
+    },
+    {
+      "paragraph": 67,
+      "text": "when, whenever"
+    },
+    {
+      "paragraph": 68,
+      "text": "*/T"
+    },
+    {
+      "paragraph": 69,
+      "text": "Locative"
+    },
+    {
+      "paragraph": 70,
+      "text": "Proposition and the place where it can be true "
+    },
+    {
+      "paragraph": 71,
+      "text": "where, wherever"
+    },
+    {
+      "paragraph": 72,
+      "text": "*/L"
+    },
+    {
+      "paragraph": 73,
+      "text": "Concessive (Adversative)"
+    },
+    {
+      "paragraph": 74,
+      "text": "Main clause that stands despite a contrary statement "
+    },
+    {
+      "paragraph": 75,
+      "text": "nevertheless, although though, yet, however"
+    },
+    {
+      "paragraph": 76,
+      "text": "Csv/*"
+    },
+    {
+      "paragraph": 77,
+      "text": "Anticipation-Fulfillment"
+    },
+    {
+      "paragraph": 78,
+      "text": "A main clause that fulfills the anticipation or promise of a prior clause (subset of progression)"
+    },
+    {
+      "paragraph": 79,
+      "text": ""
+    },
+    {
+      "paragraph": 80,
+      "text": "A/F*"
+    },
+    {
+      "paragraph": 81,
+      "text": "Both-And"
+    },
+    {
+      "paragraph": 82,
+      "text": "Each proposition makes an independent contribution to the whole, but the contributions are inseperable (subset of series)"
+    },
+    {
+      "paragraph": 83,
+      "text": ""
+    },
+    {
+      "paragraph": 84,
+      "text": "B/A"
+    },
+    {
+      "paragraph": 85,
+      "text": ""
+    }
+  ]
+}
