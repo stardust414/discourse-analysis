@@ -383,8 +383,9 @@ function showLabelPicker(bracketIdx, centerY, centerX) {
       DA_STATE.brackets[bracketIdx].type = typeKey;
       picker.remove();
       if (window.renderAll) window.renderAll();
-      const currentName = window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getName(typeKey) : labelText;
-      DA_UI.showTranslatedStatus('relationship.changed', { label: currentName }, 'success');
+      DA_UI.showTranslatedStatus('relationship.changed', () => ({
+        label: window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.getName(typeKey) : labelText
+      }), 'success');
     });
 
     // Search metadata for the type-to-filter box: names from every built-in

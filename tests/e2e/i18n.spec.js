@@ -122,6 +122,9 @@ test('Chinese and English searches and live picker labels retain the search node
     await expect(page.locator('#labelPicker button.action-purpose')).toBeVisible();
     await input.press('Enter');
     expect(await page.evaluate(() => window.DA_STATE.brackets[0].type)).toBe('action-purpose');
+    await expect(page.locator('.status')).toHaveText('已将标签改为 行动—目的 Action-Purpose (Ac/Pur)。');
+    await page.evaluate(() => window.DA_I18N.setPreference('en'));
+    await expect(page.locator('.status')).toHaveText('Label changed to Action-Purpose (Ac/Pur)');
 });
 test('IME composition does not select a relationship before commit', async ({ page }) => {
     await boot(page, 'zh-CN');

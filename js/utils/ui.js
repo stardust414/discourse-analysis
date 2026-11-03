@@ -23,7 +23,8 @@ function showStatus(message, type = 'info') {
 }
 
 function showTranslatedStatus(key, params = {}, type = 'info') {
-    const el = showStatus(DA_I18N.t(key, params), type);
+    const values = typeof params === 'function' ? params() : params;
+    const el = showStatus(DA_I18N.t(key, values), type);
     DA_I18N.bindText(el, key, params);
     return el;
 }
