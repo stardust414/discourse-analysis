@@ -3344,7 +3344,8 @@ body.rtl-mode .proposition-block .proposition-text {
    These rules change display only. Scripture fonts, zoom and graph colors retain
    their original sources. No new font downloads or bundled fonts are added. */
 :root {
-  --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-script-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-sans: var(--font-script-sans);
 }
 ::placeholder { color: var(--text-muted); opacity: 1; }
 button:disabled { cursor: not-allowed; opacity: 0.55; }
@@ -3456,4 +3457,10 @@ html:is([lang="zh-CN"], [lang="zh-Hant"]) .picker-info-panel { line-break: stric
 /* Traditional UI uses installed system fonts; original-script passage fonts stay independent. */
 html[lang="zh-Hant"] {
   --font-sans: 'Source Sans 3', 'PingFang TC', 'Microsoft JhengHei', system-ui, sans-serif;
+}
+
+/* Greek keeps the frozen original-script font stack when UI language changes. */
+html[lang="zh-Hant"] .propositions.greek-text .proposition-text,
+html[lang="zh-Hant"] .propositions.greek-text ~ .block-diagram .bd-text {
+  font-family: var(--font-script-sans);
 }
