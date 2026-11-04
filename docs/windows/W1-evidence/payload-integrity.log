@@ -1,0 +1,23 @@
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=utf8,Utf16=on,HugeFiles=on,64 bits,8 CPUs LE)
+
+Scanning the drive for archives:
+1 file, 69275175 bytes (67 MiB)
+
+Testing archive: scratch/w1/payload.7z
+--
+Path = scratch/w1/payload.7z
+Type = 7z
+Physical Size = 69275175
+Headers Size = 1136
+Method = LZMA2:26 LZMA:20 BCJ2
+Solid = +
+Blocks = 2
+
+Everything is Ok
+
+Folders: 2
+Files: 73
+Size:       264882636
+Compressed: 69275175

@@ -5,7 +5,7 @@ const vm = require('vm');
 const crypto = require('crypto');
 const ts = require('typescript');
 const ROOT = path.resolve(__dirname, '..');
-const SNAPSHOT = 'docs/zh-CN/阶段5源码文本审计.json';
+const SNAPSHOT = 'docs/windows/W1-源码文本审计.json';
 const intentionalFallback = []; // C13–C17 approved in v1.1; no deliberate missing Chinese keys.
 function filesUnder(dir) {
   return fs.readdirSync(path.join(ROOT, dir), { withFileTypes: true }).flatMap(e =>

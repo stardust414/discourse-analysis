@@ -1,0 +1,33 @@
+{
+  "scope": "W1 static and modeled platform logic; no Windows runtime",
+  "base": "c02cf5be5ce69135ef617eb317e2b7362446f239",
+  "config": {
+    "appId": "com.discourseanalysis.app",
+    "productName": "Discourse Analysis",
+    "version": "3.3.1",
+    "command": "npm run build:win -- --config.directories.output=dist/w1-win-x64",
+    "target": "portable",
+    "architecture": "x64",
+    "artifactName": "${productName} ${version} ${arch} Portable.${ext}",
+    "icon": "build/icon.png",
+    "whitelist": ["index.html", "styles.css", "app.js", "main.js", "preload.js", "js/**"],
+    "extraResources": "not configured",
+    "nsisSetup": "not configured or built; portable uses the existing NSIS self-extracting launcher"
+  },
+  "findings": [
+    {"area":"paths","source":"main.js, preload.js, js/i18n/native-menu.cjs","result":"Node path.join/path.resolve and loadFile, no runtime /Users literal; file contents pass through IPC instead of POSIX path parsing"},
+    {"area":"mac events","source":"main.js","result":"open-file and activate are mac lifecycle paths; Windows/Linux argv .json path is handled separately; suffix check is case-sensitive, so uppercase .JSON launch remains a W2 edge case"},
+    {"area":"filesystem","source":"js/services/persistence.js, js/utils/ui-menus.js, js/services/notation-ui.js, js/services/export-service.js","result":"Blob/download and file inputs; web Save picker is gated off for file: desktop; no Windows shell command for exports"},
+    {"area":"filename","source":"four modified application files","result":"sanitize only download suggestions: Windows reserved characters and controls, reserved device names, leading spaces, trailing dots/spaces, empty fallback; JSON and embedded PNG/PDF payload remain unchanged"},
+    {"area":"keyboard","source":"js/services/keyboard-handler.js, js/i18n/native-menu.cjs","result":"Ctrl or Meta save/undo/redo/formatting; native roles and existing accelerators preserved; no application-level Ctrl+O exists upstream; tooltips say Ctrl/Cmd rather than Cmd only"},
+    {"area":"native menus","source":"js/i18n/native-menu.cjs","result":"translates existing Electron menu instead of installing Mac layout; Windows-like menu model retains Ctrl/Alt accelerators, native Windows execution unverified"},
+    {"area":"IME","source":"js/utils/ui-menus.js and js/services/keyboard-handler.js","result":"compositionstart/compositionend, isComposing and keyCode 229, not gated on macOS; actual Microsoft IME pending"},
+    {"area":"fonts","source":"styles.css","result":"Microsoft YaHei then system-ui/sans-serif fallback; Segoe UI can be selected by Windows system-ui; no new font file or CSS change"},
+    {"area":"DPI","source":"main.js and existing zoom code","result":"no hardcoded deviceScaleFactor; application zoom differs from system scaling; Windows 100/125/150 percent unverified"},
+    {"area":"theme","source":"styles.css and js/utils/ui-dialogs.js","result":"HTML data-theme variables and existing local preference; WebKit scrollbar rules apply to Chromium, not a Mac-only native theme dependency"},
+    {"area":"encoding","source":"main.js, js/utils/paste-parser.js, JSON parsing","result":"UTF-8 sources; .env trim accepts CRLF; paste normalizes CRLF/CR; no global CRLF conversion"},
+    {"area":"portable state","source":"main.js and existing portable.nsi","result":"launcher extracts to temp and sets PORTABLE_EXECUTABLE_DIR; app does not redirect userData to EXE folder, so portable means no installer, not all preferences travel with the EXE; actual Windows path pending W2"},
+    {"area":"signing","source":"PE security-directory inspection","result":"no Authenticode table on outer/inner EXE; SmartScreen/Defender behavior not tested"}
+  ],
+  "windowsRuntimeVerified": false
+}

@@ -352,7 +352,7 @@ const DA_EXPORT = {
       const url = URL.createObjectURL(annotatedBlob);
       const link = document.createElement('a');
       const filename = (DA_STATE.passageRef || 'discourse').replace(/\s+/g, '_');
-      link.download = `${filename}_${new Date().toISOString().slice(0,10)}.png`;
+      link.download = DA_PERSISTENCE.sanitizeFilename(`${filename}_${new Date().toISOString().slice(0,10)}.png`);
       link.href = url;
       link.click();
       URL.revokeObjectURL(url);
@@ -436,7 +436,7 @@ const DA_EXPORT = {
       });
 
       const filename = (DA_STATE.passageRef || 'discourse').replace(/\s+/g, '_');
-      pdf.save(`${filename}.pdf`);
+      pdf.save(DA_PERSISTENCE.sanitizeFilename(`${filename}.pdf`));
       
       DA_UI.showTranslatedStatus('s.S0103', {}, 'success');
     } catch (err) {

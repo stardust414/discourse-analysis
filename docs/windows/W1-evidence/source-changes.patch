@@ -1,0 +1,103 @@
+diff --git a/js/services/export-service.js b/js/services/export-service.js
+index 0e2a3da..86950c3 100644
+--- a/js/services/export-service.js
++++ b/js/services/export-service.js
+@@ -352,7 +352,7 @@ const DA_EXPORT = {
+       const url = URL.createObjectURL(annotatedBlob);
+       const link = document.createElement('a');
+       const filename = (DA_STATE.passageRef || 'discourse').replace(/\s+/g, '_');
+-      link.download = `${filename}_${new Date().toISOString().slice(0,10)}.png`;
++      link.download = DA_PERSISTENCE.sanitizeFilename(`${filename}_${new Date().toISOString().slice(0,10)}.png`);
+       link.href = url;
+       link.click();
+       URL.revokeObjectURL(url);
+@@ -436,7 +436,7 @@ const DA_EXPORT = {
+       });
+ 
+       const filename = (DA_STATE.passageRef || 'discourse').replace(/\s+/g, '_');
+-      pdf.save(`${filename}.pdf`);
++      pdf.save(DA_PERSISTENCE.sanitizeFilename(`${filename}.pdf`));
+       
+       DA_UI.showTranslatedStatus('s.S0103', {}, 'success');
+     } catch (err) {
+diff --git a/js/services/notation-ui.js b/js/services/notation-ui.js
+index dd09734..04607f2 100644
+--- a/js/services/notation-ui.js
++++ b/js/services/notation-ui.js
+@@ -168,7 +168,7 @@
+     const blob = new Blob([JSON.stringify(p, null, 2)], { type: 'application/json' });
+     const a = document.createElement('a');
+     a.href = URL.createObjectURL(blob);
+-    a.download = `${(p.name || 'profile').replace(/[^a-z0-9]+/gi, '-')}.daprofile.json`;
++    a.download = DA_PERSISTENCE.sanitizeFilename(`${(p.name || 'profile').replace(/[^a-z0-9]+/gi, '-')}.daprofile.json`);
+     a.click();
+     URL.revokeObjectURL(a.href);
+     DA_UI.showTranslatedStatus('s.S0132', {}, 'success');
+diff --git a/js/services/persistence.js b/js/services/persistence.js
+index 9c148f8..c7bfeb5 100644
+--- a/js/services/persistence.js
++++ b/js/services/persistence.js
+@@ -428,10 +428,19 @@ function getBookAbbreviation(bookName) {
+   return map[normalized] || normalized.replace(/\s+/g, '').substring(0, 3);
+ }
+ 
++// A download suggestion is a single filename, never a path. Keep user data
++// verbatim; only adapt the external filename for Windows and other platforms.
++function sanitizeFilename(value, fallback = 'discourse') {
++  let name = String(value ?? '').replace(/[<>:"/\\|?*\u0000-\u001f]/g, '_').replace(/^ +|[ .]+$/g, '');
++  if (!name) name = fallback;
++  if (/^(?:CON|PRN|AUX|NUL|COM[1-9¹²³]|LPT[1-9¹²³])(?:\.|$)/i.test(name)) name = '_' + name;
++  return name;
++}
++
+ function getExportFilename(defaultOnly = false) {
+   const customInput = document.getElementById('exportFilename');
+   if (!defaultOnly && customInput && customInput.value.trim()) {
+-    return customInput.value.trim();
++    return sanitizeFilename(customInput.value.trim());
+   }
+ 
+   const ref = DA_STATE.passageRef || 'passage';
+@@ -449,7 +458,7 @@ function getExportFilename(defaultOnly = false) {
+ 
+   const authorInput = document.getElementById('pageAuthor');
+   const author = (authorInput?.value || '').trim().replace(/[\s/\\?%*:|"<>.]+/g, '-');
+-  return author ? `${defaultPassagePrefix}_${author}` : defaultPassagePrefix;
++  return sanitizeFilename(author ? `${defaultPassagePrefix}_${author}` : defaultPassagePrefix);
+ }
+ 
+ function updateFilenamePlaceholder() {
+@@ -845,6 +854,6 @@ function initDragAndDrop() {
+ window.DA_PERSISTENCE = {
+     normalizeBracketData, saveDraft, clearDraft, getDraft, importBracket, initMagicPaste, initDraftRecovery,
+     initStartupRecovery, showCloudReconnectBanner,
+-    addToRecent, renderRecentList, getExportFilename, attachFilenameObservers,
++    addToRecent, renderRecentList, sanitizeFilename, getExportFilename, attachFilenameObservers,
+     injectPngMetadata, extractPngMetadata, extractPdfMetadata, processDNA, saveBracket, exportBracket, initDragAndDrop
+ };
+diff --git a/js/utils/ui-menus.js b/js/utils/ui-menus.js
+index b376ba5..9e11126 100644
+--- a/js/utils/ui-menus.js
++++ b/js/utils/ui-menus.js
+@@ -729,7 +729,7 @@ function showExportMenu(e) {
+           const url = URL.createObjectURL(blob);
+           const a = document.createElement('a');
+           a.href = url;
+-          a.download = `bracket-${DA_STATE.passageRef || 'project'}.json`;
++          a.download = DA_PERSISTENCE.sanitizeFilename(`bracket-${DA_STATE.passageRef || 'project'}.json`);
+           a.click();
+       }
+       if (action === 'copy-json') {
+diff --git a/scripts/audit-i18n.cjs b/scripts/audit-i18n.cjs
+index 846aea5..f498114 100644
+--- a/scripts/audit-i18n.cjs
++++ b/scripts/audit-i18n.cjs
+@@ -5,7 +5,7 @@ const vm = require('vm');
+ const crypto = require('crypto');
+ const ts = require('typescript');
+ const ROOT = path.resolve(__dirname, '..');
+-const SNAPSHOT = 'docs/zh-CN/阶段5源码文本审计.json';
++const SNAPSHOT = 'docs/windows/W1-源码文本审计.json';
+ const intentionalFallback = []; // C13–C17 approved in v1.1; no deliberate missing Chinese keys.
+ function filesUnder(dir) {
+   return fs.readdirSync(path.join(ROOT, dir), { withFileTypes: true }).flatMap(e =>

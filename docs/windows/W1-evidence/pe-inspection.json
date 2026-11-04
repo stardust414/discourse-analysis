@@ -1,0 +1,72 @@
+{
+  "outerLauncher": {
+    "path": "dist/w1-win-x64/Discourse Analysis 3.3.1 x64 Portable.exe",
+    "bytes": 69657199,
+    "sha256": "8b69136698e7bd29fc54f86971e5bfc4d37ac62f782a46131fea6d5df320b356",
+    "machine": "0x14c",
+    "architecture": "i386",
+    "optionalHeaderMagic": "0x10b",
+    "fixedVersions": [
+      {
+        "fileVersion": "3.3.1.0",
+        "productVersion": "3.3.1.0"
+      }
+    ],
+    "versionStrings": {
+      "FileDescription": "Discourse Analysis — diagram the logical structure of Scripture",
+      "FileVersion": "3.3.1",
+      "LegalCopyright": "Copyright © 2026 Discourse Analysis",
+      "ProductName": "Discourse Analysis",
+      "ProductVersion": "3.3.1"
+    },
+    "iconCount": 1,
+    "groupIconResourceSizes": [
+      20
+    ],
+    "iconHashes": [
+      "c09e957938f81f0bd03fa3840a070f3a7802a54e0235f71789f6e2222deb336d"
+    ],
+    "authenticodeDirectoryBytes": 0
+  },
+  "innerApplication": {
+    "path": "scratch/w1/portable-extracted/Discourse Analysis.exe",
+    "bytes": 176856576,
+    "sha256": "15c45d8719a3470038eff916b5bd97e20320325f1ab1c42a613795a20885abfc",
+    "machine": "0x8664",
+    "architecture": "x86-64",
+    "optionalHeaderMagic": "0x20b",
+    "fixedVersions": [
+      {
+        "fileVersion": "3.3.1.0",
+        "productVersion": "3.3.1.0"
+      }
+    ],
+    "versionStrings": {
+      "CompanyName": "GitHub, Inc.",
+      "FileDescription": "Discourse Analysis",
+      "FileVersion": "3.3.1",
+      "InternalName": "Discourse Analysis",
+      "LegalCopyright": "Copyright © 2026 Discourse Analysis",
+      "OriginalFilename": "",
+      "ProductName": "Discourse Analysis",
+      "ProductVersion": "3.3.1.0",
+      "SquirrelAwareVersion": "1"
+    },
+    "iconCount": 4,
+    "groupIconResourceSizes": [
+      20
+    ],
+    "iconHashes": [
+      "c09e957938f81f0bd03fa3840a070f3a7802a54e0235f71789f6e2222deb336d",
+      "ebddfa9d9e5eb4c41480849d8c2668a142e73dc72d853e11e90576249f276534",
+      "b6631bf131a080cb0b632a6ed3cb684a4555498fa26492fd2a9f43073e179d9e",
+      "f6d386ce78023523091cd810437c7994531c4b739712841e69572487f36fb43b"
+    ],
+    "authenticodeDirectoryBytes": 0
+  },
+  "configuredIcon": {
+    "path": "build/icon.png",
+    "generatedIcoImages": 1,
+    "allImagesEmbeddedInApplication": true
+  }
+}

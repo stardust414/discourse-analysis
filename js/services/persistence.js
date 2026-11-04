@@ -428,10 +428,19 @@ function getBookAbbreviation(bookName) {
   return map[normalized] || normalized.replace(/\s+/g, '').substring(0, 3);
 }
 
+// A download suggestion is a single filename, never a path. Keep user data
+// verbatim; only adapt the external filename for Windows and other platforms.
+function sanitizeFilename(value, fallback = 'discourse') {
+  let name = String(value ?? '').replace(/[<>:"/\\|?*\u0000-\u001f]/g, '_').replace(/^ +|[ .]+$/g, '');
+  if (!name) name = fallback;
+  if (/^(?:CON|PRN|AUX|NUL|COM[1-9¹²³]|LPT[1-9¹²³])(?:\.|$)/i.test(name)) name = '_' + name;
+  return name;
+}
+
 function getExportFilename(defaultOnly = false) {
   const customInput = document.getElementById('exportFilename');
   if (!defaultOnly && customInput && customInput.value.trim()) {
-    return customInput.value.trim();
+    return sanitizeFilename(customInput.value.trim());
   }
 
   const ref = DA_STATE.passageRef || 'passage';
@@ -449,7 +458,7 @@ function getExportFilename(defaultOnly = false) {
 
   const authorInput = document.getElementById('pageAuthor');
   const author = (authorInput?.value || '').trim().replace(/[\s/\\?%*:|"<>.]+/g, '-');
-  return author ? `${defaultPassagePrefix}_${author}` : defaultPassagePrefix;
+  return sanitizeFilename(author ? `${defaultPassagePrefix}_${author}` : defaultPassagePrefix);
 }
 
 function updateFilenamePlaceholder() {
@@ -845,6 +854,6 @@ function initDragAndDrop() {
 window.DA_PERSISTENCE = {
     normalizeBracketData, saveDraft, clearDraft, getDraft, importBracket, initMagicPaste, initDraftRecovery,
     initStartupRecovery, showCloudReconnectBanner,
-    addToRecent, renderRecentList, getExportFilename, attachFilenameObservers,
+    addToRecent, renderRecentList, sanitizeFilename, getExportFilename, attachFilenameObservers,
     injectPngMetadata, extractPngMetadata, extractPdfMetadata, processDNA, saveBracket, exportBracket, initDragAndDrop
 };

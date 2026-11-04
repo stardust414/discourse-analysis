@@ -1,0 +1,222 @@
+
+> discourse-analysis@3.3.1 build:win
+> electron-builder --win --x64 --config.directories.output=dist/w1-win-x64
+
+  • electron-builder  version=24.13.3 os=27.0.0
+  • loaded configuration  file=package.json ("build" field)
+  • effective config  config=directories:
+  output: dist/w1-win-x64
+  buildResources: build
+appId: com.discourseanalysis.app
+productName: Discourse Analysis
+files:
+  - filter:
+      - index.html
+      - styles.css
+      - app.js
+      - main.js
+      - preload.js
+      - js/**
+mac:
+  category: public.app-category.education
+  target:
+    - zip
+  icon: build/icon.png
+  fileAssociations:
+    - ext: json
+      name: Discourse Analysis Bracket
+      role: Editor
+win:
+  target:
+    - portable
+  icon: build/icon.png
+  fileAssociations:
+    - ext: json
+      name: Discourse Analysis Bracket
+      role: Editor
+portable:
+  artifactName: ${productName} ${version} ${arch} Portable.${ext}
+
+  • spawning        command=<windows-worktree>/node_modules/app-builder-bin/mac/app-builder_arm64 node-dep-tree --dir <windows-worktree>
+  • exited          command=app-builder_arm64 code=0 pid=62866 out=[]
+  • spawning        command=<windows-worktree>/node_modules/app-builder-bin/mac/app-builder_arm64 rebuild-node-modules cwd=<windows-worktree>
+  • no native dependencies  
+  • exited          command=app-builder_arm64 code=0 pid=62886
+  • packaging       platform=win32 arch=x64 electron=28.3.3 appOutDir=dist/w1-win-x64/win-unpacked
+  • spawning        command=<windows-worktree>/node_modules/app-builder-bin/mac/app-builder_arm64 unpack-electron --configuration [{"platform":"win32","arch":"x64","version":"28.3.3"}] --output dist/w1-win-x64/win-unpacked --distMacOsAppName Electron.app
+  • map async       taskCount=2
+  • map async       taskCount=1
+  • map async       taskCount=73
+  • exited          command=app-builder_arm64 code=0 pid=62887
+  • spawning        command=<windows-worktree>/node_modules/app-builder-bin/mac/app-builder_arm64 icon --format ico --root <windows-worktree>/build --root <windows-worktree> --out dist/w1-win-x64/.icon-ico --input build/icon.png
+  • path doesn't exist  path=<windows-worktree>/build/build/icon.png
+  • path resolved   path=<windows-worktree>/build/icon.png outputFormat=ico
+  • exited          command=app-builder_arm64 code=0 pid=62919 out={"icons":[{"file":"dist/w1-win-x64/.icon-ico/icon.ico","size":0}],"isFallback":false}
+  • spawning        command=<windows-worktree>/node_modules/app-builder-bin/mac/app-builder_arm64 rcedit --args ["dist/w1-win-x64/win-unpacked/Discourse Analysis.exe","--set-version-string","FileDescription","Discourse Analysis","--set-version-string","ProductName","Discourse Analysis","--set-version-string","LegalCopyright","Copyright © 2026 Discourse Analysis","--set-file-version","3.3.1","--set-product-version","3.3.1.0","--set-version-string","InternalName","Discourse Analysis","--set-version-string","OriginalFilename","","--set-icon","dist/w1-win-x64/.icon-ico/icon.ico"]
+  • found existing  path=<cache-root>/electron-builder/winCodeSign/winCodeSign-2.6.0
+  • found existing  path=<cache-root>/electron-builder/wine/wine-4.0.1-mac
+  • execute command  command=<cache-root>/electron-builder/wine/wine-4.0.1-mac/bin/wine64 <cache-root>/electron-builder/winCodeSign/winCodeSign-2.6.0/rcedit-x64.exe 'dist/w1-win-x64/win-unpacked/Discourse Analysis.exe' --set-version-string FileDescription 'Discourse Analysis' --set-version-string ProductName 'Discourse Analysis' --set-version-string LegalCopyright 'Copyright © 2026 Discourse Analysis' --set-file-version 3.3.1 --set-product-version 3.3.1.0 --set-version-string InternalName 'Discourse Analysis' --set-version-string OriginalFilename '' --set-icon dist/w1-win-x64/.icon-ico/icon.ico
+                     workingDirectory=
+  • command executed  executable=<cache-root>/electron-builder/wine/wine-4.0.1-mac/bin/wine64
+                      errorOut=wine: cannot find L"C:\\windows\\system32\\winemenubuilder.exe"
+    000b:err:wineboot:ProcessRunKeys Error running cmd L"C:\\windows\\system32\\winemenubuilder.exe -a -r" (2)
+    Wine cannot find the FreeType font library.  To enable Wine to
+    use TrueType fonts please install a version of FreeType greater than
+    or equal to 2.0.5.
+    http://www.freetype.org
+    Wine cannot find the FreeType font library.  To enable Wine to
+    use TrueType fonts please install a version of FreeType greater than
+    or equal to 2.0.5.
+    http://www.freetype.org
+    Wine cannot find the FreeType font library.  To enable Wine to
+    use TrueType fonts please install a version of FreeType greater than
+    or equal to 2.0.5.
+    http://www.freetype.org
+    
+  • exited          command=app-builder_arm64 code=0 pid=62924
+wine&sign: 4s 409ms
+  • building        target=portable file=dist/w1-win-x64/Discourse Analysis 3.3.1 x64 Portable.exe archs=x64
+  • spawning        command=<windows-worktree>/node_modules/app-builder-bin/mac/app-builder_arm64 download-artifact --name nsis-3.0.4.1 --url https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-3.0.4.1/nsis-3.0.4.1.7z --sha512 VKMiizYdmNdJOWpRGz4trl4lD++BvYP2irAXpMilheUP0pc93iKlWAoP843Vlraj8YG19CVn0j+dCo/hURz9+Q==
+  • found existing  path=<cache-root>/electron-builder/nsis/nsis-3.0.4.1
+  • exited          command=app-builder_arm64 code=0 pid=62993 out=<cache-root>/electron-builder/nsis/nsis-3.0.4.1
+  • executing       file=<windows-worktree>/node_modules/7zip-bin/mac/arm64/7za args=a -bd -mx=9 -mtc=off -mtm=off -mta=off dist/w1-win-x64/discourse-analysis-3.3.1-x64.nsis.7z . cwd=dist/w1-win-x64/win-unpacked
+nsis package, x64: 58s 847ms
+  • executing       file=<windows-worktree>/node_modules/7zip-bin/mac/arm64/7za args=l dist/w1-win-x64/discourse-analysis-3.3.1-x64.nsis.7z
+  • executed        file=<windows-worktree>/node_modules/7zip-bin/mac/arm64/7za stdout=
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=utf8,Utf16=on,HugeFiles=on,64 bits,8 CPUs LE)
+                      Scanning the drive for archives:
+1 file, 69275175 bytes (67 MiB)
+                      Listing archive: dist/w1-win-x64/discourse-analysis-3.3.1-x64.nsis.7z
+                      --
+Path = dist/w1-win-x64/discourse-analysis-3.3.1-x64.nsis.7z
+Type = 7z
+Physical Size = 69275175
+Headers Size = 1136
+Method = LZMA2:26 LZMA:20 BCJ2
+Solid = +
+Blocks = 2
+                         Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+                    D....            0            0  locales
+                    D....            0            0  resources
+                    ....A         1096     15660820  LICENSE.electron.txt
+                    ....A      9142459               LICENSES.chromium.html
+                    ....A       167733               chrome_100_percent.pak
+                    ....A       227823               chrome_200_percent.pak
+                    ....A     10717392               icudtl.dat
+                    ....A       475987               locales/af.pak
+                    ....A       774206               locales/am.pak
+                    ....A       848943               locales/ar.pak
+                    ....A       881843               locales/bg.pak
+                    ....A      1138948               locales/bn.pak
+                    ....A       536688               locales/ca.pak
+                    ....A       552003               locales/cs.pak
+                    ....A       499433               locales/da.pak
+                    ....A       534385               locales/de.pak
+                    ....A       966750               locales/el.pak
+                    ....A       434881               locales/en-GB.pak
+                    ....A       438820               locales/en-US.pak
+                    ....A       528171               locales/es-419.pak
+                    ....A       528159               locales/es.pak
+                    ....A       479354               locales/et.pak
+                    ....A       786229               locales/fa.pak
+                    ....A       489527               locales/fi.pak
+                    ....A       554334               locales/fil.pak
+                    ....A       572576               locales/fr.pak
+                    ....A      1117670               locales/gu.pak
+                    ....A       688870               locales/he.pak
+                    ....A      1176726               locales/hi.pak
+                    ....A       533826               locales/hr.pak
+                    ....A       574850               locales/hu.pak
+                    ....A       473577               locales/id.pak
+                    ....A       521539               locales/it.pak
+                    ....A       637276               locales/ja.pak
+                    ....A      1280837               locales/kn.pak
+                    ....A       538740               locales/ko.pak
+                    ....A       578461               locales/lt.pak
+                    ....A       577630               locales/lv.pak
+                    ....A      1332459               locales/ml.pak
+                    ....A      1094665               locales/mr.pak
+                    ....A       496447               locales/ms.pak
+                    ....A       482576               locales/nb.pak
+                    ....A       496419               locales/nl.pak
+                    ....A       556829               locales/pl.pak
+                    ....A       523253               locales/pt-BR.pak
+                    ....A       524567               locales/pt-PT.pak
+                    ....A       543759               locales/ro.pak
+                    ....A       893079               locales/ru.pak
+                    ....A       561212               locales/sk.pak
+                    ....A       539150               locales/sl.pak
+                    ....A       830811               locales/sr.pak
+                    ....A       484580               locales/sv.pak
+                    ....A       510585               locales/sw.pak
+                    ....A      1320024               locales/ta.pak
+                    ....A      1220352               locales/te.pak
+                    ....A      1027321               locales/th.pak
+                    ....A       521272               locales/tr.pak
+                    ....A       891667               locales/uk.pak
+                    ....A       780171               locales/ur.pak
+                    ....A       616935               locales/vi.pak
+                    ....A       445903               locales/zh-CN.pak
+                    ....A       441078               locales/zh-TW.pak
+                    ....A      5331889               resources.pak
+                    ....A      1287662               resources/app.asar
+                    ....A       276794               snapshot_blob.bin
+                    ....A       642377               v8_context_snapshot.bin
+                    ....A          106               vk_swiftshader_icd.json
+                    ....A    176856576     53613219  Discourse Analysis.exe
+                    ....A      4916712               d3dcompiler_47.dll
+                    ....A      2877440               ffmpeg.dll
+                    ....A       478208               libEGL.dll
+                    ....A      7808512               libGLESv2.dll
+                    ....A       107520               resources/elevate.exe
+                    ....A      5238784               vk_swiftshader.dll
+                    ....A       947200               vulkan-1.dll
+------------------- ----- ------------ ------------  ------------------------
+                             264882636     69274039  73 files, 2 folders
+
+  • spawning        command=<windows-worktree>/node_modules/app-builder-bin/mac/app-builder_arm64 ksuid
+  • exited          command=app-builder_arm64 code=0 pid=63139 out=3LcideT6wwseMlvMkOl4uU031oJ
+  • spawning        command=<windows-worktree>/node_modules/app-builder-bin/mac/app-builder_arm64 download-artifact --name nsis-resources-3.4.1 --url https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-resources-3.4.1/nsis-resources-3.4.1.7z --sha512 Dqd6g+2buwwvoG1Vyf6BHR1b+25QMmPcwZx40atOT57gH27rkjOei1L0JTldxZu4NFoEmW4kJgZ3DlSWVON3+Q==
+  • found existing  path=<cache-root>/electron-builder/nsis/nsis-resources-3.4.1
+  • exited          command=app-builder_arm64 code=0 pid=63140 out=<cache-root>/electron-builder/nsis/nsis-resources-3.4.1
+  • spawning        command=<cache-root>/electron-builder/nsis/nsis-3.0.4.1/mac/makensis -WX -INPUTCHARSET UTF8 -DAPP_ID=com.discourseanalysis.app -DAPP_GUID=8374d328-67bb-5c56-87de-64e3e16f50b3 -DUNINSTALL_APP_KEY=8374d328-67bb-5c56-87de-64e3e16f50b3 -DPRODUCT_NAME=Discourse Analysis -DPRODUCT_FILENAME=Discourse Analysis -DAPP_FILENAME=discourse-analysis -DAPP_DESCRIPTION=Discourse Analysis — diagram the logical structure of Scripture -DVERSION=3.3.1 -DPROJECT_DIR=<windows-worktree> -DBUILD_RESOURCES_DIR=<windows-worktree>/build -DAPP_PACKAGE_NAME=discourse-analysis -DAPP_64=dist/w1-win-x64/discourse-analysis-3.3.1-x64.nsis.7z -DAPP_64_NAME=discourse-analysis-3.3.1-x64.nsis.7z -DAPP_64_HASH=69AAE5A0CC651BB24DDC830DBEA62FEA0B8492DEAC92E8D56237A6874050D337A325DFDB948414E0D645AB047B5AA8B4345099F40CD49B383B82EBEA261C6883 -DAPP_64_UNPACKED_SIZE=258675 -DAPP_PRODUCT_FILENAME=Discourse Analysis -DAPP_INSTALLER_STORE_FILE=discourse-analysis-updater\installer.exe -DCOMPRESSION_METHOD=7z -DREQUEST_EXECUTION_LEVEL=user -DUNPACK_DIR_NAME=3LcideT6wwseMlvMkOl4uU031oJ -DESTIMATED_SIZE=258674 -DCOMPRESS=auto -DUNINSTALLER_OUT_FILE -XOutFile "dist/w1-win-x64/Discourse Analysis 3.3.1 x64 Portable.exe" -XVIProductVersion 3.3.1.0 -XVIAddVersionKey /LANG=1033 ProductName "Discourse Analysis" -XVIAddVersionKey /LANG=1033 ProductVersion "3.3.1" -XVIAddVersionKey /LANG=1033 LegalCopyright "Copyright © 2026 Discourse Analysis" -XVIAddVersionKey /LANG=1033 FileDescription "Discourse Analysis — diagram the logical structure of Scripture" -XVIAddVersionKey /LANG=1033 FileVersion "3.3.1" -XUnicode true -XIcon "dist/w1-win-x64/.icon-ico/icon.ico" -XSetCompressor zlib - cwd=<windows-worktree>/node_modules/app-builder-lib/templates/nsis
+Command line defined: "APP_ID=com.discourseanalysis.app"
+Command line defined: "APP_GUID=8374d328-67bb-5c56-87de-64e3e16f50b3"
+Command line defined: "UNINSTALL_APP_KEY=8374d328-67bb-5c56-87de-64e3e16f50b3"
+Command line defined: "PRODUCT_NAME=Discourse Analysis"
+Command line defined: "PRODUCT_FILENAME=Discourse Analysis"
+Command line defined: "APP_FILENAME=discourse-analysis"
+Command line defined: "APP_DESCRIPTION=Discourse Analysis — diagram the logical structure of Scripture"
+Command line defined: "VERSION=3.3.1"
+Command line defined: "PROJECT_DIR=<windows-worktree>"
+Command line defined: "BUILD_RESOURCES_DIR=<windows-worktree>/build"
+Command line defined: "APP_PACKAGE_NAME=discourse-analysis"
+Command line defined: "APP_64=dist/w1-win-x64/discourse-analysis-3.3.1-x64.nsis.7z"
+Command line defined: "APP_64_NAME=discourse-analysis-3.3.1-x64.nsis.7z"
+Command line defined: "APP_64_HASH=69AAE5A0CC651BB24DDC830DBEA62FEA0B8492DEAC92E8D56237A6874050D337A325DFDB948414E0D645AB047B5AA8B4345099F40CD49B383B82EBEA261C6883"
+Command line defined: "APP_64_UNPACKED_SIZE=258675"
+Command line defined: "APP_PRODUCT_FILENAME=Discourse Analysis"
+Command line defined: "APP_INSTALLER_STORE_FILE=discourse-analysis-updater\installer.exe"
+Command line defined: "COMPRESSION_METHOD=7z"
+Command line defined: "REQUEST_EXECUTION_LEVEL=user"
+Command line defined: "UNPACK_DIR_NAME=3LcideT6wwseMlvMkOl4uU031oJ"
+Command line defined: "ESTIMATED_SIZE=258674"
+Command line defined: "COMPRESS=auto"
+Command line defined: "UNINSTALLER_OUT_FILE"
+Processing script file: "<stdin>" (UTF8)
+
+Processed 1 file, 10 command line commands, writing output (x86-unicode):
+
+Output: "dist/w1-win-x64/Discourse Analysis 3.3.1 x64 Portable.exe"
+Install: 1 page (64 bytes), 1 section (32792 bytes), 259 instructions (7252 bytes), 863 strings (10738 bytes), 26 language tables (5460 bytes).
+
+Using zlib compression.
+
+EXE header size:               81920 / 39424 bytes
+Install code:                   5167 / 40314 bytes
+Install data:               69570112 / 69824055 bytes
+
+Total size:                 69657199 / 69903793 bytes (99.6%)
+  • exited          command=makensis code=0 pid=63141

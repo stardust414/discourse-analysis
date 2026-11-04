@@ -1,0 +1,9 @@
+{
+  "original_path": "<zh-cn-worktree>",
+  "target_path": "<windows-worktree>",
+  "original_branch": "feature/local-cuv",
+  "original_head": "f133af895c1020a703016ea0b0d06e6b07f1c244",
+  "original_status": " M scripts/audit-i18n.cjs\n?? docs/local-cuv/C2-evidence/\n?? scripts/__pycache__/\n?? tests/e2e/local-cuv.spec.js\n?? tests/fixtures/\n?? tests/local-cuv-data.test.js\n?? tests/local-cuv-passage.test.js\n?? tests/local_cuv_converter_test.py\n",
+  "worktrees_before": "worktree <zh-cn-worktree>\nHEAD f133af895c1020a703016ea0b0d06e6b07f1c244\nbranch refs/heads/feature/local-cuv\n\n",
+  "frozen_commit": "c02cf5be5ce69135ef617eb317e2b7362446f239"
+}

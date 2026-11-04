@@ -1,0 +1,17 @@
+{
+  "recorded": "2026-11-04T02:40:40.043102+00:00",
+  "windows": {
+    "path": "<windows-worktree>",
+    "branch": "windows-validation",
+    "head": "c02cf5be5ce69135ef617eb317e2b7362446f239",
+    "status": "M js/services/export-service.js\n M js/services/notation-ui.js\n M js/services/persistence.js\n M js/utils/ui-menus.js\n M scripts/audit-i18n.cjs\n?? docs/windows/\n?? tests/e2e/windows-platform.spec.js\n?? tests/windows-platform.test.js"
+  },
+  "originalMetadataOnly": {
+    "path": "<zh-cn-worktree>",
+    "branch": "feature/local-cuv",
+    "head": "7b46a785232520996db242364021f1be38a7f4ea",
+    "status": ""
+  },
+  "frozenBranch": "c02cf5be5ce69135ef617eb317e2b7362446f239",
+  "note": "Original worktree is concurrently developed by another session; only status/branch/HEAD metadata was read. No feature branch source was read or copied."
+}

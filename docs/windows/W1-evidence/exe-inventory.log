@@ -1,0 +1,103 @@
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=utf8,Utf16=on,HugeFiles=on,64 bits,8 CPUs LE)
+
+Scanning the drive for archives:
+1 file, 69657199 bytes (67 MiB)
+
+Listing archive: dist/w1-win-x64/Discourse Analysis 3.3.1 x64 Portable.exe
+
+--
+Path = dist/w1-win-x64/Discourse Analysis 3.3.1 x64 Portable.exe
+Type = 7z
+WARNINGS:
+There are data after the end of archive
+Offset = 94026
+Physical Size = 69275175
+Tail Size = 287998
+Headers Size = 1136
+Method = LZMA2:26 LZMA:20 BCJ2
+Solid = +
+Blocks = 2
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+                    D....            0            0  locales
+                    D....            0            0  resources
+                    ....A         1096     15660820  LICENSE.electron.txt
+                    ....A      9142459               LICENSES.chromium.html
+                    ....A       167733               chrome_100_percent.pak
+                    ....A       227823               chrome_200_percent.pak
+                    ....A     10717392               icudtl.dat
+                    ....A       475987               locales/af.pak
+                    ....A       774206               locales/am.pak
+                    ....A       848943               locales/ar.pak
+                    ....A       881843               locales/bg.pak
+                    ....A      1138948               locales/bn.pak
+                    ....A       536688               locales/ca.pak
+                    ....A       552003               locales/cs.pak
+                    ....A       499433               locales/da.pak
+                    ....A       534385               locales/de.pak
+                    ....A       966750               locales/el.pak
+                    ....A       434881               locales/en-GB.pak
+                    ....A       438820               locales/en-US.pak
+                    ....A       528171               locales/es-419.pak
+                    ....A       528159               locales/es.pak
+                    ....A       479354               locales/et.pak
+                    ....A       786229               locales/fa.pak
+                    ....A       489527               locales/fi.pak
+                    ....A       554334               locales/fil.pak
+                    ....A       572576               locales/fr.pak
+                    ....A      1117670               locales/gu.pak
+                    ....A       688870               locales/he.pak
+                    ....A      1176726               locales/hi.pak
+                    ....A       533826               locales/hr.pak
+                    ....A       574850               locales/hu.pak
+                    ....A       473577               locales/id.pak
+                    ....A       521539               locales/it.pak
+                    ....A       637276               locales/ja.pak
+                    ....A      1280837               locales/kn.pak
+                    ....A       538740               locales/ko.pak
+                    ....A       578461               locales/lt.pak
+                    ....A       577630               locales/lv.pak
+                    ....A      1332459               locales/ml.pak
+                    ....A      1094665               locales/mr.pak
+                    ....A       496447               locales/ms.pak
+                    ....A       482576               locales/nb.pak
+                    ....A       496419               locales/nl.pak
+                    ....A       556829               locales/pl.pak
+                    ....A       523253               locales/pt-BR.pak
+                    ....A       524567               locales/pt-PT.pak
+                    ....A       543759               locales/ro.pak
+                    ....A       893079               locales/ru.pak
+                    ....A       561212               locales/sk.pak
+                    ....A       539150               locales/sl.pak
+                    ....A       830811               locales/sr.pak
+                    ....A       484580               locales/sv.pak
+                    ....A       510585               locales/sw.pak
+                    ....A      1320024               locales/ta.pak
+                    ....A      1220352               locales/te.pak
+                    ....A      1027321               locales/th.pak
+                    ....A       521272               locales/tr.pak
+                    ....A       891667               locales/uk.pak
+                    ....A       780171               locales/ur.pak
+                    ....A       616935               locales/vi.pak
+                    ....A       445903               locales/zh-CN.pak
+                    ....A       441078               locales/zh-TW.pak
+                    ....A      5331889               resources.pak
+                    ....A      1287662               resources/app.asar
+                    ....A       276794               snapshot_blob.bin
+                    ....A       642377               v8_context_snapshot.bin
+                    ....A          106               vk_swiftshader_icd.json
+                    ....A    176856576     53613219  Discourse Analysis.exe
+                    ....A      4916712               d3dcompiler_47.dll
+                    ....A      2877440               ffmpeg.dll
+                    ....A       478208               libEGL.dll
+                    ....A      7808512               libGLESv2.dll
+                    ....A       107520               resources/elevate.exe
+                    ....A      5238784               vk_swiftshader.dll
+                    ....A       947200               vulkan-1.dll
+------------------- ----- ------------ ------------  ------------------------
+                             264882636     69274039  73 files, 2 folders
+
+Warnings: 1

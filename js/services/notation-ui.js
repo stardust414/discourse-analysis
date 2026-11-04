@@ -168,7 +168,7 @@
     const blob = new Blob([JSON.stringify(p, null, 2)], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `${(p.name || 'profile').replace(/[^a-z0-9]+/gi, '-')}.daprofile.json`;
+    a.download = DA_PERSISTENCE.sanitizeFilename(`${(p.name || 'profile').replace(/[^a-z0-9]+/gi, '-')}.daprofile.json`);
     a.click();
     URL.revokeObjectURL(a.href);
     DA_UI.showTranslatedStatus('s.S0132', {}, 'success');

@@ -729,7 +729,7 @@ function showExportMenu(e) {
           const url = URL.createObjectURL(blob);
           const a = document.createElement('a');
           a.href = url;
-          a.download = `bracket-${DA_STATE.passageRef || 'project'}.json`;
+          a.download = DA_PERSISTENCE.sanitizeFilename(`bracket-${DA_STATE.passageRef || 'project'}.json`);
           a.click();
       }
       if (action === 'copy-json') {
