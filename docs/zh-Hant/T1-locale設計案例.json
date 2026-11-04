@@ -1,0 +1,145 @@
+{
+  "primaryLocaleOnly": true,
+  "scriptBeforeRegion": true,
+  "missingTranslationFallback": "en (never zh-CN)",
+  "cases": [
+    {
+      "input": "zh-CN",
+      "currentActual": "zh-CN",
+      "proposed": "zh-CN",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-SG",
+      "currentActual": "zh-CN",
+      "proposed": "zh-CN",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-Hans",
+      "currentActual": "zh-CN",
+      "proposed": "zh-CN",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-Hans-CN",
+      "currentActual": "zh-CN",
+      "proposed": "zh-CN",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-Hans-SG",
+      "currentActual": "zh-CN",
+      "proposed": "zh-CN",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-TW",
+      "currentActual": "en",
+      "proposed": "zh-Hant",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-HK",
+      "currentActual": "en",
+      "proposed": "zh-Hant",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-MO",
+      "currentActual": "en",
+      "proposed": "zh-Hant",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-Hant",
+      "currentActual": "en",
+      "proposed": "zh-Hant",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-Hant-TW",
+      "currentActual": "en",
+      "proposed": "zh-Hant",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-Hant-HK",
+      "currentActual": "en",
+      "proposed": "zh-Hant",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-Hant-CN",
+      "currentActual": "en",
+      "proposed": "zh-Hant",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-Hans-TW",
+      "currentActual": "zh-CN",
+      "proposed": "zh-CN",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-Hant-US",
+      "currentActual": "en",
+      "proposed": "zh-Hant",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "ZH_hant_HK",
+      "currentActual": "en",
+      "proposed": "zh-Hant",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh",
+      "currentActual": "zh-CN",
+      "proposed": "zh-CN",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-MY",
+      "currentActual": "zh-CN",
+      "proposed": "zh-CN",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "en-US",
+      "currentActual": "en",
+      "proposed": "en",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "fr-FR",
+      "currentActual": "en",
+      "proposed": "en",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "ja-JP",
+      "currentActual": "en",
+      "proposed": "en",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "zh-US",
+      "currentActual": "en",
+      "proposed": "en",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "not_a_locale!",
+      "currentActual": "en",
+      "proposed": "en",
+      "status": "T2 設計預期，未修改 production resolver"
+    },
+    {
+      "input": "",
+      "currentActual": "en",
+      "proposed": "en",
+      "status": "T2 設計預期，未修改 production resolver"
+    }
+  ]
+}

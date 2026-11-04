@@ -1,0 +1,151 @@
+{
+  "records": [
+    {
+      "character": "后",
+      "keys": [
+        "relationship.definition.ground",
+        "relationship.definition.bilateral",
+        "relationship.definition.double-ground",
+        "relationship.definition.idea-explanation",
+        "notation.editHint",
+        "confirm.deleteDependents",
+        "relationship.keywords.progression"
+      ]
+    },
+    {
+      "character": "发",
+      "keys": [
+        "comment.sendReply",
+        "relationship.definition.temporal",
+        "s.S0780",
+        "s.S0779",
+        "s.S0781",
+        "s.S0782",
+        "s.S0141",
+        "s.S0144",
+        "s.S0145",
+        "s.S0146",
+        "s.S0147",
+        "s.S0149",
+        "s.S0254",
+        "native.toggledevtools"
+      ]
+    },
+    {
+      "character": "里",
+      "keys": []
+    },
+    {
+      "character": "干",
+      "keys": []
+    },
+    {
+      "character": "台",
+      "keys": []
+    },
+    {
+      "character": "复",
+      "keys": [
+        "project.codeCopied",
+        "menu.copyImage",
+        "menu.copyJson",
+        "comment.replyPlaceholder",
+        "comment.sendReply",
+        "s.S0727",
+        "s.S0777",
+        "s.S0778",
+        "s.S0783",
+        "s.S0041",
+        "s.S0080",
+        "s.S0094",
+        "s.S0142",
+        "s.S0143",
+        "s.S0187",
+        "s.S0446",
+        "s.S0576",
+        "s.S0185",
+        "confirm.deleteDependents",
+        "recovery.draft",
+        "action.edit reply",
+        "action.delete reply",
+        "action.add reply",
+        "native.copy"
+      ]
+    },
+    {
+      "character": "系",
+      "keys": [
+        "language.system",
+        "relationship.choose",
+        "relationship.filter",
+        "relationship.hover",
+        "relationship.noMatches",
+        "guide.title",
+        "guide.open",
+        "guide.heading",
+        "group.coordinate",
+        "group.subordinate",
+        "group.other",
+        "relationship.name.alternative",
+        "relationship.definition.conditional",
+        "relationship.name.Way-End",
+        "s.S0657",
+        "s.S0669",
+        "s.S0034",
+        "s.S0755",
+        "s.S0757",
+        "s.S0759",
+        "s.S0765",
+        "s.S0804",
+        "s.S0126",
+        "s.S0128",
+        "common.closeGuide",
+        "action.change label",
+        "notation.nameAria",
+        "notation.labelAria",
+        "notation.colorAria",
+        "block.to",
+        "block.with",
+        "relationship.alsoCalled"
+      ]
+    },
+    {
+      "character": "只",
+      "keys": [
+        "s.S0023",
+        "s.S0617"
+      ]
+    },
+    {
+      "character": "面",
+      "keys": [
+        "settings.interface",
+        "language.label",
+        "relationship.definition.concessive",
+        "s.S0719",
+        "s.S0738",
+        "relationship.keywords.alternative"
+      ]
+    },
+    {
+      "character": "制",
+      "keys": [
+        "project.codeCopied",
+        "menu.copyImage",
+        "menu.copyJson",
+        "s.S0727",
+        "s.S0729",
+        "s.S0777",
+        "s.S0778",
+        "s.S0783",
+        "s.S0041",
+        "s.S0094",
+        "s.S0142",
+        "s.S0143",
+        "s.S0576",
+        "native.copy",
+        "native.forcereload"
+      ]
+    }
+  ]
+}

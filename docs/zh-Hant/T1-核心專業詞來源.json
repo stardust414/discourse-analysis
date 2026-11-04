@@ -1,0 +1,286 @@
+{
+  "scope": "review proposals only; not production translations",
+  "coreTerms": [
+    {
+      "id": "C01",
+      "english": "Discourse Analysis",
+      "zhCN": "篇章分析",
+      "suggestedZhHant": "篇章分析",
+      "originalApprovalStatus": "用户审定",
+      "sourceLocation": "README.md",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C02",
+      "english": "bracketing",
+      "zhCN": "括号分析",
+      "suggestedZhHant": "括號分析",
+      "originalApprovalStatus": "用户审定",
+      "sourceLocation": "README.md; index.html:36",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C03",
+      "english": "bracket",
+      "zhCN": "括号",
+      "suggestedZhHant": "括號",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/utils/ui-menus.js:46; js/utils/render-brackets.js:465",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C04",
+      "english": "proposition",
+      "zhCN": "命题",
+      "suggestedZhHant": "命題",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "README.md; js/services/state.js:3",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C05",
+      "english": "passage",
+      "zhCN": "经文段落",
+      "suggestedZhHant": "經文段落",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "index.html:34; app.js:253",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C06",
+      "english": "passage reference / Passage ref",
+      "zhCN": "经文范围",
+      "suggestedZhHant": "經文範圍",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "index.html:39; index.html:145",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C07",
+      "english": "verse / verse number",
+      "zhCN": "节／节号",
+      "suggestedZhHant": "節／節號",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "index.html:41; js/utils/render-propositions.js:479",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C08",
+      "english": "Block Diagram",
+      "zhCN": "缩进结构图",
+      "suggestedZhHant": "縮排結構圖",
+      "originalApprovalStatus": "用户审定",
+      "sourceLocation": "js/utils/block-diagram.js:1; index.html:72",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。 建議縮排結構圖，備選純字形「縮進結構圖」，須與 UI Indent 詞表同批選定。"
+    },
+    {
+      "id": "C09",
+      "english": "Bracket View",
+      "zhCN": "括号视图",
+      "suggestedZhHant": "括號檢視",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/utils/ui-menus.js:741",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。 建議括號檢視，備選括號視圖。"
+    },
+    {
+      "id": "C10",
+      "english": "Parallel Column",
+      "zhCN": "平行经文栏",
+      "suggestedZhHant": "平行經文欄",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/utils/ui-menus.js:814; js/services/state.js:42",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C11",
+      "english": "Parallel translation",
+      "zhCN": "平行译本",
+      "suggestedZhHant": "平行譯本",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/utils/ui-menus.js:816",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C12",
+      "english": "Logical Relationships / Relationship",
+      "zhCN": "逻辑关系／关系",
+      "suggestedZhHant": "邏輯關係／關係",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "index.html:301; js/utils/constants.js:146",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C13",
+      "english": "COORDINATE RELATIONSHIPS",
+      "zhCN": "并列关系",
+      "suggestedZhHant": "並列關係",
+      "originalApprovalStatus": "阶段 5 用户正式批准（2026-11-03）",
+      "sourceLocation": "js/utils/constants.js:176",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C14",
+      "english": "SUBORDINATE RELATIONSHIPS",
+      "zhCN": "从属关系",
+      "suggestedZhHant": "從屬關係",
+      "originalApprovalStatus": "阶段 5 用户正式批准（2026-11-03）",
+      "sourceLocation": "js/utils/constants.js:180",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C15",
+      "english": "Support by Restatement",
+      "zhCN": "以重述支持",
+      "suggestedZhHant": "以重述支持",
+      "originalApprovalStatus": "阶段 5 用户正式批准（2026-11-03）",
+      "sourceLocation": "js/utils/constants.js:183",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C16",
+      "english": "Support by Distinct Statement",
+      "zhCN": "以不同陈述支持",
+      "suggestedZhHant": "以不同陳述支持",
+      "originalApprovalStatus": "阶段 5 用户正式批准（2026-11-03）",
+      "sourceLocation": "js/utils/constants.js:187",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C17",
+      "english": "Support by Contrary Statement",
+      "zhCN": "以相反陈述支持",
+      "suggestedZhHant": "以相反陳述支持",
+      "originalApprovalStatus": "阶段 5 用户正式批准（2026-11-03）",
+      "sourceLocation": "js/utils/constants.js:191",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C18",
+      "english": "Notation / Notation profile",
+      "zhCN": "记号／记号方案（Notation profile → 记号方案）",
+      "suggestedZhHant": "記號／記號方案（Notation profile → 記號方案）",
+      "originalApprovalStatus": "用户审定",
+      "sourceLocation": "index.html:237; index.html:239; js/services/profiles.js:1",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C19",
+      "english": "dominance / dominant / subordinate",
+      "zhCN": "主次／主导项／从属项",
+      "suggestedZhHant": "主次／主導項／從屬項",
+      "originalApprovalStatus": "用户审定",
+      "sourceLocation": "js/utils/render-labels.js:60; js/utils/block-diagram.js:39",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。 三詞逐一對應 dominance／dominant／subordinate，不能改成一般軟體的支配性。"
+    },
+    {
+      "id": "C20",
+      "english": "Passage Main Point",
+      "zhCN": "经文主旨",
+      "suggestedZhHant": "經文主旨",
+      "originalApprovalStatus": "用户审定",
+      "sourceLocation": "js/utils/ui-menus.js:38",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C21",
+      "english": "Main Point Summary",
+      "zhCN": "经文主旨摘要",
+      "suggestedZhHant": "經文主旨摘要",
+      "originalApprovalStatus": "用户审定",
+      "sourceLocation": "index.html:190; js/utils/main-point-summary.js:1",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C22",
+      "english": "jump-over bracket",
+      "zhCN": "跨越式括号",
+      "suggestedZhHant": "跨越式括號",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/utils/ui-menus.js:497; js/utils/constants.js:200",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C23",
+      "english": "label / custom label",
+      "zhCN": "标签／自定义标签",
+      "suggestedZhHant": "標籤／自訂標籤",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "index.html:255; js/utils/ui-menus.js:294",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C24",
+      "english": "Swap Labels / Switch Stars",
+      "zhCN": "交换上下标签／切换星号位置",
+      "suggestedZhHant": "交換上下標籤／切換星號位置",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/utils/ui-menus.js:295; js/utils/render-labels.js:45",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C25",
+      "english": "node / dot / row",
+      "zhCN": "节点／圆点／行",
+      "suggestedZhHant": "節點／圓點／行",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/utils/editor-logic.js:1147; js/utils/render-propositions.js:479",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C26",
+      "english": "star (*) / passage star (★)",
+      "zhCN": "主次星号／经文主旨星标",
+      "suggestedZhHant": "主次星號／經文主旨星標",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/utils/render-labels.js:62; js/utils/render-brackets.js:516",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C27",
+      "english": "Josiah / BibleArc / Gurtner / Beale / Schreiner",
+      "zhCN": "保留英文原名",
+      "suggestedZhHant": "保留英文原名",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/services/profiles.js:45",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C28",
+      "english": "Greek / Hebrew / NT / OT",
+      "zhCN": "希腊文／希伯来文／新约／旧约",
+      "suggestedZhHant": "希臘文／希伯來文／新約／舊約",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "index.html:30; js/utils/ui-menus.js:800",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C29",
+      "english": "SBLGNT / Septuagint (LXX) / Westminster Leningrad (WLC)",
+      "zhCN": "保留缩写与英文版本名",
+      "suggestedZhHant": "保留縮寫與英文版本名",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/utils/ui-menus.js:800",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C30",
+      "english": "English Standard Version / NASB (1995)",
+      "zhCN": "保留英文名称与缩写",
+      "suggestedZhHant": "保留英文名稱與縮寫",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/utils/ui-menus.js:798",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。"
+    },
+    {
+      "id": "C31",
+      "english": "Chinese Union (Traditional) / Chinese Union (Simplified)",
+      "zhCN": "和合本（繁体）／新标点和合本（简体）",
+      "suggestedZhHant": "和合本（繁體）／新標點和合本（簡體）",
+      "originalApprovalStatus": "沿用 v0.1 建议，未单项确认",
+      "sourceLocation": "js/utils/ui-menus.js:792",
+      "note": "繼承原語義；繁體建議待確認，不提升歷史審核狀態。 僅既有譯本 UI 名稱，不改任何 Bible source 或新增 local 功能。"
+    }
+  ],
+  "approvedOriginalGroups": 12,
+  "unconfirmedHistoricalGroups": 19
+}

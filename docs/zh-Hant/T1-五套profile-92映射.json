@@ -1,0 +1,2324 @@
+{
+  "sourceHead": "403538316c80e1e539c334638592c1fc221b3ce8",
+  "perProfile": {
+    "josiah": 18,
+    "biblearc": 18,
+    "gurtner": 20,
+    "beale": 17,
+    "schreiner": 19
+  },
+  "rows": [
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "series",
+      "rawEnglishName": "Series (S)",
+      "englishName": "Series",
+      "originalAbbreviation": "S",
+      "chineseCurrentDisplay": "并列列举 Series (S)",
+      "suggestedZhHantName": "並列列舉",
+      "suggestedCompleteDisplay": "並列列舉 Series（S）",
+      "reviewId": "D01",
+      "rawDefinition": "Each proposition makes an independent contribution to the whole",
+      "approvedOrCurrentChineseHelp": "各命题分别对整体作出独立贡献。",
+      "originalKeywords": "and, moreover, furthermore, likewise",
+      "currentChineseKeywords": "并且、此外、而且、同样（and, moreover, furthermore, likewise）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "S"
+      },
+      "originalColor": "#ef4444",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "progression",
+      "rawEnglishName": "Progression (P)",
+      "englishName": "Progression",
+      "originalAbbreviation": "P / *",
+      "chineseCurrentDisplay": "递进 Progression (P)",
+      "suggestedZhHantName": "遞進",
+      "suggestedCompleteDisplay": "遞進 Progression（P / *）",
+      "reviewId": "D02",
+      "rawDefinition": "Each proposition is a further step to the climax",
+      "approvedOrCurrentChineseHelp": "各命题都是进一步通向高潮的一步。",
+      "originalKeywords": "then, and, moreover",
+      "currentChineseKeywords": "然后、并且、此外（then, and, moreover）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "P / *"
+      },
+      "originalColor": "#f97316",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "alternative",
+      "rawEnglishName": "Alternative (A)",
+      "englishName": "Alternative",
+      "originalAbbreviation": "A",
+      "chineseCurrentDisplay": "选择关系 Alternative (A)",
+      "suggestedZhHantName": "選擇關係",
+      "suggestedCompleteDisplay": "選擇關係 Alternative（A）",
+      "reviewId": "D03",
+      "rawDefinition": "Each proposition expresses an opposite possibility arising from a situation",
+      "approvedOrCurrentChineseHelp": "来自同一处境的不同可能／选项；不表示形式逻辑上的排他二选一。",
+      "originalKeywords": "but, on the other hand, while, or",
+      "currentChineseKeywords": "但是、另一方面、而、或者（but, on the other hand, while, or）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "A"
+      },
+      "originalColor": "#f59e0b",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "action-manner",
+      "rawEnglishName": "Action-Manner (Ac/Mn)",
+      "englishName": "Action-Manner",
+      "originalAbbreviation": "Ac* / Mn",
+      "chineseCurrentDisplay": "行动—方式 Action-Manner (Ac/Mn)",
+      "suggestedZhHantName": "行動—方式",
+      "suggestedCompleteDisplay": "行動—方式 Action-Manner（Ac* / Mn）",
+      "reviewId": "D15",
+      "rawDefinition": "Statement of an action and one which tells more explicitly what is involved in carrying out this action",
+      "approvedOrCurrentChineseHelp": "一个行动，以及更明确说明实行这个行动涉及什么的陈述。",
+      "originalKeywords": "in that, by",
+      "currentChineseKeywords": "在于、借着、以……方式（in that, by）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Ac* / Mn"
+      },
+      "originalColor": "#0ea5e9",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "comparison",
+      "rawEnglishName": "Comparison (/)",
+      "englishName": "Comparison",
+      "originalAbbreviation": "Cf / *",
+      "chineseCurrentDisplay": "比较 Comparison (/)",
+      "suggestedZhHantName": "比較",
+      "suggestedCompleteDisplay": "比較 Comparison（Cf / *）",
+      "reviewId": "D16",
+      "rawDefinition": "Statement expressing an action, thing, etc. followed by a statement making that action, thing, etc. clearer by showing what it is like",
+      "approvedOrCurrentChineseHelp": "先陈述行动、事物等，再说明其像什么，使前述内容更清楚。",
+      "originalKeywords": "even as, as... so",
+      "currentChineseKeywords": "正如、怎样……也怎样（even as, as... so）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Cf / *"
+      },
+      "originalColor": "#14b8a6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "negative-positive",
+      "rawEnglishName": "Negative-Positive (-/+)",
+      "englishName": "Negative-Positive",
+      "originalAbbreviation": "- / +*",
+      "chineseCurrentDisplay": "否定—肯定 Negative-Positive (-/+)",
+      "suggestedZhHantName": "否定—肯定",
+      "suggestedCompleteDisplay": "否定—肯定 Negative-Positive（- / +*）",
+      "reviewId": "D17",
+      "rawDefinition": "Two alternatives, one of which is denied so that the other is enforced",
+      "approvedOrCurrentChineseHelp": "两个选项中一个被否定，从而强化另一个。",
+      "originalKeywords": "not... but, though, although, but",
+      "currentChineseKeywords": "不是……而是、虽然、但是（not... but, though, although, but）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "- / +*"
+      },
+      "originalColor": "#4ade80",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "idea-explanation",
+      "rawEnglishName": "Idea-Explanation (Id/Exp)",
+      "englishName": "Idea-Explanation",
+      "originalAbbreviation": "Id* / Exp",
+      "chineseCurrentDisplay": "意思—解释 Idea-Explanation (Id/Exp)",
+      "suggestedZhHantName": "意思—解釋",
+      "suggestedCompleteDisplay": "意思—解釋 Idea-Explanation（Id* / Exp）",
+      "reviewId": "D18",
+      "rawDefinition": "A relationship where the second proposition explains the idea of the first.",
+      "approvedOrCurrentChineseHelp": "后一内容澄清前一内容的意思，可以解释一个词或整个命题。",
+      "originalKeywords": "that is",
+      "currentChineseKeywords": "也就是、换言之（that is）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Id* / Exp"
+      },
+      "originalColor": "#fbbf24",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "question-answer",
+      "rawEnglishName": "Question-Answer (Q/A)",
+      "englishName": "Question-Answer",
+      "originalAbbreviation": "Q / A*",
+      "chineseCurrentDisplay": "问题—回答 Question-Answer (Q/A)",
+      "suggestedZhHantName": "問題—回答",
+      "suggestedCompleteDisplay": "問題—回答 Question-Answer（Q / A*）",
+      "reviewId": "D19",
+      "rawDefinition": "Statement of question and answer to that question",
+      "approvedOrCurrentChineseHelp": "提出问题的陈述，以及对该问题的回答。",
+      "originalKeywords": "?",
+      "currentChineseKeywords": "?",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Q / A*"
+      },
+      "originalColor": "#2dd4bf",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "ground",
+      "rawEnglishName": "Ground (G)",
+      "englishName": "Ground",
+      "originalAbbreviation": "* / G",
+      "chineseCurrentDisplay": "理由 Ground (G)",
+      "suggestedZhHantName": "理由",
+      "suggestedCompleteDisplay": "理由 Ground（* / G）",
+      "reviewId": "D05",
+      "rawDefinition": "Statement and the argument or basis on which it stands; supporting follows the supported",
+      "approvedOrCurrentChineseHelp": "陈述及其所依据的论证或根据；支持性陈述在被支持的陈述之后。",
+      "originalKeywords": "for, because, since",
+      "currentChineseKeywords": "因为、由于、既然（for, because, since）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / G"
+      },
+      "originalColor": "#10b981",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "inference",
+      "rawEnglishName": "Inference (∴)",
+      "englishName": "Inference",
+      "originalAbbreviation": "∴ / *",
+      "chineseCurrentDisplay": "推论 Inference (∴)",
+      "suggestedZhHantName": "推論",
+      "suggestedCompleteDisplay": "推論 Inference（∴ / *）",
+      "reviewId": "D06",
+      "rawDefinition": "As above, but now the supporting precedes the supported",
+      "approvedOrCurrentChineseHelp": "与 Ground 相似，但支持性陈述在被支持的陈述之前。",
+      "originalKeywords": "therefore, wherefore, thus, consequently",
+      "currentChineseKeywords": "所以、因此、于是、因而（therefore, wherefore, thus, consequently）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "∴ / *"
+      },
+      "originalColor": "#06b6d4",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "action-result",
+      "rawEnglishName": "Action-Result (Ac/Res)",
+      "englishName": "Action-Result",
+      "originalAbbreviation": "Ac / Res*",
+      "chineseCurrentDisplay": "行动—结果 Action-Result (Ac/Res)",
+      "suggestedZhHantName": "行動—結果",
+      "suggestedCompleteDisplay": "行動—結果 Action-Result（Ac / Res*）",
+      "reviewId": "D10",
+      "rawDefinition": "An action and one automatically consequent upon that action",
+      "approvedOrCurrentChineseHelp": "一个行动及由它自然随之产生的结果。",
+      "originalKeywords": "that, so that, with the result that",
+      "currentChineseKeywords": "以致、结果是（that, so that, with the result that）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Ac / Res*"
+      },
+      "originalColor": "#8b5cf6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "conditional",
+      "rawEnglishName": "Conditional (If/Th)",
+      "englishName": "Conditional",
+      "originalAbbreviation": "If / Th*",
+      "chineseCurrentDisplay": "条件 Conditional (If/Th)",
+      "suggestedZhHantName": "條件",
+      "suggestedCompleteDisplay": "條件 Conditional（If / Th*）",
+      "reviewId": "D12",
+      "rawDefinition": "Like above, except the existence of the cause is only potential",
+      "approvedOrCurrentChineseHelp": "类似前述因果关系，但原因的存在仅是潜在的。",
+      "originalKeywords": "if... then, if, except",
+      "currentChineseKeywords": "如果……那么、若、除非（if... then, if, except）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "If / Th*"
+      },
+      "originalColor": "#d946ef",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "action-purpose",
+      "rawEnglishName": "Action-Purpose (Ac/Pur)",
+      "englishName": "Action-Purpose",
+      "originalAbbreviation": "Ac / Pur*",
+      "chineseCurrentDisplay": "行动—目的 Action-Purpose (Ac/Pur)",
+      "suggestedZhHantName": "行動—目的",
+      "suggestedCompleteDisplay": "行動—目的 Action-Purpose（Ac / Pur*）",
+      "reviewId": "D11",
+      "rawDefinition": "An action and the one that is intended to come as a result or goal",
+      "approvedOrCurrentChineseHelp": "一个行动，以及预期作为其结果或目标而出现的事。",
+      "originalKeywords": "in order that, that, lest, to the end that",
+      "currentChineseKeywords": "为了、为要、免得、以便（in order that, that, lest, to the end that）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Ac / Pur*"
+      },
+      "originalColor": "#a855f7",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "temporal",
+      "rawEnglishName": "Temporal (T)",
+      "englishName": "Temporal",
+      "originalAbbreviation": "* / T",
+      "chineseCurrentDisplay": "时间 Temporal (T)",
+      "suggestedZhHantName": "時間",
+      "suggestedCompleteDisplay": "時間 Temporal（* / T）",
+      "reviewId": "D13",
+      "rawDefinition": "Proposition and the occasion when it can occur",
+      "approvedOrCurrentChineseHelp": "一个命题及它可能发生的时间场合。",
+      "originalKeywords": "when, whenever",
+      "currentChineseKeywords": "当……时、每逢（when, whenever）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / T"
+      },
+      "originalColor": "#ec4899",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "locative",
+      "rawEnglishName": "Locative (L)",
+      "englishName": "Locative",
+      "originalAbbreviation": "* / L",
+      "chineseCurrentDisplay": "地点 Locative (L)",
+      "suggestedZhHantName": "地點",
+      "suggestedCompleteDisplay": "地點 Locative（* / L）",
+      "reviewId": "D14",
+      "rawDefinition": "Proposition and the place where it can be true",
+      "approvedOrCurrentChineseHelp": "一个命题及它可能成立的处所。",
+      "originalKeywords": "where, wherever",
+      "currentChineseKeywords": "在……地方、无论何处（where, wherever）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / L"
+      },
+      "originalColor": "#f43f5e",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "bilateral",
+      "rawEnglishName": "Bilateral (Bl)",
+      "englishName": "Bilateral",
+      "originalAbbreviation": "BL",
+      "chineseCurrentDisplay": "双向支持 Bilateral (Bl)",
+      "suggestedZhHantName": "雙向支持",
+      "suggestedCompleteDisplay": "雙向支持 Bilateral（BL）",
+      "reviewId": "D07",
+      "rawDefinition": "A bilateral relationship supporting the preceding proposition and supported by the following proposition.",
+      "approvedOrCurrentChineseHelp": "中间命题作为根据，支持其前后两边。",
+      "originalKeywords": "for... therefore",
+      "currentChineseKeywords": "因为……所以（for... therefore）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "BL"
+      },
+      "originalColor": "#3b82f6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "concessive",
+      "rawEnglishName": "Concessive (Csv)",
+      "englishName": "Concessive",
+      "originalAbbreviation": "Csv / *",
+      "chineseCurrentDisplay": "让步 Concessive (Csv)",
+      "suggestedZhHantName": "讓步",
+      "suggestedCompleteDisplay": "讓步 Concessive（Csv / *）",
+      "reviewId": "D23",
+      "rawDefinition": "Main clause that stands despite a contrary statement",
+      "approvedOrCurrentChineseHelp": "一个主句尽管面对相反陈述仍然成立。",
+      "originalKeywords": "nevertheless, although though, yet, however",
+      "currentChineseKeywords": "然而、虽然、尽管、却（nevertheless, although though, yet, however）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Csv / *"
+      },
+      "originalColor": "#94a3b8",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "josiah",
+      "profileName": "Josiah",
+      "relationshipId": "situation-response",
+      "rawEnglishName": "Situation-Response (Sit/R)",
+      "englishName": "Situation-Response",
+      "originalAbbreviation": "Sit / R*",
+      "chineseCurrentDisplay": "处境—回应 Situation-Response (Sit/R)",
+      "suggestedZhHantName": "處境—回應",
+      "suggestedCompleteDisplay": "處境—回應 Situation-Response（Sit / R*）",
+      "reviewId": "D24",
+      "rawDefinition": "Statement of response to a stated situation or action",
+      "approvedOrCurrentChineseHelp": "对某个已陈述处境或行动作出回应的陈述。",
+      "originalKeywords": "and",
+      "currentChineseKeywords": "于是、并且（and）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Sit / R*"
+      },
+      "originalColor": "#475569",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "series",
+      "rawEnglishName": "Series (S)",
+      "englishName": "Series",
+      "originalAbbreviation": "S",
+      "chineseCurrentDisplay": "并列列举 Series (S)",
+      "suggestedZhHantName": "並列列舉",
+      "suggestedCompleteDisplay": "並列列舉 Series（S）",
+      "reviewId": "D01",
+      "rawDefinition": "Each proposition makes an independent contribution to the whole",
+      "approvedOrCurrentChineseHelp": "各命题分别对整体作出独立贡献。",
+      "originalKeywords": "and, moreover, furthermore, likewise",
+      "currentChineseKeywords": "并且、此外、而且、同样（and, moreover, furthermore, likewise）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "S"
+      },
+      "originalColor": "#ef4444",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "progression",
+      "rawEnglishName": "Progression (P)",
+      "englishName": "Progression",
+      "originalAbbreviation": "P",
+      "chineseCurrentDisplay": "递进 Progression (P)",
+      "suggestedZhHantName": "遞進",
+      "suggestedCompleteDisplay": "遞進 Progression（P）",
+      "reviewId": "D02",
+      "rawDefinition": "Each proposition is a further step to the climax",
+      "approvedOrCurrentChineseHelp": "各命题都是进一步通向高潮的一步。",
+      "originalKeywords": "then, and, moreover",
+      "currentChineseKeywords": "然后、并且、此外（then, and, moreover）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "P"
+      },
+      "originalColor": "#f97316",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "alternative",
+      "rawEnglishName": "Alternative (A)",
+      "englishName": "Alternative",
+      "originalAbbreviation": "A",
+      "chineseCurrentDisplay": "选择关系 Alternative (A)",
+      "suggestedZhHantName": "選擇關係",
+      "suggestedCompleteDisplay": "選擇關係 Alternative（A）",
+      "reviewId": "D03",
+      "rawDefinition": "Each proposition expresses an opposite possibility arising from a situation",
+      "approvedOrCurrentChineseHelp": "来自同一处境的不同可能／选项；不表示形式逻辑上的排他二选一。",
+      "originalKeywords": "but, on the other hand, while, or",
+      "currentChineseKeywords": "但是、另一方面、而、或者（but, on the other hand, while, or）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "A"
+      },
+      "originalColor": "#f59e0b",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "action-manner",
+      "rawEnglishName": "Action-Manner (Ac/Mn)",
+      "englishName": "Action-Manner",
+      "originalAbbreviation": "Ac* / Mn",
+      "chineseCurrentDisplay": "行动—方式 Action-Manner (Ac/Mn)",
+      "suggestedZhHantName": "行動—方式",
+      "suggestedCompleteDisplay": "行動—方式 Action-Manner（Ac* / Mn）",
+      "reviewId": "D15",
+      "rawDefinition": "Statement of an action and one which tells more explicitly what is involved in carrying out this action",
+      "approvedOrCurrentChineseHelp": "一个行动，以及更明确说明实行这个行动涉及什么的陈述。",
+      "originalKeywords": "in that, by",
+      "currentChineseKeywords": "在于、借着、以……方式（in that, by）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Ac* / Mn"
+      },
+      "originalColor": "#0ea5e9",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "comparison",
+      "rawEnglishName": "Comparison (/)",
+      "englishName": "Comparison",
+      "originalAbbreviation": "Cf / *",
+      "chineseCurrentDisplay": "比较 Comparison (/)",
+      "suggestedZhHantName": "比較",
+      "suggestedCompleteDisplay": "比較 Comparison（Cf / *）",
+      "reviewId": "D16",
+      "rawDefinition": "Statement expressing an action, thing, etc. followed by a statement making that action, thing, etc. clearer by showing what it is like",
+      "approvedOrCurrentChineseHelp": "先陈述行动、事物等，再说明其像什么，使前述内容更清楚。",
+      "originalKeywords": "even as, as... so",
+      "currentChineseKeywords": "正如、怎样……也怎样（even as, as... so）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Cf / *"
+      },
+      "originalColor": "#14b8a6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "negative-positive",
+      "rawEnglishName": "Negative-Positive (-/+)",
+      "englishName": "Negative-Positive",
+      "originalAbbreviation": "- / +*",
+      "chineseCurrentDisplay": "否定—肯定 Negative-Positive (-/+)",
+      "suggestedZhHantName": "否定—肯定",
+      "suggestedCompleteDisplay": "否定—肯定 Negative-Positive（- / +*）",
+      "reviewId": "D17",
+      "rawDefinition": "Two alternatives, one of which is denied so that the other is enforced",
+      "approvedOrCurrentChineseHelp": "两个选项中一个被否定，从而强化另一个。",
+      "originalKeywords": "not... but, though, although, but",
+      "currentChineseKeywords": "不是……而是、虽然、但是（not... but, though, although, but）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "- / +*"
+      },
+      "originalColor": "#4ade80",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "idea-explanation",
+      "rawEnglishName": "Idea-Explanation (Id/Exp)",
+      "englishName": "Idea-Explanation",
+      "originalAbbreviation": "Id / Exp*",
+      "chineseCurrentDisplay": "意思—解释 Idea-Explanation (Id/Exp)",
+      "suggestedZhHantName": "意思—解釋",
+      "suggestedCompleteDisplay": "意思—解釋 Idea-Explanation（Id / Exp*）",
+      "reviewId": "D18",
+      "rawDefinition": "A relationship where the second proposition explains the idea of the first.",
+      "approvedOrCurrentChineseHelp": "后一内容澄清前一内容的意思，可以解释一个词或整个命题。",
+      "originalKeywords": "that is",
+      "currentChineseKeywords": "也就是、换言之（that is）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Id / Exp*"
+      },
+      "originalColor": "#fbbf24",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "question-answer",
+      "rawEnglishName": "Question-Answer (Q/A)",
+      "englishName": "Question-Answer",
+      "originalAbbreviation": "Q / A*",
+      "chineseCurrentDisplay": "问题—回答 Question-Answer (Q/A)",
+      "suggestedZhHantName": "問題—回答",
+      "suggestedCompleteDisplay": "問題—回答 Question-Answer（Q / A*）",
+      "reviewId": "D19",
+      "rawDefinition": "Statement of question and answer to that question",
+      "approvedOrCurrentChineseHelp": "提出问题的陈述，以及对该问题的回答。",
+      "originalKeywords": "?",
+      "currentChineseKeywords": "?",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Q / A*"
+      },
+      "originalColor": "#2dd4bf",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "ground",
+      "rawEnglishName": "Ground (G)",
+      "englishName": "Ground",
+      "originalAbbreviation": "* / G",
+      "chineseCurrentDisplay": "理由 Ground (G)",
+      "suggestedZhHantName": "理由",
+      "suggestedCompleteDisplay": "理由 Ground（* / G）",
+      "reviewId": "D05",
+      "rawDefinition": "Statement and the argument or basis on which it stands; supporting follows the supported",
+      "approvedOrCurrentChineseHelp": "陈述及其所依据的论证或根据；支持性陈述在被支持的陈述之后。",
+      "originalKeywords": "for, because, since",
+      "currentChineseKeywords": "因为、由于、既然（for, because, since）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / G"
+      },
+      "originalColor": "#10b981",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "inference",
+      "rawEnglishName": "Inference (∴)",
+      "englishName": "Inference",
+      "originalAbbreviation": "∴ / *",
+      "chineseCurrentDisplay": "推论 Inference (∴)",
+      "suggestedZhHantName": "推論",
+      "suggestedCompleteDisplay": "推論 Inference（∴ / *）",
+      "reviewId": "D06",
+      "rawDefinition": "As above, but now the supporting precedes the supported",
+      "approvedOrCurrentChineseHelp": "与 Ground 相似，但支持性陈述在被支持的陈述之前。",
+      "originalKeywords": "therefore, wherefore, thus, consequently",
+      "currentChineseKeywords": "所以、因此、于是、因而（therefore, wherefore, thus, consequently）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "∴ / *"
+      },
+      "originalColor": "#06b6d4",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "action-result",
+      "rawEnglishName": "Action-Result (Ac/Res)",
+      "englishName": "Action-Result",
+      "originalAbbreviation": "Ac / Res*",
+      "chineseCurrentDisplay": "行动—结果 Action-Result (Ac/Res)",
+      "suggestedZhHantName": "行動—結果",
+      "suggestedCompleteDisplay": "行動—結果 Action-Result（Ac / Res*）",
+      "reviewId": "D10",
+      "rawDefinition": "An action and one automatically consequent upon that action",
+      "approvedOrCurrentChineseHelp": "一个行动及由它自然随之产生的结果。",
+      "originalKeywords": "that, so that, with the result that",
+      "currentChineseKeywords": "以致、结果是（that, so that, with the result that）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Ac / Res*"
+      },
+      "originalColor": "#8b5cf6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "conditional",
+      "rawEnglishName": "Conditional (If/Th)",
+      "englishName": "Conditional",
+      "originalAbbreviation": "If / Th*",
+      "chineseCurrentDisplay": "条件 Conditional (If/Th)",
+      "suggestedZhHantName": "條件",
+      "suggestedCompleteDisplay": "條件 Conditional（If / Th*）",
+      "reviewId": "D12",
+      "rawDefinition": "Like above, except the existence of the cause is only potential",
+      "approvedOrCurrentChineseHelp": "类似前述因果关系，但原因的存在仅是潜在的。",
+      "originalKeywords": "if... then, if, except",
+      "currentChineseKeywords": "如果……那么、若、除非（if... then, if, except）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "If / Th*"
+      },
+      "originalColor": "#d946ef",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "action-purpose",
+      "rawEnglishName": "Action-Purpose (Ac/Pur)",
+      "englishName": "Action-Purpose",
+      "originalAbbreviation": "Ac / Pur*",
+      "chineseCurrentDisplay": "行动—目的 Action-Purpose (Ac/Pur)",
+      "suggestedZhHantName": "行動—目的",
+      "suggestedCompleteDisplay": "行動—目的 Action-Purpose（Ac / Pur*）",
+      "reviewId": "D11",
+      "rawDefinition": "An action and the one that is intended to come as a result or goal",
+      "approvedOrCurrentChineseHelp": "一个行动，以及预期作为其结果或目标而出现的事。",
+      "originalKeywords": "in order that, that, lest, to the end that",
+      "currentChineseKeywords": "为了、为要、免得、以便（in order that, that, lest, to the end that）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Ac / Pur*"
+      },
+      "originalColor": "#a855f7",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "temporal",
+      "rawEnglishName": "Temporal (T)",
+      "englishName": "Temporal",
+      "originalAbbreviation": "* / T",
+      "chineseCurrentDisplay": "时间 Temporal (T)",
+      "suggestedZhHantName": "時間",
+      "suggestedCompleteDisplay": "時間 Temporal（* / T）",
+      "reviewId": "D13",
+      "rawDefinition": "Proposition and the occasion when it can occur",
+      "approvedOrCurrentChineseHelp": "一个命题及它可能发生的时间场合。",
+      "originalKeywords": "when, whenever",
+      "currentChineseKeywords": "当……时、每逢（when, whenever）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / T"
+      },
+      "originalColor": "#ec4899",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "locative",
+      "rawEnglishName": "Locative (L)",
+      "englishName": "Locative",
+      "originalAbbreviation": "* / L",
+      "chineseCurrentDisplay": "地点 Locative (L)",
+      "suggestedZhHantName": "地點",
+      "suggestedCompleteDisplay": "地點 Locative（* / L）",
+      "reviewId": "D14",
+      "rawDefinition": "Proposition and the place where it can be true",
+      "approvedOrCurrentChineseHelp": "一个命题及它可能成立的处所。",
+      "originalKeywords": "where, wherever",
+      "currentChineseKeywords": "在……地方、无论何处（where, wherever）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / L"
+      },
+      "originalColor": "#f43f5e",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "bilateral",
+      "rawEnglishName": "Bilateral (Bl)",
+      "englishName": "Bilateral",
+      "originalAbbreviation": "BL",
+      "chineseCurrentDisplay": "双向支持 Bilateral (Bl)",
+      "suggestedZhHantName": "雙向支持",
+      "suggestedCompleteDisplay": "雙向支持 Bilateral（BL）",
+      "reviewId": "D07",
+      "rawDefinition": "A bilateral relationship supporting the preceding proposition and supported by the following proposition.",
+      "approvedOrCurrentChineseHelp": "中间命题作为根据，支持其前后两边。",
+      "originalKeywords": "for... therefore",
+      "currentChineseKeywords": "因为……所以（for... therefore）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "BL"
+      },
+      "originalColor": "#3b82f6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "concessive",
+      "rawEnglishName": "Concessive (Csv)",
+      "englishName": "Concessive",
+      "originalAbbreviation": "Csv / *",
+      "chineseCurrentDisplay": "让步 Concessive (Csv)",
+      "suggestedZhHantName": "讓步",
+      "suggestedCompleteDisplay": "讓步 Concessive（Csv / *）",
+      "reviewId": "D23",
+      "rawDefinition": "Main clause that stands despite a contrary statement",
+      "approvedOrCurrentChineseHelp": "一个主句尽管面对相反陈述仍然成立。",
+      "originalKeywords": "nevertheless, although though, yet, however",
+      "currentChineseKeywords": "然而、虽然、尽管、却（nevertheless, although though, yet, however）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Csv / *"
+      },
+      "originalColor": "#94a3b8",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "biblearc",
+      "profileName": "BibleArc",
+      "relationshipId": "situation-response",
+      "rawEnglishName": "Situation-Response (Sit/R)",
+      "englishName": "Situation-Response",
+      "originalAbbreviation": "Sit / R*",
+      "chineseCurrentDisplay": "处境—回应 Situation-Response (Sit/R)",
+      "suggestedZhHantName": "處境—回應",
+      "suggestedCompleteDisplay": "處境—回應 Situation-Response（Sit / R*）",
+      "reviewId": "D24",
+      "rawDefinition": "Statement of response to a stated situation or action",
+      "approvedOrCurrentChineseHelp": "对某个已陈述处境或行动作出回应的陈述。",
+      "originalKeywords": "and",
+      "currentChineseKeywords": "于是、并且（and）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Sit / R*"
+      },
+      "originalColor": "#475569",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "series",
+      "rawEnglishName": "Series (S)",
+      "englishName": "Series",
+      "originalAbbreviation": "S",
+      "chineseCurrentDisplay": "并列列举 Series (S)",
+      "suggestedZhHantName": "並列列舉",
+      "suggestedCompleteDisplay": "並列列舉 Series（S）",
+      "reviewId": "D01",
+      "rawDefinition": "Each proposition makes an independent contribution to the whole",
+      "approvedOrCurrentChineseHelp": "各命题分别对整体作出独立贡献。",
+      "originalKeywords": "and, moreover, furthermore, likewise",
+      "currentChineseKeywords": "并且、此外、而且、同样（and, moreover, furthermore, likewise）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "S"
+      },
+      "originalColor": "#ef4444",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "progression",
+      "rawEnglishName": "Progression (P)",
+      "englishName": "Progression",
+      "originalAbbreviation": "P / *",
+      "chineseCurrentDisplay": "递进 Progression (P)",
+      "suggestedZhHantName": "遞進",
+      "suggestedCompleteDisplay": "遞進 Progression（P / *）",
+      "reviewId": "D02",
+      "rawDefinition": "Each proposition is a further step to the climax",
+      "approvedOrCurrentChineseHelp": "各命题都是进一步通向高潮的一步。",
+      "originalKeywords": "then, and, moreover",
+      "currentChineseKeywords": "然后、并且、此外（then, and, moreover）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "P / *"
+      },
+      "originalColor": "#f97316",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "alternative",
+      "rawEnglishName": "Alternative (A)",
+      "englishName": "Alternative",
+      "originalAbbreviation": "A",
+      "chineseCurrentDisplay": "选择关系 Alternative (A)",
+      "suggestedZhHantName": "選擇關係",
+      "suggestedCompleteDisplay": "選擇關係 Alternative（A）",
+      "reviewId": "D03",
+      "rawDefinition": "Each proposition expresses an opposite possibility arising from a situation",
+      "approvedOrCurrentChineseHelp": "来自同一处境的不同可能／选项；不表示形式逻辑上的排他二选一。",
+      "originalKeywords": "but, on the other hand, while, or",
+      "currentChineseKeywords": "但是、另一方面、而、或者（but, on the other hand, while, or）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "A"
+      },
+      "originalColor": "#f59e0b",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "action-manner",
+      "rawEnglishName": "Way-End (W/Ed)",
+      "englishName": "Way-End",
+      "originalAbbreviation": "W / Ed*",
+      "chineseCurrentDisplay": "方式关系 Way-End (W/Ed)",
+      "suggestedZhHantName": "方式關係",
+      "suggestedCompleteDisplay": "方式關係 Way-End（W / Ed*）",
+      "reviewId": "D26",
+      "rawDefinition": "Statement of an action and one which tells more explicitly what is involved in carrying out this action",
+      "approvedOrCurrentChineseHelp": "说明一个行动以何种方式实行。",
+      "originalKeywords": "in that, by",
+      "currentChineseKeywords": "在于、借着、以……方式（in that, by）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "W / Ed*",
+        "name": "Way-End (W/Ed)"
+      },
+      "originalColor": "#0ea5e9",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "comparison",
+      "rawEnglishName": "Comparison (/)",
+      "englishName": "Comparison",
+      "originalAbbreviation": "//",
+      "chineseCurrentDisplay": "比较 Comparison (/)",
+      "suggestedZhHantName": "比較",
+      "suggestedCompleteDisplay": "比較 Comparison（//）",
+      "reviewId": "D16",
+      "rawDefinition": "Statement expressing an action, thing, etc. followed by a statement making that action, thing, etc. clearer by showing what it is like",
+      "approvedOrCurrentChineseHelp": "先陈述行动、事物等，再说明其像什么，使前述内容更清楚。",
+      "originalKeywords": "even as, as... so",
+      "currentChineseKeywords": "正如、怎样……也怎样（even as, as... so）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "//"
+      },
+      "originalColor": "#14b8a6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "negative-positive",
+      "rawEnglishName": "Negative-Positive (-/+)",
+      "englishName": "Negative-Positive",
+      "originalAbbreviation": "- / +*",
+      "chineseCurrentDisplay": "否定—肯定 Negative-Positive (-/+)",
+      "suggestedZhHantName": "否定—肯定",
+      "suggestedCompleteDisplay": "否定—肯定 Negative-Positive（- / +*）",
+      "reviewId": "D17",
+      "rawDefinition": "Two alternatives, one of which is denied so that the other is enforced",
+      "approvedOrCurrentChineseHelp": "两个选项中一个被否定，从而强化另一个。",
+      "originalKeywords": "not... but, though, although, but",
+      "currentChineseKeywords": "不是……而是、虽然、但是（not... but, though, although, but）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "- / +*"
+      },
+      "originalColor": "#4ade80",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "general-specific",
+      "rawEnglishName": "General-Specific (Gen/Sp)",
+      "englishName": "General-Specific",
+      "originalAbbreviation": "Gn / Sp*",
+      "chineseCurrentDisplay": "概括—具体 General-Specific (Gen/Sp)",
+      "suggestedZhHantName": "概括—具體",
+      "suggestedCompleteDisplay": "概括—具體 General-Specific（Gn / Sp*）",
+      "reviewId": "D20",
+      "rawDefinition": "Propositions stating a whole and one or more which set for the part of the whole",
+      "approvedOrCurrentChineseHelp": "陈述整体的命题，以及陈述整体各部分的一个或多个命题。",
+      "originalKeywords": "that is, for",
+      "currentChineseKeywords": "也就是、因为（that is, for）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Gn / Sp*"
+      },
+      "originalColor": "#60a5fa",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "fact-interpretation",
+      "rawEnglishName": "Fact-Interpretation (Ft/In)",
+      "englishName": "Fact-Interpretation",
+      "originalAbbreviation": "Ft / In*",
+      "chineseCurrentDisplay": "事实—诠释 Fact-Interpretation (Ft/In)",
+      "suggestedZhHantName": "事實—詮釋",
+      "suggestedCompleteDisplay": "事實—詮釋 Fact-Interpretation（Ft / In*）",
+      "reviewId": "D21",
+      "rawDefinition": "Proposition and one clarifying or explaining its meaning",
+      "approvedOrCurrentChineseHelp": "一个命题，以及澄清或解释其意义的另一个命题。",
+      "originalKeywords": "that is, for",
+      "currentChineseKeywords": "也就是、因为（that is, for）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Ft / In*"
+      },
+      "originalColor": "#fb7185",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "question-answer",
+      "rawEnglishName": "Question-Answer (Q/A)",
+      "englishName": "Question-Answer",
+      "originalAbbreviation": "Q / A*",
+      "chineseCurrentDisplay": "问题—回答 Question-Answer (Q/A)",
+      "suggestedZhHantName": "問題—回答",
+      "suggestedCompleteDisplay": "問題—回答 Question-Answer（Q / A*）",
+      "reviewId": "D19",
+      "rawDefinition": "Statement of question and answer to that question",
+      "approvedOrCurrentChineseHelp": "提出问题的陈述，以及对该问题的回答。",
+      "originalKeywords": "?",
+      "currentChineseKeywords": "?",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Q / A*"
+      },
+      "originalColor": "#2dd4bf",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "ground",
+      "rawEnglishName": "Ground (G)",
+      "englishName": "Ground",
+      "originalAbbreviation": "* / G",
+      "chineseCurrentDisplay": "理由 Ground (G)",
+      "suggestedZhHantName": "理由",
+      "suggestedCompleteDisplay": "理由 Ground（* / G）",
+      "reviewId": "D05",
+      "rawDefinition": "Statement and the argument or basis on which it stands; supporting follows the supported",
+      "approvedOrCurrentChineseHelp": "陈述及其所依据的论证或根据；支持性陈述在被支持的陈述之后。",
+      "originalKeywords": "for, because, since",
+      "currentChineseKeywords": "因为、由于、既然（for, because, since）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / G"
+      },
+      "originalColor": "#10b981",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "inference",
+      "rawEnglishName": "Inference (∴)",
+      "englishName": "Inference",
+      "originalAbbreviation": "∴ / *",
+      "chineseCurrentDisplay": "推论 Inference (∴)",
+      "suggestedZhHantName": "推論",
+      "suggestedCompleteDisplay": "推論 Inference（∴ / *）",
+      "reviewId": "D06",
+      "rawDefinition": "As above, but now the supporting precedes the supported",
+      "approvedOrCurrentChineseHelp": "与 Ground 相似，但支持性陈述在被支持的陈述之前。",
+      "originalKeywords": "therefore, wherefore, thus, consequently",
+      "currentChineseKeywords": "所以、因此、于是、因而（therefore, wherefore, thus, consequently）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "∴ / *"
+      },
+      "originalColor": "#06b6d4",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "action-result",
+      "rawEnglishName": "Cause-Effect (C/E)",
+      "englishName": "Cause-Effect",
+      "originalAbbreviation": "C / E*",
+      "chineseCurrentDisplay": "原因—结果 Cause-Effect (C/E)",
+      "suggestedZhHantName": "原因—結果",
+      "suggestedCompleteDisplay": "原因—結果 Cause-Effect（C / E*）",
+      "reviewId": "D09",
+      "rawDefinition": "An action and one automatically consequent upon that action",
+      "approvedOrCurrentChineseHelp": "一个行动及由它自然随之产生的结果。",
+      "originalKeywords": "that, so that, with the result that",
+      "currentChineseKeywords": "以致、结果是（that, so that, with the result that）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "C / E*",
+        "name": "Cause-Effect (C/E)"
+      },
+      "originalColor": "#8b5cf6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "conditional",
+      "rawEnglishName": "Conditional (C?/E)",
+      "englishName": "Conditional",
+      "originalAbbreviation": "C? / E*",
+      "chineseCurrentDisplay": "条件 Conditional (C?/E)",
+      "suggestedZhHantName": "條件",
+      "suggestedCompleteDisplay": "條件 Conditional（C? / E*）",
+      "reviewId": "D12",
+      "rawDefinition": "Like above, except the existence of the cause is only potential",
+      "approvedOrCurrentChineseHelp": "类似前述因果关系，但原因的存在仅是潜在的。",
+      "originalKeywords": "if... then, if, except",
+      "currentChineseKeywords": "如果……那么、若、除非（if... then, if, except）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "C? / E*",
+        "name": "Conditional (C?/E)"
+      },
+      "originalColor": "#d946ef",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "action-purpose",
+      "rawEnglishName": "Means-End (M/Ed)",
+      "englishName": "Means-End",
+      "originalAbbreviation": "M / Ed*",
+      "chineseCurrentDisplay": "手段—目的 Means-End (M/Ed)",
+      "suggestedZhHantName": "手段—目的",
+      "suggestedCompleteDisplay": "手段—目的 Means-End（M / Ed*）",
+      "reviewId": "D27",
+      "rawDefinition": "An action and the one that is intended to come as a result or goal",
+      "approvedOrCurrentChineseHelp": "一个行动，以及预期作为其结果或目标而出现的事。",
+      "originalKeywords": "in order that, that, lest, to the end that",
+      "currentChineseKeywords": "为了、为要、免得、以便（in order that, that, lest, to the end that）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "M / Ed*",
+        "name": "Means-End (M/Ed)"
+      },
+      "originalColor": "#a855f7",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "temporal",
+      "rawEnglishName": "Temporal (T)",
+      "englishName": "Temporal",
+      "originalAbbreviation": "* / T",
+      "chineseCurrentDisplay": "时间 Temporal (T)",
+      "suggestedZhHantName": "時間",
+      "suggestedCompleteDisplay": "時間 Temporal（* / T）",
+      "reviewId": "D13",
+      "rawDefinition": "Proposition and the occasion when it can occur",
+      "approvedOrCurrentChineseHelp": "一个命题及它可能发生的时间场合。",
+      "originalKeywords": "when, whenever",
+      "currentChineseKeywords": "当……时、每逢（when, whenever）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / T"
+      },
+      "originalColor": "#ec4899",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "locative",
+      "rawEnglishName": "Locative (L)",
+      "englishName": "Locative",
+      "originalAbbreviation": "* / L",
+      "chineseCurrentDisplay": "地点 Locative (L)",
+      "suggestedZhHantName": "地點",
+      "suggestedCompleteDisplay": "地點 Locative（* / L）",
+      "reviewId": "D14",
+      "rawDefinition": "Proposition and the place where it can be true",
+      "approvedOrCurrentChineseHelp": "一个命题及它可能成立的处所。",
+      "originalKeywords": "where, wherever",
+      "currentChineseKeywords": "在……地方、无论何处（where, wherever）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / L"
+      },
+      "originalColor": "#f43f5e",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "concessive",
+      "rawEnglishName": "Adversative (Adv)",
+      "englishName": "Adversative",
+      "originalAbbreviation": "Adv / *",
+      "chineseCurrentDisplay": "逆接 Adversative (Adv)",
+      "suggestedZhHantName": "逆接",
+      "suggestedCompleteDisplay": "逆接 Adversative（Adv / *）",
+      "reviewId": "D28",
+      "rawDefinition": "Main clause that stands despite a contrary statement",
+      "approvedOrCurrentChineseHelp": "尽管存在相反陈述，主句仍然成立；保留 concessive／contrary-statement 性质，不把所有普通转折都归入此类。",
+      "originalKeywords": "nevertheless, although though, yet, however",
+      "currentChineseKeywords": "然而、虽然、尽管、却（nevertheless, although though, yet, however）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Adv / *",
+        "name": "Adversative (Adv)"
+      },
+      "originalColor": "#94a3b8",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "situation-response",
+      "rawEnglishName": "Situation-Response (S/R)",
+      "englishName": "Situation-Response",
+      "originalAbbreviation": "S / R*",
+      "chineseCurrentDisplay": "处境—回应 Situation-Response (S/R)",
+      "suggestedZhHantName": "處境—回應",
+      "suggestedCompleteDisplay": "處境—回應 Situation-Response（S / R*）",
+      "reviewId": "D24",
+      "rawDefinition": "Statement of response to a stated situation or action",
+      "approvedOrCurrentChineseHelp": "对某个已陈述处境或行动作出回应的陈述。",
+      "originalKeywords": "and",
+      "currentChineseKeywords": "于是、并且（and）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "S / R*",
+        "name": "Situation-Response (S/R)"
+      },
+      "originalColor": "#475569",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "anticipation-fulfillment",
+      "rawEnglishName": "Anticipation-Fulfillment (An/Fl)",
+      "englishName": "Anticipation-Fulfillment",
+      "originalAbbreviation": "A / F*",
+      "chineseCurrentDisplay": "预期—实现 Anticipation-Fulfillment (An/Fl)",
+      "suggestedZhHantName": "預期—實現",
+      "suggestedCompleteDisplay": "預期—實現 Anticipation-Fulfillment（A / F*）",
+      "reviewId": "D22",
+      "rawDefinition": "A main clause that fulfills the anticipation or promise of a prior clause (subset of progression)",
+      "approvedOrCurrentChineseHelp": "一个主句实现先前分句的预期或应许；属于 Progression 的子类。",
+      "originalKeywords": "",
+      "currentChineseKeywords": "",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "A / F*"
+      },
+      "originalColor": "#c084fc",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "gurtner",
+      "profileName": "Gurtner",
+      "relationshipId": "both-and",
+      "rawEnglishName": "Both-And (B-A)",
+      "englishName": "Both-And",
+      "originalAbbreviation": "B-A",
+      "chineseCurrentDisplay": "两者并列 Both-And (B-A)",
+      "suggestedZhHantName": "兩者並列",
+      "suggestedCompleteDisplay": "兩者並列 Both-And（B-A）",
+      "reviewId": "D04",
+      "rawDefinition": "Each proposition makes an independent contribution to the whole, but the contributions are inseparable (subset of series)",
+      "approvedOrCurrentChineseHelp": "各命题分别对整体作出独立贡献，但这些贡献不可分；属于 Series 的子类。",
+      "originalKeywords": "",
+      "currentChineseKeywords": "",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "B-A"
+      },
+      "originalColor": "#84cc16",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "series",
+      "rawEnglishName": "Series (S)",
+      "englishName": "Series",
+      "originalAbbreviation": "S",
+      "chineseCurrentDisplay": "并列列举 Series (S)",
+      "suggestedZhHantName": "並列列舉",
+      "suggestedCompleteDisplay": "並列列舉 Series（S）",
+      "reviewId": "D01",
+      "rawDefinition": "Each proposition makes an independent contribution to the whole",
+      "approvedOrCurrentChineseHelp": "各命题分别对整体作出独立贡献。",
+      "originalKeywords": "and, moreover, furthermore, likewise",
+      "currentChineseKeywords": "并且、此外、而且、同样（and, moreover, furthermore, likewise）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "S"
+      },
+      "originalColor": "#ef4444",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "progression",
+      "rawEnglishName": "Progression (P)",
+      "englishName": "Progression",
+      "originalAbbreviation": "P",
+      "chineseCurrentDisplay": "递进 Progression (P)",
+      "suggestedZhHantName": "遞進",
+      "suggestedCompleteDisplay": "遞進 Progression（P）",
+      "reviewId": "D02",
+      "rawDefinition": "Each proposition is a further step to the climax",
+      "approvedOrCurrentChineseHelp": "各命题都是进一步通向高潮的一步。",
+      "originalKeywords": "then, and, moreover",
+      "currentChineseKeywords": "然后、并且、此外（then, and, moreover）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "P"
+      },
+      "originalColor": "#f97316",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "alternative",
+      "rawEnglishName": "Alternative (A)",
+      "englishName": "Alternative",
+      "originalAbbreviation": "A",
+      "chineseCurrentDisplay": "选择关系 Alternative (A)",
+      "suggestedZhHantName": "選擇關係",
+      "suggestedCompleteDisplay": "選擇關係 Alternative（A）",
+      "reviewId": "D03",
+      "rawDefinition": "Each proposition expresses an opposite possibility arising from a situation",
+      "approvedOrCurrentChineseHelp": "来自同一处境的不同可能／选项；不表示形式逻辑上的排他二选一。",
+      "originalKeywords": "but, on the other hand, while, or",
+      "currentChineseKeywords": "但是、另一方面、而、或者（but, on the other hand, while, or）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "A"
+      },
+      "originalColor": "#f59e0b",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "comparison",
+      "rawEnglishName": "Comparison (/)",
+      "englishName": "Comparison",
+      "originalAbbreviation": "// / *",
+      "chineseCurrentDisplay": "比较 Comparison (/)",
+      "suggestedZhHantName": "比較",
+      "suggestedCompleteDisplay": "比較 Comparison（// / *）",
+      "reviewId": "D16",
+      "rawDefinition": "Statement expressing an action, thing, etc. followed by a statement making that action, thing, etc. clearer by showing what it is like",
+      "approvedOrCurrentChineseHelp": "先陈述行动、事物等，再说明其像什么，使前述内容更清楚。",
+      "originalKeywords": "even as, as... so",
+      "currentChineseKeywords": "正如、怎样……也怎样（even as, as... so）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "// / *"
+      },
+      "originalColor": "#14b8a6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "negative-positive",
+      "rawEnglishName": "Negative-Positive (-/+)",
+      "englishName": "Negative-Positive",
+      "originalAbbreviation": "- / +*",
+      "chineseCurrentDisplay": "否定—肯定 Negative-Positive (-/+)",
+      "suggestedZhHantName": "否定—肯定",
+      "suggestedCompleteDisplay": "否定—肯定 Negative-Positive（- / +*）",
+      "reviewId": "D17",
+      "rawDefinition": "Two alternatives, one of which is denied so that the other is enforced",
+      "approvedOrCurrentChineseHelp": "两个选项中一个被否定，从而强化另一个。",
+      "originalKeywords": "not... but, though, although, but",
+      "currentChineseKeywords": "不是……而是、虽然、但是（not... but, though, although, but）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "- / +*"
+      },
+      "originalColor": "#4ade80",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "general-specific",
+      "rawEnglishName": "General-Specific (Gen/Sp)",
+      "englishName": "General-Specific",
+      "originalAbbreviation": "Gn / Sp*",
+      "chineseCurrentDisplay": "概括—具体 General-Specific (Gen/Sp)",
+      "suggestedZhHantName": "概括—具體",
+      "suggestedCompleteDisplay": "概括—具體 General-Specific（Gn / Sp*）",
+      "reviewId": "D20",
+      "rawDefinition": "Propositions stating a whole and one or more which set for the part of the whole",
+      "approvedOrCurrentChineseHelp": "陈述整体的命题，以及陈述整体各部分的一个或多个命题。",
+      "originalKeywords": "that is, for",
+      "currentChineseKeywords": "也就是、因为（that is, for）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Gn / Sp*"
+      },
+      "originalColor": "#60a5fa",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "fact-interpretation",
+      "rawEnglishName": "Fact-Interpretation (Ft/In)",
+      "englishName": "Fact-Interpretation",
+      "originalAbbreviation": "Ft / In*",
+      "chineseCurrentDisplay": "事实—诠释 Fact-Interpretation (Ft/In)",
+      "suggestedZhHantName": "事實—詮釋",
+      "suggestedCompleteDisplay": "事實—詮釋 Fact-Interpretation（Ft / In*）",
+      "reviewId": "D21",
+      "rawDefinition": "Proposition and one clarifying or explaining its meaning",
+      "approvedOrCurrentChineseHelp": "一个命题，以及澄清或解释其意义的另一个命题。",
+      "originalKeywords": "that is, for",
+      "currentChineseKeywords": "也就是、因为（that is, for）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Ft / In*"
+      },
+      "originalColor": "#fb7185",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "question-answer",
+      "rawEnglishName": "Question-Answer (Q/A)",
+      "englishName": "Question-Answer",
+      "originalAbbreviation": "Q / A*",
+      "chineseCurrentDisplay": "问题—回答 Question-Answer (Q/A)",
+      "suggestedZhHantName": "問題—回答",
+      "suggestedCompleteDisplay": "問題—回答 Question-Answer（Q / A*）",
+      "reviewId": "D19",
+      "rawDefinition": "Statement of question and answer to that question",
+      "approvedOrCurrentChineseHelp": "提出问题的陈述，以及对该问题的回答。",
+      "originalKeywords": "?",
+      "currentChineseKeywords": "?",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Q / A*"
+      },
+      "originalColor": "#2dd4bf",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "ground",
+      "rawEnglishName": "Ground (G)",
+      "englishName": "Ground",
+      "originalAbbreviation": "* / G",
+      "chineseCurrentDisplay": "理由 Ground (G)",
+      "suggestedZhHantName": "理由",
+      "suggestedCompleteDisplay": "理由 Ground（* / G）",
+      "reviewId": "D05",
+      "rawDefinition": "Statement and the argument or basis on which it stands; supporting follows the supported",
+      "approvedOrCurrentChineseHelp": "陈述及其所依据的论证或根据；支持性陈述在被支持的陈述之后。",
+      "originalKeywords": "for, because, since",
+      "currentChineseKeywords": "因为、由于、既然（for, because, since）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / G"
+      },
+      "originalColor": "#10b981",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "inference",
+      "rawEnglishName": "Inference (∴)",
+      "englishName": "Inference",
+      "originalAbbreviation": "∴ / *",
+      "chineseCurrentDisplay": "推论 Inference (∴)",
+      "suggestedZhHantName": "推論",
+      "suggestedCompleteDisplay": "推論 Inference（∴ / *）",
+      "reviewId": "D06",
+      "rawDefinition": "As above, but now the supporting precedes the supported",
+      "approvedOrCurrentChineseHelp": "与 Ground 相似，但支持性陈述在被支持的陈述之前。",
+      "originalKeywords": "therefore, wherefore, thus, consequently",
+      "currentChineseKeywords": "所以、因此、于是、因而（therefore, wherefore, thus, consequently）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "∴ / *"
+      },
+      "originalColor": "#06b6d4",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "action-result",
+      "rawEnglishName": "Cause-Effect (C/E)",
+      "englishName": "Cause-Effect",
+      "originalAbbreviation": "C / E*",
+      "chineseCurrentDisplay": "原因—结果 Cause-Effect (C/E)",
+      "suggestedZhHantName": "原因—結果",
+      "suggestedCompleteDisplay": "原因—結果 Cause-Effect（C / E*）",
+      "reviewId": "D09",
+      "rawDefinition": "An action and one automatically consequent upon that action",
+      "approvedOrCurrentChineseHelp": "一个行动及由它自然随之产生的结果。",
+      "originalKeywords": "that, so that, with the result that",
+      "currentChineseKeywords": "以致、结果是（that, so that, with the result that）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "C / E*",
+        "name": "Cause-Effect (C/E)"
+      },
+      "originalColor": "#8b5cf6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "conditional",
+      "rawEnglishName": "Conditional (C?/E)",
+      "englishName": "Conditional",
+      "originalAbbreviation": "C? / E*",
+      "chineseCurrentDisplay": "条件 Conditional (C?/E)",
+      "suggestedZhHantName": "條件",
+      "suggestedCompleteDisplay": "條件 Conditional（C? / E*）",
+      "reviewId": "D12",
+      "rawDefinition": "Like above, except the existence of the cause is only potential",
+      "approvedOrCurrentChineseHelp": "类似前述因果关系，但原因的存在仅是潜在的。",
+      "originalKeywords": "if... then, if, except",
+      "currentChineseKeywords": "如果……那么、若、除非（if... then, if, except）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "C? / E*",
+        "name": "Conditional (C?/E)"
+      },
+      "originalColor": "#d946ef",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "action-purpose",
+      "rawEnglishName": "Means-End (M/Ed)",
+      "englishName": "Means-End",
+      "originalAbbreviation": "M / Ed*",
+      "chineseCurrentDisplay": "手段—目的 Means-End (M/Ed)",
+      "suggestedZhHantName": "手段—目的",
+      "suggestedCompleteDisplay": "手段—目的 Means-End（M / Ed*）",
+      "reviewId": "D27",
+      "rawDefinition": "An action and the one that is intended to come as a result or goal",
+      "approvedOrCurrentChineseHelp": "一个行动，以及预期作为其结果或目标而出现的事。",
+      "originalKeywords": "in order that, that, lest, to the end that",
+      "currentChineseKeywords": "为了、为要、免得、以便（in order that, that, lest, to the end that）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "M / Ed*",
+        "name": "Means-End (M/Ed)"
+      },
+      "originalColor": "#a855f7",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "temporal",
+      "rawEnglishName": "Temporal (T)",
+      "englishName": "Temporal",
+      "originalAbbreviation": "* / T",
+      "chineseCurrentDisplay": "时间 Temporal (T)",
+      "suggestedZhHantName": "時間",
+      "suggestedCompleteDisplay": "時間 Temporal（* / T）",
+      "reviewId": "D13",
+      "rawDefinition": "Proposition and the occasion when it can occur",
+      "approvedOrCurrentChineseHelp": "一个命题及它可能发生的时间场合。",
+      "originalKeywords": "when, whenever",
+      "currentChineseKeywords": "当……时、每逢（when, whenever）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / T"
+      },
+      "originalColor": "#ec4899",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "locative",
+      "rawEnglishName": "Locative (L)",
+      "englishName": "Locative",
+      "originalAbbreviation": "* / L",
+      "chineseCurrentDisplay": "地点 Locative (L)",
+      "suggestedZhHantName": "地點",
+      "suggestedCompleteDisplay": "地點 Locative（* / L）",
+      "reviewId": "D14",
+      "rawDefinition": "Proposition and the place where it can be true",
+      "approvedOrCurrentChineseHelp": "一个命题及它可能成立的处所。",
+      "originalKeywords": "where, wherever",
+      "currentChineseKeywords": "在……地方、无论何处（where, wherever）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "* / L"
+      },
+      "originalColor": "#f43f5e",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "concessive",
+      "rawEnglishName": "Adversative (Adv)",
+      "englishName": "Adversative",
+      "originalAbbreviation": "Adv / *",
+      "chineseCurrentDisplay": "逆接 Adversative (Adv)",
+      "suggestedZhHantName": "逆接",
+      "suggestedCompleteDisplay": "逆接 Adversative（Adv / *）",
+      "reviewId": "D28",
+      "rawDefinition": "Main clause that stands despite a contrary statement",
+      "approvedOrCurrentChineseHelp": "尽管存在相反陈述，主句仍然成立；保留 concessive／contrary-statement 性质，不把所有普通转折都归入此类。",
+      "originalKeywords": "nevertheless, although though, yet, however",
+      "currentChineseKeywords": "然而、虽然、尽管、却（nevertheless, although though, yet, however）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Adv / *",
+        "name": "Adversative (Adv)"
+      },
+      "originalColor": "#94a3b8",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "beale",
+      "profileName": "Beale",
+      "relationshipId": "situation-response",
+      "rawEnglishName": "Situation-Response (S/R)",
+      "englishName": "Situation-Response",
+      "originalAbbreviation": "S / R*",
+      "chineseCurrentDisplay": "处境—回应 Situation-Response (S/R)",
+      "suggestedZhHantName": "處境—回應",
+      "suggestedCompleteDisplay": "處境—回應 Situation-Response（S / R*）",
+      "reviewId": "D24",
+      "rawDefinition": "Statement of response to a stated situation or action",
+      "approvedOrCurrentChineseHelp": "对某个已陈述处境或行动作出回应的陈述。",
+      "originalKeywords": "and",
+      "currentChineseKeywords": "于是、并且（and）",
+      "originalDominance": {
+        "default": true,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "S / R*",
+        "name": "Situation-Response (S/R)"
+      },
+      "originalColor": "#475569",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "series",
+      "rawEnglishName": "Series (S)",
+      "englishName": "Series",
+      "originalAbbreviation": "S",
+      "chineseCurrentDisplay": "并列列举 Series (S)",
+      "suggestedZhHantName": "並列列舉",
+      "suggestedCompleteDisplay": "並列列舉 Series（S）",
+      "reviewId": "D01",
+      "rawDefinition": "Each proposition makes an independent contribution to the whole",
+      "approvedOrCurrentChineseHelp": "各命题分别对整体作出独立贡献。",
+      "originalKeywords": "and, moreover, furthermore, likewise",
+      "currentChineseKeywords": "并且、此外、而且、同样（and, moreover, furthermore, likewise）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "S"
+      },
+      "originalColor": "#ef4444",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "progression",
+      "rawEnglishName": "Progression (P)",
+      "englishName": "Progression",
+      "originalAbbreviation": "P",
+      "chineseCurrentDisplay": "递进 Progression (P)",
+      "suggestedZhHantName": "遞進",
+      "suggestedCompleteDisplay": "遞進 Progression（P）",
+      "reviewId": "D02",
+      "rawDefinition": "Each proposition is a further step to the climax",
+      "approvedOrCurrentChineseHelp": "各命题都是进一步通向高潮的一步。",
+      "originalKeywords": "then, and, moreover",
+      "currentChineseKeywords": "然后、并且、此外（then, and, moreover）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "P"
+      },
+      "originalColor": "#f97316",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "alternative",
+      "rawEnglishName": "Alternative (A)",
+      "englishName": "Alternative",
+      "originalAbbreviation": "A",
+      "chineseCurrentDisplay": "选择关系 Alternative (A)",
+      "suggestedZhHantName": "選擇關係",
+      "suggestedCompleteDisplay": "選擇關係 Alternative（A）",
+      "reviewId": "D03",
+      "rawDefinition": "Each proposition expresses an opposite possibility arising from a situation",
+      "approvedOrCurrentChineseHelp": "来自同一处境的不同可能／选项；不表示形式逻辑上的排他二选一。",
+      "originalKeywords": "but, on the other hand, while, or",
+      "currentChineseKeywords": "但是、另一方面、而、或者（but, on the other hand, while, or）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "A"
+      },
+      "originalColor": "#f59e0b",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "action-manner",
+      "rawEnglishName": "Action-Manner (Ac/Mn)",
+      "englishName": "Action-Manner",
+      "originalAbbreviation": "Ac / Mn",
+      "chineseCurrentDisplay": "行动—方式 Action-Manner (Ac/Mn)",
+      "suggestedZhHantName": "行動—方式",
+      "suggestedCompleteDisplay": "行動—方式 Action-Manner（Ac / Mn）",
+      "reviewId": "D15",
+      "rawDefinition": "Statement of an action and one which tells more explicitly what is involved in carrying out this action",
+      "approvedOrCurrentChineseHelp": "一个行动，以及更明确说明实行这个行动涉及什么的陈述。",
+      "originalKeywords": "in that, by",
+      "currentChineseKeywords": "在于、借着、以……方式（in that, by）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Ac / Mn"
+      },
+      "originalColor": "#0ea5e9",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "comparison",
+      "rawEnglishName": "Comparison (/)",
+      "englishName": "Comparison",
+      "originalAbbreviation": "Cf",
+      "chineseCurrentDisplay": "比较 Comparison (/)",
+      "suggestedZhHantName": "比較",
+      "suggestedCompleteDisplay": "比較 Comparison（Cf）",
+      "reviewId": "D16",
+      "rawDefinition": "Statement expressing an action, thing, etc. followed by a statement making that action, thing, etc. clearer by showing what it is like",
+      "approvedOrCurrentChineseHelp": "先陈述行动、事物等，再说明其像什么，使前述内容更清楚。",
+      "originalKeywords": "even as, as... so",
+      "currentChineseKeywords": "正如、怎样……也怎样（even as, as... so）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Cf"
+      },
+      "originalColor": "#14b8a6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "negative-positive",
+      "rawEnglishName": "Negative-Positive (-/+)",
+      "englishName": "Negative-Positive",
+      "originalAbbreviation": "- / +",
+      "chineseCurrentDisplay": "否定—肯定 Negative-Positive (-/+)",
+      "suggestedZhHantName": "否定—肯定",
+      "suggestedCompleteDisplay": "否定—肯定 Negative-Positive（- / +）",
+      "reviewId": "D17",
+      "rawDefinition": "Two alternatives, one of which is denied so that the other is enforced",
+      "approvedOrCurrentChineseHelp": "两个选项中一个被否定，从而强化另一个。",
+      "originalKeywords": "not... but, though, although, but",
+      "currentChineseKeywords": "不是……而是、虽然、但是（not... but, though, although, but）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "- / +"
+      },
+      "originalColor": "#4ade80",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "idea-explanation",
+      "rawEnglishName": "Idea-Explanation (Id/Exp)",
+      "englishName": "Idea-Explanation",
+      "originalAbbreviation": "Id / Exp",
+      "chineseCurrentDisplay": "意思—解释 Idea-Explanation (Id/Exp)",
+      "suggestedZhHantName": "意思—解釋",
+      "suggestedCompleteDisplay": "意思—解釋 Idea-Explanation（Id / Exp）",
+      "reviewId": "D18",
+      "rawDefinition": "A relationship where the second proposition explains the idea of the first.",
+      "approvedOrCurrentChineseHelp": "后一内容澄清前一内容的意思，可以解释一个词或整个命题。",
+      "originalKeywords": "that is",
+      "currentChineseKeywords": "也就是、换言之（that is）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Id / Exp"
+      },
+      "originalColor": "#fbbf24",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "question-answer",
+      "rawEnglishName": "Question-Answer (Q/A)",
+      "englishName": "Question-Answer",
+      "originalAbbreviation": "Q / A",
+      "chineseCurrentDisplay": "问题—回答 Question-Answer (Q/A)",
+      "suggestedZhHantName": "問題—回答",
+      "suggestedCompleteDisplay": "問題—回答 Question-Answer（Q / A）",
+      "reviewId": "D19",
+      "rawDefinition": "Statement of question and answer to that question",
+      "approvedOrCurrentChineseHelp": "提出问题的陈述，以及对该问题的回答。",
+      "originalKeywords": "?",
+      "currentChineseKeywords": "?",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Q / A"
+      },
+      "originalColor": "#2dd4bf",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "ground",
+      "rawEnglishName": "Ground (G)",
+      "englishName": "Ground",
+      "originalAbbreviation": "G",
+      "chineseCurrentDisplay": "理由 Ground (G)",
+      "suggestedZhHantName": "理由",
+      "suggestedCompleteDisplay": "理由 Ground（G）",
+      "reviewId": "D05",
+      "rawDefinition": "Statement and the argument or basis on which it stands; supporting follows the supported",
+      "approvedOrCurrentChineseHelp": "陈述及其所依据的论证或根据；支持性陈述在被支持的陈述之后。",
+      "originalKeywords": "for, because, since",
+      "currentChineseKeywords": "因为、由于、既然（for, because, since）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "G"
+      },
+      "originalColor": "#10b981",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "inference",
+      "rawEnglishName": "Inference (∴)",
+      "englishName": "Inference",
+      "originalAbbreviation": "∴",
+      "chineseCurrentDisplay": "推论 Inference (∴)",
+      "suggestedZhHantName": "推論",
+      "suggestedCompleteDisplay": "推論 Inference（∴）",
+      "reviewId": "D06",
+      "rawDefinition": "As above, but now the supporting precedes the supported",
+      "approvedOrCurrentChineseHelp": "与 Ground 相似，但支持性陈述在被支持的陈述之前。",
+      "originalKeywords": "therefore, wherefore, thus, consequently",
+      "currentChineseKeywords": "所以、因此、于是、因而（therefore, wherefore, thus, consequently）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "∴"
+      },
+      "originalColor": "#06b6d4",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "action-result",
+      "rawEnglishName": "Action-Result (Ac/Res)",
+      "englishName": "Action-Result",
+      "originalAbbreviation": "Ac / Res",
+      "chineseCurrentDisplay": "行动—结果 Action-Result (Ac/Res)",
+      "suggestedZhHantName": "行動—結果",
+      "suggestedCompleteDisplay": "行動—結果 Action-Result（Ac / Res）",
+      "reviewId": "D10",
+      "rawDefinition": "An action and one automatically consequent upon that action",
+      "approvedOrCurrentChineseHelp": "一个行动及由它自然随之产生的结果。",
+      "originalKeywords": "that, so that, with the result that",
+      "currentChineseKeywords": "以致、结果是（that, so that, with the result that）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Ac / Res"
+      },
+      "originalColor": "#8b5cf6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "conditional",
+      "rawEnglishName": "Conditional (If/Th)",
+      "englishName": "Conditional",
+      "originalAbbreviation": "If / Th",
+      "chineseCurrentDisplay": "条件 Conditional (If/Th)",
+      "suggestedZhHantName": "條件",
+      "suggestedCompleteDisplay": "條件 Conditional（If / Th）",
+      "reviewId": "D12",
+      "rawDefinition": "Like above, except the existence of the cause is only potential",
+      "approvedOrCurrentChineseHelp": "类似前述因果关系，但原因的存在仅是潜在的。",
+      "originalKeywords": "if... then, if, except",
+      "currentChineseKeywords": "如果……那么、若、除非（if... then, if, except）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "If / Th"
+      },
+      "originalColor": "#d946ef",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "action-purpose",
+      "rawEnglishName": "Action-Purpose (Ac/Pur)",
+      "englishName": "Action-Purpose",
+      "originalAbbreviation": "Ac / Pur",
+      "chineseCurrentDisplay": "行动—目的 Action-Purpose (Ac/Pur)",
+      "suggestedZhHantName": "行動—目的",
+      "suggestedCompleteDisplay": "行動—目的 Action-Purpose（Ac / Pur）",
+      "reviewId": "D11",
+      "rawDefinition": "An action and the one that is intended to come as a result or goal",
+      "approvedOrCurrentChineseHelp": "一个行动，以及预期作为其结果或目标而出现的事。",
+      "originalKeywords": "in order that, that, lest, to the end that",
+      "currentChineseKeywords": "为了、为要、免得、以便（in order that, that, lest, to the end that）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Ac / Pur"
+      },
+      "originalColor": "#a855f7",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "temporal",
+      "rawEnglishName": "Temporal (T)",
+      "englishName": "Temporal",
+      "originalAbbreviation": "T",
+      "chineseCurrentDisplay": "时间 Temporal (T)",
+      "suggestedZhHantName": "時間",
+      "suggestedCompleteDisplay": "時間 Temporal（T）",
+      "reviewId": "D13",
+      "rawDefinition": "Proposition and the occasion when it can occur",
+      "approvedOrCurrentChineseHelp": "一个命题及它可能发生的时间场合。",
+      "originalKeywords": "when, whenever",
+      "currentChineseKeywords": "当……时、每逢（when, whenever）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "T"
+      },
+      "originalColor": "#ec4899",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "locative",
+      "rawEnglishName": "Locative (L)",
+      "englishName": "Locative",
+      "originalAbbreviation": "L",
+      "chineseCurrentDisplay": "地点 Locative (L)",
+      "suggestedZhHantName": "地點",
+      "suggestedCompleteDisplay": "地點 Locative（L）",
+      "reviewId": "D14",
+      "rawDefinition": "Proposition and the place where it can be true",
+      "approvedOrCurrentChineseHelp": "一个命题及它可能成立的处所。",
+      "originalKeywords": "where, wherever",
+      "currentChineseKeywords": "在……地方、无论何处（where, wherever）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "L"
+      },
+      "originalColor": "#f43f5e",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "bilateral",
+      "rawEnglishName": "Bilateral (Bl)",
+      "englishName": "Bilateral",
+      "originalAbbreviation": "BL",
+      "chineseCurrentDisplay": "双向支持 Bilateral (Bl)",
+      "suggestedZhHantName": "雙向支持",
+      "suggestedCompleteDisplay": "雙向支持 Bilateral（BL）",
+      "reviewId": "D07",
+      "rawDefinition": "A bilateral relationship supporting the preceding proposition and supported by the following proposition.",
+      "approvedOrCurrentChineseHelp": "中间命题作为根据，支持其前后两边。",
+      "originalKeywords": "for... therefore",
+      "currentChineseKeywords": "因为……所以（for... therefore）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "BL"
+      },
+      "originalColor": "#3b82f6",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "double-ground",
+      "rawEnglishName": "Double Ground (DG)",
+      "englishName": "Double Ground",
+      "originalAbbreviation": "DG",
+      "chineseCurrentDisplay": "双侧理由 Double Ground (DG)",
+      "suggestedZhHantName": "雙側理由",
+      "suggestedCompleteDisplay": "雙側理由 Double Ground（DG）",
+      "reviewId": "D08",
+      "rawDefinition": "A proposition supported on both sides by grounds — like a bilateral, it can be formed by jumping over the middle member.",
+      "approvedOrCurrentChineseHelp": "中央命题受到前后两侧理由的支持。",
+      "originalKeywords": "for... for",
+      "currentChineseKeywords": "因为……因为（for... for）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "DG",
+        "name": "Double Ground (DG)"
+      },
+      "originalColor": "#1d4ed8",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "concessive",
+      "rawEnglishName": "Concessive (Csv)",
+      "englishName": "Concessive",
+      "originalAbbreviation": "Csv",
+      "chineseCurrentDisplay": "让步 Concessive (Csv)",
+      "suggestedZhHantName": "讓步",
+      "suggestedCompleteDisplay": "讓步 Concessive（Csv）",
+      "reviewId": "D23",
+      "rawDefinition": "Main clause that stands despite a contrary statement",
+      "approvedOrCurrentChineseHelp": "一个主句尽管面对相反陈述仍然成立。",
+      "originalKeywords": "nevertheless, although though, yet, however",
+      "currentChineseKeywords": "然而、虽然、尽管、却（nevertheless, although though, yet, however）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Csv"
+      },
+      "originalColor": "#94a3b8",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    },
+    {
+      "profileId": "schreiner",
+      "profileName": "Schreiner",
+      "relationshipId": "situation-response",
+      "rawEnglishName": "Situation-Response (Sit/R)",
+      "englishName": "Situation-Response",
+      "originalAbbreviation": "Sit / R",
+      "chineseCurrentDisplay": "处境—回应 Situation-Response (Sit/R)",
+      "suggestedZhHantName": "處境—回應",
+      "suggestedCompleteDisplay": "處境—回應 Situation-Response（Sit / R）",
+      "reviewId": "D24",
+      "rawDefinition": "Statement of response to a stated situation or action",
+      "approvedOrCurrentChineseHelp": "对某个已陈述处境或行动作出回应的陈述。",
+      "originalKeywords": "and",
+      "currentChineseKeywords": "于是、并且（and）",
+      "originalDominance": {
+        "default": false,
+        "perType": {}
+      },
+      "originalLabelOverride": {
+        "abbr": "Sit / R"
+      },
+      "originalColor": "#475569",
+      "note": "只建立審核資料；不改 profile 或括號內部 ID、名稱、縮寫、符號、星號、主次、顏色、順序。"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "sourceHead": "403538316c80e1e539c334638592c1fc221b3ce8",
+  "rows": [
+    {
+      "reviewId": "D01",
+      "key": "relationship.name.series",
+      "variant": "series",
+      "english": "Series",
+      "zhCN": "并列列举 Series",
+      "suggestedZhHant": "並列列舉",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D02",
+      "key": "relationship.name.progression",
+      "variant": "progression",
+      "english": "Progression",
+      "zhCN": "递进 Progression",
+      "suggestedZhHant": "遞進",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D03",
+      "key": "relationship.name.alternative",
+      "variant": "alternative",
+      "english": "Alternative",
+      "zhCN": "选择关系 Alternative",
+      "suggestedZhHant": "選擇關係",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D04",
+      "key": "relationship.name.both-and",
+      "variant": "both-and",
+      "english": "Both-And",
+      "zhCN": "两者并列 Both-And",
+      "suggestedZhHant": "兩者並列",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D05",
+      "key": "relationship.name.ground",
+      "variant": "ground",
+      "english": "Ground",
+      "zhCN": "理由 Ground",
+      "suggestedZhHant": "理由",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D06",
+      "key": "relationship.name.inference",
+      "variant": "inference",
+      "english": "Inference",
+      "zhCN": "推论 Inference",
+      "suggestedZhHant": "推論",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D07",
+      "key": "relationship.name.bilateral",
+      "variant": "bilateral",
+      "english": "Bilateral",
+      "zhCN": "双向支持 Bilateral",
+      "suggestedZhHant": "雙向支持",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D08",
+      "key": "relationship.name.double-ground",
+      "variant": "double-ground",
+      "english": "Double Ground",
+      "zhCN": "双侧理由 Double Ground",
+      "suggestedZhHant": "雙側理由",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D09",
+      "key": "relationship.name.cause-effect",
+      "variant": "cause-effect",
+      "english": "Cause-Effect",
+      "zhCN": "原因—结果 Cause-Effect",
+      "suggestedZhHant": "原因—結果",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D10",
+      "key": "relationship.name.action-result",
+      "variant": "action-result",
+      "english": "Action-Result",
+      "zhCN": "行动—结果 Action-Result",
+      "suggestedZhHant": "行動—結果",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D11",
+      "key": "relationship.name.action-purpose",
+      "variant": "action-purpose",
+      "english": "Action-Purpose",
+      "zhCN": "行动—目的 Action-Purpose",
+      "suggestedZhHant": "行動—目的",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D12",
+      "key": "relationship.name.conditional",
+      "variant": "conditional",
+      "english": "Conditional",
+      "zhCN": "条件 Conditional",
+      "suggestedZhHant": "條件",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D13",
+      "key": "relationship.name.temporal",
+      "variant": "temporal",
+      "english": "Temporal",
+      "zhCN": "时间 Temporal",
+      "suggestedZhHant": "時間",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D14",
+      "key": "relationship.name.locative",
+      "variant": "locative",
+      "english": "Locative",
+      "zhCN": "地点 Locative",
+      "suggestedZhHant": "地點",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D15",
+      "key": "relationship.name.action-manner",
+      "variant": "action-manner",
+      "english": "Action-Manner",
+      "zhCN": "行动—方式 Action-Manner",
+      "suggestedZhHant": "行動—方式",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D16",
+      "key": "relationship.name.comparison",
+      "variant": "comparison",
+      "english": "Comparison",
+      "zhCN": "比较 Comparison",
+      "suggestedZhHant": "比較",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D17",
+      "key": "relationship.name.negative-positive",
+      "variant": "negative-positive",
+      "english": "Negative-Positive",
+      "zhCN": "否定—肯定 Negative-Positive",
+      "suggestedZhHant": "否定—肯定",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D18",
+      "key": "relationship.name.idea-explanation",
+      "variant": "idea-explanation",
+      "english": "Idea-Explanation",
+      "zhCN": "意思—解释 Idea-Explanation",
+      "suggestedZhHant": "意思—解釋",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D19",
+      "key": "relationship.name.question-answer",
+      "variant": "question-answer",
+      "english": "Question-Answer",
+      "zhCN": "问题—回答 Question-Answer",
+      "suggestedZhHant": "問題—回答",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D20",
+      "key": "relationship.name.general-specific",
+      "variant": "general-specific",
+      "english": "General-Specific",
+      "zhCN": "概括—具体 General-Specific",
+      "suggestedZhHant": "概括—具體",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D21",
+      "key": "relationship.name.fact-interpretation",
+      "variant": "fact-interpretation",
+      "english": "Fact-Interpretation",
+      "zhCN": "事实—诠释 Fact-Interpretation",
+      "suggestedZhHant": "事實—詮釋",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D22",
+      "key": "relationship.name.anticipation-fulfillment",
+      "variant": "anticipation-fulfillment",
+      "english": "Anticipation-Fulfillment",
+      "zhCN": "预期—实现 Anticipation-Fulfillment",
+      "suggestedZhHant": "預期—實現",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D23",
+      "key": "relationship.name.concessive",
+      "variant": "concessive",
+      "english": "Concessive",
+      "zhCN": "让步 Concessive",
+      "suggestedZhHant": "讓步",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D24",
+      "key": "relationship.name.situation-response",
+      "variant": "situation-response",
+      "english": "Situation-Response",
+      "zhCN": "处境—回应 Situation-Response",
+      "suggestedZhHant": "處境—回應",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D25",
+      "key": "relationship.name.unspecified",
+      "variant": "unspecified",
+      "english": "?",
+      "zhCN": "未指定 ?",
+      "suggestedZhHant": "未指定",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D26",
+      "key": "relationship.name.Way-End",
+      "variant": "Way-End",
+      "english": "Way-End",
+      "zhCN": "方式关系 Way-End",
+      "suggestedZhHant": "方式關係",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D27",
+      "key": "relationship.name.Means-End",
+      "variant": "Means-End",
+      "english": "Means-End",
+      "zhCN": "手段—目的 Means-End",
+      "suggestedZhHant": "手段—目的",
+      "status": "建議，未作繁體人工定稿"
+    },
+    {
+      "reviewId": "D28",
+      "key": "relationship.name.Adversative",
+      "variant": "Adversative",
+      "english": "Adversative",
+      "zhCN": "逆接 Adversative",
+      "suggestedZhHant": "逆接",
+      "status": "建議，未作繁體人工定稿"
+    }
+  ]
+}

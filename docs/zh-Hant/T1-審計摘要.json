@@ -1,0 +1,356 @@
+{
+  "sourceBranch": "windows-validation",
+  "sourceHead": "403538316c80e1e539c334638592c1fc221b3ce8",
+  "worktree": "<zh-hant-worktree>",
+  "branch": "feature/zh-hant",
+  "worktreeStartHead": "403538316c80e1e539c334638592c1fc221b3ce8",
+  "englishKeys": 600,
+  "chineseKeys": 600,
+  "productionZhHantExists": false,
+  "categories": {
+    "A": 41,
+    "B": 265,
+    "C": 262,
+    "D": 28,
+    "E": 4
+  },
+  "countsAreMutuallyExclusive": true,
+  "CandD": 290,
+  "relationNames": 28,
+  "visibleProfileRows": 92,
+  "perProfile": {
+    "josiah": 18,
+    "biblearc": 18,
+    "gurtner": 20,
+    "beale": 17,
+    "schreiner": 19
+  },
+  "visibleUniqueRelationshipIds": 23,
+  "canonicalRelationshipIds": 25,
+  "appDifferencesFromMac": [
+    "js/services/export-service.js",
+    "js/services/notation-ui.js",
+    "js/services/persistence.js",
+    "js/utils/ui-menus.js"
+  ],
+  "projectSchema": 3,
+  "profileSchema": 1,
+  "newDependenciesRequired": false,
+  "proposedNewKey": "language.traditional",
+  "proposedT2KeyCountIfApproved": 601,
+  "allApplicationTestsAndConfigMatchFrozenHead": true,
+  "fullSourceHashes": [
+    {
+      "file": "app.js",
+      "sha256": "e5cc392d8c95946fdb1803ef4a451f1f8a93db45745c45d3ee108d29872bbb1c"
+    },
+    {
+      "file": "functions/index.js",
+      "sha256": "d36427a9d03a33498f84f345517c28233e546d6fc725e02af07809706c70abf4"
+    },
+    {
+      "file": "functions/package-lock.json",
+      "sha256": "66fdfa8e5f679467ae8bc88d7854bb04518bd1707391d86c6b7fde12d5850e90"
+    },
+    {
+      "file": "functions/package.json",
+      "sha256": "3b5440694cf0c3c639abe120bdee651a0c3ffb722eb9b21d90b6a6392f77623c"
+    },
+    {
+      "file": "index.html",
+      "sha256": "4766e7dff89211d845e6aac9caaf8ce1c646ac1d7c79c309c80ce32fb790a2e5"
+    },
+    {
+      "file": "js/i18n/en.js",
+      "sha256": "90153b14379da4647281f8983342362e0e4c10ee90bd6a1f00cb79ef35812881"
+    },
+    {
+      "file": "js/i18n/i18n.js",
+      "sha256": "534997593b66cdfa6fbfee91557b20cfdf7c66ebda91f37bf5eb10331f63a24c"
+    },
+    {
+      "file": "js/i18n/native-menu.cjs",
+      "sha256": "47e8d73e2c8f171e511eeb0883f05efb5ea9c16c2faef992f77366885e2e87ef"
+    },
+    {
+      "file": "js/i18n/relationships.js",
+      "sha256": "71962683ff76d7d654a367b45619ec3d719a629ae51c3a28755193a4b4348601"
+    },
+    {
+      "file": "js/i18n/zh-CN.js",
+      "sha256": "48a6d8ba580cb97aeea20904e836b4c4ca4111122eb99f32e4d863a066ce0f33"
+    },
+    {
+      "file": "js/services/bible-service.js",
+      "sha256": "506408e80f3254669979689539b953379f43739308c4e73373be135289442911"
+    },
+    {
+      "file": "js/services/cloud-sync.js",
+      "sha256": "c4b3775acce0f0fa23749e01d0e35c5f2277c90dfab1612f3a5d46a4ea8d755b"
+    },
+    {
+      "file": "js/services/export-service.js",
+      "sha256": "c86113c69a9629280342abee45126d472fbaf648212fbbe026fb33200468927b"
+    },
+    {
+      "file": "js/services/firebase-config.js",
+      "sha256": "769561b2fadf62f405907da7c9ca746cf80fa1bdc544bc4df4ff44066ab279b4"
+    },
+    {
+      "file": "js/services/keyboard-handler.js",
+      "sha256": "81754565bd253f0991bef80e9b6e77243d22b37fdcf8e4fe0dddc36de9e75792"
+    },
+    {
+      "file": "js/services/mode-service.js",
+      "sha256": "9e1c767ad13e9dca085a4320a18945d51b0c40e7cab52db51da9ea5961f4a5da"
+    },
+    {
+      "file": "js/services/mouse-handler.js",
+      "sha256": "73c9e4e79c115ffc14433e1ce76464e0877887678ed64e8f2f071c859a2996e5"
+    },
+    {
+      "file": "js/services/notation-ui.js",
+      "sha256": "49feb9e6eca27b0dbf3e5ee32af3b101a09d144b3f5810a5aa366b6f09f45470"
+    },
+    {
+      "file": "js/services/persistence.js",
+      "sha256": "4c1830124fdfba3033dbff44c3b91495a6e766a67380ba6d25b3ed56cf23f61e"
+    },
+    {
+      "file": "js/services/profiles.js",
+      "sha256": "c93c9e07613ff0f1753970510f1a125fdc7c5cbe0b31c44f60b2f7657948bf0d"
+    },
+    {
+      "file": "js/services/state.js",
+      "sha256": "59375df77d366fbcfd68d4f31499f0322a4b3e5275c0519ffe68e5e6165d65be"
+    },
+    {
+      "file": "js/utils/block-diagram.js",
+      "sha256": "d85a9fa157ee8e080456b895fa023e27af3e2a49379d8fad9869f04be665433b"
+    },
+    {
+      "file": "js/utils/constants.js",
+      "sha256": "468a468d89b585e1272feba732285f90ec0dd9d33817bd807b5c195176cfa1b7"
+    },
+    {
+      "file": "js/utils/editor-logic.js",
+      "sha256": "108731d7f84a77e80d1f55756194086c40244df26103cf7f73c1884257884265"
+    },
+    {
+      "file": "js/utils/init.js",
+      "sha256": "f773670c32f78dd8925c651044fcb5cdaef42bb34b3f0ab278f86418032fc9a0"
+    },
+    {
+      "file": "js/utils/main-point-summary.js",
+      "sha256": "365cc1f01e825e1ba9dbcbc2d3a6604c3001686254f39e88a638509a8e962a27"
+    },
+    {
+      "file": "js/utils/paste-parser.js",
+      "sha256": "fdfa978501d5f0bf188578afb063829e62f06394e472448ba4d945d09ae39176"
+    },
+    {
+      "file": "js/utils/render-arrows.js",
+      "sha256": "de2423190709f915838b890538120504c722444b1e0211cfb264c77377fdb75d"
+    },
+    {
+      "file": "js/utils/render-brackets.js",
+      "sha256": "e3f5fe23dba7f653efaef63cf4f8de5b95d05e03faacc6bd3a078b216a110a0d"
+    },
+    {
+      "file": "js/utils/render-comments.js",
+      "sha256": "82cab5ae0b65e5bcd6637c0d639fc7cc99feaf97febc4df0c32e4b08e7370cd4"
+    },
+    {
+      "file": "js/utils/render-labels.js",
+      "sha256": "72a7d715fd0a9464ec91d1b8942f614106fcd2ffb7277b7fbf7ed73a8cbf00f1"
+    },
+    {
+      "file": "js/utils/render-model.js",
+      "sha256": "9f75fe17c49eff78dbcd9daf948acf2c67468e64ab7849bef7c4b7e5f595515f"
+    },
+    {
+      "file": "js/utils/render-propositions.js",
+      "sha256": "f687163edcd68b6838c3e33ee76710de1950238bb638c294b4aa5820bab95016"
+    },
+    {
+      "file": "js/utils/rendering-engine.js",
+      "sha256": "c5aa80bfbdc4966dfd8fe1b0122909c8438e560bf6296ca9c4ed3630f05bdd0e"
+    },
+    {
+      "file": "js/utils/ui-comments.js",
+      "sha256": "89d19d5d8b9cf06295757d7bdb008ec9c4dfdc83c6f1090e6fc361e9b76d474e"
+    },
+    {
+      "file": "js/utils/ui-dialogs.js",
+      "sha256": "f2a734318f757598d0845758aa93f9a3648d9fb9788419359e1590fbb6d54e98"
+    },
+    {
+      "file": "js/utils/ui-menus.js",
+      "sha256": "e38bf79a8bf82806388a0a383b31dee27b1be2de3e89422a9b6030f59828278f"
+    },
+    {
+      "file": "js/utils/ui.js",
+      "sha256": "06aa9737d0fbe79aa0b137e65024dd8f444cdd4dcb2fce2eb6b315d45818c6c3"
+    },
+    {
+      "file": "js/vendor/html2canvas.min.js",
+      "sha256": "e87e550794322e574a1fda0c1549a3c70dae5a93d9113417a429016838eab8cb"
+    },
+    {
+      "file": "js/vendor/jspdf.umd.min.js",
+      "sha256": "98ccf17aa10c20bb1301762618fcc9b6ab3a4e7f26b6071d64d0b41154df3875"
+    },
+    {
+      "file": "js/vendor/lz-string.min.js",
+      "sha256": "9d1a0ef07a2ea5faa8cd4afb60a0518075e6771e341e5ff4e0e481cefedeecbf"
+    },
+    {
+      "file": "main.js",
+      "sha256": "73af227d4c5d55a3c9c7b63af840f4e6e5046b9742be363fb5f3a633a2fabbc0"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "bdd1808abe5c9366e423d9f7c54afcb5adfea21faa769ff84c4ef0c4f795f09b"
+    },
+    {
+      "file": "package.json",
+      "sha256": "cac4623930eb12dd781a51518db56b31958db04c4d021fc20c957618663cdb19"
+    },
+    {
+      "file": "preload.js",
+      "sha256": "f3a7d6a241e502f89008433dc39440d42506e22c48ae8a1679f4cd0c3d9b2286"
+    },
+    {
+      "file": "scripts/audit-i18n.cjs",
+      "sha256": "fb041096135d8618dfaa49c9432ff9c913c1e94f0d9f7a180290c7769f9b694c"
+    },
+    {
+      "file": "styles.css",
+      "sha256": "88ad55f8a5657e8591767355692c9cb6f1b6289291a5c13f371698cda06c15ca"
+    },
+    {
+      "file": "tests/README.md",
+      "sha256": "eab062acac69c7bf9e458cd8179be14fc8c6d30b24852298219fb730f26c893b"
+    },
+    {
+      "file": "tests/add-passage.test.js",
+      "sha256": "0dfb420b49c4197b4b6337163152934edb9ae46523c796345b69762a71990ed3"
+    },
+    {
+      "file": "tests/arrow-mode.test.js",
+      "sha256": "ea2b432dfe645edbc1c6a6597c9effda11fc513a89411ffd85c9ba522ac1a885"
+    },
+    {
+      "file": "tests/bible-service.test.js",
+      "sha256": "c590d9627ece744bcb93f6a797ef1e2aba37be88637942d71146437643c2b16a"
+    },
+    {
+      "file": "tests/bracket-labels.test.js",
+      "sha256": "608e6e6e3ff159791c886dcf73b9e8acb311f4775dfefbf420e781c3ab6b9808"
+    },
+    {
+      "file": "tests/cloud-profiles.test.js",
+      "sha256": "57d14ccd99662512642298477fbc989cfd66e4b7c1785c02b23baa88c2acdcfe"
+    },
+    {
+      "file": "tests/cloud-session.test.js",
+      "sha256": "dc450580b1703c52d1f55be0483a88d205cb4b1970f00d6262b4250f2414c656"
+    },
+    {
+      "file": "tests/collapse.test.js",
+      "sha256": "bb7f9108a81cccc36add553dd66392a90a7cf3e40f3b4a97c660900c572f21ef"
+    },
+    {
+      "file": "tests/e2e/app.spec.js",
+      "sha256": "7ec6380e5e2dec38a8eb46c0f4dda8c3e4664d27e4559782e115edd259127fd3"
+    },
+    {
+      "file": "tests/e2e/i18n-complete.spec.js",
+      "sha256": "d229588f599342d9585dc2422c081c88b7a7d7388dda56e038bedd6b67d29154"
+    },
+    {
+      "file": "tests/e2e/i18n-polish.spec.js",
+      "sha256": "f8818ff62069694f5b4cd5f12396b3f22e63781ef3282476797a2366f4cc0c0c"
+    },
+    {
+      "file": "tests/e2e/i18n.spec.js",
+      "sha256": "302e616089213020e142b4ab28ed4d8806af60dea8d0bd33813d9dfd6047592f"
+    },
+    {
+      "file": "tests/e2e/serve.js",
+      "sha256": "28dc87b6f04397c1650e690cc1d36234d29df4e985ef8671824c9858282440e2"
+    },
+    {
+      "file": "tests/e2e/windows-platform.spec.js",
+      "sha256": "9c1324ac9457c2b289ae26259137f897663b763c8956c3803188d03d7fd89414"
+    },
+    {
+      "file": "tests/editor-logic.test.js",
+      "sha256": "d050b2ffd2dbd4b4cfbd04f02598ccfe957422fca7e006171ba99a597a30f468"
+    },
+    {
+      "file": "tests/export-service.test.js",
+      "sha256": "e6f3cac4d074775d018407c2281ac0bccc2a8874ebd94ae80f872bbc8629039d"
+    },
+    {
+      "file": "tests/helpers/harness.js",
+      "sha256": "897cf63e6e95b43ad958f0a4371ba89c1d934c4ad52b6733a70f1bda44fb6dbb"
+    },
+    {
+      "file": "tests/i18n-core.test.js",
+      "sha256": "e8493a67eadccf8a4a55f37c5079f63a7861b9a277087874c9bdc3597ee32713"
+    },
+    {
+      "file": "tests/i18n-coverage.test.js",
+      "sha256": "36109ad48f53b2f6823ddf053c582c7e12a7c556b8b0649e98cce5a905470ef1"
+    },
+    {
+      "file": "tests/i18n-polish.test.js",
+      "sha256": "baa9db193cc9cca4e78b1de87f9d885a5548b0000f40a5ac04fa46da4b3af14f"
+    },
+    {
+      "file": "tests/i18n-relationships.test.js",
+      "sha256": "8fee3b303469c8726a9691fc0a5275b3a9102847117ca9dba430750b01028d4c"
+    },
+    {
+      "file": "tests/label-picker-position.test.js",
+      "sha256": "e26b24c166b5195a1f28b74aab1e13b2219226f7d98f860f175f7e21a1436bc0"
+    },
+    {
+      "file": "tests/main-point-summary.test.js",
+      "sha256": "14ba0f96148a13e5a6266027e085a35f4625959815ff6cb9fd5c79e7a8ce855b"
+    },
+    {
+      "file": "tests/parallel-column.test.js",
+      "sha256": "7e8b253aadfe788fa0a7fafa3b152a96e8f9b5ef45fa6557fee37f66e16be30c"
+    },
+    {
+      "file": "tests/paste-parser.test.js",
+      "sha256": "9e99604f4b27f63c3e7609dd58bbebee77fa5f8222a4ea3dd23b0cec1809cb24"
+    },
+    {
+      "file": "tests/persistence.test.js",
+      "sha256": "2ba19b4d1e2c7882b7d0b22182fc86ebd49c526471a86473e3301a0e79654367"
+    },
+    {
+      "file": "tests/profiles.test.js",
+      "sha256": "885aaefd2e1407c30dfdb00b01cef7610ad09457be97d1cb4feed2362af15956"
+    },
+    {
+      "file": "tests/reference-guide.test.js",
+      "sha256": "5aaefe02e4e6935b79c553afa7bdeece1e2fe2bbfb8bdaeda19732977dba47e3"
+    },
+    {
+      "file": "tests/state.test.js",
+      "sha256": "e28be53376470e8bfff59b93106010dff232cbbdf5a2dfc39803c4631822ca50"
+    },
+    {
+      "file": "tests/windows-platform.test.js",
+      "sha256": "557026aa86f63c9bbc6697eacfa754256a05b7cbf4f138bf3ff26bace09220d1"
+    },
+    {
+      "file": "tests/zoom.test.js",
+      "sha256": "669f97b7378e544b7ec620ff457e57d659f5d0e5acb0234d99a943bdc99e09e9"
+    }
+  ]
+}
