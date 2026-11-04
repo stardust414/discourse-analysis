@@ -1,6 +1,7 @@
 {
-  "applicationSourceCommit": "210b3bb63a02e118e5441b4f26afc345c210c44e",
-  "finalRegressionSourceHead": "488e5040804ac277b0cfea43e7fc2d5cb2c2eacb",
+  "commitReferenceContext": "公開分支已做身份與路徑隱私清理；提交引用已對應至重寫後歷史，原始對照見 ../公開分支隱私清理與提交對照.md。日期、測試結果與二進位雜湊不變。",
+  "applicationSourceCommit": "7d388aec57e1b09cfc68ccb39b2b36f43b909ce2",
+  "finalRegressionSourceHead": "9a9b1b44fa1662a71b964fa3c77bb771b317f60b",
   "applicationSourceFilesMatched": 43,
   "manifest": [
     {

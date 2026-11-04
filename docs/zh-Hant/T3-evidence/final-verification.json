@@ -1,14 +1,15 @@
 {
+  "commitReferenceContext": "公開分支已做身份與路徑隱私清理；提交引用已對應至重寫後歷史，原始對照見 ../公開分支隱私清理與提交對照.md。日期、測試結果與二進位雜湊不變。",
   "frozenBranch": "feature/zh-hant",
-  "applicationSourceCommit": "210b3bb63a02e118e5441b4f26afc345c210c44e",
-  "commonFrozenBaseline": "403538316c80e1e539c334638592c1fc221b3ce8",
-  "t1Commit": "baba1034884c01feb03827ef2c1f6372fb7991b7",
-  "t2RepositoryHead": "488e5040804ac277b0cfea43e7fc2d5cb2c2eacb",
+  "applicationSourceCommit": "7d388aec57e1b09cfc68ccb39b2b36f43b909ce2",
+  "commonFrozenBaseline": "dc2414964022df10a34187f8317056c3b3000cdb",
+  "t1Commit": "d4ddc7e91b6dcf2e7499adcab0b3612b66d6ac9e",
+  "t2RepositoryHead": "9a9b1b44fa1662a71b964fa3c77bb771b317f60b",
   "finalRepositoryHeadRecording": {
     "recordedAfterDocumentationCommit": true,
-    "path": "dist/final-zh-Hant/delivery-metadata.json",
-    "field": "finalRepositoryHead",
-    "reason": "Avoid self-referential commit hash in committed document"
+    "location": "External delivery reply and untracked verification record",
+    "command": "git rev-parse HEAD",
+    "reason": "Avoid self-reference; original dist metadata retains historical local freeze SHA"
   },
   "applicationSourceModified": false,
   "applicationRebuilt": false,
@@ -68,7 +69,7 @@
       "sha256": "c3c0ff72952f432cd18d989436eb71217395cf5955b56271f2035ea0ee15e665",
       "byteIdenticalToTestedT2": true,
       "rebuilt": false,
-      "applicationSourceCommit": "210b3bb63a02e118e5441b4f26afc345c210c44e",
+      "applicationSourceCommit": "7d388aec57e1b09cfc68ccb39b2b36f43b909ce2",
       "version": "3.3.1",
       "productName": "Discourse Analysis"
     },
@@ -81,7 +82,7 @@
       "sha256": "2b7df895b607b4d59764e64fd9a8ef4a1f8b71371011bc05fca5b919005584a9",
       "byteIdenticalToTestedT2": true,
       "rebuilt": false,
-      "applicationSourceCommit": "210b3bb63a02e118e5441b4f26afc345c210c44e",
+      "applicationSourceCommit": "7d388aec57e1b09cfc68ccb39b2b36f43b909ce2",
       "version": "3.3.1",
       "productName": "Discourse Analysis"
     }
