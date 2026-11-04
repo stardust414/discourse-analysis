@@ -1,0 +1,13 @@
+{
+  "W1CommitVerified": true,
+  "W1EnteredW2WithCleanTree": true,
+  "W1ExeHashVerified": true,
+  "KitCRCVerified": true,
+  "ManifestFileHashesVerified": true,
+  "ChecklistRows": 60,
+  "AllChecklistResults": "未验证",
+  "ApplicationAndTestsUnchangedSinceW1": true,
+  "PowerShellStaticSafetyReviewOnly": true,
+  "PowerShellExecutedOnWindows": false,
+  "WindowsRuntimeVerified": false
+}

@@ -1,0 +1,20 @@
+{
+  "recorded": "2026-11-04T02:52:33.451709+00:00",
+  "w1Commit": "d5376dbc5725cae9a08d03209ab23e756a08f003",
+  "branch": "windows-validation",
+  "headBeforeW2": "d5376dbc5725cae9a08d03209ab23e756a08f003",
+  "gitStatusBeforeW2": "",
+  "w1ExeSHA256": "8b69136698e7bd29fc54f86971e5bfc4d37ac62f782a46131fea6d5df320b356",
+  "w1ExeBytes": 69657199,
+  "frozenBase": "c02cf5be5ce69135ef617eb317e2b7362446f239",
+  "WindowsRuntimeVerified": false,
+  "WindowsArmX64EmulationVerified": false,
+  "nativeX64HardwareVerified": false,
+  "installedVirtualizationAppsFound": [],
+  "virtualizationCommandsFound": [],
+  "standardVmDirectoriesFound": [],
+  "runningVmProcessesFound": [],
+  "spotlightMatchingAppsFound": [],
+  "assessment": "No accessible Windows environment found; runtime paused, handoff kit prepared instead.",
+  "securityPolicyChanged": false
+}

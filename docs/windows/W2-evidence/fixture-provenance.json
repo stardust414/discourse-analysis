@@ -1,0 +1,17 @@
+{
+  "macProject": {
+    "sourceCommit": "c02cf5be5ce69135ef617eb317e2b7362446f239",
+    "sourcePath": "docs/zh-CN/阶段5验证证据/native-workflow-project.json",
+    "copiedOriginalBytes": true,
+    "sha256": "1f166f83f784807bebf8cf5f36047f02fa7db93cb33884d2ef2b5f8dbee146c4",
+    "origin": "actual Mac stage 5 saved JSON retained in frozen repository; synthetic user identity/comments; original Scripture attribution retained",
+    "activeProfileForTest": "gurtner",
+    "projectSchemaVersion": 3
+  },
+  "reservedNameProfile": {
+    "origin": "synthetic W2 user-profile test fixture, not an additional builtin profile",
+    "id": "w2-con-fixture",
+    "name": "CON",
+    "schemaVersion": 1
+  }
+}

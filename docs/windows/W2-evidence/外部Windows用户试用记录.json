@@ -1,0 +1,45 @@
+{
+  "recordedDate": "2026-11-04",
+  "evidenceLevel": "External Windows runtime user validation",
+  "source": "用户在本会话提供：W1 生成的 Windows Portable EXE 已复制到另一台真实 Windows 电脑实际试用，并确认实际运行正常。",
+  "validator": "用户",
+  "reportedEnvironment": "外部真实 Windows 电脑",
+  "artifactFilename": "Discourse Analysis 3.3.1 x64 Portable.exe",
+  "artifactSHA256": "8b69136698e7bd29fc54f86971e5bfc4d37ac62f782a46131fea6d5df320b356",
+  "binaryIdentityBasis": "用户指定已试用文件为固定 W1 哈希；本机源 EXE 重新计算一致。未收到外部电脑单独哈希采集日志。",
+  "passed": [
+    {
+      "operation": "实际启动并运行",
+      "status": "通过",
+      "evidence": "由用户在外部 Windows 电脑实际运行验证"
+    },
+    {
+      "operation": "整体实际试用正常",
+      "status": "通过",
+      "evidence": "由用户在外部 Windows 电脑实际运行验证；具体功能操作未逐项记录"
+    }
+  ],
+  "windowsEdition": "未记录",
+  "windowsBuild": "未记录",
+  "cpuArchitecture": "未记录",
+  "cpuVendor": "未记录",
+  "virtualizationDetails": "未记录",
+  "startupSeconds": "未记录",
+  "runtimeAppGetVersion": "未记录",
+  "userDataPath": "未记录",
+  "specificFeatureResults": "未逐项记录，不将整体试用推断为专项全部通过",
+  "dpiMatrix": "未专项验证",
+  "imeBoundaries": "未专项验证",
+  "filePathMatrix": "未专项验证",
+  "smartScreen": "未专项记录",
+  "defender": "未专项记录",
+  "screenshotsProvided": false,
+  "powershellResultsProvided": false,
+  "directAgentWindowsRuntimeVerified": false,
+  "externalWindowsUserRuntimeValidated": true,
+  "nativeX64HardwareVerified": false,
+  "windowsArmX64EmulationVerified": false,
+  "reportedBlockers": [],
+  "blockerInterpretation": "未收到实际 Windows blocker 报告；不是证明所有潜在问题均不存在。",
+  "acceptedFreezeBasis": "用户明确授权按精确已试用二进制冻结；未覆盖专项作为已知未覆盖范围。"
+}

@@ -1,0 +1,14 @@
+{
+  "kitPath": "dist/Discourse-Analysis-3.3.1-zh-CN-W2-validation-kit.zip",
+  "kitBytes": 69679287,
+  "kitSHA256": "a76e63e281f3d17ef6678988f63120771c58c8df6959286d97601e3e8bac3e86",
+  "exeSHA256": "8b69136698e7bd29fc54f86971e5bfc4d37ac62f782a46131fea6d5df320b356",
+  "exeBytes": 69657199,
+  "checklistRows": 60,
+  "zipCRCOK": true,
+  "exeBytesUnchanged": true,
+  "manifestFiles": 9,
+  "WindowsRuntimeVerified": false,
+  "powershellScriptsWindowsExecuted": false,
+  "sourceCodeChanged": false
+}
