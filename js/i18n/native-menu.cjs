@@ -6,7 +6,7 @@ const vm = require('vm');
 function createNativeMenuTranslator(Menu, appName) {
   const context = { window: {} };
   vm.createContext(context);
-  for (const name of ['en', 'zh-CN']) {
+  for (const name of ['en', 'zh-CN', 'zh-Hant']) {
     vm.runInContext(fs.readFileSync(path.join(__dirname, name + '.js'), 'utf8'), context);
   }
   const catalogs = context.window.DA_I18N_CATALOGS;
@@ -21,7 +21,7 @@ function createNativeMenuTranslator(Menu, appName) {
     }));
   }
   return function update(locale) {
-    if (!['en', 'zh-CN'].includes(locale)) return false;
+    if (!['en', 'zh-CN', 'zh-Hant'].includes(locale)) return false;
     if (!original) {
       const menu = Menu.getApplicationMenu();
       if (!menu) return false;
@@ -31,7 +31,7 @@ function createNativeMenuTranslator(Menu, appName) {
       return items.map(item => {
         const key = 'native.' + item.role;
         // Unknown OS items and product names retain their original labels.
-        const label = locale === 'en' ? item.label : catalogs[locale][key] || item.label;
+        const label = locale === 'en' ? item.label : catalogs[locale][key] || catalogs.en[key] || item.label;
         return { ...item, label: label.replace(/\{app\}/g, appName),
           ...(item.submenu ? { submenu: translate(item.submenu) } : {}) };
       });
