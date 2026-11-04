@@ -1,0 +1,9 @@
+{
+  "branch": "feature/zh-hant",
+  "startHead": "488e5040804ac277b0cfea43e7fc2d5cb2c2eacb",
+  "initialObservedStatus": "clean (before final regression commands)",
+  "commonBaseline": "403538316c80e1e539c334638592c1fc221b3ce8",
+  "t2Head": "488e5040804ac277b0cfea43e7fc2d5cb2c2eacb",
+  "applicationSourceCommit": "210b3bb63a02e118e5441b4f26afc345c210c44e",
+  "worktree": "<zh-hant-worktree>"
+}

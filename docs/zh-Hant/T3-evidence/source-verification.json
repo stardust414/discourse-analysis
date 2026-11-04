@@ -1,0 +1,182 @@
+{
+  "applicationSourceCommit": "210b3bb63a02e118e5441b4f26afc345c210c44e",
+  "finalRegressionSourceHead": "488e5040804ac277b0cfea43e7fc2d5cb2c2eacb",
+  "applicationSourceFilesMatched": 43,
+  "manifest": [
+    {
+      "file": "app.js",
+      "sha256": "e5cc392d8c95946fdb1803ef4a451f1f8a93db45745c45d3ee108d29872bbb1c"
+    },
+    {
+      "file": "index.html",
+      "sha256": "0ac7871570c8b543f59fe384d84a1d64363cf17704144cd6231b7ee22565efc8"
+    },
+    {
+      "file": "js/i18n/en.js",
+      "sha256": "5507a160c50fee985b4b563989c0582aeb8722a9faa439bdf5372966c296b3a1"
+    },
+    {
+      "file": "js/i18n/i18n.js",
+      "sha256": "699362a5c2c9ecc086a24ef4da9048e3c1799e0c7b5e28ef12f1b9f62c2318a5"
+    },
+    {
+      "file": "js/i18n/native-menu.cjs",
+      "sha256": "c39dfe72b376fe7dae3e065caf1a55c5e8c6531a60293361b742e12eec3e920a"
+    },
+    {
+      "file": "js/i18n/relationship-profiles.js",
+      "sha256": "21b55fb2e02599aaf86e4c06fa7e7b8278e96822943fcf7707b04c662de2f6fc"
+    },
+    {
+      "file": "js/i18n/relationships.js",
+      "sha256": "9bb5df493ceb7b9cb682b48cbde3c5be5442acb989c19769e09cd4f21e7d7a62"
+    },
+    {
+      "file": "js/i18n/zh-CN.js",
+      "sha256": "a8557ca8a69bd16feaac6d0e3e313470d4983d7dc99317757c4b5e5a41639234"
+    },
+    {
+      "file": "js/i18n/zh-Hant.js",
+      "sha256": "58b9ccdfb9bd293e4be01ae2eedbe155d84138d8250f6e4a1e576f1da8881450"
+    },
+    {
+      "file": "js/services/bible-service.js",
+      "sha256": "506408e80f3254669979689539b953379f43739308c4e73373be135289442911"
+    },
+    {
+      "file": "js/services/cloud-sync.js",
+      "sha256": "c4b3775acce0f0fa23749e01d0e35c5f2277c90dfab1612f3a5d46a4ea8d755b"
+    },
+    {
+      "file": "js/services/export-service.js",
+      "sha256": "c86113c69a9629280342abee45126d472fbaf648212fbbe026fb33200468927b"
+    },
+    {
+      "file": "js/services/firebase-config.js",
+      "sha256": "769561b2fadf62f405907da7c9ca746cf80fa1bdc544bc4df4ff44066ab279b4"
+    },
+    {
+      "file": "js/services/keyboard-handler.js",
+      "sha256": "81754565bd253f0991bef80e9b6e77243d22b37fdcf8e4fe0dddc36de9e75792"
+    },
+    {
+      "file": "js/services/mode-service.js",
+      "sha256": "9e1c767ad13e9dca085a4320a18945d51b0c40e7cab52db51da9ea5961f4a5da"
+    },
+    {
+      "file": "js/services/mouse-handler.js",
+      "sha256": "73c9e4e79c115ffc14433e1ce76464e0877887678ed64e8f2f071c859a2996e5"
+    },
+    {
+      "file": "js/services/notation-ui.js",
+      "sha256": "49feb9e6eca27b0dbf3e5ee32af3b101a09d144b3f5810a5aa366b6f09f45470"
+    },
+    {
+      "file": "js/services/persistence.js",
+      "sha256": "4c1830124fdfba3033dbff44c3b91495a6e766a67380ba6d25b3ed56cf23f61e"
+    },
+    {
+      "file": "js/services/profiles.js",
+      "sha256": "c93c9e07613ff0f1753970510f1a125fdc7c5cbe0b31c44f60b2f7657948bf0d"
+    },
+    {
+      "file": "js/services/state.js",
+      "sha256": "59375df77d366fbcfd68d4f31499f0322a4b3e5275c0519ffe68e5e6165d65be"
+    },
+    {
+      "file": "js/utils/block-diagram.js",
+      "sha256": "d85a9fa157ee8e080456b895fa023e27af3e2a49379d8fad9869f04be665433b"
+    },
+    {
+      "file": "js/utils/constants.js",
+      "sha256": "468a468d89b585e1272feba732285f90ec0dd9d33817bd807b5c195176cfa1b7"
+    },
+    {
+      "file": "js/utils/editor-logic.js",
+      "sha256": "108731d7f84a77e80d1f55756194086c40244df26103cf7f73c1884257884265"
+    },
+    {
+      "file": "js/utils/init.js",
+      "sha256": "f773670c32f78dd8925c651044fcb5cdaef42bb34b3f0ab278f86418032fc9a0"
+    },
+    {
+      "file": "js/utils/main-point-summary.js",
+      "sha256": "365cc1f01e825e1ba9dbcbc2d3a6604c3001686254f39e88a638509a8e962a27"
+    },
+    {
+      "file": "js/utils/paste-parser.js",
+      "sha256": "fdfa978501d5f0bf188578afb063829e62f06394e472448ba4d945d09ae39176"
+    },
+    {
+      "file": "js/utils/render-arrows.js",
+      "sha256": "de2423190709f915838b890538120504c722444b1e0211cfb264c77377fdb75d"
+    },
+    {
+      "file": "js/utils/render-brackets.js",
+      "sha256": "e3f5fe23dba7f653efaef63cf4f8de5b95d05e03faacc6bd3a078b216a110a0d"
+    },
+    {
+      "file": "js/utils/render-comments.js",
+      "sha256": "82cab5ae0b65e5bcd6637c0d639fc7cc99feaf97febc4df0c32e4b08e7370cd4"
+    },
+    {
+      "file": "js/utils/render-labels.js",
+      "sha256": "72a7d715fd0a9464ec91d1b8942f614106fcd2ffb7277b7fbf7ed73a8cbf00f1"
+    },
+    {
+      "file": "js/utils/render-model.js",
+      "sha256": "9f75fe17c49eff78dbcd9daf948acf2c67468e64ab7849bef7c4b7e5f595515f"
+    },
+    {
+      "file": "js/utils/render-propositions.js",
+      "sha256": "f687163edcd68b6838c3e33ee76710de1950238bb638c294b4aa5820bab95016"
+    },
+    {
+      "file": "js/utils/rendering-engine.js",
+      "sha256": "c5aa80bfbdc4966dfd8fe1b0122909c8438e560bf6296ca9c4ed3630f05bdd0e"
+    },
+    {
+      "file": "js/utils/ui-comments.js",
+      "sha256": "89d19d5d8b9cf06295757d7bdb008ec9c4dfdc83c6f1090e6fc361e9b76d474e"
+    },
+    {
+      "file": "js/utils/ui-dialogs.js",
+      "sha256": "da3d38a59d1c8a654490d419adaa49c1a37b338430cbfae115cd97ccb2b7637c"
+    },
+    {
+      "file": "js/utils/ui-menus.js",
+      "sha256": "e38bf79a8bf82806388a0a383b31dee27b1be2de3e89422a9b6030f59828278f"
+    },
+    {
+      "file": "js/utils/ui.js",
+      "sha256": "06aa9737d0fbe79aa0b137e65024dd8f444cdd4dcb2fce2eb6b315d45818c6c3"
+    },
+    {
+      "file": "js/vendor/html2canvas.min.js",
+      "sha256": "e87e550794322e574a1fda0c1549a3c70dae5a93d9113417a429016838eab8cb"
+    },
+    {
+      "file": "js/vendor/jspdf.umd.min.js",
+      "sha256": "98ccf17aa10c20bb1301762618fcc9b6ab3a4e7f26b6071d64d0b41154df3875"
+    },
+    {
+      "file": "js/vendor/lz-string.min.js",
+      "sha256": "9d1a0ef07a2ea5faa8cd4afb60a0518075e6771e341e5ff4e0e481cefedeecbf"
+    },
+    {
+      "file": "main.js",
+      "sha256": "73af227d4c5d55a3c9c7b63af840f4e6e5046b9742be363fb5f3a633a2fabbc0"
+    },
+    {
+      "file": "preload.js",
+      "sha256": "f3a7d6a241e502f89008433dc39440d42506e22c48ae8a1679f4cd0c3d9b2286"
+    },
+    {
+      "file": "styles.css",
+      "sha256": "b239384ba32e47d76c4cb10fbad4d1e10cda6a08d3b65511e05bb00832a560d6"
+    }
+  ],
+  "dependenciesAndSevenExceptionGuardUnchanged": true,
+  "appSourceModifiedInT3": false,
+  "packagedVersion": "3.3.1"
+}

@@ -1,0 +1,9 @@
+{
+  "onlyGeneratedScreenshots": true,
+  "historicalT2ScreenshotsPreservedByteExactly": [
+    "docs/zh-Hant/T2-evidence/comments-hant.png",
+    "docs/zh-Hant/T2-evidence/main-1460-150-light.png",
+    "docs/zh-Hant/T2-evidence/main-800-150-dark.png"
+  ],
+  "newScreenshotsStoredOnlyInScratch": true
+}

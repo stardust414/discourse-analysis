@@ -1,0 +1,2 @@
+c3c0ff72952f432cd18d989436eb71217395cf5955b56271f2035ea0ee15e665  dist/final-zh-Hant/mac/Discourse Analysis-3.3.1-zh-CN-zh-Hant-arm64-mac.zip
+2b7df895b607b4d59764e64fd9a8ef4a1f8b71371011bc05fca5b919005584a9  dist/final-zh-Hant/windows/Discourse Analysis-3.3.1-zh-CN-zh-Hant-win-x64-portable.exe

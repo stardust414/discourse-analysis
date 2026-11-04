@@ -1,0 +1,59 @@
+{
+  "classification": "External Windows runtime validation passed",
+  "evidenceType": "User confirmation in this conversation; no automated Windows collection or screenshot supplied",
+  "confirmationRecordedDate": "2026-11-04",
+  "actualTrialDate": "未記錄",
+  "testedT2File": "dist/t2-zh-Hant-win/Discourse Analysis 3.3.1 x64 Portable.exe",
+  "expectedSha256": "2b7df895b607b4d59764e64fd9a8ef4a1f8b71371011bc05fca5b919005584a9",
+  "originalSha256ReverifiedBeforeCopy": true,
+  "finalFile": "dist/final-zh-Hant/windows/Discourse Analysis-3.3.1-zh-CN-zh-Hant-win-x64-portable.exe",
+  "byteIdenticalToTestedT2": true,
+  "confirmedByUser": [
+    {
+      "item": "EXE 已在外部 Windows 電腦實際運行",
+      "status": "通過"
+    },
+    {
+      "item": "成功啟動",
+      "status": "通過"
+    },
+    {
+      "item": "實際試用正常",
+      "status": "通過"
+    },
+    {
+      "item": "未發現使用問題或 blocker",
+      "status": "通過"
+    }
+  ],
+  "notRecorded": {
+    "windowsVersion": "未記錄",
+    "windowsBuild": "未記錄",
+    "cpuVendorAndArchitecture": "未記錄",
+    "nativeX64HardwareStatus": "未確認",
+    "x64EmulationStatus": "未記錄",
+    "specificWorkflowActions": "未記錄"
+  },
+  "notSpecificallyValidated": [
+    "DPI 100/125/150 矩陣",
+    "Microsoft IME 候選及 Enter 邊界",
+    "SmartScreen 提示／reputation",
+    "Defender 掃描／隔離行為",
+    "UNC 路徑",
+    "長路徑",
+    "各種 Windows build",
+    "Windows 專項快捷鍵／原生對話框逐項清單"
+  ],
+  "notClaimed": [
+    "native Windows x64 hardware verified",
+    "Windows 10/11 全版本相容認證",
+    "Windows 專項全部通過",
+    "新二進位繼承舊 W1 實測"
+  ],
+  "blockerForCurrentPersonalAndClassmateDistribution": false,
+  "signing": {
+    "unsigned": true,
+    "authenticode": false,
+    "securityPoliciesChanged": false
+  }
+}
