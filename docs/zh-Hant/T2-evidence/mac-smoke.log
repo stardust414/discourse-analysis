@@ -1,0 +1,21 @@
+PASS 01 從測試 ZIP 解壓啟動與首次 Welcome
+PASS 02 簡體中文與原生選單
+PASS 03 English 與原生選單
+PASS 04 繁體中文與原生選單／accelerator
+PASS 05 跟隨目前實際系統語言
+PASS 06 經網路載入 John 1:1-3 ESV
+PASS 07 原有 Enter 拆分
+PASS 08 圓點建立理由與行動—目的
+PASS 09 Schreiner 出版詞與課件雙重理據
+PASS 10 搜尋繁簡、出版詞、English 與原記號
+PASS 11 五套 profile 與 Guide 正確分組／原記號
+PASS 12 縮排結構圖與返回括號檢視
+PASS 13 新增評論與回覆，不轉換內容
+PASS 14 經文主旨摘要跨三語保留
+PASS 15 平行譯本實際載入 ESV
+PASS 16 自訂方案與自訂關係原樣保留
+PASS 17 JSON 匯出→English 開啟→繁體開啟
+PASS 18 PNG／PDF 匯出與完整內嵌資料還原
+PASS 19 實際 Mac 小視窗與縮放 Light／Dark
+PASS 20 重啟後繁體偏好與自訂方案保留
+{"passed":20,"failed":0,"fatal":null}

@@ -1,0 +1,345 @@
+{
+  "sourceCommit": "210b3bb63a02e118e5441b4f26afc345c210c44e",
+  "steps": [
+    {
+      "name": "01 從測試 ZIP 解壓啟動與首次 Welcome",
+      "status": "pass",
+      "detail": {
+        "version": "3.3.1",
+        "packaged": true,
+        "arch": "arm64",
+        "languages": [
+          "zh-Hans-CN",
+          "el-CN",
+          "en-CN"
+        ]
+      }
+    },
+    {
+      "name": "02 簡體中文與原生選單",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "03 English 與原生選單",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "04 繁體中文與原生選單／accelerator",
+      "status": "pass",
+      "detail": [
+        {
+          "role": "appmenu",
+          "label": "discourse-analysis",
+          "items": [
+            {
+              "role": "about",
+              "label": "關於 discourse-analysis",
+              "accelerator": null
+            },
+            {
+              "role": null,
+              "label": "",
+              "accelerator": null
+            },
+            {
+              "role": "services",
+              "label": "服務",
+              "accelerator": null
+            },
+            {
+              "role": null,
+              "label": "",
+              "accelerator": null
+            },
+            {
+              "role": "hide",
+              "label": "隱藏 discourse-analysis",
+              "accelerator": null
+            },
+            {
+              "role": "hideothers",
+              "label": "隱藏其他應用程式",
+              "accelerator": null
+            },
+            {
+              "role": "unhide",
+              "label": "全部顯示",
+              "accelerator": null
+            },
+            {
+              "role": null,
+              "label": "",
+              "accelerator": null
+            },
+            {
+              "role": "quit",
+              "label": "結束 discourse-analysis",
+              "accelerator": null
+            }
+          ]
+        },
+        {
+          "role": "filemenu",
+          "label": "檔案",
+          "items": [
+            {
+              "role": "close",
+              "label": "關閉視窗",
+              "accelerator": null
+            }
+          ]
+        },
+        {
+          "role": "editmenu",
+          "label": "編輯",
+          "items": [
+            {
+              "role": "undo",
+              "label": "復原",
+              "accelerator": null
+            },
+            {
+              "role": "redo",
+              "label": "重做",
+              "accelerator": null
+            },
+            {
+              "role": null,
+              "label": "",
+              "accelerator": null
+            },
+            {
+              "role": "cut",
+              "label": "剪下",
+              "accelerator": null
+            },
+            {
+              "role": "copy",
+              "label": "複製",
+              "accelerator": null
+            },
+            {
+              "role": "paste",
+              "label": "貼上",
+              "accelerator": null
+            },
+            {
+              "role": "pasteandmatchstyle",
+              "label": "貼上並符合樣式",
+              "accelerator": null
+            },
+            {
+              "role": "delete",
+              "label": "刪除",
+              "accelerator": null
+            },
+            {
+              "role": "selectall",
+              "label": "全選",
+              "accelerator": null
+            },
+            {
+              "role": null,
+              "label": "",
+              "accelerator": null
+            },
+            {
+              "role": null,
+              "label": "Substitutions",
+              "accelerator": null
+            },
+            {
+              "role": null,
+              "label": "Speech",
+              "accelerator": null
+            }
+          ]
+        },
+        {
+          "role": "viewmenu",
+          "label": "檢視",
+          "items": [
+            {
+              "role": "reload",
+              "label": "重新載入",
+              "accelerator": null
+            },
+            {
+              "role": "forcereload",
+              "label": "強制重新載入",
+              "accelerator": null
+            },
+            {
+              "role": "toggledevtools",
+              "label": "開發者工具",
+              "accelerator": null
+            },
+            {
+              "role": null,
+              "label": "",
+              "accelerator": null
+            },
+            {
+              "role": "resetzoom",
+              "label": "實際大小",
+              "accelerator": null
+            },
+            {
+              "role": "zoomin",
+              "label": "放大",
+              "accelerator": null
+            },
+            {
+              "role": "zoomout",
+              "label": "縮小",
+              "accelerator": null
+            },
+            {
+              "role": null,
+              "label": "",
+              "accelerator": null
+            },
+            {
+              "role": "togglefullscreen",
+              "label": "切換全螢幕",
+              "accelerator": null
+            }
+          ]
+        },
+        {
+          "role": "windowmenu",
+          "label": "視窗",
+          "items": [
+            {
+              "role": "minimize",
+              "label": "最小化",
+              "accelerator": null
+            },
+            {
+              "role": "zoom",
+              "label": "縮放視窗",
+              "accelerator": null
+            },
+            {
+              "role": null,
+              "label": "",
+              "accelerator": null
+            },
+            {
+              "role": "front",
+              "label": "全部前置",
+              "accelerator": null
+            }
+          ]
+        },
+        {
+          "role": "help",
+          "label": "說明",
+          "items": []
+        }
+      ]
+    },
+    {
+      "name": "05 跟隨目前實際系統語言",
+      "status": "pass",
+      "detail": {
+        "actual": "zh-CN",
+        "expected": "zh-CN",
+        "system": [
+          "zh-Hans-CN",
+          "el-CN",
+          "en-CN"
+        ]
+      }
+    },
+    {
+      "name": "06 經網路載入 John 1:1-3 ESV",
+      "status": "pass",
+      "detail": {
+        "reference": "John 1:1-3",
+        "attribution": "(ESV)"
+      }
+    },
+    {
+      "name": "07 原有 Enter 拆分",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "08 圓點建立理由與行動—目的",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "09 Schreiner 出版詞與課件雙重理據",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "10 搜尋繁簡、出版詞、English 與原記號",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "11 五套 profile 與 Guide 正確分組／原記號",
+      "status": "pass",
+      "detail": {
+        "josiah": 18,
+        "biblearc": 18,
+        "gurtner": 20,
+        "beale": 17,
+        "schreiner": 19
+      }
+    },
+    {
+      "name": "12 縮排結構圖與返回括號檢視",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "13 新增評論與回覆，不轉換內容",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "14 經文主旨摘要跨三語保留",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "15 平行譯本實際載入 ESV",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "16 自訂方案與自訂關係原樣保留",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "17 JSON 匯出→English 開啟→繁體開啟",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "18 PNG／PDF 匯出與完整內嵌資料還原",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "19 實際 Mac 小視窗與縮放 Light／Dark",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "20 重啟後繁體偏好與自訂方案保留",
+      "status": "pass",
+      "detail": null
+    }
+  ],
+  "pageErrors": [],
+  "passed": 20,
+  "failed": 0
+}

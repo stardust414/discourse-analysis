@@ -1,0 +1,12 @@
+{
+  "issues": [],
+  "englishKeys": 601,
+  "chineseKeys": 601,
+  "traditionalKeys": 601,
+  "approvedGrammarUnitExceptions": 7,
+  "traditionalMissingKeys": 0,
+  "explicitKeysChecked": 435,
+  "sourceFiles": 38,
+  "sourceRecords": 2422,
+  "intentionalFallback": []
+}

@@ -1,0 +1,51 @@
+{
+  "asar": "dist/t2-zh-Hant-win/win-unpacked/resources/app.asar",
+  "version": "3.3.1",
+  "checked": [
+    {
+      "file": "index.html",
+      "sha256": "0ac7871570c8b543f59fe384d84a1d64363cf17704144cd6231b7ee22565efc8"
+    },
+    {
+      "file": "styles.css",
+      "sha256": "b239384ba32e47d76c4cb10fbad4d1e10cda6a08d3b65511e05bb00832a560d6"
+    },
+    {
+      "file": "main.js",
+      "sha256": "73af227d4c5d55a3c9c7b63af840f4e6e5046b9742be363fb5f3a633a2fabbc0"
+    },
+    {
+      "file": "preload.js",
+      "sha256": "f3a7d6a241e502f89008433dc39440d42506e22c48ae8a1679f4cd0c3d9b2286"
+    },
+    {
+      "file": "js/i18n/en.js",
+      "sha256": "5507a160c50fee985b4b563989c0582aeb8722a9faa439bdf5372966c296b3a1"
+    },
+    {
+      "file": "js/i18n/zh-CN.js",
+      "sha256": "a8557ca8a69bd16feaac6d0e3e313470d4983d7dc99317757c4b5e5a41639234"
+    },
+    {
+      "file": "js/i18n/zh-Hant.js",
+      "sha256": "58b9ccdfb9bd293e4be01ae2eedbe155d84138d8250f6e4a1e576f1da8881450"
+    },
+    {
+      "file": "js/i18n/relationship-profiles.js",
+      "sha256": "21b55fb2e02599aaf86e4c06fa7e7b8278e96822943fcf7707b04c662de2f6fc"
+    },
+    {
+      "file": "js/i18n/relationships.js",
+      "sha256": "9bb5df493ceb7b9cb682b48cbde3c5be5442acb989c19769e09cd4f21e7d7a62"
+    },
+    {
+      "file": "js/i18n/i18n.js",
+      "sha256": "699362a5c2c9ecc086a24ef4da9048e3c1799e0c7b5e28ef12f1b9f62c2318a5"
+    },
+    {
+      "file": "js/i18n/native-menu.cjs",
+      "sha256": "c39dfe72b376fe7dae3e065caf1a55c5e8c6531a60293361b742e12eec3e920a"
+    }
+  ],
+  "entryCount": 49
+}

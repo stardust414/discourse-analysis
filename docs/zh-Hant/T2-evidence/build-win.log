@@ -1,0 +1,8 @@
+
+> discourse-analysis@3.3.1 build:win
+> electron-builder --win --x64 --config.directories.output=dist/t2-zh-Hant-win
+
+  • electron-builder  version=24.13.3 os=27.0.0
+  • loaded configuration  file=package.json ("build" field)
+  • packaging       platform=win32 arch=x64 electron=28.3.3 appOutDir=dist/t2-zh-Hant-win/win-unpacked
+  • building        target=portable file=dist/t2-zh-Hant-win/Discourse Analysis 3.3.1 x64 Portable.exe archs=x64
