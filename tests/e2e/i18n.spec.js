@@ -40,7 +40,7 @@ async function picker(page) {
     await page.locator('.bracket-hitbox[tabindex="0"]').first().press('Enter');
     await expect(page.locator('#labelPicker')).toBeVisible();
 }
-for (const [locale, want] of [['zh-CN', 'zh-CN'], ['zh-SG', 'zh-CN'], ['zh-TW', 'en'], ['fr-FR', 'en']]) {
+for (const [locale, want] of [['zh-CN', 'zh-CN'], ['zh-SG', 'zh-CN'], ['zh-TW', 'zh-Hant'], ['fr-FR', 'en']]) {
     test('default Follow System: ' + locale, async ({ browser }) => {
         const context = await browser.newContext({ locale });
         const page = await context.newPage();

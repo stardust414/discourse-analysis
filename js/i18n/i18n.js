@@ -1,7 +1,7 @@
 /** Small display-only i18n layer. No document state, HTML evaluation or reloads. */
 (function () {
   const STORAGE_KEY = 'biblebracket_language';
-  const choices = ['system', 'en', 'zh-CN'];
+  const choices = ['system', 'en', 'zh-CN', 'zh-Hant'];
   const catalogs = window.DA_I18N_CATALOGS || {};
   const listeners = new Set();
   const bindings = new WeakMap();
@@ -14,9 +14,14 @@
   } catch (_) { /* Storage can be unavailable; the current session still works. */ }
 
   function resolveLocale(languages) {
-    const first = String((languages || [])[0] || 'en').replace(/_/g, '-').toLowerCase();
-    if (!/^zh(?:-|$)/.test(first) || /-hant(?:-|$)/.test(first)) return 'en';
-    return first === 'zh' || /-(hans|cn|sg|my)(?:-|$)/.test(first) ? 'zh-CN' : 'en';
+    try {
+      const first = String((languages || [])[0] || 'en').replace(/_/g, '-');
+      const parsed = new Intl.Locale(first);
+      if (parsed.language !== 'zh') return 'en';
+      if (parsed.script) return ({ Hans: 'zh-CN', Hant: 'zh-Hant' })[parsed.script] || 'en';
+      if (['TW', 'HK', 'MO'].includes(parsed.region)) return 'zh-Hant';
+      return !parsed.region || ['CN', 'SG', 'MY'].includes(parsed.region) ? 'zh-CN' : 'en';
+    } catch (_) { return 'en'; }
   }
   let locale = preference === 'system' ? resolveLocale(systemLanguages) : preference;
 

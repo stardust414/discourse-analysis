@@ -97,7 +97,7 @@ function load(sandbox, relPath) {
   if (!relPath.startsWith('js/i18n/') && !sandbox.DA_I18N) {
     const doc = sandbox.document;
     sandbox.document = { querySelectorAll: () => [], readyState: 'complete' };
-    ['en.js', 'zh-CN.js', 'i18n.js'].forEach(f => load(sandbox, 'js/i18n/' + f));
+    ['en.js', 'zh-CN.js', 'zh-Hant.js', 'i18n.js'].forEach(f => load(sandbox, 'js/i18n/' + f));
     sandbox.document = doc;
   }
   if (sandbox.DA_UI?.showStatus && !sandbox.DA_UI.showTranslatedStatus) {

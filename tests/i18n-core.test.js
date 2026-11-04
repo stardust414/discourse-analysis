@@ -27,7 +27,7 @@ async function setup({ languages = ['en-US'], saved, native, blocked = false, no
     s.addEventListener = (name, fn) => {
         events[name] = fn;
     };
-    ['en.js', 'zh-CN.js', 'i18n.js'].forEach(f => load(s, 'js/i18n/' + f));
+    ['en.js', 'zh-CN.js', 'zh-Hant.js', 'i18n.js'].forEach(f => load(s, 'js/i18n/' + f));
     await s.DA_I18N.ready;
     return { s, i: s.DA_I18N, html, events };
 }
@@ -37,7 +37,7 @@ test('default is Follow System without writing a preference', async () => {
     assert.equal(i.getLocale(), 'en');
     assert.equal(s.localStorage.getItem(i.STORAGE_KEY), null);
 });
-for (const [tag, expected] of [['zh-CN', 'zh-CN'], ['zh-SG', 'zh-CN'], ['zh-Hans', 'zh-CN'], ['zh-Hans-MY', 'zh-CN'], ['zh', 'zh-CN'], ['zh-TW', 'en'], ['zh-Hant-CN', 'en'], ['fr-FR', 'en']]) {
+for (const [tag, expected] of [['zh-CN', 'zh-CN'], ['zh-SG', 'zh-CN'], ['zh-Hans', 'zh-CN'], ['zh-Hans-MY', 'zh-CN'], ['zh', 'zh-CN'], ['zh-TW', 'zh-Hant'], ['zh-Hant-CN', 'zh-Hant'], ['fr-FR', 'en']]) {
     test('Follow System resolves ' + tag, async () => {
         const { i } = await setup({ languages: [tag] });
         assert.equal(i.getLocale(), expected);
