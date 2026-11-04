@@ -430,7 +430,7 @@ window.DA_I18N_CATALOGS["zh-CN"] = Object.freeze({
   "s.S0607": "希腊文新约 — Greek NT (SBLGNT)",
   "s.S0609": "希腊文旧约 — Greek OT (Septuagint / LXX)",
   "s.S0611": "希伯来文旧约 — Hebrew OT (Westminster Leningrad / WLC)",
-  "s.S0622": "确定用 {newTranslation} 替换当前 {oldTranslation} 栏（包括所有编辑内容）？可按 Ctrl+Z 撤销。",
+  "s.S0622": "确定用 {oldTranslation} 替换当前 {newTranslation} 栏（包括所有编辑内容）？可按 Ctrl+Z 撤销。",
   "s.S0623": "正在载入 {translation}…",
   "s.S0624": "未找到与此经文范围对应的经文。",
   "s.S0626": "平行经文栏：{translation}。",
