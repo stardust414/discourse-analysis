@@ -202,7 +202,10 @@ test('Hant JSON / PNG / PDF exports restore the unchanged project and contain no
     await page.locator(`#exportMenu [data-action="${action}"]`).click(); const download = await pending;
     const output = test.info().outputPath('project.' + ext); await download.saveAs(output);
     expect(fs.statSync(output).size).toBeGreaterThan(100);
-    await page.locator('#importFileInput').setInputFiles(output);
+    await page.evaluate(() => window.DA_PERSISTENCE.importBracket({ version: 3, passageRef: 'Sentinel', propositions: ['Different content before restore'], verseRefs: ['1'], brackets: [], comments: [], mainPointSummary: '' }));
+    await expect(page.locator('.proposition-text')).toHaveCount(1);
+    await page.locator('#openMenuBtn').click(); const chooser = page.waitForEvent('filechooser');
+    await page.locator('#openPicker > button').first().click(); await (await chooser).setFiles(output);
     await expect(page.locator('.proposition-text')).toHaveCount(2);
     const after = (await snapshot(page)).data; expect(after).toEqual(before);
   }

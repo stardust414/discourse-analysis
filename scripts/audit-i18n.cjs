@@ -8,6 +8,12 @@ const ROOT = path.resolve(__dirname, '..');
 const SNAPSHOT = 'docs/zh-Hant/T2-源碼文字審計.json';
 const BASE_SNAPSHOT = 'docs/windows/W1-源码文本审计.json';
 const LANGUAGES = ['en', 'zh-CN', 'zh-Hant'];
+// User approved on 2026-11-04: Chinese fixed units replace English plural words.
+const grammarUnitExceptions = {
+  's.S0017': ['verses'], 's.S0026': ['verses'], 's.S0029': ['verses'],
+  's.S0422': ['rows'], 's.S0425': ['rows'],
+  'confirm.deleteDependents': ['brackets'], 'block.verses': ['unit']
+};
 const intentionalFallback = []; // C13–C17 approved in v1.1; no deliberate missing Chinese keys.
 function filesUnder(dir) {
   return fs.readdirSync(path.join(ROOT, dir), { withFileTypes: true }).flatMap(e =>
@@ -65,11 +71,14 @@ function compareSnapshot(actual, expected) {
 }
 function check() {
   const dict = catalogs(), issues = [];
-  const parameters = value => [...new Set([...JSON.stringify(value).matchAll(/\{(\w+)\}/g)].map(m => m[1]))].sort();
+  const parameters = value => [...new Set([...JSON.stringify(value ?? '').matchAll(/\{(\w+)\}/g)].map(m => m[1]))].sort();
   for (const locale of LANGUAGES) {
     for (const key of Object.keys(dict.en)) {
       const entry = dict[locale][key];
       if (!entry || typeof entry !== 'string' && !entry.other) issues.push('Missing/empty translation: ' + locale + ':' + key);
+      const omitted = parameters(dict.en[key]).filter(p => !parameters(entry).includes(p));
+      if (JSON.stringify(omitted) !== JSON.stringify(locale === 'en' ? [] : grammarUnitExceptions[key] || []))
+        issues.push('Unapproved parameter omission: ' + locale + ':' + key);
       if (entry && parameters(entry).some(p => !parameters(dict.en[key]).includes(p))) issues.push('Unknown parameter: ' + locale + ':' + key);
       if (locale === 'zh-Hant' && JSON.stringify(parameters(entry)) !== JSON.stringify(parameters(dict['zh-CN'][key])))
         issues.push('Chinese parameter mismatch: ' + key);
@@ -97,6 +106,7 @@ function check() {
   }
   return { issues, englishKeys: Object.keys(dict.en).length, chineseKeys: Object.keys(dict['zh-CN']).length,
     traditionalKeys: Object.keys(dict['zh-Hant']).length,
+    approvedGrammarUnitExceptions: Object.keys(grammarUnitExceptions).length,
     traditionalMissingKeys: Object.keys(dict.en).filter(k => !dict['zh-Hant'][k]).length,
     explicitKeysChecked: used.size, sourceFiles: sourceFiles().length, sourceRecords: rows.length, intentionalFallback };
 }

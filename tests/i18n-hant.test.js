@@ -60,7 +60,7 @@ test('all three catalogs have exactly the same 601 nonempty safe values', () => 
     }
   }
 });
-test('Hant interpolation preserves the approved Chinese parameter set without adding unknown parameters', () => {
+test('Hant interpolation enforces the seven approved grammar exceptions without losing data parameters', () => {
   const d = setup().DA_I18N_CATALOGS;
   const parameters = value => [...new Set([...JSON.stringify(value).matchAll(/\{(\w+)\}/g)].map(x => x[1]))].sort();
   // Seven existing Chinese omissions are English grammatical unit words, not user data.
