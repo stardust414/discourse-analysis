@@ -1,6 +1,14 @@
 /** Reviewed UI catalog. s.* keys retain stage 2 audit record identities. */
 window.DA_I18N_CATALOGS = window.DA_I18N_CATALOGS || {};
 window.DA_I18N_CATALOGS["zh-CN"] = Object.freeze({
+  "scripture.cuvs": "新标点和合本（简体）",
+  "scripture.cuvt": "新标点和合本（繁体）",
+  "scripture.publicDomain": "公有领域",
+  "scripture.reference": "请使用如 John 1、John 1:1-5、John 1-2 或 John 1:50-2:3 的经文引用。",
+  "scripture.invalidData": "经文来源返回了不支持或格式错误的数据。",
+  "scripture.http": "经文来源请求失败（{status}）。",
+  "scripture.network": "无法连接经文来源，请重试。",
+  "scripture.empty": "所选译本的此经文引用没有可用正文。",
   "settings.title": "项目设置",
   "settings.open": "设置",
   "settings.tooltip": "项目与个人设置",

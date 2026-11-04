@@ -33,7 +33,7 @@ test('main selector keeps all four legacy IDs and fetches through the public ada
   ]) {
     await page.goto('/');
     expect(await page.locator('#versionSelect option').evaluateAll(options => options.map(o => o.value)))
-      .toEqual(['esv', 'nasb', 'greek', 'hebrew']);
+      .toEqual(['esv', 'nasb', 'greek', 'hebrew', 'cuvs', 'cuvt']);
     expect(await page.evaluate(id => window.DA_BIBLE.getTranslationMetadata(id), id))
       .toEqual({ id, provider: 'legacy' });
     await page.locator('#versionSelect').selectOption(id);

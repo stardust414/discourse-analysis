@@ -6,7 +6,7 @@
   <!-- script-src deliberately has no 'unsafe-inline'/'unsafe-eval': all scripts are
        external files and none of the vendored libs (html2canvas, jspdf, lz-string)
        or the Firebase compat SDK use eval. Keep new scripts in .js files. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://*.firebaseapp.com https://apis.google.com https://www.gstatic.com https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.firebaseio.com https://*.googleapis.com https://api.esv.org https://us-central1-discourse-analysis-f4a8e.cloudfunctions.net https://bolls.life https://raw.githubusercontent.com https://josiah-hoi.goatcounter.com http://localhost:*;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://*.firebaseapp.com https://apis.google.com https://www.gstatic.com https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://v1.fetch.bible https://*.firebaseio.com https://*.googleapis.com https://api.esv.org https://us-central1-discourse-analysis-f4a8e.cloudfunctions.net https://bolls.life https://raw.githubusercontent.com https://josiah-hoi.goatcounter.com http://localhost:*;">
   <title>Discourse Analysis</title>
   <script src="js/i18n/en.js?v=3.3.1"></script>
   <script src="js/i18n/zh-CN.js?v=3.3.1"></script>
@@ -33,6 +33,8 @@
           <option value="nasb" data-i18n="s.S0605">NASB (1995)</option>
           <option value="greek" data-i18n="s.S0653">Greek (SBLGNT / LXX)</option>
           <option value="hebrew" data-i18n="s.S0654">Hebrew (WLC)</option>
+          <option value="cuvs" data-i18n="scripture.cuvs">Chinese Union Version (Simplified)</option>
+          <option value="cuvt" data-i18n="scripture.cuvt">Chinese Union Version (Traditional)</option>
         </select>
         <input type="text" id="passageInput" placeholder="e.g. John 1:1-5, Romans 8:28" value="Rom 3:21-26" data-i18n-placeholder="passage.placeholder">
         <button id="fetchBtn" type="button" data-i18n="passage.fetch">Fetch Passage</button>

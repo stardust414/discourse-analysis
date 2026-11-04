@@ -48,10 +48,10 @@ test('missing, empty, or malformed Hant values fall straight to English, never S
   assert.equal(s.DA_I18N.t('relationship.removed', { count: 2 }), '2 brackets removed.');
   assert.equal(s.DA_I18N.t('settings.open'), 'Settings');
 });
-test('all three catalogs have exactly the same 601 nonempty safe values', () => {
+test('all three catalogs have exactly the same 609 nonempty safe values', () => {
   const s = setup(), d = s.DA_I18N_CATALOGS;
   for (const locale of ['en', 'zh-CN', 'zh-Hant']) {
-    assert.equal(Object.keys(d[locale]).length, 601);
+    assert.equal(Object.keys(d[locale]).length, 609);
     assert.deepEqual(Object.keys(d[locale]).sort(), Object.keys(d.en).sort());
     s.DA_I18N.setPreference(locale);
     for (const key of Object.keys(d.en)) {

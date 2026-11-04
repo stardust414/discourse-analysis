@@ -1,5 +1,5 @@
 {
-  "purpose": "Reviewed T2 delta only; immutable W1 snapshot remains the base. All 27 new/increased literals were inspected individually. Catalog strings and Schreiner override values are separately validated by tests. S1 additionally reviews five internal Scripture routing literals (new or increased occurrences); original T2 records remain unchanged.",
+  "purpose": "Reviewed T2 delta only; immutable W1 snapshot remains the base. All 27 new/increased literals were inspected individually. Catalog strings and Schreiner override values are separately validated by tests. S1 additionally reviews five internal Scripture routing literals (new or increased occurrences); original T2 records remain unchanged. S2A individually reviews 35 new/increased Scripture metadata, schema and localized UI records.",
   "baseSnapshot": "docs/windows/W1-源码文本审计.json",
   "baseSha256": "21ee6e46446d746f1a6aa238b07ba185e52ccf04e31d534eaf007cbf11e136b9",
   "records": [
@@ -322,6 +322,356 @@
       "occurrences": 1,
       "auditClass": "C-internal-scripture-routing-id",
       "reviewNote": "S1: reviewed stable main-selector ID or internal legacy adapter key; never displayed as UI text."
+    },
+    {
+      "id": "c5d474f794737e7e5b92",
+      "file": "index.html",
+      "line": 36,
+      "kind": "html-text",
+      "text": "Chinese Union Version (Simplified)",
+      "occurrences": 1,
+      "auditClass": "A-translated-ui",
+      "reviewNote": "S2A: selector label bound to scripture.cuvs/cuvt in all three catalogs."
+    },
+    {
+      "id": "1eda8b8bbb6acb0cb977",
+      "file": "index.html",
+      "line": 37,
+      "kind": "html-text",
+      "text": "Chinese Union Version (Traditional)",
+      "occurrences": 1,
+      "auditClass": "A-translated-ui",
+      "reviewNote": "S2A: selector label bound to scripture.cuvs/cuvt in all three catalogs."
+    },
+    {
+      "id": "199cc8a5cfed31a81b95",
+      "file": "js/services/bible-service.js",
+      "line": 126,
+      "kind": "literal",
+      "text": "s.S0061",
+      "occurrences": 2,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "9d76ee73dda04528a584",
+      "file": "js/services/bible-service.js",
+      "line": 371,
+      "kind": "literal",
+      "text": "cuvs",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "b828c598511dab107604",
+      "file": "js/services/bible-service.js",
+      "line": 371,
+      "kind": "literal",
+      "text": "fetch-bible",
+      "occurrences": 3,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "5d422d9cc5f1d49c1580",
+      "file": "js/services/bible-service.js",
+      "line": 371,
+      "kind": "literal",
+      "text": "cmn_cus",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "b601f53c61a57687f95d",
+      "file": "js/services/bible-service.js",
+      "line": 372,
+      "kind": "literal",
+      "text": "zh",
+      "occurrences": 2,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "0dcb6e8ab434d9a613c9",
+      "file": "js/services/bible-service.js",
+      "line": 372,
+      "kind": "literal",
+      "text": "Hans",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "94b5fcf38ef9857986ca",
+      "file": "js/services/bible-service.js",
+      "line": 372,
+      "kind": "literal",
+      "text": "scripture.cuvs",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "d21c1c3d3b10a8cb7032",
+      "file": "js/services/bible-service.js",
+      "line": 372,
+      "kind": "literal",
+      "text": "CUVS",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "79dd3d587183aae8f5b4",
+      "file": "js/services/bible-service.js",
+      "line": 373,
+      "kind": "literal",
+      "text": "Public Domain",
+      "occurrences": 2,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "73e6ee00bd6d5e3e850a",
+      "file": "js/services/bible-service.js",
+      "line": 373,
+      "kind": "literal",
+      "text": "cmn-cu89s",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "92ed09b2a8cb1d466447",
+      "file": "js/services/bible-service.js",
+      "line": 374,
+      "kind": "literal",
+      "text": "eBible.org / fetch(bible)",
+      "occurrences": 2,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "3ad429c234e30b08b1e0",
+      "file": "js/services/bible-service.js",
+      "line": 375,
+      "kind": "literal",
+      "text": "https://ebible.org/details.php?id=cmn-cu89s",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "330a2879226342b29e4b",
+      "file": "js/services/bible-service.js",
+      "line": 378,
+      "kind": "literal",
+      "text": "cuvt",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "6ccec35a0185c5f7e1f8",
+      "file": "js/services/bible-service.js",
+      "line": 378,
+      "kind": "literal",
+      "text": "cmn_cut",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "74ed0912de7f4714d44d",
+      "file": "js/services/bible-service.js",
+      "line": 379,
+      "kind": "literal",
+      "text": "Hant",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "f47f43ced780e148c3a6",
+      "file": "js/services/bible-service.js",
+      "line": 379,
+      "kind": "literal",
+      "text": "scripture.cuvt",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "feed510bd81443d4f80f",
+      "file": "js/services/bible-service.js",
+      "line": 379,
+      "kind": "literal",
+      "text": "CUVT",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "016a94f6330f79a17e36",
+      "file": "js/services/bible-service.js",
+      "line": 380,
+      "kind": "literal",
+      "text": "cmn-cu89t",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "f9649beb183959cc1f85",
+      "file": "js/services/bible-service.js",
+      "line": 382,
+      "kind": "literal",
+      "text": "https://ebible.org/details.php?id=cmn-cu89t",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "99b4b800e4ccfb009364",
+      "file": "js/services/bible-service.js",
+      "line": 392,
+      "kind": "literal",
+      "text": "scripture.reference",
+      "occurrences": 2,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "784bf43505ef9aecea30",
+      "file": "js/services/bible-service.js",
+      "line": 393,
+      "kind": "template",
+      "text": "{m[1]} {m[2]}",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "929a379dc280a4b26faf",
+      "file": "js/services/bible-service.js",
+      "line": 411,
+      "kind": "template",
+      "text": "{ref.bookName} {normalized.slice(m[1].length).trim()}",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "c7251405c01dd8939b96",
+      "file": "js/services/bible-service.js",
+      "line": 416,
+      "kind": "literal",
+      "text": "scripture.invalidData",
+      "occurrences": 5,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "eef74c3e61485757f117",
+      "file": "js/services/bible-service.js",
+      "line": 420,
+      "kind": "literal",
+      "text": "string",
+      "occurrences": 3,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "84c007d0b60cdccd40c5",
+      "file": "js/services/bible-service.js",
+      "line": 421,
+      "kind": "literal",
+      "text": "heading",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "62cc08ec1836da5f9027",
+      "file": "js/services/bible-service.js",
+      "line": 421,
+      "kind": "literal",
+      "text": "note",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "eab9a26c9fa37ad56fb5",
+      "file": "js/services/bible-service.js",
+      "line": 432,
+      "kind": "template",
+      "text": "https://v1.fetch.bible/bibles/{translation.providerTranslationId}/txt/{ref.bookId}.json",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "a6762a7fdaa5bff8df4a",
+      "file": "js/services/bible-service.js",
+      "line": 434,
+      "kind": "literal",
+      "text": "scripture.network",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "436f571bec7cdde6a19f",
+      "file": "js/services/bible-service.js",
+      "line": 436,
+      "kind": "literal",
+      "text": "scripture.http",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "427b2c4e4a16e8213415",
+      "file": "js/services/bible-service.js",
+      "line": 445,
+      "kind": "literal",
+      "text": "scripture.empty",
+      "occurrences": 3,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "128eee809e1352de4e66",
+      "file": "js/services/bible-service.js",
+      "line": 457,
+      "kind": "template",
+      "text": "{chapter}:{verse}",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "e76c51b461657e51ac30",
+      "file": "js/services/bible-service.js",
+      "line": 462,
+      "kind": "template",
+      "text": "({translation.shortName}) — {DA_I18N.t('scripture.publicDomain')} · eBible {translation.sourceId} · fetch(bible)",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "931594a41b4a21353f9e",
+      "file": "js/services/bible-service.js",
+      "line": 462,
+      "kind": "literal",
+      "text": "scripture.publicDomain",
+      "occurrences": 1,
+      "auditClass": "C-scripture-provider-metadata-or-schema",
+      "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
     }
   ]
 }

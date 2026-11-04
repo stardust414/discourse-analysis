@@ -1,6 +1,14 @@
 /** Reviewed Traditional Chinese UI. Shared across Mac/Windows; not a runtime conversion. */
 window.DA_I18N_CATALOGS = window.DA_I18N_CATALOGS || {};
 window.DA_I18N_CATALOGS["zh-Hant"] = Object.freeze({
+  "scripture.cuvs": "新標點和合本（簡體）",
+  "scripture.cuvt": "新標點和合本（繁體）",
+  "scripture.publicDomain": "公有領域",
+  "scripture.reference": "請使用如 John 1、John 1:1-5、John 1-2 或 John 1:50-2:3 的經文引用。",
+  "scripture.invalidData": "經文來源傳回了不支援或格式錯誤的資料。",
+  "scripture.http": "經文來源請求失敗（{status}）。",
+  "scripture.network": "無法連接經文來源，請重試。",
+  "scripture.empty": "所選譯本的此經文引用沒有可用正文。",
   "settings.title": "專案設定",
   "settings.open": "設定",
   "settings.tooltip": "專案與個人設定",

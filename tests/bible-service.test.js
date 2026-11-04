@@ -359,13 +359,13 @@ test('registry rejects unknown, inherited, parallel-only and custom-text IDs', (
   }
 });
 
-test('registry IDs match the existing main selector without adding options', () => {
+test('registry IDs match the current main selector, preserving legacy values', () => {
   const fs = require('node:fs');
   const path = require('node:path');
   const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
   const select = html.match(/<select id="versionSelect"[^]*?<\/select>/)[0];
   const ids = [...select.matchAll(/<option value="([^"]+)"/g)].map(m => m[1]);
-  assert.deepEqual(ids, ['esv', 'nasb', 'greek', 'hebrew']);
+  assert.deepEqual(ids, ['esv', 'nasb', 'greek', 'hebrew', 'cuvs', 'cuvt']);
   const sb = setup();
   for (const id of ids) assert.equal(sb.DA_BIBLE.getTranslationMetadata(id).id, id);
 });

@@ -1,6 +1,14 @@
 /** Reviewed UI catalog. s.* keys retain stage 2 audit record identities. */
 window.DA_I18N_CATALOGS = window.DA_I18N_CATALOGS || {};
 window.DA_I18N_CATALOGS["en"] = Object.freeze({
+  "scripture.cuvs": "Chinese Union Version (Simplified)",
+  "scripture.cuvt": "Chinese Union Version (Traditional)",
+  "scripture.publicDomain": "Public Domain",
+  "scripture.reference": "Use a reference such as John 1, John 1:1-5, John 1-2 or John 1:50-2:3.",
+  "scripture.invalidData": "The Scripture source returned an unsupported or malformed response.",
+  "scripture.http": "Scripture source request failed ({status}).",
+  "scripture.network": "Could not connect to the Scripture source. Please try again.",
+  "scripture.empty": "No Scripture text is available for this reference in the selected translation.",
   "settings.title": "Project Settings",
   "settings.open": "Settings",
   "settings.tooltip": "Project and personal settings",

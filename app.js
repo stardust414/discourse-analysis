@@ -350,7 +350,7 @@ async function fetchPassage(mode = 'replace') {
 
     renderAll();
     // ESV and NASB have a primary/fallback split (official API → Bolls);
-    // other versions are always Bolls, so don't call that a "fallback".
+    // other versions have no official-API/fallback split.
     const usedFallback = (version === 'esv' || version === 'nasb') && result.source === 'bolls';
     const apiName = version === 'esv' ? 'ESV' : 'NASB';
     DA_UI.showTranslatedStatus(usedFallback ? 'passage.fallback' : 'passage.loaded', { apiName }, 'success');
