@@ -358,7 +358,7 @@ function populateReferenceGuide() {
         section.rows.forEach((row) => {
             const tr = document.createElement('tr');
             tr.append(
-                cell(row.name, { strong: true, title: window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.selectorPresentation(row.type).full : row.name }),
+                cell(window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.selectorPresentation(row.type).full : row.name, { strong: true, title: window.DA_RELATIONSHIPS ? DA_RELATIONSHIPS.selectorPresentation(row.type).full : row.name }),
                 cell(row.abbr, { className: 'abbr-cell' }),
                 cell(row.keywords, { className: 'keyword-cell' }),
                 cell(row.definition)

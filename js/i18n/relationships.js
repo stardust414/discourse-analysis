@@ -25,6 +25,19 @@
       candidate === 'cause-effect' && name === 'Cause-Effect') || t;
   }
 
+  function profileLabels(locale = DA_I18N.getLocale()) {
+    const active = DA_PROFILES.getActive();
+    return active.builtin && DA_PROFILES.builtins()[active.id]
+      ? window.DA_I18N_PROFILE_LABELS?.[locale]?.[active.id] : null;
+  }
+
+  function translatedName(type) {
+    const key = 'relationship.name.' + variant(type);
+    const english = window.DA_I18N_CATALOGS.en[key];
+    const override = profileLabels()?.names[type];
+    return override && english ? override + ' ' + english : DA_I18N.t(key);
+  }
+
   function getName(type) {
     const t = DA_PROFILES.effectiveType(type);
     const raw = DA_PROFILES.getName(t);
@@ -40,7 +53,7 @@
     if (!original || raw !== original) return raw;
     const key = 'relationship.name.' + variant(t);
     if (!Object.prototype.hasOwnProperty.call(window.DA_I18N_CATALOGS.en, key)) return raw;
-    return DA_I18N.t(key) + raw.slice(bare(raw).length);
+    return translatedName(t) + raw.slice(bare(raw).length);
   }
 
   function getDefinition(type) {
@@ -57,12 +70,12 @@
     const active = DA_PROFILES.getActive();
     const builtin = active.builtin && DA_PROFILES.builtins()[active.id];
     const original = builtin && (builtin.labels[t]?.name || DA_CONSTANTS.RELATIONSHIP_LABELS[t]);
-    const compact = DA_I18N.getLocale() === 'zh-CN' && !t.startsWith('cl_')
+    const compact = ['zh-CN', 'zh-Hant'].includes(DA_I18N.getLocale()) && !t.startsWith('cl_')
       && !!original && DA_PROFILES.getName(t) === original;
     const key = 'relationship.name.' + variant(t);
     const english = window.DA_I18N_CATALOGS.en[key];
     if (!compact || !english) return { compact: false, full, name: full, abbr: '' };
-    const translated = DA_I18N.t(key);
+    const translated = translatedName(t);
     const name = translated.endsWith(' ' + english)
       ? translated.slice(0, -english.length - 1) : translated;
     const abbr = DA_PROFILES.getAbbr(t);
@@ -77,18 +90,25 @@
 
   function searchTerms(type) {
     const names = [type, ...(extraNames[type] || [])];
-    const zh = window.DA_I18N_CATALOGS['zh-CN'];
-    return names.map((name) => zh['relationship.name.' + name]).filter(Boolean);
+    return ['en', 'zh-CN', 'zh-Hant'].flatMap(locale => {
+      const catalog = window.DA_I18N_CATALOGS[locale] || {};
+      return [...names.map(name => catalog['relationship.name.' + name]),
+        profileLabels(locale)?.names[type]].filter(Boolean);
+    });
   }
 
   function searchKeywords(type) {
-    const zh = window.DA_I18N_CATALOGS['zh-CN'];
-    return [type, ...(extraNames[type] || [])]
-      .flatMap((name) => [zh['relationship.definition.' + name], zh['relationship.keywords.' + name]]).filter(Boolean);
+    return ['en', 'zh-CN', 'zh-Hant'].flatMap(locale => {
+      const catalog = window.DA_I18N_CATALOGS[locale] || {};
+      return [type, ...(extraNames[type] || [])]
+        .flatMap(name => [catalog['relationship.definition.' + name], catalog['relationship.keywords.' + name]])
+        .filter(Boolean);
+    });
   }
 
   window.DA_RELATIONSHIPS = {
     getName, getDefinition, getKeywords, selectorPresentation, searchTerms, searchKeywords,
-    getGroupName: (name) => groupKeys[name] ? DA_I18N.t(groupKeys[name]) : name
+    getGroupName: (name) => groupKeys[name]
+      ? profileLabels()?.groups[groupKeys[name]] || DA_I18N.t(groupKeys[name]) : name
   };
 })();

@@ -39,7 +39,7 @@ declare var DA_SUMMARY: any;
 
 // window.* extras set by app.js / state.js / mouse-handler.js / preload.js
 interface Window {
-  DA_I18N_CATALOGS: any; DA_I18N: any; DA_RELATIONSHIPS: any;
+  DA_I18N_CATALOGS: any; DA_I18N_PROFILE_LABELS: any; DA_I18N: any; DA_RELATIONSHIPS: any;
   DA_STATE: any; DA_CONSTANTS: any; DA_PROFILES: any; DA_UI: any; DA_PASTE: any;
   DA_NOTATION: any; DA_PERSISTENCE: any; DA_MODES: any; DA_BIBLE: any;
   DA_CLOUD: any; DA_EDITOR: any; DA_RENDERER: any; DA_EXPORT: any;
