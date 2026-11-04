@@ -318,7 +318,7 @@ async function fetchFromNASBApi(query) {
  * @param {string} version - 'esv' | 'nasb' | 'greek' | 'hebrew'
  * @param {string} query   - Passage reference e.g. "John 1:1-5"
  */
-async function fetchPassageData(version, query) {
+async function fetchLegacyPassageData(version, query) {
   if (version === 'hebrew') {
     // Westminster Leningrad Codex (Hebrew OT) via bolls.life. Returns isRTL so
     // the UI flips to right-to-left layout automatically.
@@ -362,7 +362,34 @@ async function fetchPassageData(version, query) {
   return { ...parsed, passageRef: data.passageRef, copyright: data.copyright, isGreek: false, source: 'bolls' };
 }
 
+// Main-passage IDs stay identical to versionSelect. Parallel codes and pasted
+// text have separate entry points and deliberately do not enter this registry.
+// Keep metadata local and immutable; add fields only when a caller needs them.
+const PASSAGE_TRANSLATIONS = Object.freeze(Object.fromEntries(
+  ['esv', 'nasb', 'greek', 'hebrew'].map(id => [id, Object.freeze({ id, provider: 'legacy' })])
+));
+
+function getTranslationMetadata(id) {
+  return Object.hasOwn(PASSAGE_TRANSLATIONS, id) ? PASSAGE_TRANSLATIONS[id] : undefined;
+}
+
+// Adapters return the existing passage result shape consumed by app.js. A new
+// provider adds an entry here and translations above, without changing the
+// legacy official-API/fallback logic or the main UI's loading flow.
+const PASSAGE_PROVIDERS = Object.freeze({
+  legacy: (id, query) => fetchLegacyPassageData(id, query)
+});
+
+async function fetchPassageData(version, query) {
+  const translation = getTranslationMetadata(version);
+  // Preserve the old entry point's ESV default for unrecognized values. Strict
+  // registry lookup itself returns undefined, never an invented translation.
+  if (!translation) return fetchLegacyPassageData(version, query);
+  return PASSAGE_PROVIDERS[translation.provider](translation.id, query);
+}
+
 window.DA_BIBLE = {
+  getTranslationMetadata,
   fetchPassageData,
   fetchParallelVerses,
   parsePassageReference

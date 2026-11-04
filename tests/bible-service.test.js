@@ -339,3 +339,127 @@ test('fetchFromBolls (the primary passage-import path) also comes back unspaced 
   assert.ok(result.text.includes('[1] 神吩咐這一切的話說：'), 'verse 1 unspaced, marker space intact');
   assert.ok(result.text.includes('我是耶和華─你的　神'), 'verse 2 dash closes up, U+3000 reverence marker survives');
 });
+
+// Registry and adapter contract: exercise the public entry point as app.js does.
+test('main translation metadata preserves stable selector IDs and identity', () => {
+  const sb = setup();
+  for (const id of ['esv', 'nasb', 'greek', 'hebrew']) {
+    const entry = sb.DA_BIBLE.getTranslationMetadata(id);
+    assert.deepEqual(entry, { id, provider: 'legacy' });
+    assert.strictEqual(sb.DA_BIBLE.getTranslationMetadata(id), entry);
+    assert.ok(Object.isFrozen(entry), 'callers cannot change subsequent routing');
+  }
+});
+
+test('registry rejects unknown, inherited, parallel-only and custom-text IDs', () => {
+  const sb = setup();
+  for (const id of ['unknown', 'toString', '__proto__', 'constructor', '', undefined, null,
+    'ESV', 'NASB', 'SBLGNT', 'CUV', 'CUNPS', 'paste', 'custom']) {
+    assert.strictEqual(sb.DA_BIBLE.getTranslationMetadata(id), undefined);
+  }
+});
+
+test('registry IDs match the existing main selector without adding options', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+  const select = html.match(/<select id="versionSelect"[^]*?<\/select>/)[0];
+  const ids = [...select.matchAll(/<option value="([^"]+)"/g)].map(m => m[1]);
+  assert.deepEqual(ids, ['esv', 'nasb', 'greek', 'hebrew']);
+  const sb = setup();
+  for (const id of ids) assert.equal(sb.DA_BIBLE.getTranslationMetadata(id).id, id);
+});
+
+test('ESV public adapter keeps official backend before Bolls, without changing the result', async () => {
+  const sb = setup();
+  const calls = [];
+  sb.window.electronAPI = { fetchESV: async query => {
+    calls.push(['esv', query]);
+    return { ok: true, text: '[1] official', canonical: 'John 1:1' };
+  } };
+  sb.fetch = async () => { throw new Error('unexpected network fallback'); };
+  assert.deepEqual(await sb.DA_BIBLE.fetchPassageData('esv', 'John 1:1'), {
+    propositions: ['official'], verseRefs: ['1'], passageRef: 'John 1:1',
+    copyright: '(ESV)', isGreek: false, source: 'esv-api'
+  });
+  assert.deepEqual(calls, [['esv', 'John 1:1']]);
+});
+
+test('NASB public adapter preserves USFM proxy query and canonical result', async () => {
+  const sb = setup();
+  const urls = [];
+  sb.fetch = async url => {
+    urls.push(url);
+    return { ok: true, json: async () => ({ ok: true, text: '[21] official', canonical: 'Romans 3:21' }) };
+  };
+  const out = await sb.DA_BIBLE.fetchPassageData('nasb', 'Rom 3:21');
+  assert.equal(urls.length, 1);
+  assert.ok(urls[0].endsWith('/nasb?passage=ROM.3.21'));
+  assert.deepEqual(out, { propositions: ['official'], verseRefs: ['21'], passageRef: 'Romans 3:21',
+    copyright: '(NASB)', isGreek: false, source: 'nasb-api' });
+});
+
+for (const [id, code, bridge] of [['esv', 'ESV', 'fetchESV'], ['nasb', 'NASB', 'fetchNASB']]) {
+  test(`${id} public adapter retains backend failure then Bolls order`, async () => {
+    const sb = setup();
+    const calls = [];
+    sb.window.electronAPI = { [bridge]: async () => { calls.push('official'); throw new Error('offline'); } };
+    sb.fetch = async url => {
+      calls.push(url);
+      return { ok: true, json: async () => [{ verse: 1, text: 'fallback' }] };
+    };
+    const out = await sb.DA_BIBLE.fetchPassageData(id, 'John 1:1');
+    assert.equal(calls[0], 'official');
+    assert.equal(calls[1], `https://bolls.life/get-text/${code}/43/1/`);
+    assert.equal(calls.length, 2);
+    assert.equal(out.source, 'bolls');
+    assert.deepEqual(out.propositions, ['fallback']);
+  });
+}
+
+test('Greek NT public adapter keeps SBLGNT chapter filtering and repeated verse joining', async () => {
+  const sb = setup();
+  const urls = [];
+  sb.fetch = async url => {
+    urls.push(url);
+    return { ok: true, text: async () => 'Jn 1:1\talpha\nJn 1:1\tbeta\nJn 1:2\tnext\nJn 2:1\tother' };
+  };
+  const out = await sb.DA_BIBLE.fetchPassageData('greek', 'John 1:1');
+  assert.equal(urls.length, 1);
+  assert.ok(urls[0].endsWith('/John.txt'));
+  assert.deepEqual(out, { propositions: ['alpha beta'], verseRefs: ['1'], passageRef: 'John 1:1',
+    copyright: '(SBLGNT)', isGreek: true });
+});
+
+for (const [id, code, flags] of [
+  ['greek', 'LXX', { isGreek: true }],
+  ['hebrew', 'WLC', { isHebrew: true, isRTL: true }]
+]) {
+  test(`${id} OT public adapter preserves Bolls mapping and script flags`, async () => {
+    const sb = setup();
+    const urls = [];
+    sb.fetch = async url => {
+      urls.push(url);
+      return { ok: true, json: async () => [{ verse: 1, text: 'first' }, { verse: 2, text: 'second' }] };
+    };
+    assert.deepEqual(await sb.DA_BIBLE.fetchPassageData(id, 'Genesis 1:1'), {
+      propositions: ['first'], verseRefs: ['1'], passageRef: 'Genesis 1:1', copyright: `(${code})`, ...flags
+    });
+    assert.deepEqual(urls, [`https://bolls.life/get-text/${code}/1/1/`]);
+  });
+}
+
+test('public adapter propagates final source failure without swallowing it', async () => {
+  const sb = setup();
+  sb.window.electronAPI = { fetchESV: async () => ({ ok: false, noKey: true }) };
+  sb.fetch = async () => ({ ok: false, status: 503 });
+  await assert.rejects(() => sb.DA_BIBLE.fetchPassageData('esv', 'John 1:1'), /503/);
+  await assert.rejects(() => sb.DA_BIBLE.fetchPassageData('greek', 'John 1:1'), /503/);
+});
+
+test('legacy unknown-ID ESV default stays separate from strict registry lookup', async () => {
+  const sb = setup();
+  sb.window.electronAPI = { fetchESV: async () => ({ ok: true, text: '[1] legacy default' }) };
+  assert.strictEqual(sb.DA_BIBLE.getTranslationMetadata('unknown'), undefined);
+  assert.equal((await sb.DA_BIBLE.fetchPassageData('unknown', 'John 1:1')).source, 'esv-api');
+});

@@ -1,5 +1,5 @@
 {
-  "purpose": "Reviewed T2 delta only; immutable W1 snapshot remains the base. All 27 new/increased literals were inspected individually. Catalog strings and Schreiner override values are separately validated by tests.",
+  "purpose": "Reviewed T2 delta only; immutable W1 snapshot remains the base. All 27 new/increased literals were inspected individually. Catalog strings and Schreiner override values are separately validated by tests. S1 additionally reviews five internal Scripture routing literals (new or increased occurrences); original T2 records remain unchanged.",
   "baseSnapshot": "docs/windows/W1-源码文本审计.json",
   "baseSha256": "21ee6e46446d746f1a6aa238b07ba185e52ccf04e31d534eaf007cbf11e136b9",
   "records": [
@@ -272,6 +272,56 @@
       "occurrences": 2,
       "auditClass": "C-internal-locale-or-translation-key",
       "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "b13ab4e9786be3e442b3",
+      "file": "js/services/bible-service.js",
+      "line": 263,
+      "kind": "literal",
+      "text": "esv",
+      "occurrences": 4,
+      "auditClass": "C-internal-scripture-routing-id",
+      "reviewNote": "S1: reviewed stable main-selector ID or internal legacy adapter key; never displayed as UI text."
+    },
+    {
+      "id": "690dea3fc8d58f5029fc",
+      "file": "js/services/bible-service.js",
+      "line": 301,
+      "kind": "literal",
+      "text": "nasb",
+      "occurrences": 4,
+      "auditClass": "C-internal-scripture-routing-id",
+      "reviewNote": "S1: reviewed stable main-selector ID or internal legacy adapter key; never displayed as UI text."
+    },
+    {
+      "id": "b0213f168e3b0722f848",
+      "file": "js/services/bible-service.js",
+      "line": 322,
+      "kind": "literal",
+      "text": "hebrew",
+      "occurrences": 2,
+      "auditClass": "C-internal-scripture-routing-id",
+      "reviewNote": "S1: reviewed stable main-selector ID or internal legacy adapter key; never displayed as UI text."
+    },
+    {
+      "id": "eddf4f34b6aa0fe2f3c7",
+      "file": "js/services/bible-service.js",
+      "line": 330,
+      "kind": "literal",
+      "text": "greek",
+      "occurrences": 2,
+      "auditClass": "C-internal-scripture-routing-id",
+      "reviewNote": "S1: reviewed stable main-selector ID or internal legacy adapter key; never displayed as UI text."
+    },
+    {
+      "id": "e5d7a3c39f03abc4011e",
+      "file": "js/services/bible-service.js",
+      "line": 369,
+      "kind": "literal",
+      "text": "legacy",
+      "occurrences": 1,
+      "auditClass": "C-internal-scripture-routing-id",
+      "reviewNote": "S1: reviewed stable main-selector ID or internal legacy adapter key; never displayed as UI text."
     }
   ]
 }
