@@ -8,6 +8,7 @@ window.DA_I18N_CATALOGS["zh-CN"] = Object.freeze({
   "language.label": "界面语言",
   "language.system": "跟随系统",
   "language.english": "English",
+  "language.traditional": "繁體中文",
   "language.chinese": "简体中文",
   "common.done": "完成",
   "common.save": "保存",
