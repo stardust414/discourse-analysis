@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-04",
+  "w1Commit": "d5376dbc5725cae9a08d03209ab23e756a08f003",
+  "w2Commit": "04285af02768689939bcccaf711afc7687c2e19e",
+  "branch": "windows-validation",
+  "gitStatusAtW3Start": "",
+  "sourcePath": "dist/w1-win-x64/Discourse Analysis 3.3.1 x64 Portable.exe",
+  "targetPath": "dist/final-windows-zh-CN/Discourse Analysis-3.3.1-zh-CN-win-x64-portable.exe",
+  "sourceSHA256": "8b69136698e7bd29fc54f86971e5bfc4d37ac62f782a46131fea6d5df320b356",
+  "targetSHA256": "8b69136698e7bd29fc54f86971e5bfc4d37ac62f782a46131fea6d5df320b356",
+  "sourceBytes": 69657199,
+  "targetBytes": 69657199,
+  "byteForByteEqual": true,
+  "applicationRebuilt": false,
+  "identity": "Discourse Analysis 3.3.1 简体中文 Windows x64 Portable 本地化构建",
+  "runtimeEvidenceLevel": "External Windows runtime user validation",
+  "sourceCodeChangedSinceW1": false
+}

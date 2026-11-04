@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-04",
+  "w1Commit": "d5376dbc5725cae9a08d03209ab23e756a08f003",
+  "w2Commit": "04285af02768689939bcccaf711afc7687c2e19e",
+  "branch": "windows-validation",
+  "w3CommitLocation": "dist/final-windows-zh-CN/交付清单.json, populated from clean final HEAD after documentation commit",
+  "applicationRebuilt": false,
+  "sourceCodeChangedSinceW1": false,
+  "sourceManifestMatchesW1": true,
+  "applicationFilesChecked": 41,
+  "sourceAndTargetByteIdentical": true,
+  "artifact": {
+    "fileName": "Discourse Analysis-3.3.1-zh-CN-win-x64-portable.exe",
+    "bytes": 69657199,
+    "sha256": "8b69136698e7bd29fc54f86971e5bfc4d37ac62f782a46131fea6d5df320b356"
+  },
+  "automaticValidation": {
+    "environment": "macOS; not Windows runtime",
+    "unit": {
+      "passed": 351,
+      "total": 351
+    },
+    "e2e": {
+      "passed": 109,
+      "total": 109
+    },
+    "audit": {
+      "issues": [],
+      "englishKeys": 600,
+      "chineseKeys": 600,
+      "explicitKeysChecked": 434,
+      "sourceFiles": 37,
+      "sourceRecords": 2398,
+      "intentionalFallback": []
+    }
+  },
+  "buildVerificationInheritedFromW1": {
+    "innerArchitecture": "PE32+ x86-64",
+    "outerArchitecture": "PE32 i386 NSIS launcher",
+    "version": "3.3.1",
+    "payloadFilesMatched": 73,
+    "sourceFilesMatched": 41,
+    "evidence": "docs/windows/W1-evidence/验证汇总.json and pe-inspection.json",
+    "notRebuiltInW3": true
+  },
+  "runtimeValidation": {
+    "level": "External Windows runtime user validation",
+    "verifiedOperations": [
+      "启动并运行正常（用户报告）",
+      "整体实际试用正常（用户报告；未逐项记录）"
+    ],
+    "windowsVersion": "未记录",
+    "windowsBuild": "未记录",
+    "cpuArchitecture": "未记录",
+    "nativeX64HardwareVerified": false,
+    "armX64EmulationVerified": false,
+    "agentDirectWindowsExecution": false
+  },
+  "coverageLimits": [
+    "DPI全矩阵",
+    "所有IME边界",
+    "语言与菜单专项",
+    "所有Windows路径和UNC",
+    "JSON/PNG/PDF/profile逐项往返",
+    "Greek/Hebrew/RTL专项",
+    "所有网络服务",
+    "所有安全软件",
+    "所有Windows build"
+  ],
+  "signing": {
+    "authenticode": false,
+    "codeSigningPerformed": false,
+    "SmartScreen": "未专项记录",
+    "Defender": "未专项记录"
+  },
+  "schemaDependenciesAndTerminologyChanged": false,
+  "localCuvIncluded": false,
+  "publicActions": {
+    "push": false,
+    "release": false,
+    "pr": false
+  }
+}
