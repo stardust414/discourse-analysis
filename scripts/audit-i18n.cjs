@@ -5,7 +5,9 @@ const vm = require('vm');
 const crypto = require('crypto');
 const ts = require('typescript');
 const ROOT = path.resolve(__dirname, '..');
-const SNAPSHOT = 'docs/windows/W1-源码文本审计.json';
+const SNAPSHOT = 'docs/zh-Hant/T2-源碼文字審計.json';
+const BASE_SNAPSHOT = 'docs/windows/W1-源码文本审计.json';
+const LANGUAGES = ['en', 'zh-CN', 'zh-Hant'];
 const intentionalFallback = []; // C13–C17 approved in v1.1; no deliberate missing Chinese keys.
 function filesUnder(dir) {
   return fs.readdirSync(path.join(ROOT, dir), { withFileTypes: true }).flatMap(e =>
@@ -13,12 +15,12 @@ function filesUnder(dir) {
 }
 function sourceFiles() {
   return ['app.js', 'main.js', 'preload.js', 'index.html', 'styles.css', ...filesUnder('js'), ...filesUnder('functions')]
-    .filter(f => !f.includes('/vendor/') && !/i18n\/(en|zh-CN)\.js$/.test(f) && /\.(?:js|cjs|html|css)$/.test(f));
+    .filter(f => !f.includes('/vendor/') && !/i18n\/(en|zh-CN|zh-Hant)\.js$/.test(f) && /\.(?:js|cjs|html|css)$/.test(f));
 }
 function catalogs() {
   const s = { window: {} };
   vm.createContext(s);
-  for (const lang of ['en', 'zh-CN']) vm.runInContext(fs.readFileSync(path.join(ROOT, 'js/i18n/' + lang + '.js'), 'utf8'), s);
+  for (const lang of LANGUAGES) vm.runInContext(fs.readFileSync(path.join(ROOT, 'js/i18n/' + lang + '.js'), 'utf8'), s);
   return s.window.DA_I18N_CATALOGS;
 }
 function literals(file, source) {
@@ -63,9 +65,16 @@ function compareSnapshot(actual, expected) {
 }
 function check() {
   const dict = catalogs(), issues = [];
-  for (const [key, en] of Object.entries(dict.en)) {
-    if (!en || typeof en !== 'string' && !en.other) issues.push('Empty English: ' + key);
-    if (!intentionalFallback.includes(key) && !dict['zh-CN'][key]) issues.push('Missing approved Chinese: ' + key);
+  const parameters = value => [...new Set([...JSON.stringify(value).matchAll(/\{(\w+)\}/g)].map(m => m[1]))].sort();
+  for (const locale of LANGUAGES) {
+    for (const key of Object.keys(dict.en)) {
+      const entry = dict[locale][key];
+      if (!entry || typeof entry !== 'string' && !entry.other) issues.push('Missing/empty translation: ' + locale + ':' + key);
+      if (entry && parameters(entry).some(p => !parameters(dict.en[key]).includes(p))) issues.push('Unknown parameter: ' + locale + ':' + key);
+      if (locale === 'zh-Hant' && JSON.stringify(parameters(entry)) !== JSON.stringify(parameters(dict['zh-CN'][key])))
+        issues.push('Chinese parameter mismatch: ' + key);
+    }
+    for (const key of Object.keys(dict[locale])) if (!Object.hasOwn(dict.en, key)) issues.push('No English baseline: ' + locale + ':' + key);
   }
   const used = new Set();
   for (const f of sourceFiles()) {
@@ -81,19 +90,19 @@ function check() {
   const rows = collect();
   if (!fs.existsSync(path.join(ROOT, SNAPSHOT))) issues.push('Source audit snapshot missing');
   else {
-    for (const r of compareSnapshot(rows, JSON.parse(fs.readFileSync(path.join(ROOT, SNAPSHOT), 'utf8')).records))
+    const reviewed = new Map(JSON.parse(fs.readFileSync(path.join(ROOT, BASE_SNAPSHOT), 'utf8')).records.map(r => [r.id, r]));
+    for (const r of JSON.parse(fs.readFileSync(path.join(ROOT, SNAPSHOT), 'utf8')).records) reviewed.set(r.id, r);
+    for (const r of compareSnapshot(rows, [...reviewed.values()]))
       issues.push('Review new source text: ' + r.file + ':' + r.line + ' ' + r.text.slice(0, 90));
   }
   return { issues, englishKeys: Object.keys(dict.en).length, chineseKeys: Object.keys(dict['zh-CN']).length,
+    traditionalKeys: Object.keys(dict['zh-Hant']).length,
+    traditionalMissingKeys: Object.keys(dict.en).filter(k => !dict['zh-Hant'][k]).length,
     explicitKeysChecked: used.size, sourceFiles: sourceFiles().length, sourceRecords: rows.length, intentionalFallback };
 }
 if (require.main === module) {
   if (process.argv.includes('--write-snapshot')) {
-    const records = collect().map(r => ({ ...r,
-      auditClass: /data-i18n/.test(r.text) || r.kind.startsWith('html-') ? 'A-bound-or-reviewed-html' :
-        /constants\.js|profiles\.js/.test(r.file) && !r.text.includes('s.S') ? 'B-D-stable-relationship-profile-data' : 'C-reviewed-code-diagnostic-or-stable-value'
-    }));
-    fs.writeFileSync(path.join(ROOT, SNAPSHOT), JSON.stringify({ purpose: 'Reviewed literal inventory. New or increased literals require review; see residual-English report for A-F decisions.', records }, null, 2) + '\n');
+    throw new Error('Review and classify source literals explicitly; automatic snapshot replacement is disabled.');
   }
   const result = check();
   console.log(JSON.stringify(result, null, 2));

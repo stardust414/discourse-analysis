@@ -1,0 +1,277 @@
+{
+  "purpose": "Reviewed T2 delta only; immutable W1 snapshot remains the base. All 27 new/increased literals were inspected individually. Catalog strings and Schreiner override values are separately validated by tests.",
+  "baseSnapshot": "docs/windows/W1-源码文本审计.json",
+  "baseSha256": "21ee6e46446d746f1a6aa238b07ba185e52ccf04e31d534eaf007cbf11e136b9",
+  "records": [
+    {
+      "id": "f4534188e5420eb3989f",
+      "file": "js/i18n/i18n.js",
+      "line": 4,
+      "kind": "literal",
+      "text": "en",
+      "occurrences": 10,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "79b1c7ea694f520f01e2",
+      "file": "js/i18n/i18n.js",
+      "line": 4,
+      "kind": "literal",
+      "text": "zh-CN",
+      "occurrences": 3,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "c5e730f9826a564a1076",
+      "file": "js/i18n/i18n.js",
+      "line": 4,
+      "kind": "literal",
+      "text": "zh-Hant",
+      "occurrences": 3,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "8a93719ea2f5d6e21112",
+      "file": "js/i18n/i18n.js",
+      "line": 22,
+      "kind": "literal",
+      "text": "TW",
+      "occurrences": 1,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "ae08d9e7614a596ccc32",
+      "file": "js/i18n/i18n.js",
+      "line": 22,
+      "kind": "literal",
+      "text": "HK",
+      "occurrences": 1,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "0a306ef6cd1f92b093c8",
+      "file": "js/i18n/i18n.js",
+      "line": 22,
+      "kind": "literal",
+      "text": "MO",
+      "occurrences": 1,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "0e5536cfc58ac754c321",
+      "file": "js/i18n/i18n.js",
+      "line": 23,
+      "kind": "literal",
+      "text": "CN",
+      "occurrences": 1,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "57273052b8973ba0e8f1",
+      "file": "js/i18n/i18n.js",
+      "line": 23,
+      "kind": "literal",
+      "text": "SG",
+      "occurrences": 1,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "067dcd783ab8412d25c7",
+      "file": "js/i18n/i18n.js",
+      "line": 23,
+      "kind": "literal",
+      "text": "MY",
+      "occurrences": 1,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "d017d2e6494f8b38b9a1",
+      "file": "js/i18n/native-menu.cjs",
+      "line": 9,
+      "kind": "literal",
+      "text": "zh-Hant",
+      "occurrences": 2,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "454919d716611e027ce6",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 6,
+      "kind": "literal",
+      "text": "zh-Hant",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "3e9772aa89362970f988",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 10,
+      "kind": "literal",
+      "text": "action-manner",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "f35bebdd86ba2d1d4ed4",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 11,
+      "kind": "literal",
+      "text": "negative-positive",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "ef58788ee9247eff91d0",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 11,
+      "kind": "literal",
+      "text": "idea-explanation",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "a4ea09b3ef4214696938",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 12,
+      "kind": "literal",
+      "text": "question-answer",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "32393a84c2fff975d2c8",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 13,
+      "kind": "literal",
+      "text": "action-result",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "b1afb71c09b830be9455",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 13,
+      "kind": "literal",
+      "text": "action-purpose",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "66c1b12dc928fd6e68dc",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 15,
+      "kind": "literal",
+      "text": "double-ground",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "95ae4e41894a6267d65d",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 16,
+      "kind": "literal",
+      "text": "situation-response",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "fc7d9df5d59282b01d24",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 19,
+      "kind": "literal",
+      "text": "group.coordinate",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "7515fe600db5fef820b6",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 19,
+      "kind": "literal",
+      "text": "group.subordinate",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "e5794dbaa39905342e6a",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 20,
+      "kind": "literal",
+      "text": "group.restatement",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "0ee2104a8ba1935b3f29",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 20,
+      "kind": "literal",
+      "text": "group.distinct",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "6db0bab1e0d7caf464e4",
+      "file": "js/i18n/relationship-profiles.js",
+      "line": 21,
+      "kind": "literal",
+      "text": "group.contrary",
+      "occurrences": 1,
+      "auditClass": "C-profile-display-lookup-key",
+      "reviewNote": "Approved Schreiner display overrides only; IDs are lookup keys, original profile data untouched."
+    },
+    {
+      "id": "9b8b21239022f9a8eb10",
+      "file": "js/i18n/relationships.js",
+      "line": 35,
+      "kind": "literal",
+      "text": "relationship.name.",
+      "occurrences": 4,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "36661b90830be106f3a6",
+      "file": "js/i18n/relationships.js",
+      "line": 73,
+      "kind": "literal",
+      "text": "zh-Hant",
+      "occurrences": 3,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    },
+    {
+      "id": "a9d4e3bd8ca316d70894",
+      "file": "js/i18n/relationships.js",
+      "line": 93,
+      "kind": "literal",
+      "text": "en",
+      "occurrences": 2,
+      "auditClass": "C-internal-locale-or-translation-key",
+      "reviewNote": "Reviewed locale tags/regions and translation lookup key; not untranslated UI."
+    }
+  ]
+}
