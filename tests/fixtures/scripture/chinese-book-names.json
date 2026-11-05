@@ -1,0 +1,554 @@
+[
+  {
+    "usfm": "GEN",
+    "simplified": "创世记",
+    "traditional": "創世記",
+    "shorts": [
+      "创",
+      "創"
+    ]
+  },
+  {
+    "usfm": "EXO",
+    "simplified": "出埃及记",
+    "traditional": "出埃及記",
+    "shorts": [
+      "出"
+    ]
+  },
+  {
+    "usfm": "LEV",
+    "simplified": "利未记",
+    "traditional": "利未記",
+    "shorts": [
+      "利"
+    ]
+  },
+  {
+    "usfm": "NUM",
+    "simplified": "民数记",
+    "traditional": "民數記",
+    "shorts": [
+      "民"
+    ]
+  },
+  {
+    "usfm": "DEU",
+    "simplified": "申命记",
+    "traditional": "申命記",
+    "shorts": [
+      "申"
+    ]
+  },
+  {
+    "usfm": "JOS",
+    "simplified": "约书亚记",
+    "traditional": "約書亞記",
+    "shorts": [
+      "书",
+      "書"
+    ]
+  },
+  {
+    "usfm": "JDG",
+    "simplified": "士师记",
+    "traditional": "士師記",
+    "shorts": [
+      "士"
+    ]
+  },
+  {
+    "usfm": "RUT",
+    "simplified": "路得记",
+    "traditional": "路得記",
+    "shorts": [
+      "得"
+    ]
+  },
+  {
+    "usfm": "1SA",
+    "simplified": "撒母耳记上",
+    "traditional": "撒母耳記上",
+    "shorts": [
+      "撒上"
+    ]
+  },
+  {
+    "usfm": "2SA",
+    "simplified": "撒母耳记下",
+    "traditional": "撒母耳記下",
+    "shorts": [
+      "撒下"
+    ]
+  },
+  {
+    "usfm": "1KI",
+    "simplified": "列王纪上",
+    "traditional": "列王紀上",
+    "shorts": [
+      "王上"
+    ]
+  },
+  {
+    "usfm": "2KI",
+    "simplified": "列王纪下",
+    "traditional": "列王紀下",
+    "shorts": [
+      "王下"
+    ]
+  },
+  {
+    "usfm": "1CH",
+    "simplified": "历代志上",
+    "traditional": "歷代志上",
+    "shorts": [
+      "代上"
+    ]
+  },
+  {
+    "usfm": "2CH",
+    "simplified": "历代志下",
+    "traditional": "歷代志下",
+    "shorts": [
+      "代下"
+    ]
+  },
+  {
+    "usfm": "EZR",
+    "simplified": "以斯拉记",
+    "traditional": "以斯拉記",
+    "shorts": [
+      "拉"
+    ]
+  },
+  {
+    "usfm": "NEH",
+    "simplified": "尼希米记",
+    "traditional": "尼希米記",
+    "shorts": [
+      "尼"
+    ]
+  },
+  {
+    "usfm": "EST",
+    "simplified": "以斯帖记",
+    "traditional": "以斯帖記",
+    "shorts": [
+      "斯"
+    ]
+  },
+  {
+    "usfm": "JOB",
+    "simplified": "约伯记",
+    "traditional": "約伯記",
+    "shorts": [
+      "伯"
+    ]
+  },
+  {
+    "usfm": "PSA",
+    "simplified": "诗篇",
+    "traditional": "詩篇",
+    "shorts": [
+      "诗",
+      "詩"
+    ]
+  },
+  {
+    "usfm": "PRO",
+    "simplified": "箴言",
+    "traditional": "箴言",
+    "shorts": [
+      "箴"
+    ]
+  },
+  {
+    "usfm": "ECC",
+    "simplified": "传道书",
+    "traditional": "傳道書",
+    "shorts": [
+      "传",
+      "傳"
+    ]
+  },
+  {
+    "usfm": "SNG",
+    "simplified": "雅歌",
+    "traditional": "雅歌",
+    "shorts": [
+      "歌"
+    ]
+  },
+  {
+    "usfm": "ISA",
+    "simplified": "以赛亚书",
+    "traditional": "以賽亞書",
+    "shorts": [
+      "赛",
+      "賽"
+    ]
+  },
+  {
+    "usfm": "JER",
+    "simplified": "耶利米书",
+    "traditional": "耶利米書",
+    "shorts": [
+      "耶"
+    ]
+  },
+  {
+    "usfm": "LAM",
+    "simplified": "耶利米哀歌",
+    "traditional": "耶利米哀歌",
+    "shorts": [
+      "哀"
+    ]
+  },
+  {
+    "usfm": "EZK",
+    "simplified": "以西结书",
+    "traditional": "以西結書",
+    "shorts": [
+      "结",
+      "結"
+    ]
+  },
+  {
+    "usfm": "DAN",
+    "simplified": "但以理书",
+    "traditional": "但以理書",
+    "shorts": [
+      "但"
+    ]
+  },
+  {
+    "usfm": "HOS",
+    "simplified": "何西阿书",
+    "traditional": "何西阿書",
+    "shorts": [
+      "何"
+    ]
+  },
+  {
+    "usfm": "JOL",
+    "simplified": "约珥书",
+    "traditional": "約珥書",
+    "shorts": [
+      "珥"
+    ]
+  },
+  {
+    "usfm": "AMO",
+    "simplified": "阿摩司书",
+    "traditional": "阿摩司書",
+    "shorts": [
+      "摩"
+    ]
+  },
+  {
+    "usfm": "OBA",
+    "simplified": "俄巴底亚书",
+    "traditional": "俄巴底亞書",
+    "shorts": [
+      "俄"
+    ]
+  },
+  {
+    "usfm": "JON",
+    "simplified": "约拿书",
+    "traditional": "約拿書",
+    "shorts": [
+      "拿"
+    ]
+  },
+  {
+    "usfm": "MIC",
+    "simplified": "弥迦书",
+    "traditional": "彌迦書",
+    "shorts": [
+      "弥",
+      "彌"
+    ]
+  },
+  {
+    "usfm": "NAM",
+    "simplified": "那鸿书",
+    "traditional": "那鴻書",
+    "shorts": [
+      "鸿",
+      "鴻"
+    ]
+  },
+  {
+    "usfm": "HAB",
+    "simplified": "哈巴谷书",
+    "traditional": "哈巴谷書",
+    "shorts": [
+      "哈"
+    ]
+  },
+  {
+    "usfm": "ZEP",
+    "simplified": "西番雅书",
+    "traditional": "西番雅書",
+    "shorts": [
+      "番"
+    ]
+  },
+  {
+    "usfm": "HAG",
+    "simplified": "哈该书",
+    "traditional": "哈該書",
+    "shorts": [
+      "该",
+      "該"
+    ]
+  },
+  {
+    "usfm": "ZEC",
+    "simplified": "撒迦利亚书",
+    "traditional": "撒迦利亞書",
+    "shorts": [
+      "亚",
+      "亞"
+    ]
+  },
+  {
+    "usfm": "MAL",
+    "simplified": "玛拉基书",
+    "traditional": "瑪拉基書",
+    "shorts": [
+      "玛",
+      "瑪"
+    ]
+  },
+  {
+    "usfm": "MAT",
+    "simplified": "马太福音",
+    "traditional": "馬太福音",
+    "shorts": [
+      "太"
+    ]
+  },
+  {
+    "usfm": "MRK",
+    "simplified": "马可福音",
+    "traditional": "馬可福音",
+    "shorts": [
+      "可"
+    ]
+  },
+  {
+    "usfm": "LUK",
+    "simplified": "路加福音",
+    "traditional": "路加福音",
+    "shorts": [
+      "路"
+    ]
+  },
+  {
+    "usfm": "JHN",
+    "simplified": "约翰福音",
+    "traditional": "約翰福音",
+    "shorts": [
+      "约",
+      "約"
+    ]
+  },
+  {
+    "usfm": "ACT",
+    "simplified": "使徒行传",
+    "traditional": "使徒行傳",
+    "shorts": [
+      "徒"
+    ]
+  },
+  {
+    "usfm": "ROM",
+    "simplified": "罗马书",
+    "traditional": "羅馬書",
+    "shorts": [
+      "罗",
+      "羅"
+    ]
+  },
+  {
+    "usfm": "1CO",
+    "simplified": "哥林多前书",
+    "traditional": "哥林多前書",
+    "shorts": [
+      "林前"
+    ]
+  },
+  {
+    "usfm": "2CO",
+    "simplified": "哥林多后书",
+    "traditional": "哥林多後書",
+    "shorts": [
+      "林后",
+      "林後"
+    ]
+  },
+  {
+    "usfm": "GAL",
+    "simplified": "加拉太书",
+    "traditional": "加拉太書",
+    "shorts": [
+      "加"
+    ]
+  },
+  {
+    "usfm": "EPH",
+    "simplified": "以弗所书",
+    "traditional": "以弗所書",
+    "shorts": [
+      "弗"
+    ]
+  },
+  {
+    "usfm": "PHP",
+    "simplified": "腓立比书",
+    "traditional": "腓立比書",
+    "shorts": [
+      "腓"
+    ]
+  },
+  {
+    "usfm": "COL",
+    "simplified": "歌罗西书",
+    "traditional": "歌羅西書",
+    "shorts": [
+      "西"
+    ]
+  },
+  {
+    "usfm": "1TH",
+    "simplified": "帖撒罗尼迦前书",
+    "traditional": "帖撒羅尼迦前書",
+    "shorts": [
+      "帖前"
+    ]
+  },
+  {
+    "usfm": "2TH",
+    "simplified": "帖撒罗尼迦后书",
+    "traditional": "帖撒羅尼迦後書",
+    "shorts": [
+      "帖后",
+      "帖後"
+    ]
+  },
+  {
+    "usfm": "1TI",
+    "simplified": "提摩太前书",
+    "traditional": "提摩太前書",
+    "shorts": [
+      "提前"
+    ]
+  },
+  {
+    "usfm": "2TI",
+    "simplified": "提摩太后书",
+    "traditional": "提摩太後書",
+    "shorts": [
+      "提后",
+      "提後"
+    ]
+  },
+  {
+    "usfm": "TIT",
+    "simplified": "提多书",
+    "traditional": "提多書",
+    "shorts": [
+      "多"
+    ]
+  },
+  {
+    "usfm": "PHM",
+    "simplified": "腓利门书",
+    "traditional": "腓利門書",
+    "shorts": [
+      "门",
+      "門"
+    ]
+  },
+  {
+    "usfm": "HEB",
+    "simplified": "希伯来书",
+    "traditional": "希伯來書",
+    "shorts": [
+      "来",
+      "來"
+    ]
+  },
+  {
+    "usfm": "JAS",
+    "simplified": "雅各书",
+    "traditional": "雅各書",
+    "shorts": [
+      "雅"
+    ]
+  },
+  {
+    "usfm": "1PE",
+    "simplified": "彼得前书",
+    "traditional": "彼得前書",
+    "shorts": [
+      "彼前"
+    ]
+  },
+  {
+    "usfm": "2PE",
+    "simplified": "彼得后书",
+    "traditional": "彼得後書",
+    "shorts": [
+      "彼后",
+      "彼後"
+    ]
+  },
+  {
+    "usfm": "1JN",
+    "simplified": "约翰一书",
+    "traditional": "約翰一書",
+    "shorts": [
+      "约一",
+      "約一"
+    ]
+  },
+  {
+    "usfm": "2JN",
+    "simplified": "约翰二书",
+    "traditional": "約翰二書",
+    "shorts": [
+      "约二",
+      "約二"
+    ]
+  },
+  {
+    "usfm": "3JN",
+    "simplified": "约翰三书",
+    "traditional": "約翰三書",
+    "shorts": [
+      "约三",
+      "約三"
+    ]
+  },
+  {
+    "usfm": "JUD",
+    "simplified": "犹大书",
+    "traditional": "猶大書",
+    "shorts": [
+      "犹",
+      "猶"
+    ]
+  },
+  {
+    "usfm": "REV",
+    "simplified": "启示录",
+    "traditional": "啟示錄",
+    "shorts": [
+      "启",
+      "啟"
+    ]
+  }
+]

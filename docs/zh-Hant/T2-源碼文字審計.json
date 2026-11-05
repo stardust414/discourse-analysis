@@ -1,5 +1,5 @@
 {
-  "purpose": "Reviewed T2 delta only; immutable W1 snapshot remains the base. All 27 new/increased literals were inspected individually. Catalog strings and Schreiner override values are separately validated by tests. S1 additionally reviews five internal Scripture routing literals (new or increased occurrences); original T2 records remain unchanged. S2A individually reviews 35 new/increased Scripture metadata, schema and localized UI records.",
+  "purpose": "Reviewed T2 delta only; immutable W1 snapshot remains the base. All 27 new/increased literals were inspected individually. Catalog strings and Schreiner override values are separately validated by tests. S1 additionally reviews five internal Scripture routing literals (new or increased occurrences); original T2 records remain unchanged. S2A individually reviews 35 new/increased Scripture metadata, schema and localized UI records. S2B explicitly reviews 66 existing English book keys and one alias-reference template as parser data; no new UI dictionary keys.",
   "baseSnapshot": "docs/windows/W1-源码文本审计.json",
   "baseSha256": "21ee6e46446d746f1a6aa238b07ba185e52ccf04e31d534eaf007cbf11e136b9",
   "records": [
@@ -672,6 +672,676 @@
       "occurrences": 1,
       "auditClass": "C-scripture-provider-metadata-or-schema",
       "reviewNote": "S2A: reviewed provider ID/provenance, JSON type, existing/new translation key, reference, endpoint or localized attribution template. Not Scripture body or untranslated UI."
+    },
+    {
+      "id": "49f5107b099c0b3e4263",
+      "file": "js/services/bible-service.js",
+      "line": 4,
+      "kind": "literal",
+      "text": "Genesis",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "fd5aee2f9ce0cd0bb26b",
+      "file": "js/services/bible-service.js",
+      "line": 5,
+      "kind": "literal",
+      "text": "Exodus",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "ffd8292175073a80309b",
+      "file": "js/services/bible-service.js",
+      "line": 6,
+      "kind": "literal",
+      "text": "Leviticus",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "bac24b70cdac40a58c73",
+      "file": "js/services/bible-service.js",
+      "line": 7,
+      "kind": "literal",
+      "text": "Numbers",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "198e4d9a669cc95bce96",
+      "file": "js/services/bible-service.js",
+      "line": 8,
+      "kind": "literal",
+      "text": "Deuteronomy",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "07b64321d4f95451a853",
+      "file": "js/services/bible-service.js",
+      "line": 9,
+      "kind": "literal",
+      "text": "Joshua",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "f265482f7db9c967c072",
+      "file": "js/services/bible-service.js",
+      "line": 10,
+      "kind": "literal",
+      "text": "Judges",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "b7c60e32871181da4b76",
+      "file": "js/services/bible-service.js",
+      "line": 11,
+      "kind": "literal",
+      "text": "Ruth",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "183aeef896db32e2cb5c",
+      "file": "js/services/bible-service.js",
+      "line": 12,
+      "kind": "literal",
+      "text": "1sam",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "ea372ce801ed01e89117",
+      "file": "js/services/bible-service.js",
+      "line": 13,
+      "kind": "literal",
+      "text": "2sam",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "86ed40ac5f75e5c798ad",
+      "file": "js/services/bible-service.js",
+      "line": 14,
+      "kind": "literal",
+      "text": "1kings",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "d5863f500da3d75a44b6",
+      "file": "js/services/bible-service.js",
+      "line": 15,
+      "kind": "literal",
+      "text": "2kings",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "526c6470fb1b157da9f3",
+      "file": "js/services/bible-service.js",
+      "line": 16,
+      "kind": "literal",
+      "text": "1chron",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "5207967803856c110e12",
+      "file": "js/services/bible-service.js",
+      "line": 17,
+      "kind": "literal",
+      "text": "2chron",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "e3f058e41e2c5112cb0e",
+      "file": "js/services/bible-service.js",
+      "line": 18,
+      "kind": "literal",
+      "text": "Ezra",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "efe360bfe88998ca977d",
+      "file": "js/services/bible-service.js",
+      "line": 19,
+      "kind": "literal",
+      "text": "Nehemiah",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "2707b228a603e6cc3cd2",
+      "file": "js/services/bible-service.js",
+      "line": 20,
+      "kind": "literal",
+      "text": "Esther",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "ea388bb0c847ab183934",
+      "file": "js/services/bible-service.js",
+      "line": 21,
+      "kind": "literal",
+      "text": "Job",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "ed8d5b369bc6756e183a",
+      "file": "js/services/bible-service.js",
+      "line": 22,
+      "kind": "literal",
+      "text": "Psalms",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "f7cd53f0fe2393178edd",
+      "file": "js/services/bible-service.js",
+      "line": 23,
+      "kind": "literal",
+      "text": "Proverbs",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "aae73a56054ed45bd7af",
+      "file": "js/services/bible-service.js",
+      "line": 24,
+      "kind": "literal",
+      "text": "Ecclesiastes",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "6ed6e84df769cde4625c",
+      "file": "js/services/bible-service.js",
+      "line": 25,
+      "kind": "literal",
+      "text": "song",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "ef27763979dd630b64f4",
+      "file": "js/services/bible-service.js",
+      "line": 26,
+      "kind": "literal",
+      "text": "Isaiah",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "d1295bd73be656c06d17",
+      "file": "js/services/bible-service.js",
+      "line": 27,
+      "kind": "literal",
+      "text": "Jeremiah",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "bc4b99f181f6e431f03f",
+      "file": "js/services/bible-service.js",
+      "line": 28,
+      "kind": "literal",
+      "text": "Lamentations",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "4dbb869619f64d82263a",
+      "file": "js/services/bible-service.js",
+      "line": 29,
+      "kind": "literal",
+      "text": "Ezekiel",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "b4a63e1da84c6a677e96",
+      "file": "js/services/bible-service.js",
+      "line": 30,
+      "kind": "literal",
+      "text": "Daniel",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "06e491a9cbae254eb2ac",
+      "file": "js/services/bible-service.js",
+      "line": 31,
+      "kind": "literal",
+      "text": "Hosea",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "2022a6d67dc745aa1034",
+      "file": "js/services/bible-service.js",
+      "line": 32,
+      "kind": "literal",
+      "text": "Joel",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "7388683c0c49dabbdb6c",
+      "file": "js/services/bible-service.js",
+      "line": 33,
+      "kind": "literal",
+      "text": "Amos",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "0d8d7f018ede86a3865f",
+      "file": "js/services/bible-service.js",
+      "line": 34,
+      "kind": "literal",
+      "text": "Obadiah",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "d1d59ac4ad1cbe80c5bd",
+      "file": "js/services/bible-service.js",
+      "line": 35,
+      "kind": "literal",
+      "text": "Jonah",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "76cef9c98315521ef31b",
+      "file": "js/services/bible-service.js",
+      "line": 36,
+      "kind": "literal",
+      "text": "Micah",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "da3e018596845a677131",
+      "file": "js/services/bible-service.js",
+      "line": 37,
+      "kind": "literal",
+      "text": "Nahum",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "e3cce32f459249878dcf",
+      "file": "js/services/bible-service.js",
+      "line": 38,
+      "kind": "literal",
+      "text": "Habakkuk",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "05bd478277f54498ca12",
+      "file": "js/services/bible-service.js",
+      "line": 39,
+      "kind": "literal",
+      "text": "Zephaniah",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "eedc97cf949c9e3ac500",
+      "file": "js/services/bible-service.js",
+      "line": 40,
+      "kind": "literal",
+      "text": "Haggai",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "3b441e45ccc460dd71cf",
+      "file": "js/services/bible-service.js",
+      "line": 41,
+      "kind": "literal",
+      "text": "Zechariah",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "700f32e3fcf61882315d",
+      "file": "js/services/bible-service.js",
+      "line": 42,
+      "kind": "literal",
+      "text": "Malachi",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "b671ffc4464bdf6df5f9",
+      "file": "js/services/bible-service.js",
+      "line": 43,
+      "kind": "literal",
+      "text": "matt",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "31a500da57b0813cd306",
+      "file": "js/services/bible-service.js",
+      "line": 44,
+      "kind": "literal",
+      "text": "mark",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "b9d95473963f33376647",
+      "file": "js/services/bible-service.js",
+      "line": 45,
+      "kind": "literal",
+      "text": "luke",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "9f1df0304f80b75d48bc",
+      "file": "js/services/bible-service.js",
+      "line": 46,
+      "kind": "literal",
+      "text": "john",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "8b3489022b679aba15dc",
+      "file": "js/services/bible-service.js",
+      "line": 47,
+      "kind": "literal",
+      "text": "acts",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "9e32b2dddeffa6632592",
+      "file": "js/services/bible-service.js",
+      "line": 48,
+      "kind": "literal",
+      "text": "rom",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "f9fdaaf38a01637ffe4a",
+      "file": "js/services/bible-service.js",
+      "line": 49,
+      "kind": "literal",
+      "text": "1cor",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "1fc7c539b654d429ce95",
+      "file": "js/services/bible-service.js",
+      "line": 50,
+      "kind": "literal",
+      "text": "2cor",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "88d82f9bc97a78c86c6d",
+      "file": "js/services/bible-service.js",
+      "line": 51,
+      "kind": "literal",
+      "text": "gal",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "09773fffb824c971f8f7",
+      "file": "js/services/bible-service.js",
+      "line": 52,
+      "kind": "literal",
+      "text": "eph",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "5e900236fce8b71676f1",
+      "file": "js/services/bible-service.js",
+      "line": 53,
+      "kind": "literal",
+      "text": "phil",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "77b459f234a4900ab792",
+      "file": "js/services/bible-service.js",
+      "line": 54,
+      "kind": "literal",
+      "text": "col",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "fee12b92fd0b59958cbc",
+      "file": "js/services/bible-service.js",
+      "line": 55,
+      "kind": "literal",
+      "text": "1thess",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "b9822551d7249067c53f",
+      "file": "js/services/bible-service.js",
+      "line": 56,
+      "kind": "literal",
+      "text": "2thess",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "6eaf5166c28da19b4810",
+      "file": "js/services/bible-service.js",
+      "line": 57,
+      "kind": "literal",
+      "text": "1tim",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "93877adf4080fcc6fc82",
+      "file": "js/services/bible-service.js",
+      "line": 58,
+      "kind": "literal",
+      "text": "2tim",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "4cc2ece350068d953b74",
+      "file": "js/services/bible-service.js",
+      "line": 59,
+      "kind": "literal",
+      "text": "titus",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "081315f1b7740e273bfc",
+      "file": "js/services/bible-service.js",
+      "line": 60,
+      "kind": "literal",
+      "text": "phlm",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "25090012458a06ddd10a",
+      "file": "js/services/bible-service.js",
+      "line": 61,
+      "kind": "literal",
+      "text": "heb",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "e0d37ae299d7e3be4403",
+      "file": "js/services/bible-service.js",
+      "line": 62,
+      "kind": "literal",
+      "text": "jas",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "964ac45b2495bc3a2a3c",
+      "file": "js/services/bible-service.js",
+      "line": 63,
+      "kind": "literal",
+      "text": "1pet",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "31b33804153eadb0ee8e",
+      "file": "js/services/bible-service.js",
+      "line": 64,
+      "kind": "literal",
+      "text": "2pet",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "0a71c43b5a3b09f9d524",
+      "file": "js/services/bible-service.js",
+      "line": 65,
+      "kind": "literal",
+      "text": "1jn",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "daae2799b2499c5ac42a",
+      "file": "js/services/bible-service.js",
+      "line": 66,
+      "kind": "literal",
+      "text": "2jn",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "5f93b43598377e1ce5de",
+      "file": "js/services/bible-service.js",
+      "line": 67,
+      "kind": "literal",
+      "text": "3jn",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "84772aed126dd952ef8f",
+      "file": "js/services/bible-service.js",
+      "line": 68,
+      "kind": "literal",
+      "text": "jude",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "eb20a688d485e0372b00",
+      "file": "js/services/bible-service.js",
+      "line": 69,
+      "kind": "literal",
+      "text": "rev",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "b6ac5795d8a995a2e309",
+      "file": "js/services/bible-service.js",
+      "line": 90,
+      "kind": "template",
+      "text": "{alias} {normalized.slice(book[0].length)}",
+      "occurrences": 1,
+      "auditClass": "C-reference-parser-data",
+      "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
     }
   ]
 }

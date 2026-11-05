@@ -1,3 +1,74 @@
+// Reference-input aliases only. Values are existing English book keys, not
+// new book identities. Keep BOLLS_BOOKS unchanged (also used by pasted text).
+const CHINESE_BOOK_ALIASES = Object.freeze(Object.fromEntries([
+  ['Genesis', '创世记 創世記 创 創'],
+  ['Exodus', '出埃及记 出埃及記 出'],
+  ['Leviticus', '利未记 利未記 利'],
+  ['Numbers', '民数记 民數記 民'],
+  ['Deuteronomy', '申命记 申命記 申'],
+  ['Joshua', '约书亚记 約書亞記 书 書'],
+  ['Judges', '士师记 士師記 士'],
+  ['Ruth', '路得记 路得記 得'],
+  ['1sam', '撒母耳记上 撒母耳記上 撒上'],
+  ['2sam', '撒母耳记下 撒母耳記下 撒下'],
+  ['1kings', '列王纪上 列王紀上 王上'],
+  ['2kings', '列王纪下 列王紀下 王下'],
+  ['1chron', '历代志上 歷代志上 代上'],
+  ['2chron', '历代志下 歷代志下 代下'],
+  ['Ezra', '以斯拉记 以斯拉記 拉'],
+  ['Nehemiah', '尼希米记 尼希米記 尼'],
+  ['Esther', '以斯帖记 以斯帖記 斯'],
+  ['Job', '约伯记 約伯記 伯'],
+  ['Psalms', '诗篇 詩篇 诗 詩'],
+  ['Proverbs', '箴言 箴'],
+  ['Ecclesiastes', '传道书 傳道書 传 傳'],
+  ['song', '雅歌 歌'],
+  ['Isaiah', '以赛亚书 以賽亞書 赛 賽'],
+  ['Jeremiah', '耶利米书 耶利米書 耶'],
+  ['Lamentations', '耶利米哀歌 哀'],
+  ['Ezekiel', '以西结书 以西結書 结 結'],
+  ['Daniel', '但以理书 但以理書 但'],
+  ['Hosea', '何西阿书 何西阿書 何'],
+  ['Joel', '约珥书 約珥書 珥'],
+  ['Amos', '阿摩司书 阿摩司書 摩'],
+  ['Obadiah', '俄巴底亚书 俄巴底亞書 俄'],
+  ['Jonah', '约拿书 約拿書 拿'],
+  ['Micah', '弥迦书 彌迦書 弥 彌'],
+  ['Nahum', '那鸿书 那鴻書 鸿 鴻'],
+  ['Habakkuk', '哈巴谷书 哈巴谷書 哈'],
+  ['Zephaniah', '西番雅书 西番雅書 番'],
+  ['Haggai', '哈该书 哈該書 该 該'],
+  ['Zechariah', '撒迦利亚书 撒迦利亞書 亚 亞'],
+  ['Malachi', '玛拉基书 瑪拉基書 玛 瑪'],
+  ['matt', '马太福音 馬太福音 太'],
+  ['mark', '马可福音 馬可福音 可'],
+  ['luke', '路加福音 路'],
+  ['john', '约翰福音 約翰福音 约 約'],
+  ['acts', '使徒行传 使徒行傳 徒'],
+  ['rom', '罗马书 羅馬書 罗 羅'],
+  ['1cor', '哥林多前书 哥林多前書 林前'],
+  ['2cor', '哥林多后书 哥林多後書 林后 林後'],
+  ['gal', '加拉太书 加拉太書 加'],
+  ['eph', '以弗所书 以弗所書 弗'],
+  ['phil', '腓立比书 腓立比書 腓'],
+  ['col', '歌罗西书 歌羅西書 西'],
+  ['1thess', '帖撒罗尼迦前书 帖撒羅尼迦前書 帖前'],
+  ['2thess', '帖撒罗尼迦后书 帖撒羅尼迦後書 帖后 帖後'],
+  ['1tim', '提摩太前书 提摩太前書 提前'],
+  ['2tim', '提摩太后书 提摩太後書 提后 提後'],
+  ['titus', '提多书 提多書 多'],
+  ['phlm', '腓利门书 腓利門書 门 門'],
+  ['heb', '希伯来书 希伯來書 来 來'],
+  ['jas', '雅各书 雅各書 雅'],
+  ['1pet', '彼得前书 彼得前書 彼前'],
+  ['2pet', '彼得后书 彼得後書 彼后 彼後'],
+  ['1jn', '约翰一书 約翰一書 约一 約一'],
+  ['2jn', '约翰二书 約翰二書 约二 約二'],
+  ['3jn', '约翰三书 約翰三書 约三 約三'],
+  ['jude', '犹大书 猶大書 犹 猶'],
+  ['rev', '启示录 啟示錄 启 啟'],
+].flatMap(([book, aliases]) => aliases.split(' ').map(alias => [alias, book]))));
+
 const PASSAGE_REF_REGEX = /^(\d?\s*[a-zA-Z\s]+?)\s*(\d+)(?::(\d+)(?:-(\d+))?)?$/;
 
 /**
@@ -7,10 +78,16 @@ const PASSAGE_REF_REGEX = /^(\d?\s*[a-zA-Z\s]+?)\s*(\d+)(?::(\d+)(?:-(\d+))?)?$/
  * before every parse.
  */
 function normalizeRefQuery(query) {
-  return String(query || '')
-    .replace(/[\u2010\u2011\u2012\u2013\u2014\u2015\u2212]/g, '-') // hyphens, en/em dashes, minus
+  const normalized = String(query || '')
+    .replace(/[\u2010\u2011\u2012\u2013\u2014\u2015\u2212\uFF0D]/g, '-') // dash variants
+    .replace(/\uFF1A/g, ':') // full-width colon; no broad Unicode conversion
     .replace(/\u00A0/g, ' ') // non-breaking space
     .trim();
+  // Capture the entire Chinese book token before the Arabic chapter number.
+  // Exact lookup prevents 約 from consuming 約一, and rejects unknown names.
+  const book = normalized.match(/^([\u3400-\u9FFF]+)\s*(?=\d)/);
+  const alias = book && CHINESE_BOOK_ALIASES[book[1]];
+  return alias ? `${alias} ${normalized.slice(book[0].length)}` : normalized;
 }
 
 // Any codepoint that can be immediately adjacent to a CUV/CUNPS-style spurious
@@ -476,6 +553,10 @@ const PASSAGE_PROVIDERS = Object.freeze({
 });
 
 async function fetchPassageData(version, query) {
+  // Official ESV queries otherwise bypass the local parser. Normalize Chinese
+  // references at this input boundary; leave all existing English API queries
+  // byte-for-byte intact, including the API's free-query syntax.
+  if (/[\u3400-\u9FFF]/.test(query)) query = normalizeRefQuery(query);
   const translation = getTranslationMetadata(version);
   // Preserve the old entry point's ESV default for unrecognized values. Strict
   // registry lookup itself returns undefined, never an invented translation.
