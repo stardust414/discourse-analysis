@@ -1342,6 +1342,36 @@
       "occurrences": 1,
       "auditClass": "C-reference-parser-data",
       "reviewNote": "S2B: reviewed existing English book key or alias-only reference reconstruction; parser data, not UI text. No Scripture conversion."
+    },
+    {
+      "id": "73547dbbb558c51eff95",
+      "file": "main.js",
+      "line": 4,
+      "kind": "literal",
+      "text": "os",
+      "occurrences": 1,
+      "auditClass": "C-internal-platform-compatibility",
+      "reviewNote": "Intel Monterey startup guard: Node os module name or process platform/architecture identifier; never displayed in the UI."
+    },
+    {
+      "id": "4daf7c5d8e285a03cf17",
+      "file": "main.js",
+      "line": 7,
+      "kind": "literal",
+      "text": "darwin",
+      "occurrences": 1,
+      "auditClass": "C-internal-platform-compatibility",
+      "reviewNote": "Intel Monterey startup guard: Node os module name or process platform/architecture identifier; never displayed in the UI."
+    },
+    {
+      "id": "312f517b5ca05bb68634",
+      "file": "main.js",
+      "line": 7,
+      "kind": "literal",
+      "text": "x64",
+      "occurrences": 1,
+      "auditClass": "C-internal-platform-compatibility",
+      "reviewNote": "Intel Monterey startup guard: Node os module name or process platform/architecture identifier; never displayed in the UI."
     }
   ]
 }

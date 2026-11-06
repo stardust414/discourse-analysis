@@ -1,6 +1,17 @@
 const { app, BrowserWindow, ipcMain, Menu } = require('electron');
 const path = require('path');
 const fs = require('fs');
+const os = require('os');
+
+function shouldDisableHardwareAcceleration() {
+  if (process.platform !== 'darwin' || process.arch !== 'x64') return false;
+  const release = os.release();
+  // macOS Monterey uses Darwin 21; reject malformed release strings.
+  return /^\d+(?:\.\d+)*$/.test(release) && Number(release.split('.')[0]) === 21;
+}
+
+// Must run before app readiness or window creation (Intel Monterey GPU fallback).
+if (shouldDisableHardwareAcceleration()) app.disableHardwareAcceleration();
 
 const { createNativeMenuTranslator } = require('./js/i18n/native-menu.cjs');
 const updateNativeMenu = createNativeMenuTranslator(Menu, app.name);
