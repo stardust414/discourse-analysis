@@ -2,6 +2,8 @@
 
 A Bible study tool for diagramming the logical structure of Scripture using **bracketing** — splitting passages into propositions and drawing logic brackets between them. Similar to [BibleArc](https://biblearc.com), built for speed, portability, and collaboration.
 
+> **Multilingual community fork:** this repository is an unofficial fork of [josiahhoi/discourse-analysis](https://github.com/josiahhoi/discourse-analysis), currently based on application version **3.3.1**. It adds English / 简体中文 / 繁體中文 interface support, online Simplified and Traditional Chinese Union Version sources, Chinese Bible reference input, and current macOS / Windows builds.
+
 ## Features
 
 ### 1. Bible Text Sources
@@ -9,7 +11,8 @@ A Bible study tool for diagramming the logical structure of Scripture using **br
 - **NASB (1995)** — via bolls.life.
 - **Greek** — SBLGNT for the New Testament, Septuagint (LXX) for the Old Testament, with native Greek rendering.
 - **Hebrew (WLC)** — Westminster Leningrad Codex with **automatic right-to-left layout**: the text, bracket gutter, and diagram all mirror correctly.
-- **Smart reference parsing** — abbreviations (`Rom`, `1 Cor`, `Ps`), full chapters (`Eph 1`), verse ranges, and even en-dash references pasted from other apps.
+- **Chinese Union Version (Simplified / Traditional)** — online CUVS and CUVT main-passage sources via [fetch(bible)](https://fetch.bible/).
+- **Smart reference parsing** — abbreviations (`Rom`, `1 Cor`, `Ps`), full chapters (`Eph 1`), verse ranges, en-dash references pasted from other apps, plus Simplified/Traditional Chinese book names and common abbreviations such as `创1`, `創1`, `约3：16`, and `林前10:1-4`.
 - **Paste your own text** — paste any passage or translation; verse markers like `[1]` or `[2:1]` are detected, and **Magic Paste** recognizes bracket data ("Discourse DNA") on the clipboard and restores the whole project.
 
 ### 2. The Bracketing Engine
@@ -59,10 +62,18 @@ A Bible study tool for diagramming the logical structure of Scripture using **br
 ## Setup & Desktop Apps
 
 ### Desktop (Recommended)
-1. Download the latest release for your platform from the GitHub Releases page (or build locally with `npm run build` — output lands in `dist/`).
-   - **Windows**: `Discourse Analysis 3.1.0 x64 Portable.exe` (no installation required)
-   - **macOS**: `Discourse Analysis-3.1.0-arm64-mac.zip`
-2. Run the application directly. (The macOS build is unsigned, so Gatekeeper may warn on first open — right-click → Open.)
+1. Download the latest **3.3.1 multilingual** release for your platform from the [GitHub Releases page](https://github.com/stardust414/discourse-analysis/releases/latest) (or build locally with `npm run build` — output lands in `dist/`).
+   - **macOS Apple Silicon / arm64**: `Discourse-Analysis-3.3.1-zh-CN-zh-Hant-arm64-mac.zip`
+   - **macOS Intel / x64**: `Discourse-Analysis-3.3.1-zh-CN-zh-Hant-x64-mac.zip`
+   - **Windows x64 Portable**: `Discourse-Analysis-3.3.1-zh-CN-zh-Hant-win-x64-portable.exe` (no installation required)
+2. Run the application directly. The distributed binaries are unsigned, so macOS Gatekeeper or Windows SmartScreen may show a warning.
+3. On macOS, after moving `Discourse Analysis.app` to `/Applications`, if Gatekeeper still blocks launch, run:
+   ```bash
+   xattr -dr com.apple.quarantine "/Applications/Discourse Analysis.app"
+   ```
+   Then open the app normally.
+
+The Intel x64 build includes a compatibility fallback for the blank-window issue reproduced on Intel Macs running macOS Monterey. Apple Silicon and newer Intel macOS versions do not trigger that fallback.
 
 ### ESV & NASB text sources
 Selecting **ESV** or **NASB** tries the official API first — ESV via
@@ -97,8 +108,8 @@ There is no in-app key field. Without keys everything still works via Bolls.
 ## Usage
 
 ### 1. Fetch a Passage
-- Select **ESV**, **NASB (1995)**, **Greek (SBLGNT / LXX)**, or **Hebrew (WLC)** from the dropdown.
-- Enter a reference (e.g., `John 1:1-5`, `Genesis 1:1`, `Eph 1`) and click **Fetch Passage**.
+- Select **ESV**, **NASB (1995)**, **Greek (SBLGNT / LXX)**, **Hebrew (WLC)**, **Chinese Union Version (Simplified)**, or **Chinese Union Version (Traditional)** from the dropdown.
+- Enter an English or Chinese reference (e.g., `John 1:1-5`, `Eph 1`, `约3：16`, `約3:16`, `林前10:1-4`) and click **Fetch Passage**.
 - The text is split into one proposition per verse; refine the split yourself — **Enter** splits at the cursor, **Backspace** at the start of a line merges upward.
 
 ### 2. Draw Logic Brackets
@@ -161,9 +172,18 @@ Abbreviations below are the defaults (Josiah profile); notation profiles can ren
 - **Desktop**: Electron (the ESV API key stays in the main process, never the page).
 - **Database**: Firebase Firestore (cloud sync and shared notation profiles).
 - **Libraries**: `html2canvas` and `jsPDF` for exports, `LZ-String` for data compression.
-- **Quality**: ESLint + TypeScript `checkJs`, 155 unit tests (`node --test`), 16 Playwright end-to-end tests.
+- **Quality**: ESLint + TypeScript `checkJs`; the frozen 3.3.1 multilingual.3 release passed **764/764 unit tests** and **147/147 Playwright browser E2E tests**, plus i18n audit parity at **609 / 609 / 609** keys for English / Simplified Chinese / Traditional Chinese.
 
 ## Changelog
+
+### Version 3.3.1 Multilingual (.1–.3)
+- **English / 简体中文 / 繁體中文 UI** with runtime language switching and English fallback.
+- **Online Chinese Scripture**: added Simplified and Traditional Chinese Union Version main-passage sources.
+- **Chinese Bible references**: supports Simplified/Traditional full book names, common abbreviations, optional spacing, and full-width punctuation.
+- **Cross-platform builds**: Apple Silicon macOS, native Intel macOS, and Windows x64 Portable.
+- **Intel Monterey compatibility**: added an automatic Chromium hardware-acceleration fallback for the blank-window issue reproduced on Intel Mac + macOS Monterey.
+- **Validation hardening**: multilingual.3 release passed 764/764 unit tests, 147/147 browser E2E tests, 609/609/609 i18n audit parity, packaged smoke checks, and real Intel Mac compatibility validation.
+- **Project compatibility retained**: multilingual UI preferences do not change project schema or automatically convert Scripture/user content between scripts.
 
 ### Version 3.1.0
 - **Parallel Translation Column**: view a second translation (Chinese, Korean, Spanish, German, Portuguese, English, Greek, Hebrew) beside the text, matched by verse.
